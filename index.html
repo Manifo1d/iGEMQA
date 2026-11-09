@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iGEM Real-Time Defense Assistant</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+<!-- Top Control Bar -->
+<header class="topbar">
+  <button class="btn btn-mic" id="micBtn" title="Alt+S 开启/暂停监听">开启全场监听 (EN)</button>
+  <button class="btn" id="langBtn" title="切换语音识别语言 (EN / ZH)" style="padding:0 10px;">EN</button>
+  <select id="voiceModeSelect" class="ctrl-select" title="选择语音工作模式">
+    <option value="auto_detect" selected>模式: 自动识别并触发</option>
+    <option value="manual_grab">模式: 持续转写 · 按键取最后问句</option>
+    <option value="raw">模式: 传统全量语音</option>
+  </select>
+  <button class="btn btn-primary" id="grabLastQBtn" title="Alt+Q：从持续录音中提取最后一个评委问句并生成回答">提取最后问句 (Alt+Q)</button>
+  <button class="btn" id="prevAnswerBtn" title="Alt+Z：误触发时一键返回上一个问题的回答画面" disabled>← 上一回答</button>
+  <button class="btn" id="unlockNextBtn" title="Alt+N 手动解锁并准备接收下一题" style="display:none;">下一题解锁</button>
+  <input type="text" class="query-input" id="queryInput" placeholder="全场自动捕获评委问句，或手动输入关键词 / 题号 (如 B1, naringenin, two bands, 84%)...">
+  <button class="btn btn-primary" id="askBtn">生成回答</button>
+  <button class="btn" id="openDbBtn" title="可视化编辑、新增、导入/导出参考回答数据库">题库管理</button>
+  <select id="providerSelect" class="ctrl-select"></select>
+  <input type="text" id="customUrlInput" class="ctrl-key" style="display:none;width:150px;" placeholder="Base URL">
+  <input type="text" id="customModelInput" class="ctrl-key" style="display:none;width:110px;" placeholder="Model ID">
+  <input type="password" id="apiKeyInput" class="ctrl-key" placeholder="API Key" autocomplete="off">
+</header>
+
+<!-- Subbar: Live Translation & Matched Question Switcher -->
+<div class="subbar">
+  <div class="trans-line" id="liveTransLine">就绪 · 点击「开启全场监听」后无需反复开关，系统会自动锁定评委问句并过滤我方队员回答</div>
+  <div class="hit-tabs" id="hitTabs"></div>
+  <span class="slide-tag" id="slideTag">S1 · P1</span>
+</div>
+<div class="q-hist-bar" id="qHistBar">
+  <span style="color:var(--text-muted);font-weight:600;white-space:nowrap;">本场评委问题与上下文记忆:</span>
+  <div id="qHistList" style="display:flex;gap:6px;align-items:center;flex:1;overflow-x:auto;"></div>
+  <button class="btn" id="clearContextBtn" title="Alt+C：清空连续追问上下文记忆，开启全新话题" style="height:24px;padding:0 8px;font-size:11.5px;">清空上下文 (Alt+C)</button>
+</div>
+
+<!-- Main Split Output: Left = 1, 2, 3 Key Points | Right = Listening-Note Cue Chains -->
+<main class="workspace">
+  <!-- Left Column: 1, 2, 3 Full-Sentence Key Points -->
+  <section class="col col-left">
+    <div class="col-header">
+      <span>1 · 2 · 3 分点陈述</span>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <span id="leftStatusText">本地毫秒检索</span>
+        <button class="btn" id="copyBtn" style="padding:3px 9px;font-size:12px;">复制英文</button>
+      </div>
+    </div>
+    <div class="col-body">
+      <div class="q-header">
+        <div class="q-zh" id="qZhText"></div>
+        <div class="q-en" id="qEnText"></div>
+      </div>
+
+      <!-- AI Generated 1, 2, 3 Points -->
+      <div class="ai-block" id="aiPointsBlock">
+        <div class="section-label">AI 实时生成 · English Points (1 / 2 / 3)</div>
+        <div class="points-stack" id="aiPointsEnContainer"></div>
+        <div class="section-label">AI 实时生成 · 中文分点 (1 / 2 / 3)</div>
+        <div class="points-stack" id="aiPointsZhContainer"></div>
+      </div>
+
+      <!-- Standard 1, 2, 3 Points (EN) -->
+      <div class="section-label">English Key Points (1 / 2 / 3)</div>
+      <div class="points-stack" id="stdPointsEn"></div>
+
+      <!-- Standard 1, 2, 3 Points (ZH) -->
+      <div class="section-label">中文分点陈述 (1 / 2 / 3)</div>
+      <div class="points-stack" id="stdPointsZh"></div>
+
+      <!-- Auto-Retrieved Project Library Original Excerpts -->
+      <div class="section-label" id="refSectionLabel">关联项目库原文 (Protocols / Wiki / DBTL / Parts)</div>
+      <div class="ref-list" id="refListContainer"></div>
+    </div>
+  </section>
+
+  <!-- Right Column: Listening-Note Style Cues (Keywords + Arrow Chains, No Full Sentences) -->
+  <section class="col col-right">
+    <div class="col-header">
+      <span>答题思路 · 听力速记笔记</span>
+      <span id="rightStatusText">中文词汇速记</span>
+    </div>
+    <div class="col-body">
+      <!-- AI Generated Cue Notes -->
+      <div class="ai-block" id="aiNotesBlock">
+        <div class="section-label">AI 实时生成 · 答题思路速记 (中文词汇与逻辑链)</div>
+        <div class="note-stack" id="aiNotesContainer"></div>
+      </div>
+
+      <!-- Standard Cue Notes -->
+      <div class="section-label">答题思路速记 (中文关键词 · 逻辑箭头 · 关键数值)</div>
+      <div class="note-stack" id="stdNotesContainer"></div>
+
+      <!-- Quantitative Calculation / Supplement Note if present -->
+      <div class="extra-box" id="stdExtraZh" style="display:none;"></div>
+    </div>
+  </section>
+</main>
+
+<!-- Reference Answer Database Manager Modal -->
+<div class="modal-backdrop" id="dbModal">
+  <div class="modal-panel">
+    <div class="modal-header">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <strong>参考回答数据库管理 (支持可视化编辑 / JSON 导入导出 / Markdown 同步)</strong>
+        <span id="dbStatusMsg" style="font-size:12px;color:var(--text-secondary);"></span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <button class="btn" id="dbNewItemBtn">+ 新增问答</button>
+        <button class="btn" id="dbExportJsonBtn">导出 qa_items.json</button>
+        <label class="btn" style="display:inline-flex;align-items:center;cursor:pointer;">
+          导入 JSON
+          <input type="file" id="dbImportJsonInput" accept=".json" style="display:none;">
+        </label>
+        <button class="btn" id="closeDbBtn">关闭</button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <aside class="db-sidebar" id="dbSidebarList"></aside>
+      <div class="db-form">
+        <div style="display:grid;grid-template-columns:1fr 1fr 2fr;gap:12px;">
+          <div class="form-row">
+            <label>题号 (Code)</label>
+            <input type="text" class="form-input" id="dbCodeInput" placeholder="如 S1.1 / B1.1">
+          </div>
+          <div class="form-row">
+            <label>对应 PPT 页码标识 (Slide)</label>
+            <input type="text" class="form-input" id="dbSlideInput" placeholder="如 S1 / B1 / B6">
+          </div>
+          <div class="form-row">
+            <label>检索关键词 (Keywords，空格分隔)</label>
+            <input type="text" class="form-input" id="dbKeywordsInput" placeholder="naringenin HPLC yield 产量 峰面积">
+          </div>
+        </div>
+        <div class="form-row">
+          <label>中文问题 (q_zh)</label>
+          <input type="text" class="form-input" id="dbQZhInput">
+        </div>
+        <div class="form-row">
+          <label>英文问题 (q_en)</label>
+          <input type="text" class="form-input" id="dbQEnInput">
+        </div>
+        <div class="form-row">
+          <label>英文 1·2·3 分点陈述 (points_en，每行一点)</label>
+          <textarea class="form-textarea" id="dbPointsEnInput"></textarea>
+        </div>
+        <div class="form-row">
+          <label>中文 1·2·3 分点陈述 (points_zh，每行一点)</label>
+          <textarea class="form-textarea" id="dbPointsZhInput"></textarea>
+        </div>
+        <div class="form-row">
+          <label>右侧答题思路 · 中文听力速记笔记 (notes_zh，每行一点，用 → 连接逻辑链)</label>
+          <textarea class="form-textarea" id="dbNotesZhInput"></textarea>
+        </div>
+        <div class="form-row">
+          <label>补充定量计算或延伸说明 (extra_zh，选填)</label>
+          <textarea class="form-textarea" id="dbExtraZhInput" style="min-height:54px;"></textarea>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding-top:6px;">
+          <button class="btn" id="dbDeleteItemBtn" style="color:var(--danger);border-color:var(--danger);">删除此题</button>
+          <button class="btn btn-primary" id="dbSaveItemBtn">保存修改</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Configuration, Knowledge Base Bundle & Core App -->
+<script src="config/config.js"></script>
+<script src="data/knowledge_base.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>
