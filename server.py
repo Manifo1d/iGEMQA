@@ -144,7 +144,7 @@ class DefenseAssistantHandler(http.server.SimpleHTTPRequestHandler):
 
 
 def run_server(port: int = 8788):
-    sync_main()
+    sync_main([])
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("127.0.0.1", port), DefenseAssistantHandler) as httpd:
         print(f"iGEM Real-Time Defense Assistant running at http://127.0.0.1:{port}/index.html")

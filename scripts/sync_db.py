@@ -207,12 +207,12 @@ def build_knowledge_base_js():
     return len(qa_items), len(docs), len(glossary), len(slides)
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description="Sync iGEM Defense Assistant Reference Database")
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--from-md", action="store_true", help="Parse data/qa_items.md and update data/qa_items.json")
     group.add_argument("--to-md", action="store_true", help="Export data/qa_items.json to data/qa_items.md")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     qa_items = load_json(QA_JSON_PATH, [])
 
