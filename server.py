@@ -3,7 +3,7 @@
 """
 Local HTTP Server & REST API for iGEM Real-Time Defense Assistant
 =================================================================
-- Serves the web UI on http://127.0.0.1:8765 (so Chrome remembers microphone permissions)
+- Serves the web UI on http://127.0.0.1:8788 (so Chrome remembers microphone permissions)
 - Automatically syncs `data/qa_items.md` <-> `data/qa_items.json` <-> `data/knowledge_base.js`
 - Provides REST API endpoints for reading and modifying the Reference Answer Database:
     GET    /api/kb        -> Returns full knowledge base JSON (qa_items, docs, glossary, slides, system_prompt)
@@ -143,7 +143,7 @@ class DefenseAssistantHandler(http.server.SimpleHTTPRequestHandler):
         return self._send_json(404, {"ok": False, "error": "Not found"})
 
 
-def run_server(port: int = 8765):
+def run_server(port: int = 8788):
     sync_main()
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("127.0.0.1", port), DefenseAssistantHandler) as httpd:
@@ -154,6 +154,6 @@ def run_server(port: int = 8765):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--port", type=int, default=8788)
     args = parser.parse_args()
     run_server(args.port)
