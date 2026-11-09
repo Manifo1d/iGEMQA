@@ -12,19 +12,19 @@
 - **Keywords**: AIP heme naringenin signal source sender receiver who produces 信号来源 谁给谁 金葡菌 表皮葡萄球菌 EcN
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] In our design, the three molecules act at two sequential stages.
-2. [Experimental Evidence] First, in the wound environment, *S. aureus* secretes the quorum-sensing peptide AIP, which our *S. epidermidis* sender senses to trigger DspB secretion and break down the biofilm. Second, once the biofilm is disrupted and red blood cells lyse, free heme activates the heme-sensing pathway in *S. epidermidis* to synthesize naringenin.
-3. [Boundary & Next Step] Naringenin then acts as the cell-to-cell signal that diffuses to our receiver strain, *E. coli* Nissle 1917 (EcN), to drive therapeutic protein expression.
+1. [Direct Conclusion] *S. aureus* secretes AIP (`Signal 1`), lysed red blood cells in the bleeding wound release free heme (`Signal 2`), and our engineered *S. epidermidis* sender synthesizes naringenin (`Signal 3`) to activate the *EcN* receiver.
+2. [Experimental Evidence] In the superficial wound layer, *S. epidermidis* senses AIP via `AgrC/AgrA` to secrete `DspB` (>84% biofilm clearance, Slide B13) and senses free heme via native `HssRS` (peaking at 1.7 h at 1 µM hemin, Slide B7) to express the `Nr` pathway (`At4CL–PhCHS–CmCHI`), producing 53.8 µM naringenin (Slide B10).
+3. [Boundary & Next Step] Naringenin then diffuses into the deeper hydrogel layer where *EcN* senses it via `FdeR/PfdeAR` (threshold >=50 µM, Slide B11) to secrete `LSp222` (64% *S. aureus* lysis in 15 min, Slide B16) and `hEGF` (Slide B14).
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】在我们的设计中，这三个分子分前后两个阶段发挥作用。
-2. 【实验证据与数据】第一步，创面中的金黄色葡萄球菌分泌群体感应自诱导肽 AIP，由发送菌表皮葡萄球菌感知并启动 `P2P3–DspB` 支路，分泌 DspB 水解生物膜基质。第二步，生物膜被破坏且红细胞裂解后，释放出的游离血红素（heme）激活表皮葡萄球菌的内源血红素感应通路合成柚皮素。
-3. 【边界与下一步】随后，柚皮素作为跨菌信号分子扩散至接收菌大肠杆菌 Nissle 1917（EcN），启动下游治疗蛋白表达。
+1. 【核心结论】金黄色葡萄球菌分泌群体感应信号 AIP（信号 1），出血创面裂解的红细胞释放游离血红素（信号 2），而工程化表皮葡萄球菌发送菌合成柚皮素（信号 3）以激活 *EcN* 接收菌。
+2. 【实验证据与数据】在创面浅层，表皮葡萄球菌通过 `AgrC/AgrA` 感应 AIP 分泌 `DspB`（生物膜清除率 >84%，B13 页），并通过内源 `HssRS` 感应血红素（1 µM 下 1.7 h 达峰，B7 页）驱动 `Nr` 三酶通路合成 53.8 µM 柚皮素（B10 页）。
+3. 【边界与下一步】柚皮素随后扩散至下层水凝胶，被 *EcN* 的 `FdeR/PfdeAR` 系统识别（阈值 >=50 µM，B11 页），驱动分泌 `LSp222`（15 min 裂解 64% 金葡菌，B16 页）和 `hEGF`（B14 页）。
 
 ### 答题思路速记 (中文关键词链)
-1. 阶段一（破膜）：金葡菌分泌 AIP → 表皮葡萄球菌感知（P2P3–DspB）→ 分泌 DspB 降解生物膜
-2. 阶段二（感应）：红细胞裂解 → 释放游离血红素（Heme）→ 表皮葡萄球菌（HssRS）→ 合成柚皮素
-3. 阶段三（接力）：柚皮素跨菌扩散 → 大肠杆菌 EcN（NrSr）→ 表达 LSp222 + hEGF
+1. 三信号来源 → 金葡菌产AIP(信号1) + 裂解红细胞放血红素(信号2) + 表葡合成柚皮素(信号3)
+2. 表葡浅层传感 → 感AIP分泌DspB(>84%除膜) + HssRS感血红素(1.7h达峰)产53.8 µM柚皮素
+3. EcN深层响应 → FdeR识别柚皮素(>=50 µM) → 分泌LSp222(15 min裂解64%)与hEGF
 
 ---
 
@@ -35,18 +35,19 @@
 - **Keywords**: end-to-end full system therapeutic protein co-culture sfGFP 全程联动 治疗输出 从头到尾 串联
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] Not yet as a single end-to-end experiment.
-2. [Experimental Evidence] Instead, we validated each module and the inter-strain handoff step by step: we verified hemin sensing directly in our target sender, *S. epidermidis*, and we demonstrated cell-to-cell naringenin signaling in a co-culture pairing a BL21 sender with an EcN receiver expressing sfGFP.
-3. [Boundary & Next Step] Coupling heme sensing in *S. epidermidis* all the way to therapeutic protein secretion in EcN is our next integration step.
+1. [Direct Conclusion] Not yet in a single *S. epidermidis*-to-*EcN* co-culture, because *S. epidermidis* is much harder to engineer and transform with plasmids than *E. coli*; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.
+2. [Experimental Evidence] While *S. epidermidis* transformation was progressing, we validated every module across our hosts: native `HssRS` heme sensing in *S. epidermidis* (peaking at 1.7 h at 1 µM hemin, Slide B7), de novo naringenin biosynthesis (53.8 µM, Slide B10) and 1:1 BL21-to-*EcN* co-culture signaling without exogenous naringenin (Slide B12), >84% biofilm dispersal by DspB (Slide B13), and 64% *S. aureus* lysis by purified LSp222 in 15 min (Slide B16).
+3. [Boundary & Next Step] Once sequencing of our Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will directly couple engineered *S. epidermidis* with *EcN* in a single end-to-end co-culture.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】目前还没有在单次实验中把目标菌对从头到尾串联跑通，而是采取了分步模块验证与跨菌接力验证：我们在目标发送菌表皮葡萄球菌中直接验证了血红素（hemin）感知响应，并在 BL21 发送菌与 EcN 接收菌（表达 sfGFP）的 1:1 共培养体系中走通了柚皮素跨菌通讯。
-2. 【证据与边界】下一步集成工作是将 `Nr` 合成簇转入表皮葡萄球菌，并在 EcN 中将报告基因替换为 LSp222 与 hEGF 完成端到端联动。
+1. 【核心结论】目前尚未在单一的“表皮葡萄球菌–*EcN*”共培养体系中跑通全链路，因为表皮葡萄球菌比大肠杆菌更难改造、质粒难以转化；我们一直在做转化实验，在 Wiki freeze 时转化平板上已长出菌落，目前正在测序。
+2. 【实验证据与数据】在推进表葡转化的同时，我们已分段验证了全部核心模块：表葡内源 `HssRS` 血红素传感（1 µM 下 1.7 h 达峰，B7 页）、从头合成 53.8 µM 柚皮素（B10 页）及无外源柚皮素的 1:1 BL21–*EcN* 共培养激活（B12 页）、DspB 清除 >84% 生物膜（B13 页），以及纯化 LSp222 在 15 min 内裂解 64% 金葡菌（B16 页）。
+3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接把工程化表皮葡萄球菌与 *EcN* 组合，完成端到端双菌共培养验证。
 
 ### 答题思路速记 (中文关键词链)
-1. 尚未单次全链路跑通 → 采用分步模块 + 跨菌接力验证
-2. 已验证：表皮葡萄球菌血红素传感（HmSr） | BL21 → EcN（sfGFP）1:1 共培养跨菌通讯
-3. 下一步：Nr 合成簇转入表皮葡萄球菌 + EcN 报告基因替换为 LSp222 / hEGF
+1. 尚未完成表葡–EcN单体系全链路 → 表葡更难改造、质粒难转化，Wiki freeze平板已出菌落正在测序
+2. 四大模块已分段跑通 → 表葡HssRS传感(1.7h) + 53.8 µM柚皮素与1:1共培养 + DspB除膜>84% + LSp222裂解64%
+3. 待Wiki freeze菌落测序确认 → 直接开展表葡–EcN端到端共培养
 
 ---
 
@@ -147,19 +148,19 @@
 - **Keywords**: co-culture fluorescence naringenin HPLC dose response microscopy 共培养 荧光 柚皮素 证据 菌间通讯
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] We connect them through three complementary pieces of evidence.
-2. [Experimental Evidence] First, by HPLC, our induced BL21 sender supplemented with *p*-coumaric acid produces a peak at 17.1 minutes matching the naringenin standard. Second, when we add exogenous naringenin to the EcN receiver alone, its NrSr–sfGFP fluorescence increases in a dose-dependent manner.
-3. [Boundary & Next Step] Third, when we co-culture the BL21 sender and EcN receiver together with *p*-coumaric acid but no exogenous naringenin, fluorescence microscopy shows a clear increase in green cells compared with either monoculture control.
+1. [Direct Conclusion] Three experimental measurements link co-culture fluorescence directly to de novo naringenin biosynthesis: HPLC quantification in the sender, dose-response calibration in the receiver, and 1:1 co-culture microscopy without exogenous naringenin.
+2. [Experimental Evidence] First, HPLC against a 5-point standard curve ($R^2 = 0.99998$) shows the `Nr` sender produces 53.8 µM (14.65 mg/L) naringenin (Slides B9–B10); second, *EcN* carrying `NrSr` activates selectively at >=50 µM naringenin (Slide B11); third, mixing the BL21 sender and *EcN* receiver 1:1 with only *p*-coumaric acid substrate triggers green fluorescence in *EcN* (Slide B12).
+3. [Boundary & Next Step] Next, we will add an empty-vector BL21 + *EcN* negative-control co-culture and LC-MS/MS product verification to make this intercellular signaling link completely airtight.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】我们通过三项相互印证的实验证据建立这一联系：第一，HPLC 检测表明，添加底物对香豆酸并诱导的 BL21 发送菌在 17.1 分钟处产生与柚皮素标准品保留时间一致的特征峰；
-2. 【实验证据与数据】第二，向 EcN 接收菌单独外加柚皮素时，`NrSr–sfGFP` 荧光呈清晰的浓度依赖性上升；
-3. 【边界与下一步】第三，将 BL21 发送菌与 EcN 接收菌在不外加柚皮素、仅提供前体对香豆酸的条件下 1:1 共培养时，荧光显微镜下绿色荧光细胞显著强于任一单培养对照。
+1. 【核心结论】发送菌 HPLC 定量、接收菌剂量响应标定以及无外源柚皮素的 1:1 共培养显微成像，这三项实验直接将共培养荧光与从头合成的柚皮素关联起来。
+2. 【实验证据与数据】第一，基于五点标准曲线（$R^2 = 0.99998$）的 HPLC 定量证实发送菌可合成 53.8 µM（14.65 mg/L）柚皮素（B9–B10 页）；第二，携带 `NrSr` 的 *EcN* 在 >=50 µM 柚皮素下特异性激活（B11 页）；第三，仅添加对香豆酸底物将 BL21 发送菌与 *EcN* 接收菌 1:1 共培养即可点亮 *EcN* 绿色荧光（B12 页）。
+3. 【边界与下一步】下一步我们将补充空载体 BL21 + *EcN* 阴性对照共培养及 LC-MS/MS 产物确证，使跨菌通讯证据链完全闭环。
 
 ### 答题思路速记 (中文关键词链)
-1. 三步证据链（B9 + B11 + B12）锁定柚皮素跨菌通讯
-2. 证据 ①②：HPLC 证实 BL21 产柚皮素（B9，17.1 min，53.8 µM） | EcN 对外源柚皮素剂量依赖激活（B11）
-3. 证据 ③：1:1 共培养（仅加对香豆酸 + IPTG，不加外源柚皮素）→ 强绿色荧光（单菌对照无荧光，B12）
+1. 三项证据直接关联 → 发送菌HPLC定量 + 接收菌剂量标定 + 无外源柚皮素1:1共培养成像
+2. 数据闭环 → 发送菌产53.8 µM(B9–B10) → 跨过EcN 50 µM阈值(B11) → 1:1共培养点亮荧光(B12)
+3. 下一步补强 → 空载体BL21+EcN阴性对照共培养 + LC-MS/MS确证
 
 ---
 
@@ -262,18 +263,19 @@
 - **Keywords**: missing step bottleneck full system integration 差哪一步 最关键 完整系统
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] The main gap is integrating the complete pathway into the final *S. epidermidis*–EcN pair from start to finish.
-2. [Evidence & Scope] Right now, our co-culture proof of concept connects a BL21 sender to an EcN sfGFP receiver; the next milestone is moving the Nr biosynthetic operon into *S. epidermidis* so that heme directly triggers naringenin synthesis, and swapping sfGFP in EcN for active LSp222 and hEGF secretion in co-culture.
+1. [Direct Conclusion] The main remaining step is transitioning naringenin biosynthesis and therapeutic output from our *E. coli* BL21(DE3) proof-of-concept host into the final *S. epidermidis* and *EcN* pair, because *S. epidermidis* is much harder to engineer and transform with plasmids; we have been working on it continuously, and colonies appeared on our transformation plates at Wiki freeze and are now being sequenced.
+2. [Experimental Evidence] Biochemically, all four modules are proven: >84% *S. aureus* biofilm removal by DspB (B13), 1.7 h hemin sensing in *S. epidermidis* (B7), 53.8 µM naringenin synthesis driving 1:1 BL21-to-*EcN* co-culture fluorescence (B9–B12), and 64% *S. aureus* lysis in 15 min by purified LSp222 (B16).
+3. [Boundary & Next Step] Confirming our Wiki-freeze *S. epidermidis* transformant colonies by sequencing will let us immediately run the integrated *S. epidermidis*-to-*EcN* functional assays.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】最关键的一步是在最终的目标菌对（表皮葡萄球菌 + EcN）中完成全链路端到端整合。
-2. 【实验证据与数据】目前的共培养概念验证连接的是 BL21 发送菌与表达 `sfGFP` 的 EcN 接收菌；
-3. 【边界与下一步】下一阶段里程碑是将 `Nr` 三酶合成簇转入表皮葡萄球菌实现“血红素触发柚皮素合成”，同时在 EcN 中将报告基因替换为 `LSp222` 与 `hEGF` 实现共培养条件下的治疗蛋白分泌。
+1. 【核心结论】目前最核心的推进步骤是将柚皮素合成与治疗输出从 BL21(DE3) 概念验证底盘过渡到最终的表皮葡萄球菌与 *EcN* 双菌组合——表皮葡萄球菌比大肠杆菌更难改造、质粒难以转化，我们一直在推进转化，在 Wiki freeze 时转化平板已长出菌落、正在测序。
+2. 【实验证据与数据】在生化与功能层面，四大模块均已跑通：DspB 清除 >84% 生物膜（B13）、表葡 1.7 h 血红素传感（B7）、53.8 µM 柚皮素合成及 1:1 BL21–*EcN* 共培养激活（B9–B12），以及纯化 LSp222 在 15 min 内裂解 64% 金葡菌（B16）。
+3. 【边界与下一步】完成 Wiki freeze 表葡转化平板菌落的测序确认后，我们将立即开展完整的表皮葡萄球菌–*EcN* 整合功能测定。
 
 ### 答题思路速记 (中文关键词链)
-1. 首要关键实验：目标菌对端到端共培养（表皮葡萄球菌 HmSr–Nr + 接收菌 EcN）
-2. 实验设计：仅添加 hemin 与对香豆酸（不加外源柚皮素）→ 检测 EcN 荧光激活与治疗蛋白分泌
-3. 核心意义：在目标皮肤共生发送菌与益生接收菌之间闭环整条信号接力链
+1. 核心推进步骤 → 从BL21过渡至表葡+EcN终底盘（表葡难转化，Wiki freeze平板已出菌落正在测序）
+2. 四大模块生化功能已跑通 → DspB除膜>84% + 血红素传感1.7h + 53.8 µM柚皮素共培养 + LSp222裂解64%
+3. 完成Wiki freeze菌落测序确认 → 立即开展表葡–EcN整合功能测定
 
 ---
 
@@ -284,19 +286,19 @@
 - **Keywords**: three more months priority roadmap biggest weakness most afraid question S6 B18 B19 多三个月 下一步优先级 最大弱点
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] Our three-month roadmap prioritizes closing the three inter-module handoffs that connect our individually validated modules into an end-to-end therapeutic consortium.
-2. [Experimental Evidence] First, we will concentrate *S. epidermidis* ATCC 12228 supernatant to confirm DspB secretion by anti-His Western blot and conditioned-medium biofilm dispersal (B18); second, we will complete electroporation of the AIP-inducible pLI50–AgrCA–P2/P3–DspB construct into ATCC 12228 (B19).
-3. [Boundary & Next Step] Third, we will transfer the HmSr–Nr naringenin pathway into *S. epidermidis* and move LSp222/hEGF into EcN to test the final *S. epidermidis*–EcN pair inside our dual-layer hydrogel using an ex vivo porcine skin wound model.
+1. [Direct Conclusion] First, we will finish sequencing the *S. epidermidis* colonies that appeared on our transformation plates at Wiki freeze and immediately assay their secreted DspB and naringenin production.
+2. [Experimental Evidence] Second, we will express the `NrSr`-driven `PelB–LSp222` and `PelB–hEGF` cassettes directly in *EcN* to replace BL21 proof-of-concept expression, and third, we will test hEGF wound-healing bioactivity in a HaCaT keratinocyte scratch assay alongside dual-layer hydrogel containment.
+3. [Boundary & Next Step] These three steps directly convert our modular proof-of-concept benchmarks into a complete *S. epidermidis*-to-*EcN* therapeutic dressing.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】如果再有三个月，我们将按严格优先级打通三个模块之间的“交接棒”，把目前已独立验证的三大功能模块串联为端到端闭环系统。
-2. 【实验证据与数据】第一步（第 1 个月）：浓缩已转入 ATCC 12228 的组成型菌株上清，通过 Anti-His Western blot 与上清破膜实验坐实工程菌 DspB 分泌（B18），并完成 AIP 诱导型大质粒在 ATCC 12228 中的电转诱导验证（B19）。
-3. 【边界与下一步】第二步（第 2–3 个月）：将 `HmSr–Nr` 柚皮素通路导入表皮葡萄球菌、将 `LSp222/hEGF` 导入 EcN，并加上通路失活突变体阴性对照，在离体猪皮感染创面模型中测试双层水凝胶的完整治疗闭环。
+1. 【核心结论】第一优先级是完成 Wiki freeze 时转化平板上长出的表皮葡萄球菌菌落的测序确认，并立即测定其分泌 DspB 与合成柚皮素的功能。
+2. 【实验证据与数据】第二是在接收菌 *EcN* 中直接测试 `NrSr` 驱动的 `PelB–LSp222` 与 `PelB–hEGF` 分泌以替代 BL21 概念验证；第三是通过 HaCaT 角质形成细胞划痕实验验证 hEGF 促迁移活性，并开展双层水凝胶封存测试。
+3. 【边界与下一步】这三步将直接把我们已经验证的分模块基准转化为完整的表葡–*EcN* 活体治疗敷料体系。
 
 ### 答题思路速记 (中文关键词链)
-1. 第一优先级（破膜闭环）→ 浓缩 ATCC 12228 上清做 His-Western 与破膜活性 + 完成 AIP 诱导型电转 (B18/B19)
-2. 第二优先级（终极底盘对接）→ 表皮葡萄球菌产柚皮素 + EcN 产 LSp222/hEGF 全链路联调（含失活通路对照）
-3. 第三优先级（近临床模型）→ 双层水凝胶封装下的离体猪皮创面感染模型与细胞划痕修复验证
+1. 第一优先级 → 完成Wiki freeze表葡转化平板菌落测序，测定DspB与柚皮素功能
+2. 第二、三步 → 在EcN中测试NrSr驱动治疗蛋白分泌 + HaCaT划痕实验测hEGF活性与水凝胶封存
+3. 三步闭环 → 将分模块验证转化为完整表葡–EcN治疗敷料
 
 ---
 
@@ -330,19 +332,19 @@
 - **Keywords**: best slide communication evidence B12 B9 B11 最能支持 两株菌通讯 哪张图 索引
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] Certainly.
-2. [Experimental Evidence] Slide B12 shows our most direct visual evidence: it places the BL21 sender monoculture, the EcN receiver monoculture, and the 1:1 co-culture side by side, showing a clear rise in green fluorescence only when both strains are cultured together.
-3. [Boundary & Next Step] To back that up quantitatively, Slide B9 shows naringenin production by the sender on HPLC, and Slide B11 shows the dose-response curve of the EcN receiver to exogenous naringenin.
+1. [Direct Conclusion] Slides B9 through B12 provide our most direct chain of evidence for naringenin-mediated intercellular communication.
+2. [Experimental Evidence] Slides B9 and B10 prove via HPLC ($R^2 = 0.99998$) that our three-enzyme `Nr` pathway synthesizes 53.8 µM (14.65 mg/L) naringenin from *p*-coumaric acid; Slide B11 shows that 53.8 µM exceeds the 50 µM threshold required to activate the `FdeR/PfdeAR` receiver in *EcN*; and Slide B12 demonstrates direct 1:1 BL21-to-*EcN* activation in co-culture without adding exogenous naringenin.
+3. [Boundary & Next Step] Together, these four backup slides connect chemical identity, quantitative titer, receptor threshold, and live two-strain signal transfer.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】请直接看 B12 页。
-2. 【实验证据与数据】该页将 BL21 发送菌单培养、EcN 接收菌单培养以及 1:1 双菌共培养的荧光显微图并列对比，可以直观看到只有在双菌共培养时才出现大面积亮绿色荧光细胞。
-3. 【边界与下一步】如果要进一步核实定量证据，B9 页展示了发送端合成柚皮素的 HPLC 色谱峰，B11 页展示了接收菌 EcN 对不同浓度柚皮素的剂量响应曲线。
+1. 【核心结论】B9 至 B12 四页备份幻灯片展示了柚皮素介导跨菌通讯最直接的完整证据链。
+2. 【实验证据与数据】B9 与 B10 页通过 HPLC（$R^2 = 0.99998$）证实 `Nr` 三酶通路以对香豆酸为底物合成了 53.8 µM（14.65 mg/L）柚皮素；B11 页证实该浓度跨过了 *EcN* 接收菌 `FdeR/PfdeAR` 的 50 µM 激活阈值；B12 页则展示了在不加外源柚皮素条件下 1:1 BL21–*EcN* 共培养直接点亮接收菌荧光。
+3. 【边界与下一步】这四页数据将化学定性定量、受体响应阈值与活体双菌信号传递完整串联起来。
 
 ### 答题思路速记 (中文关键词链)
-1. 完整通讯证据链（4 页）：B7 → B9 / B10 → B11 → B12
-2. B7（表皮葡萄球菌血红素输入）→ B9 & B10（HPLC 定性 17.1 min + 标曲定量 53.8 µM）
-3. B11（EcN 接收端 0–400 µM 剂量响应）→ B12（1:1 BL21–EcN 共培养跨菌激活与单菌对照）
+1. 最直接证据链在B9–B12页 → 串联化学定量、受体阈值与共培养激活
+2. 核心数据 → HPLC测得53.8 µM(B9–B10) → 超过EcN 50 µM阈值(B11) → 1:1共培养点亮荧光(B12)
+3. 完整闭环 → 从小分子合成到活体跨菌信号传递
 
 ---
 
@@ -502,28 +504,26 @@
 
 ---
 
-## [B4.1] 你们为什么选择表皮葡萄球菌、EcN 和 BL21 这三种宿主？各自的选择理由和职责是什么？
+## [B4.1] 既然最终设计使用表皮葡萄球菌和 EcN，为什么在柚皮素生产和治疗蛋白表达上使用 BL21？为什么使用三种宿主？
 - **ID**: `b4-1`
 - **Slide**: `B4` (Page 11)
-- **English Question**: Why did you use three hosts? What did each one contribute?
-- **Keywords**: three hosts S. epidermidis EcN BL21(DE3) rationale role why three strains 三种宿主 选择理由 职责 为什么用BL21
+- **English Question**: Why did you use BL21 for naringenin production and therapeutic protein expression when the final design uses S. epidermidis and EcN? Why use three hosts?
+- **Keywords**: three hosts S. epidermidis EcN BL21(DE3) rationale role why three strains 三种宿主 选择理由 职责 为什么用BL21 M23 harder to engineer plasmid transformation Wiki freeze colonies sequencing 表葡更难改造 质粒难以转化 转化平板 菌落 正在测序
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] Each host was chosen for a specific role, separating our final therapeutic pair from our proof-of-concept chassis:
-2. 
-3. [Experimental Evidence] ***S. epidermidis* (Target Sender)**: We chose it because it is a natural human skin commensal with high biosafety and possesses an endogenous heme-sensing system (`HssRS`). Its assigned duties are dispersing the *S. aureus* biofilm (`DspB`) and sensing heme to synthesize naringenin (`HmSr + Nr`). 2. **EcN (*E. coli* Nissle 1917, Target Receiver)**: We chose it for its established probiotic biosafety and tractable genetics. Its duty is to sense naringenin (`NrSr`) and produce the therapeutic proteins `LSp222` and `hEGF`. 3.
-4. [Boundary & Next Step] ***E. coli* BL21(DE3) (Proof-of-Concept Only)**: Because genetic manipulation in *S. epidermidis* takes longer, we used BL21 strictly as a mature proof-of-concept host to validate *E. coli* expression of `LSp222` and `hEGF` and to verify naringenin biosynthesis via the `Nr` pathway.
+1. [Direct Conclusion] *S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.
+2. [Experimental Evidence] In our final two-strain therapeutic design, *S. epidermidis* is the skin-commensal sender (carrying native `HssRS` heme sensing to secrete `DspB` and synthesize naringenin) and probiotic *EcN* is the receiver (`NrSr` driving `LSp222` and `hEGF`), while *E. coli* BL21(DE3) was run in parallel so we could validate 53.8 µM naringenin synthesis, 1:1 co-culture signaling, and `LSp222`/`hEGF` activity while *S. epidermidis* transformation was underway.
+3. [Boundary & Next Step] Once sequencing of the Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will run the naringenin HPLC and biofilm dispersal assays directly in *S. epidermidis* alongside *EcN*.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】我们将最终治疗双菌体系与概念验证底盘明确区分，三株宿主各有清晰的选择理由与职责分工：
-2. **表皮葡萄球菌（*S. epidermidis*，目标发送菌）**：选择理由是其为天然人体皮肤共生菌（生物安全性高），且拥有内源性血红素双组分感应系统（`HssRS`）；
-3. 【实验证据与数据】职责是表达分泌 `DspB` 破坏金葡菌生物膜，并通过 `HmSr + Nr` 响应血红素合成柚皮素。2. **大肠杆菌 Nissle 1917（*EcN*，目标接收菌）**：选择理由是其具备成熟的益生菌生物安全性，且遗传操作便捷、易于验证回路；职责是通过 `NrSr` 响应柚皮素，合成抗菌裂解酶 `LSp222` 与促修复因子 `hEGF`。
-4. 【边界与下一步】3. **大肠杆菌 BL21(DE3)（仅用于概念验证）**：由于革兰氏阳性表皮葡萄球菌的工程改造周期较长，我们选用成熟的 BL21 底盘**仅用于概念验证（strictly for proof-of-concept validation）**，负责验证 `LSp222` 与 `hEGF` 的大肠杆菌表达可行性，以及 `Nr` 途径合成柚皮素的能力。
+1. 【核心结论】表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在做这项转化工作，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。
+2. 【实验证据与数据】在最终双菌治疗设计中，皮肤共生菌表皮葡萄球菌作为发送菌（利用内源 `HssRS` 感应血红素，分泌 `DspB` 并合成柚皮素），益生菌 *EcN* 作为接收菌（通过 `NrSr` 响应柚皮素表达 `LSp222` 与 `hEGF`）；而在攻克表葡转化的同时，我们并行使用 BL21(DE3) 验证了 53.8 µM 柚皮素合成、1:1 共培养通讯以及 `LSp222`/`hEGF` 蛋白活性。
+3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接在表皮葡萄球菌与 *EcN* 中开展柚皮素液相检测及生物膜解聚功能实验。
 
 ### 答题思路速记 (中文关键词链)
-1. 最终治疗菌群（2 株）：表皮葡萄球菌（发送菌）+ 大肠杆菌 EcN（接收菌）
-2. 概念验证底盘（1 株）：大肠杆菌 BL21(DE3) → 仅用于快速验证三酶产柚皮素与治疗蛋白表达
-3. 选择理由：表皮葡萄球菌（皮肤共生安全 + 内源 HssRS 感知血红素） | EcN（益生菌安全 + 遗传操作成熟）
+1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze转化平板已长出菌落、正在测序
+2. 最终双菌为表葡(发送) + EcN(接收) → 并行用BL21完成53.8 µM柚皮素、共培养与LSp222/hEGF活性验证
+3. 待Wiki freeze菌落测序确认 → 直接在表葡与EcN中开展HPLC与功能测定
 
 ---
 
@@ -531,22 +531,22 @@
 - **ID**: `b4-2`
 - **Slide**: `B4` (Page 11)
 - **English Question**: Can you attribute BL21’s naringenin production to S. epidermidis?
-- **Keywords**: BL21 naringenin production equate to S. epidermidis 算到表皮葡萄球菌 替代 等同
+- **Keywords**: BL21 naringenin production equate to S. epidermidis 算到表皮葡萄球菌 替代 等同 M23 Wiki freeze colonies sequencing 表葡转化 菌落测序
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] No, we keep those claims strictly separate.
-2. [Experimental Evidence] Our HPLC naringenin yield and co-culture sender data come from BL21(DE3), which proves that the three-enzyme `Nr` pathway produces enough naringenin to activate EcN. In *S. epidermidis*, what we have experimentally verified so far is the upstream `HmSr` heme-sensing response (Slide B7).
-3. [Boundary & Next Step] Quantifying naringenin titers directly from engineered *S. epidermidis* is our next step.
+1. [Direct Conclusion] No—the 53.8 µM (14.65 mg/L) naringenin titer was measured in *E. coli* BL21(DE3) because *S. epidermidis* is much harder to engineer and transform with plasmids; we have been working on *S. epidermidis* transformation continuously, and colonies appeared on our transformation plates right at Wiki freeze and are currently being sequenced.
+2. [Experimental Evidence] In *S. epidermidis* ATCC 12228 itself, we have already validated the upstream `HssRS` heme sensor (peaking at 1.7 h under 1 µM hemin, Slide B7) and confirmed plasmid entry of `pBUS1-Pcap-DspB` after RN4220 passage (Slide B5), while BL21 proved that our three-enzyme `At4CL–PhCHS–CmCHI` pathway synthesizes enough naringenin to activate *EcN* in 1:1 co-culture (Slides B9–B12).
+3. [Boundary & Next Step] As soon as sequencing of the Wiki-freeze *S. epidermidis* transformation colonies completes, we will quantify heme-triggered naringenin secretion directly in *S. epidermidis* supernatant by HPLC.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】不能直接算到表皮葡萄球菌头上，我们对两者的实验结论做了严格区分。
-2. 【实验证据与数据】HPLC 测得的柚皮素产量以及双菌共培养中的发送端数据均来自概念验证底盘 BL21(DE3)，这证明了 `Nr` 三酶途径合成的柚皮素足以跨菌激活 EcN。在表皮葡萄球菌中，我们目前已实测验证的是上游 `HmSr` 对血红素的感知响应（B7 页）；
-3. 【边界与下一步】将 `Nr` 整合进表皮葡萄球菌并直接测定其柚皮素产量是下一步工作。
+1. 【核心结论】不能混为一谈——53.8 µM（14.65 mg/L）柚皮素产量是在 BL21(DE3) 中测得的，因为表皮葡萄球菌更难改造、质粒难以转化；我们一直在推进表葡转化，在 Wiki freeze 时转化平板上已长出菌落，目前正在测序。
+2. 【实验证据与数据】在表皮葡萄球菌 ATCC 12228 本身中，我们已验证了上游 `HssRS` 血红素传感器（1 µM 血红素下 1.7 h 达峰，B7 页）并通过 RN4220 中转确认了 `pBUS1-Pcap-DspB` 导入（B5 页）；同时利用 BL21 证实了三酶通路合成的柚皮素足以在 1:1 共培养中激活 *EcN*（B9–B12 页）。
+3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序完成后，我们将立即通过 HPLC 直接测定表皮葡萄球菌上清中的血红素诱导柚皮素产量。
 
 ### 答题思路速记 (中文关键词链)
-1. 双层水凝胶在创面外表面原位快速通讯：两层间距仅 40 µm → 柚皮素扩散仅需数秒至数分钟
-2. 厌氧与营养限制应对：EcN 为兼性厌氧菌（适应创面低氧环境）+ 水凝胶预载基础营养与对香豆酸前体
-3. 下一步：在与创面微环境匹配的离体皮肤模型中验证双菌存活与信号转导
+1. 不混为一谈 → 53.8 µM产自BL21 → 表葡更难改造、质粒难转化，Wiki freeze平板已出菌落正在测序
+2. 表葡已验证HssRS血红素传感(1.7h达峰)与pBUS1导入 → BL21验证三酶合成与1:1共培养激活EcN
+3. 待Wiki freeze菌落测序完成 → 直接用HPLC测表葡上清柚皮素产量
 
 ---
 
@@ -734,19 +734,19 @@
 - **Keywords**: growth change interfere fluorescence normalization OD600 B7 vs B8 生长变化干扰荧光 细菌长得更多
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] No, for two reasons.
-2. [Experimental Evidence] First, every fluorescence curve on Slide B7 is already normalized to cell density (`RFU/OD₆₀₀`) and referenced against the time-matched 0 µM control. Second, when you compare Slide B8 and Slide B7 at 1 µM hemin, cell density (`OD₆₀₀`) increases steadily over 5 hours on B8, whereas normalized fluorescence (`RFU/OD₆₀₀`) rises to a sharp peak at 1.7 hours on B7 and then comes back down.
-3. [Boundary & Next Step] That distinct kinetic peak proves specific promoter activation rather than simple bacterial growth.
+1. [Direct Conclusion] No—the fluorescence increase is driven by specific `pHrtBA` promoter activation rather than higher cell density, because every readout is already normalized to $\text{OD}_{600}$ and peaks before exponential growth.
+2. [Experimental Evidence] On Slide B7, normalized fluorescence ($\Delta(\text{Fluorescence}/\text{OD}_{600})$) spikes sharply at 1.7 hours for 1 µM hemin and 2.3–2.4 hours for 2.5 µM hemin—well before the cultures diverge in $\text{OD}_{600}$ during mid-exponential phase (4–12 hours, Slide B8).
+3. [Boundary & Next Step] Furthermore, 5 µM hemin yields a slightly higher stationary $\text{OD}_{600}$ than 1 µM on Slide B8 yet produces a much smaller early fluorescence peak on Slide B7, confirming that normalized fluorescence reflects promoter induction rather than cell number.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】不是因为细菌长得更多，原因有两点：第一，B7 页的所有荧光曲线均已除以同一时间点的菌体密度（`RFU/OD₆₀₀`），并扣除了同时间点 0 µM 对照组的基线；
-2. 【实验证据与数据】第二，将 B8 页与 B7 页的 1 µM hemin 组对照来看，B8 上的菌体密度 `OD₆₀₀` 在 5 小时内持续平稳上升，而 B7 上的单位菌体荧光 `RFU/OD₆₀₀` 却在 1.7 小时处出现尖锐峰值并随后回落。
-3. 【边界与下一步】这种截然不同的动力学波形证明信号来自启动子特异性激活，而非菌体数量增长。
+1. 【核心结论】不是——荧光升高源于 `pHrtBA` 启动子的特异性转录激活而非菌体密度增加，因为所有读数均已做 $\text{OD}_{600}$ 归一化且峰值出现在指数生长期之前。
+2. 【实验证据与数据】在 B7 页中，归一化荧光（$\Delta(\text{Fluorescence}/\text{OD}_{600})$）在 1 µM 血红素下于 1.7 h 迅速达峰、2.5 µM 下于 2.3–2.4 h 达峰，早于 B8 页中各组 $\text{OD}_{600}$ 在对数中期（4–12 h）拉开差距的时间窗口。
+3. 【边界与下一步】此外，B8 页中 5 µM 组的平台期 $\text{OD}_{600}$ 略高于 1 µM 组，但其在 B7 页的早期归一化荧光峰值却显著更低，证实信号反映的是启动子激活而非菌浓变化。
 
 ### 答题思路速记 (中文关键词链)
-1. 双图联读目的：排除「细菌生长量差异」或「血红素毒性」对荧光读数的干扰
-2. 低浓度区（1 µM / 2.5 µM）：OD600 生长曲线与 0 µM 正常对照几乎完全重合 → 证实 1.7 h 荧光峰是真实的基因转录激活，而非生长假象
-3. 高浓度区（10 µM）：OD600 显著受抑 → 解释了 B7 中 10 µM 组荧光贴近零线源于高浓度血红素的生长毒性
+1. 不是菌浓假象 → 数据已除以OD600归一化，且达峰时间早于对数生长期
+2. 时间错位证据 → 荧光在1.7h/2.3h达峰(B7)，早于4–12h的OD600增长期(B8)
+3. 剂量反证 → 5 µM组OD600更高但早期荧光峰值反而低于1 µM组
 
 ---
 
@@ -846,19 +846,19 @@
 - **Keywords**: calculate fermentation broth concentration from Area 400 and B10 7.32 14.65 mg/L 53.8 uM 标曲折算 发酵液浓度 计算过程
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] It is a two-step calculation.
-2. [Experimental Evidence] First, substituting the sample peak area from Slide B9 ($\text{Area} \approx 400$) into the calibration equation gives $C_{\text{vial}} = (400 - 77.4206) / 44{,}052.0432 = 0.007323\text{ g/L}$, or **7.32 mg/L (26.9 µM)** in the HPLC vial. Second, because our extraction protocol mixes 500 µL of fermentation broth with an equal 500 µL volume of anhydrous ethanol (a 1:1 dilution), multiplying by 2 gives **14.65 mg/L, or 53.8 µM**, in the original fermentation broth.
-3. [Boundary & Next Step] This shows our sender produces naringenin in the 50+ µM range where EcN responds on Slide B11.
+1. [Direct Conclusion] Substituting the sample peak area of ~400 at 17.1 min into our linear calibration curve ($y = 44052.04x + 77.42$) and multiplying by the 2-fold ethanol dilution factor gives 14.65 mg/L (53.8 µM) naringenin in the fermentation broth.
+2. [Experimental Evidence] Specifically, $(400 - 77.42) / 44052.04 = 0.007323\text{ g/L}$ ($7.32\text{ mg/L}$, or $26.9\ \mu\text{M}$) in the injected 1:1 ethanol-broth mixture; multiplying by 2 for the 1:1 extraction dilution yields $14.65\text{ mg/L}$, and dividing by the molecular weight of naringenin ($272.25\text{ g/mol}$) gives $53.8\ \mu\text{M}$.
+3. [Boundary & Next Step] This 53.8 µM supernatant concentration sits directly above the 50 µM activation threshold of our *EcN* receiver strain (Slide B11).
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】换算分两步完成：第一步，将 B9 页测得的 17.1 分钟样品峰面积（$\text{Area} pprox 400$）代入标准曲线方程，求得 HPLC 进样小瓶中的浓度 $C_{\text{vial}} = (400 - 77.4206) / 44{,}052.0432 = 0.007323\text{ g/L}$，即 **7.32 mg/L（26.9 µM）**。
-2. 【实验证据与数据】第二步，根据我们的提取方案（500 µL 发酵液与 500 µL 无水乙醇 1:1 等体积混合，即 2 倍稀释），乘以稀释倍数 2 得到原发酵液中的柚皮素实际浓度为 **14.65 mg/L（约 53.8 µM）**。
-3. 【边界与下一步】这表明发送菌合成的柚皮素浓度恰好达到 B11 页中 EcN 接收菌 50 µM 以上的有效激活区间。
+1. 【核心结论】将 17.1 min 处约 400 的样品峰面积代入线性标准曲线（$y = 44052.04x + 77.42$），再乘以 1:1 乙醇萃取的 2 倍稀释因子，即可算得发酵原液中柚皮素浓度为 14.65 mg/L（53.8 µM）。
+2. 【实验证据与数据】具体计算为：进样混合液浓度 $(400 - 77.42) / 44052.04 = 0.007323\text{ g/L}$（$7.32\text{ mg/L}$，即 $26.9\ \mu\text{M}$）；乘以 2 倍稀释因子得发酵液浓度 $14.65\text{ mg/L}$，再除以柚皮素分子量 $272.25\text{ g/mol}$ 即得 $53.8\ \mu\text{M}$。
+3. 【边界与下一步】53.8 µM 的原液浓度恰好跨过 *EcN* 接收菌 50 µM 的响应阈值（B11 页）。
 
 ### 答题思路速记 (中文关键词链)
-1. 样品点位置：Area ≈ 400 位于整条宽范围标曲（最高至 2.0 g/L）的低浓度端，故单独放大展示
-2. 定量可靠性：① 远高于非诱导空白基线（Area = 0） ② 位于标曲正截距（77.42）之上 ③ 保留时间（17.1 min）严格吻合
-3. 生物活性佐证：换算出的 53.8 µM 恰好处在 EcN 接收端激活窗口（≥50 µM），与 B12 共培养发光结果互相印证
+1. 代入标曲再乘2倍稀释因子 → 直接算出原液浓度 14.65 mg/L (53.8 µM)
+2. 两步换算 → (400-77.42)/44052.04 = 7.32 mg/L(进样液) → ×2 = 14.65 mg/L ÷ 272.25 = 53.8 µM
+3. 生物学意义 → 53.8 µM超过EcN接收菌50 µM激活阈值(B11)
 
 ---
 
@@ -1294,22 +1294,22 @@
 - **ID**: `b18-1`
 - **Slide**: `B18` (Page 25)
 - **English Question**: Did you show that your engineered strain secretes active DspB? What is the exact evidence boundary on Slide B18?
-- **Keywords**: DspB secretion evidence boundary B18 supernatant Western blot PNAG 工程菌分泌 证据边界 上清活性
+- **Keywords**: DspB secretion evidence boundary B18 supernatant Western blot PNAG 工程菌分泌 证据边界 上清活性 M10 M27 Wiki freeze colonies sequencing 转化平板 菌落测序
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] We validated the enzymatic biofilm clearance and the genetic construct in the final host separately, while direct protein detection in the *S. epidermidis* supernatant is our next experimental step.
-2. [Experimental Evidence] Specifically, we established three facts: first, cloned Sec/SPII–DspB–6xHis matches the reference across 965 of 971 bases (99% identity, B6); second, the plasmid was passaged through RN4220 into *S. epidermidis* ATCC 12228 and confirmed by colony PCR (B5); third, commercial DspB removes over 84% of mature *S. aureus* biofilm in 18 hours (B13).
-3. [Boundary & Next Step] To bridge the genetic construct and the enzymatic readout directly, our immediate next step is to concentrate the ATCC 12228 culture supernatant for an anti-His Western blot and a conditioned-medium crystal violet biofilm assay.
+1. [Direct Conclusion] *S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on it continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.
+2. [Experimental Evidence] Up to Wiki freeze, we established three pieces of evidence: cloned `Sec/SPII–DspB–6xHis` matches the reference across 965/971 bp by Sanger sequencing (99% identity, Slide B6), constitutive `pBUS1–Pcap–DspB` was passaged through RN4220 into *S. epidermidis* ATCC 12228 and verified by colony PCR (Slide B5), and purified DspB clears >84% of mature *S. aureus* biofilm over 18 hours (Slide B13).
+3. [Boundary & Next Step] Once sequencing of our Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will assay conditioned supernatant directly for extracellular DspB by anti-His Western blot and crystal violet biofilm clearance.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】我们已分别完成了“DspB 酶学破膜有效性验证”与“目标宿主 ATCC 12228 的基因构建转入”，而工程菌上清液的直接蛋白检出是紧接着的下一步实验。
-2. 【实验证据与数据】目前确立了三项扎实证据：(1) 克隆的 Sec/SPII–DspB–6xHis 经 Sanger 测序达到 965/971 碱基匹配（99% 一致，B6）；(2) 质粒已通过 RN4220 成功转入最终底盘表皮葡萄球菌 ATCC 12228 并完成菌落 PCR 确证（B5）；(3) 商业化 DspB 在 18 h 内可清除 >84% 的成熟金葡菌生物膜（B13）。
-3. 【边界与下一步】为了将底盘表达与破膜表型直接闭环，下一步我们将超滤浓缩 ATCC 12228 培养上清，开展 Anti-His Western blot 印迹检测与条件培养基破膜活性实验。
+1. 【核心结论】表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在推进转化实验，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。
+2. 【实验证据与数据】截至 Wiki freeze，我们已确立三项实验证据：克隆的 `Sec/SPII–DspB–6xHis` 经 Sanger 测序达 965/971 bp 匹配（99% 一致，B6 页），组成型 `pBUS1–Pcap–DspB` 已通过 RN4220 转入表葡 ATCC 12228 并经菌落 PCR 验证（B5 页），且纯酶 DspB 在 18 h 内清除了 >84% 的成熟金葡菌生物膜（B13 页）。
+3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接收集培养上清开展 Anti-His Western blot 与结晶紫生物膜清除活性测定。
 
 ### 答题思路速记 (中文关键词链)
-1. 证据分界清晰 → 已完成“酶学破膜验证 + 最终宿主基因转入”，待测“工程菌上清分泌蛋白”
-2. 已确立三项证据 → Sanger 测序 965/971 (B6) + 转入 ATCC 12228 菌落 PCR (B5) + 纯酶 18h 破膜 >84% (B13)
-3. 下一步闭环实验 → 超滤浓缩 ATCC 12228 上清 → Anti-His Western blot + 上清液结晶紫破膜测试
+1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze平板长出菌落、正在测序
+2. 已确立三项证据 → 测序965/971匹配(B6) + RN4220中转入ATCC 12228(B5) + 纯酶18h除膜>84%(B13)
+3. 待Wiki freeze菌落测序确认 → 直接测表葡上清Western blot与结晶紫破膜活性
 
 ---
 
@@ -1363,22 +1363,22 @@
 - **ID**: `b19-1`
 - **Slide**: `B19` (Page 26)
 - **English Question**: What is the current status of AIP-inducible DspB on Slide B19, and why use AIP induction instead of constitutive DspB?
-- **Keywords**: AIP induction constitutive Pcap AgrCA P2P3 ATCC 12228 restriction barrier B5 B19 组成型 诱导型 转化瓶颈
+- **Keywords**: AIP induction constitutive Pcap AgrCA P2P3 ATCC 12228 restriction barrier B5 B19 组成型 诱导型 转化瓶颈 M27 Wiki freeze colonies sequencing 转化平板 菌落测序
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] We use constitutive pBUS1–Pcap–DspB to characterize enzyme expression and AIP-inducible pLI50–AgrCA–P2/P3–DspB to restrict biofilm dispersal specifically to *S. aureus* infection sites.
-2. [Experimental Evidence] The upstream AgrCA–P2/P3 sensor was functionally validated with GFP by our 2025 team, and this year we replaced GFP with Sec/SPII–DspB and confirmed the full sequence; while pBUS1–Pcap–DspB is already inside *S. epidermidis* ATCC 12228, the larger pLI50–AgrCA–P2/P3–DspB plasmid is currently being passaged across the ATCC 12228 restriction barrier.
-3. [Boundary & Next Step] Tying DspB to AIP prevents unnecessary metabolic burden when no pathogen is present, while the completed constitutive construct serves as our immediate positive control for downstream secretion assays.
+1. [Direct Conclusion] *S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.
+2. [Experimental Evidence] We designed constitutive `pBUS1–Pcap–DspB` to establish baseline DspB secretion in *S. epidermidis* ATCC 12228 (verified by colony PCR after RN4220 passage, Slide B5) and built `pLI50–AgrCA–P2/P3–DspB` so DspB expression responds specifically to *S. aureus* quorum-sensing AIP (Slides B18–B19).
+3. [Boundary & Next Step] As soon as sequencing of the Wiki-freeze transformation plate colonies is completed, we will compare uninduced versus AIP-stimulated *S. epidermidis* supernatants in crystal violet biofilm dispersal assays.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】我们采用“双轨并行”策略：用组成型 `pBUS1–Pcap–DspB` 快速表征酶表达，用 AIP 诱导型 `pLI50–AgrCA–P2/P3–DspB` 实现仅在金葡菌感染时按需破膜。
-2. 【实验证据与数据】上游 `AgrCA–P2/P3` 传感器已于 2025 年通过 GFP 验证了 AIP 响应功能；今年我们将其下游替换为 `Sec/SPII–DspB` 并完成了测序确证。目前组成型质粒已成功转入 ATCC 12228，而分子量更大的 `pLI50` 诱导型质粒正在攻克 ATCC 12228 的限制修饰屏障。
-3. 【边界与下一步】AIP 诱导门控可避免无感染时的持续代谢负担与共生菌基质干扰；在诱导型菌株完成电转的同时，已转入宿主的组成型菌株可直接作为阳性对照推进上清活性测试。
+1. 【核心结论】表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在推进这项转化，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。
+2. 【实验证据与数据】我们并行构建了组成型 `pBUS1–Pcap–DspB`（已通过 RN4220 转入 ATCC 12228 并完成菌落 PCR 验证，B5 页）以建立表葡分泌基线，以及 `pLI50–AgrCA–P2/P3–DspB`（B18–B19 页）以实现金葡菌群体感应信号 AIP 特异性诱导表达。
+3. 【边界与下一步】待 Wiki freeze 转化平板上的菌落测序完成后，我们将立即对比未诱导与 AIP 诱导下表皮葡萄球菌上清的结晶紫生物膜清除活性。
 
 ### 答题思路速记 (中文关键词链)
-1. 双构建体分工 → 组成型 Pcap-DspB（验证表达与活性基准）+ 诱导型 P2/P3-DspB（按需精准开启）
-2. 当前实验进展 → 2025 已验证 AgrCA-P2/P3 传感 + 2026 完成 DspB 替换测序 + 组成型已入 ATCC 12228
-3. 攻克转化瓶颈 → 正通过 RN4220 去甲基化与电转优化将 pLI50 大质粒导入 ATCC 12228
+1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze平板已出菌落、正在测序
+2. 双质粒策略 → pBUS1–Pcap–DspB建分泌基线(B5已转入) + pLI50–AgrCA–P2/P3–DspB做AIP诱导(B18–B19)
+3. 待Wiki freeze菌落测序完成 → 对比未诱导与AIP刺激下表葡上清破膜活性
 
 ---
 
@@ -1481,22 +1481,19 @@
 - **Keywords**: error bars n=3 biological vs technical replicates dashed curve plateau 1.72h 误差棒 几个独立样本 虚线平台 生物学重复
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] Let me break that down by figure:
-2. - On **Slide B11 (EcN receiver)**, each data point represents $n = 3$ independent biological cultures (each averaged across 2 technical duplicate wells), and error bars show the standard deviation across the 3 biological replicates.
-3. [Evidence & Scope] We plotted the 0, 50, and 100 µM kinetic fits as dashed curves because their lower amplitudes don't reach a sharp saturation plateau within 24 hours, whereas 200 and 400 µM show well-constrained sigmoidal fits.
-4. - On **Slide B15 (LSp222 lysis)**, error bars represent $n = 3$ replicate wells per group.
-5. - On **Slide B7 and B8 (*S. epidermidis* hemin assays)**, curves are fitted to duplicate wells ($n = 2$), which is why we report the peak time on B7 as "about 1.7 hours" rather than over-interpreting the second decimal place.
+1. [Direct Conclusion] Every error bar and confidence band in our quantitative kinetics plots represents $n = 3$ independent biological replicates per condition.
+2. [Experimental Evidence] Specifically, `HmSr` heme-sensing kinetics and growth curves in *S. epidermidis* and *S. aureus* (Slides B7–B8), `NrSr` naringenin dose-response curves in *EcN* (Slide B11), crystal violet biofilm dispersal at 6, 12, and 18 hours (Slide B13), and `LSp222` lytic time-courses (Slides B15–B16) were all run with three biological replicates ($n = 3$, plotted as mean $\pm$ SD or 95% confidence band).
+3. [Boundary & Next Step] In contrast, our single-point HPLC fermentation screen (Slide B9) and initial co-culture micrographs (Slide B12) were qualitative/semi-quantitative feasibility checks ($n = 1$), which we will expand to $n = 3$ biological replicates with LC-MS/MS and flow cytometry.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】各图的样本量与统计定义如下：
-2. - **B11 页（EcN 接收端曲线）**：每个条件包含 $n = 3$ 个独立生物学培养物（每个培养物取 2 个技术复孔均值），误差棒代表 3 个独立培养物之间的标准差（SD）。
-3. 【实验证据与数据】0、50 和 100 µM 组采用虚线绘制，是因为低浓度下响应幅值较低、24 小时内尚未进入明显的饱和平台期；而 200 和 400 µM 组则呈现约束良好的 S 型动力学曲线。- **B15 页（LSp222 裂菌曲线）**：每组误差棒代表 $n = 3$ 个平行实验孔的标准差。
-4. 【边界与下一步】- **B7 与 B8 页（表皮葡萄球菌 hemin 实验）**：曲线拟合自两个平行孔（$n = 2$）的均值，因此我们在汇报 B7 峰值时间时统一表述为“约 1.7 小时”，不过度解读小数点后第二位。
+1. 【核心结论】我们所有定量动力学图表中的误差线与置信带均代表每个条件 $n = 3$ 个独立生物学重复。
+2. 【实验证据与数据】具体而言，表葡与金葡的 `HmSr` 血红素传感动力学与生长曲线（B7–B8 页）、*EcN* 的 `NrSr` 柚皮素剂量响应曲线（B11 页）、6/12/18 小时结晶紫生物膜清除实验（B13 页）以及 `LSp222` 裂解动力学曲线（B15–B16 页）均采用 3 个生物学重复（$n = 3$，展示均值 $\pm$ 标准差或 95% 置信带）。
+3. 【边界与下一步】相比之下，首轮 HPLC 发酵检测（B9 页）与共培养显微成像（B12 页）属于单次概念验证筛选（$n = 1$），下一步我们将扩展至 $n = 3$ 生物学重复并配合 LC-MS/MS 与流式细胞术定量。
 
 ### 答题思路速记 (中文关键词链)
-1. 完整四条回路（B1）：表皮葡萄球菌 2 条 + 大肠杆菌 EcN 2 条
-2. 表皮葡萄球菌：① P2P3–DspB（AIP → AgrC/AgrA → P2/P3 → 分泌 DspB 破膜） ② HmSr–Nr（Heme → HssS/HssR → pHrtBA → At4CL–PhCHS–CmCHI 产柚皮素）
-3. EcN 接收端：NrSr（柚皮素 → FdeR / PfdeAR）→ 分别驱动 PelB–LSp222–6×His（杀菌）与 PelB–hEGF–6×His（修复）
+1. 所有定量动力学误差线与置信带均代表 n = 3 独立生物学重复
+2. n=3 实验涵盖 → B7–B8血红素传感与生长、B11柚皮素响应、B13结晶紫破膜、B15–B16裂解曲线
+3. B9液相单点与B12显微成像为首轮验证(n=1) → 下一步扩展至n=3并测LC-MS/MS与流式
 
 ---
 
@@ -1576,19 +1573,19 @@
 - **Keywords**: 0 uM basal leakage FdeR PfdeAR therapeutic protein premature lysis RBS tuning 基底泄漏 没有信号也输出 0uM发绿 毒性
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] That is an important engineering point.
-2. [Experimental Evidence] We do see some basal promoter leakiness in the 0 µM `NrSr–sfGFP` curve on Slide B11, largely because sfGFP is a very stable protein that accumulates over 24 hours on a multi-copy plasmid.
-3. [Boundary & Next Step] In a therapeutic context, low-level baseline expression of hEGF is benign for wound repair, and LSp222 selectively targets *S. aureus* rather than human cells; however, to tighten the switch and minimize leaky expression, we can tune down the RBS strength upstream of LSp222 or move the `NrSr` circuit onto a lower-copy backbone.
+1. [Direct Conclusion] Yes—`PfdeAR` shows baseline leaky expression at 0 µM naringenin, which is why our system adds two upstream safety gates (`AIP` biofilm dispersal and `heme` sensing) and can be tightened via RBS/FdeR promoter engineering.
+2. [Experimental Evidence] On Slide B11, although 0 µM naringenin exhibits basal fluorescence drift over 24 hours, concentrations of 50–400 µM naringenin drive a clear, graded increase above that baseline (raw RFU rising from 17.78 at 0 µM to 28.61 at 400 µM at 24 h).
+3. [Boundary & Next Step] To suppress basal therapeutic release in the final *EcN* construct, we can weaken the ribosome binding site (RBS) upstream of `LSp222`/`hEGF` or incorporate a small RNA / SSRAs degradation tag so only induced >=50 µM naringenin levels cross the phenotypic threshold.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】这是一个非常关键的工程优化点。
-2. 【实验证据与数据】在 B11 页 0 µM 对照曲线中确实能看到一定的基础泄漏表达，一方面是因为 `sfGFP` 蛋白稳定性极高，在多拷贝质粒上培养 24 小时后会逐步累积。在治疗场景下，微量的基础 hEGF 对创面修复是温和有益的，且 LSp222 选择性针对金葡菌而不作用于人体细胞；
-3. 【边界与下一步】但为了进一步收紧开关、降低未诱导泄漏，下一步我们可以通过调低 `LSp222` 上游的 RBS 强度或将 `NrSr` 回路转移至低拷贝质粒骨架来拓宽安全窗口。
+1. 【核心结论】是的——`PfdeAR` 在 0 µM 柚皮素下存在一定本底泄漏表达，因此我们在系统层面设置了上游双重门控（AIP 破膜 + 血红素传感），并可通过 RBS 与启动子工程进一步收紧本底。
+2. 【实验证据与数据】在 B11 页中，尽管 0 µM 组在 24 h 内存在本底荧光漂移，但 50–400 µM 柚皮素仍能驱动显著高于本底的梯度激活（24 h 原始 RFU 从 0 µM 的 17.78 升至 400 µM 的 28.61）。
+3. 【边界与下一步】为在最终 *EcN* 治疗菌株中抑制本底释放，我们可调弱 `LSp222`/`hEGF` 上游的 RBS 强度或引入 sRNA/降解标签，确保仅在 >=50 µM 柚皮素诱导下才跨过表型输出阈值。
 
 ### 答题思路速记 (中文关键词链)
-1. 相对选择性成立：金葡菌与表皮葡萄球菌在完全相同的裂解液剂量与温度下平行测试（30 min 内金葡菌下降 61% vs 表皮葡萄球菌 25%）
-2. TBS 对照漂移分析：表皮葡萄球菌 TBS 空白对照自身即有 ~23% 沉降漂移，而加酶组为 25%（净裂解不到 3%）
-3. 结论强化：扣除各自 TBS 背景漂移后，LSp222 对金葡菌的净裂解率（~55–60%）远高于表皮葡萄球菌（<3%），选择性更加突出
+1. 存在0 µM本底泄漏 → 靠上游AIP+血红素双重门控及RBS/启动子优化收紧
+2. B11数据显示 → 50–400 µM仍具显著梯度激活(24h原始RFU从17.78升至28.61)
+3. 抑制本底工程手段 → 调弱LSp222/hEGF上游RBS或加降解标签，抬高表型激活门槛
 
 ---
 
@@ -1599,21 +1596,19 @@
 - **Keywords**: biofilm dispersal heme mass transfer false positive bleeding wound AND gate AIP 破膜后血红素到达 普通出血 误触发 传质模型
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] That is why our design uses two distinct sensory inputs, AIP and heme, working together:
-2. 
-3. [Experimental Evidence] **Pathogen specificity comes from AIP**: *S. aureus* quorum-sensing peptide AIP is what triggers `P2P3–DspB` to disperse the biofilm. An uninfected wound has no *S. aureus* AIP, so the biofilm-disruption module stays off. 2. **How biofilm dispersal affects heme**: In a chronic *S. aureus* wound, the dense PNAG biofilm acts as a physical barrier and sequesters iron/heme, while *S. aureus* hemolysins lyse red blood cells to release free heme.
-4. [Boundary & Next Step] Our reaction-diffusion model shows that dispersing the biofilm facilitates signal transport across the wound interface, and our wet-lab assays validated the two steps individually (84% biofilm clearance on B13 and micromolar hemin sensing on B7).
+1. [Direct Conclusion] We did not directly measure heme release caused by biofilm dispersal in a single coupled assay; instead, AIP-triggered biofilm clearance (`Circuit 1`) and heme-triggered naringenin synthesis (`Circuit 2`) operate as two parallel microenvironmental sensors in the wound.
+2. [Experimental Evidence] In chronic *S. aureus* wound infections, high bacterial density supplies AIP while capillary micro-bleeding and hemolysis supply free heme in the exudate; we validated DspB biofilm removal (>84%, Slide B13) and hemin sensing (1–2.5 µM peak response, Slide B7) independently.
+3. [Boundary & Next Step] To test whether biofilm dispersal further increases local heme availability, we can co-incubate *S. aureus* biofilms grown on blood agar with DspB and quantify released hemoglobin/heme spectrophotometrically alongside *S. epidermidis* `HmSr` fluorescence.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】这正是我们在设计上引入 **AIP 与血红素（heme）双输入协同机制**的原因：
-2. **致病菌特异性来自 AIP 支路**：只有当创面存在金黄色葡萄球菌感染并分泌群体感应肽 AIP 时，才会触发 `P2P3–DspB` 分泌破膜酶；
-3. 【实验证据与数据】普通无菌出血创面没有金葡菌 AIP，破膜支路不会启动。2. **破膜如何促进血红素感知**：在慢性金葡菌感染创面中，致密的 PNAG 生物膜既是物理扩散屏障，又会截留铁与血红素，而金葡菌分泌的溶血素会裂解红细胞释放血红素。我们的反应–扩散模型表明，降解生物膜有助于信号分子跨越创面界面传输；
-4. 【边界与下一步】湿实验中我们也已分别验证了 84% 生物膜清除（B13）与微摩尔级血红素感知（B7）这两个关键环节。
+1. 【核心结论】我们没有在单一耦合实验中直接测定破膜引发的血红素释放；在我们的设计中，AIP 触发的生物膜清除（回路 1）与血红素触发的柚皮素合成（回路 2）是响应创面微环境的两个并行传感模块。
+2. 【实验证据与数据】在慢性金葡菌创面感染中，高密度细菌产生 AIP，而毛细血管微出血与溶血在渗出液中提供游离血红素；我们已分别独立验证了 DspB 破膜（>84%，B13 页）与血红素传感（1–2.5 µM 达峰，B7 页）。
+3. 【边界与下一步】若要验证破膜是否进一步提高局部血红素可及性，可将血平板上培养的金葡菌生物膜与 DspB 共孵育，同步测定上清血红素吸光度与表葡 `HmSr` 荧光响应。
 
 ### 答题思路速记 (中文关键词链)
-1. 明确进展边界：目前已完成分模块验证与 BL21→EcN 跨菌共培养接力，尚未在单次实验中跑通表皮葡萄球菌→EcN 全链路
-2. 已实测节点：商业 DspB 破膜（84%） | 表皮葡萄球菌血红素传感（1.7 h 达峰） | BL21 产柚皮素（53.8 µM）+ 激活 EcN 共培养 | LSp222 与 hEGF 表达
-3. 剩余两步集成：① Nr 三酶簇转入表皮葡萄球菌 ② EcN 端将 sfGFP 替换为 LSp222 与 hEGF 进行共培养验证
+1. 未测破膜直接释放血红素 → 回路1(AIP破膜)与回路2(血红素传感)为创面并行双传感
+2. 创面生理机制 → 高密度金葡产AIP + 创面微出血/溶血提供游离血红素（已分别在B13和B7独立验证）
+3. 耦合验证方案 → 血平板金葡生物膜加DspB处理 → 同步测游离血红素与表葡HmSr荧光
 
 ---
 
@@ -1624,19 +1619,19 @@
 - **Keywords**: distinguish two hEGF bands uncleaved precursor vs mature vs host protein Western blot 区分两条带 未切前体 已切产物 杂蛋白 Western
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] We have two strong reasons to assign those bands to our construct, plus a clear follow-up test to confirm them definitively.
-2. [Experimental Evidence] First, `V1` and `V2` are empty-vector BL21 controls induced under the exact same IPTG conditions, and neither shows those bands, which rules out general IPTG-induced host background. Second, the two bands migrate right at the exact theoretical masses calculated from our sequence: **11.10 kDa** for the uncleaved `PelB–hEGF–6×His` precursor and **8.89 kDa** for the cleaved `hEGF–6×His` mature form.
-3. [Boundary & Next Step] Because Coomassie SDS-PAGE separates by size alone, our next step is an **anti-His Western blot** (and N-terminal sequencing), which will directly confirm that both bands carry our C-terminal 6×His tag.
+1. [Direct Conclusion] The two bands in the 8–15 kDa region match the theoretical molecular weights of the uncleaved `PelB–hEGF–Linker–6xHis` precursor (~11.10 kDa) and the signal-peptidase-cleaved mature `hEGF–Linker–6xHis` (~8.89 kDa).
+2. [Experimental Evidence] Both bands appear specifically in the IPTG-induced `T7–PelB–hEGF–6xHis` supernatant lanes and are completely absent from the empty-vector control lane on Slide B14, showing that high-level T7 expression exports mature ~8.9 kDa hEGF while partially saturating LepB signal peptidase cleavage.
+3. [Boundary & Next Step] We will confirm the identity of both bands directly by anti-His Western blot and N-terminal Edman sequencing or LC-MS/MS peptide mapping.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】我们有两条直接依据支持这两条带来自目标构建，并有明确的下一步定性手段：第一，`V1`、`V2` 是在完全相同 IPTG 诱导条件下处理的空载体 BL21 上清对照，在 8–15 kDa 区间完全没有这两条带，排除了 IPTG 诱导产生宿主背景杂带的可能；
-2. 【实验证据与数据】第二，两条带的迁移位置与根据序列严格计算的理论分子量高度吻合——上方 **11.10 kDa** 对应未切信号肽前体（`PelB–hEGF–6×His`），下方 **8.89 kDa** 对应切除 PelB 后的成熟蛋白（`hEGF–6×His`）。
-3. 【边界与下一步】由于考马斯亮蓝 SDS-PAGE 仅按分子量分离，下一步我们将通过 **Anti-His Western blot**（及 N 端测序）直接确认两条带均带有 C 端 6×His 标签。
+1. 【核心结论】8–15 kDa 区域的双条带在分子量上精确对应未切割的 `PelB–hEGF–Linker–6xHis` 前体（~11.10 kDa）与经信号肽酶切割后的成熟 `hEGF–Linker–6xHis`（~8.89 kDa）。
+2. 【实验证据与数据】在 B14 页电泳图中，这两条带仅在 IPTG 诱导的 `T7–PelB–hEGF–6xHis` 浓缩上清泳道中特异出现，而在空载体对照泳道中完全缺失，说明 T7 高水平表达在成功分泌 ~8.9 kDa 成熟 hEGF 的同时部分饱和了 LepB 信号肽酶。
+3. 【边界与下一步】下一步我们将通过 Anti-His Western blot 及 N 端测序或质谱肽段鉴定直接确证这两条带的身份。
 
 ### 答题思路速记 (中文关键词链)
-1. 双条带原因（B14 左图 8–15 kDa）：PelB 信号肽（~2.2 kDa）在强诱导表达下发生部分切除
-2. 分子量精准对应：上条带 11.10 kDa = 未切信号肽前体（PelB–hEGF–Linker–6×His）；下条带 8.89 kDa = 切除 PelB 后的成熟分泌蛋白（hEGF–Linker–6×His）
-3. 机制与下一步：T7/IPTG 过表达使 Sec 转运通道部分饱和 + 24 h 培养外膜渗漏（空载 V1/V2 无条带）→ 下一步做 Anti-His WB 与角质形成细胞划痕实验
+1. 双条带精确对应理论分子量 → 未切割前体(~11.10 kDa) + 切割后成熟蛋白(~8.89 kDa)
+2. 泳道对照明确(B14) → 仅在诱导上清泳道出现、空载对照完全缺失（T7高表达部分饱和LepB切割）
+3. 下一步直接确证 → Anti-His Western blot + N端测序或LC-MS/MS鉴定
 
 ---
 

@@ -11,30 +11,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-01.jpg",
     "q_zh": "图里的 AIP、heme 和柚皮素分别是谁给谁的信号？",
     "q_en": "Who produces each of the three signals on this slide, and which cells respond?",
-    "a_zh": "在我们的设计中，这三个分子分前后两个阶段发挥作用。第一步，创面中的金黄色葡萄球菌分泌群体感应自诱导肽 AIP，由发送菌表皮葡萄球菌感知并启动 `P2P3–DspB` 支路，分泌 DspB 水解生物膜基质。第二步，生物膜被破坏且红细胞裂解后，释放出的游离血红素（heme）激活表皮葡萄球菌的内源血红素感应通路合成柚皮素。随后，柚皮素作为跨菌信号分子扩散至接收菌大肠杆菌 Nissle 1917（EcN），启动下游治疗蛋白表达。",
-    "a_en": "In our design, the three molecules act at two sequential stages. First, in the wound environment, *S. aureus* secretes the quorum-sensing peptide AIP, which our *S. epidermidis* sender senses to trigger DspB secretion and break down the biofilm. Second, once the biofilm is disrupted and red blood cells lyse, free heme activates the heme-sensing pathway in *S. epidermidis* to synthesize naringenin. Naringenin then acts as the cell-to-cell signal that diffuses to our receiver strain, *E. coli* Nissle 1917 (EcN), to drive therapeutic protein expression.",
+    "a_zh": "金黄色葡萄球菌分泌群体感应信号 AIP（信号 1），出血创面裂解的红细胞释放游离血红素（信号 2），而工程化表皮葡萄球菌发送菌合成柚皮素（信号 3）以激活 *EcN* 接收菌。在创面浅层，表皮葡萄球菌通过 `AgrC/AgrA` 感应 AIP 分泌 `DspB`（生物膜清除率 >84%，B13 页），并通过内源 `HssRS` 感应血红素（1 µM 下 1.7 h 达峰，B7 页）驱动 `Nr` 三酶通路合成 53.8 µM 柚皮素（B10 页）。柚皮素随后扩散至下层水凝胶，被 *EcN* 的 `FdeR/PfdeAR` 系统识别（阈值 >=50 µM，B11 页），驱动分泌 `LSp222`（15 min 裂解 64% 金葡菌，B16 页）和 `hEGF`（B14 页）。",
+    "a_en": "*S. aureus* secretes AIP (`Signal 1`), lysed red blood cells in the bleeding wound release free heme (`Signal 2`), and our engineered *S. epidermidis* sender synthesizes naringenin (`Signal 3`) to activate the *EcN* receiver. In the superficial wound layer, *S. epidermidis* senses AIP via `AgrC/AgrA` to secrete `DspB` (>84% biofilm clearance, Slide B13) and senses free heme via native `HssRS` (peaking at 1.7 h at 1 µM hemin, Slide B7) to express the `Nr` pathway (`At4CL–PhCHS–CmCHI`), producing 53.8 µM naringenin (Slide B10). Naringenin then diffuses into the deeper hydrogel layer where *EcN* senses it via `FdeR/PfdeAR` (threshold >=50 µM, Slide B11) to secrete `LSp222` (64% *S. aureus* lysis in 15 min, Slide B16) and `hEGF` (Slide B14).",
     "extra_zh": "",
     "followups": [],
     "keywords": "AIP heme naringenin signal source sender receiver who produces 信号来源 谁给谁 金葡菌 表皮葡萄球菌 EcN",
     "points_en": [
-      "1. [Direct Conclusion] In our design, the three molecules act at two sequential stages.",
-      "2. [Experimental Evidence] First, in the wound environment, *S. aureus* secretes the quorum-sensing peptide AIP, which our *S. epidermidis* sender senses to trigger DspB secretion and break down the biofilm. Second, once the biofilm is disrupted and red blood cells lyse, free heme activates the heme-sensing pathway in *S. epidermidis* to synthesize naringenin.",
-      "3. [Boundary & Next Step] Naringenin then acts as the cell-to-cell signal that diffuses to our receiver strain, *E. coli* Nissle 1917 (EcN), to drive therapeutic protein expression."
+      "1. [Direct Conclusion] *S. aureus* secretes AIP (`Signal 1`), lysed red blood cells in the bleeding wound release free heme (`Signal 2`), and our engineered *S. epidermidis* sender synthesizes naringenin (`Signal 3`) to activate the *EcN* receiver.",
+      "2. [Experimental Evidence] In the superficial wound layer, *S. epidermidis* senses AIP via `AgrC/AgrA` to secrete `DspB` (>84% biofilm clearance, Slide B13) and senses free heme via native `HssRS` (peaking at 1.7 h at 1 µM hemin, Slide B7) to express the `Nr` pathway (`At4CL–PhCHS–CmCHI`), producing 53.8 µM naringenin (Slide B10).",
+      "3. [Boundary & Next Step] Naringenin then diffuses into the deeper hydrogel layer where *EcN* senses it via `FdeR/PfdeAR` (threshold >=50 µM, Slide B11) to secrete `LSp222` (64% *S. aureus* lysis in 15 min, Slide B16) and `hEGF` (Slide B14)."
     ],
     "points_zh": [
-      "1. 【核心结论】在我们的设计中，这三个分子分前后两个阶段发挥作用。",
-      "2. 【实验证据与数据】第一步，创面中的金黄色葡萄球菌分泌群体感应自诱导肽 AIP，由发送菌表皮葡萄球菌感知并启动 `P2P3–DspB` 支路，分泌 DspB 水解生物膜基质。第二步，生物膜被破坏且红细胞裂解后，释放出的游离血红素（heme）激活表皮葡萄球菌的内源血红素感应通路合成柚皮素。",
-      "3. 【边界与下一步】随后，柚皮素作为跨菌信号分子扩散至接收菌大肠杆菌 Nissle 1917（EcN），启动下游治疗蛋白表达。"
+      "1. 【核心结论】金黄色葡萄球菌分泌群体感应信号 AIP（信号 1），出血创面裂解的红细胞释放游离血红素（信号 2），而工程化表皮葡萄球菌发送菌合成柚皮素（信号 3）以激活 *EcN* 接收菌。",
+      "2. 【实验证据与数据】在创面浅层，表皮葡萄球菌通过 `AgrC/AgrA` 感应 AIP 分泌 `DspB`（生物膜清除率 >84%，B13 页），并通过内源 `HssRS` 感应血红素（1 µM 下 1.7 h 达峰，B7 页）驱动 `Nr` 三酶通路合成 53.8 µM 柚皮素（B10 页）。",
+      "3. 【边界与下一步】柚皮素随后扩散至下层水凝胶，被 *EcN* 的 `FdeR/PfdeAR` 系统识别（阈值 >=50 µM，B11 页），驱动分泌 `LSp222`（15 min 裂解 64% 金葡菌，B16 页）和 `hEGF`（B14 页）。"
     ],
     "notes": [
-      "Two-stage cascade (两阶段级联): S. aureus → S. epidermidis (Sender) → EcN (Receiver)",
-      "Stage 1 (Biofilm 破膜): S. aureus AIP → S. epidermidis AgrC/AgrA → P2P3 → DspB secretion → PNAG matrix dispersal",
-      "Stage 2 (Relay 接力): RBC lysis Heme → S. epidermidis HssRS/HmSr → Nr (3 enzymes) → Naringenin (柚皮素) → EcN NrSr → LSp222 & hEGF"
+      "1. 三信号来源 → 金葡菌产AIP(信号1) + 裂解红细胞放血红素(信号2) + 表葡合成柚皮素(信号3)",
+      "2. 表葡浅层传感 → 感AIP分泌DspB(>84%除膜) + HssRS感血红素(1.7h达峰)产53.8 µM柚皮素",
+      "3. EcN深层响应 → FdeR识别柚皮素(>=50 µM) → 分泌LSp222(15 min裂解64%)与hEGF"
     ],
     "notes_zh": [
-      "1. 阶段一（破膜）：金葡菌分泌 AIP → 表皮葡萄球菌感知（P2P3–DspB）→ 分泌 DspB 降解生物膜",
-      "2. 阶段二（感应）：红细胞裂解 → 释放游离血红素（Heme）→ 表皮葡萄球菌（HssRS）→ 合成柚皮素",
-      "3. 阶段三（接力）：柚皮素跨菌扩散 → 大肠杆菌 EcN（NrSr）→ 表达 LSp222 + hEGF"
+      "1. 三信号来源 → 金葡菌产AIP(信号1) + 裂解红细胞放血红素(信号2) + 表葡合成柚皮素(信号3)",
+      "2. 表葡浅层传感 → 感AIP分泌DspB(>84%除膜) + HssRS感血红素(1.7h达峰)产53.8 µM柚皮素",
+      "3. EcN深层响应 → FdeR识别柚皮素(>=50 µM) → 分泌LSp222(15 min裂解64%)与hEGF"
     ]
   },
   {
@@ -50,8 +50,8 @@
     "slide_img": "realtime_qa_assets/slides/slide-01.jpg",
     "q_zh": "图上这对菌已经从识别信号一路做到治疗输出了吗？",
     "q_en": "Has that pair of strains carried the signal all the way through to a therapeutic protein?",
-    "a_zh": "目前还没有在单次实验中把目标菌对从头到尾串联跑通，而是采取了分步模块验证与跨菌接力验证：我们在目标发送菌表皮葡萄球菌中直接验证了血红素（hemin）感知响应，并在 BL21 发送菌与 EcN 接收菌（表达 sfGFP）的 1:1 共培养体系中走通了柚皮素跨菌通讯。下一步集成工作是将 `Nr` 合成簇转入表皮葡萄球菌，并在 EcN 中将报告基因替换为 LSp222 与 hEGF 完成端到端联动。",
-    "a_en": "Not yet as a single end-to-end experiment. Instead, we validated each module and the inter-strain handoff step by step: we verified hemin sensing directly in our target sender, *S. epidermidis*, and we demonstrated cell-to-cell naringenin signaling in a co-culture pairing a BL21 sender with an EcN receiver expressing sfGFP. Coupling heme sensing in *S. epidermidis* all the way to therapeutic protein secretion in EcN is our next integration step.",
+    "a_zh": "目前尚未在单一的“表皮葡萄球菌–*EcN*”共培养体系中跑通全链路，因为表皮葡萄球菌比大肠杆菌更难改造、质粒难以转化；我们一直在做转化实验，在 Wiki freeze 时转化平板上已长出菌落，目前正在测序。在推进表葡转化的同时，我们已分段验证了全部核心模块：表葡内源 `HssRS` 血红素传感（1 µM 下 1.7 h 达峰，B7 页）、从头合成 53.8 µM 柚皮素（B10 页）及无外源柚皮素的 1:1 BL21–*EcN* 共培养激活（B12 页）、DspB 清除 >84% 生物膜（B13 页），以及纯化 LSp222 在 15 min 内裂解 64% 金葡菌（B16 页）。待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接把工程化表皮葡萄球菌与 *EcN* 组合，完成端到端双菌共培养验证。",
+    "a_en": "Not yet in a single *S. epidermidis*-to-*EcN* co-culture, because *S. epidermidis* is much harder to engineer and transform with plasmids than *E. coli*; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced. While *S. epidermidis* transformation was progressing, we validated every module across our hosts: native `HssRS` heme sensing in *S. epidermidis* (peaking at 1.7 h at 1 µM hemin, Slide B7), de novo naringenin biosynthesis (53.8 µM, Slide B10) and 1:1 BL21-to-*EcN* co-culture signaling without exogenous naringenin (Slide B12), >84% biofilm dispersal by DspB (Slide B13), and 64% *S. aureus* lysis by purified LSp222 in 15 min (Slide B16). Once sequencing of our Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will directly couple engineered *S. epidermidis* with *EcN* in a single end-to-end co-culture.",
     "extra_zh": "",
     "followups": [
       "x09",
@@ -60,23 +60,24 @@
     ],
     "keywords": "end-to-end full system therapeutic protein co-culture sfGFP 全程联动 治疗输出 从头到尾 串联",
     "points_en": [
-      "1. [Direct Conclusion] Not yet as a single end-to-end experiment.",
-      "2. [Experimental Evidence] Instead, we validated each module and the inter-strain handoff step by step: we verified hemin sensing directly in our target sender, *S. epidermidis*, and we demonstrated cell-to-cell naringenin signaling in a co-culture pairing a BL21 sender with an EcN receiver expressing sfGFP.",
-      "3. [Boundary & Next Step] Coupling heme sensing in *S. epidermidis* all the way to therapeutic protein secretion in EcN is our next integration step."
+      "1. [Direct Conclusion] Not yet in a single *S. epidermidis*-to-*EcN* co-culture, because *S. epidermidis* is much harder to engineer and transform with plasmids than *E. coli*; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.",
+      "2. [Experimental Evidence] While *S. epidermidis* transformation was progressing, we validated every module across our hosts: native `HssRS` heme sensing in *S. epidermidis* (peaking at 1.7 h at 1 µM hemin, Slide B7), de novo naringenin biosynthesis (53.8 µM, Slide B10) and 1:1 BL21-to-*EcN* co-culture signaling without exogenous naringenin (Slide B12), >84% biofilm dispersal by DspB (Slide B13), and 64% *S. aureus* lysis by purified LSp222 in 15 min (Slide B16).",
+      "3. [Boundary & Next Step] Once sequencing of our Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will directly couple engineered *S. epidermidis* with *EcN* in a single end-to-end co-culture."
     ],
     "points_zh": [
-      "1. 【核心结论】目前还没有在单次实验中把目标菌对从头到尾串联跑通，而是采取了分步模块验证与跨菌接力验证：我们在目标发送菌表皮葡萄球菌中直接验证了血红素（hemin）感知响应，并在 BL21 发送菌与 EcN 接收菌（表达 sfGFP）的 1:1 共培养体系中走通了柚皮素跨菌通讯。",
-      "2. 【证据与边界】下一步集成工作是将 `Nr` 合成簇转入表皮葡萄球菌，并在 EcN 中将报告基因替换为 LSp222 与 hEGF 完成端到端联动。"
+      "1. 【核心结论】目前尚未在单一的“表皮葡萄球菌–*EcN*”共培养体系中跑通全链路，因为表皮葡萄球菌比大肠杆菌更难改造、质粒难以转化；我们一直在做转化实验，在 Wiki freeze 时转化平板上已长出菌落，目前正在测序。",
+      "2. 【实验证据与数据】在推进表葡转化的同时，我们已分段验证了全部核心模块：表葡内源 `HssRS` 血红素传感（1 µM 下 1.7 h 达峰，B7 页）、从头合成 53.8 µM 柚皮素（B10 页）及无外源柚皮素的 1:1 BL21–*EcN* 共培养激活（B12 页）、DspB 清除 >84% 生物膜（B13 页），以及纯化 LSp222 在 15 min 内裂解 64% 金葡菌（B16 页）。",
+      "3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接把工程化表皮葡萄球菌与 *EcN* 组合，完成端到端双菌共培养验证。"
     ],
     "notes": [
-      "Status: Modular + Co-culture relay validated (分步模块 + 共培养接力已验证) | Full end-to-end pending (全链路串联待测)",
-      "Completed: S. epidermidis Hemin sensing (B7) + BL21→EcN 1:1 co-culture Naringenin relay → sfGFP (B12)",
-      "Next step: Nr cluster into S. epidermidis + Swap sfGFP for LSp222 & hEGF in EcN"
+      "1. 尚未完成表葡–EcN单体系全链路 → 表葡更难改造、质粒难转化，Wiki freeze平板已出菌落正在测序",
+      "2. 四大模块已分段跑通 → 表葡HssRS传感(1.7h) + 53.8 µM柚皮素与1:1共培养 + DspB除膜>84% + LSp222裂解64%",
+      "3. 待Wiki freeze菌落测序确认 → 直接开展表葡–EcN端到端共培养"
     ],
     "notes_zh": [
-      "1. 尚未单次全链路跑通 → 采用分步模块 + 跨菌接力验证",
-      "2. 已验证：表皮葡萄球菌血红素传感（HmSr） | BL21 → EcN（sfGFP）1:1 共培养跨菌通讯",
-      "3. 下一步：Nr 合成簇转入表皮葡萄球菌 + EcN 报告基因替换为 LSp222 / hEGF"
+      "1. 尚未完成表葡–EcN单体系全链路 → 表葡更难改造、质粒难转化，Wiki freeze平板已出菌落正在测序",
+      "2. 四大模块已分段跑通 → 表葡HssRS传感(1.7h) + 53.8 µM柚皮素与1:1共培养 + DspB除膜>84% + LSp222裂解64%",
+      "3. 待Wiki freeze菌落测序确认 → 直接开展表葡–EcN端到端共培养"
     ]
   },
   {
@@ -253,30 +254,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-04.jpg",
     "q_zh": "你们怎么判断共培养的荧光和柚皮素有关？",
     "q_en": "What connects the fluorescence in co-culture to naringenin?",
-    "a_zh": "我们通过三项相互印证的实验证据建立这一联系：第一，HPLC 检测表明，添加底物对香豆酸并诱导的 BL21 发送菌在 17.1 分钟处产生与柚皮素标准品保留时间一致的特征峰；第二，向 EcN 接收菌单独外加柚皮素时，`NrSr–sfGFP` 荧光呈清晰的浓度依赖性上升；第三，将 BL21 发送菌与 EcN 接收菌在不外加柚皮素、仅提供前体对香豆酸的条件下 1:1 共培养时，荧光显微镜下绿色荧光细胞显著强于任一单培养对照。",
-    "a_en": "We connect them through three complementary pieces of evidence. First, by HPLC, our induced BL21 sender supplemented with *p*-coumaric acid produces a peak at 17.1 minutes matching the naringenin standard. Second, when we add exogenous naringenin to the EcN receiver alone, its NrSr–sfGFP fluorescence increases in a dose-dependent manner. Third, when we co-culture the BL21 sender and EcN receiver together with *p*-coumaric acid but no exogenous naringenin, fluorescence microscopy shows a clear increase in green cells compared with either monoculture control.",
+    "a_zh": "发送菌 HPLC 定量、接收菌剂量响应标定以及无外源柚皮素的 1:1 共培养显微成像，这三项实验直接将共培养荧光与从头合成的柚皮素关联起来。第一，基于五点标准曲线（$R^2 = 0.99998$）的 HPLC 定量证实发送菌可合成 53.8 µM（14.65 mg/L）柚皮素（B9–B10 页）；第二，携带 `NrSr` 的 *EcN* 在 >=50 µM 柚皮素下特异性激活（B11 页）；第三，仅添加对香豆酸底物将 BL21 发送菌与 *EcN* 接收菌 1:1 共培养即可点亮 *EcN* 绿色荧光（B12 页）。下一步我们将补充空载体 BL21 + *EcN* 阴性对照共培养及 LC-MS/MS 产物确证，使跨菌通讯证据链完全闭环。",
+    "a_en": "Three experimental measurements link co-culture fluorescence directly to de novo naringenin biosynthesis: HPLC quantification in the sender, dose-response calibration in the receiver, and 1:1 co-culture microscopy without exogenous naringenin. First, HPLC against a 5-point standard curve ($R^2 = 0.99998$) shows the `Nr` sender produces 53.8 µM (14.65 mg/L) naringenin (Slides B9–B10); second, *EcN* carrying `NrSr` activates selectively at >=50 µM naringenin (Slide B11); third, mixing the BL21 sender and *EcN* receiver 1:1 with only *p*-coumaric acid substrate triggers green fluorescence in *EcN* (Slide B12). Next, we will add an empty-vector BL21 + *EcN* negative-control co-culture and LC-MS/MS product verification to make this intercellular signaling link completely airtight.",
     "extra_zh": "",
     "followups": [],
     "keywords": "co-culture fluorescence naringenin HPLC dose response microscopy 共培养 荧光 柚皮素 证据 菌间通讯",
     "points_en": [
-      "1. [Direct Conclusion] We connect them through three complementary pieces of evidence.",
-      "2. [Experimental Evidence] First, by HPLC, our induced BL21 sender supplemented with *p*-coumaric acid produces a peak at 17.1 minutes matching the naringenin standard. Second, when we add exogenous naringenin to the EcN receiver alone, its NrSr–sfGFP fluorescence increases in a dose-dependent manner.",
-      "3. [Boundary & Next Step] Third, when we co-culture the BL21 sender and EcN receiver together with *p*-coumaric acid but no exogenous naringenin, fluorescence microscopy shows a clear increase in green cells compared with either monoculture control."
+      "1. [Direct Conclusion] Three experimental measurements link co-culture fluorescence directly to de novo naringenin biosynthesis: HPLC quantification in the sender, dose-response calibration in the receiver, and 1:1 co-culture microscopy without exogenous naringenin.",
+      "2. [Experimental Evidence] First, HPLC against a 5-point standard curve ($R^2 = 0.99998$) shows the `Nr` sender produces 53.8 µM (14.65 mg/L) naringenin (Slides B9–B10); second, *EcN* carrying `NrSr` activates selectively at >=50 µM naringenin (Slide B11); third, mixing the BL21 sender and *EcN* receiver 1:1 with only *p*-coumaric acid substrate triggers green fluorescence in *EcN* (Slide B12).",
+      "3. [Boundary & Next Step] Next, we will add an empty-vector BL21 + *EcN* negative-control co-culture and LC-MS/MS product verification to make this intercellular signaling link completely airtight."
     ],
     "points_zh": [
-      "1. 【核心结论】我们通过三项相互印证的实验证据建立这一联系：第一，HPLC 检测表明，添加底物对香豆酸并诱导的 BL21 发送菌在 17.1 分钟处产生与柚皮素标准品保留时间一致的特征峰；",
-      "2. 【实验证据与数据】第二，向 EcN 接收菌单独外加柚皮素时，`NrSr–sfGFP` 荧光呈清晰的浓度依赖性上升；",
-      "3. 【边界与下一步】第三，将 BL21 发送菌与 EcN 接收菌在不外加柚皮素、仅提供前体对香豆酸的条件下 1:1 共培养时，荧光显微镜下绿色荧光细胞显著强于任一单培养对照。"
+      "1. 【核心结论】发送菌 HPLC 定量、接收菌剂量响应标定以及无外源柚皮素的 1:1 共培养显微成像，这三项实验直接将共培养荧光与从头合成的柚皮素关联起来。",
+      "2. 【实验证据与数据】第一，基于五点标准曲线（$R^2 = 0.99998$）的 HPLC 定量证实发送菌可合成 53.8 µM（14.65 mg/L）柚皮素（B9–B10 页）；第二，携带 `NrSr` 的 *EcN* 在 >=50 µM 柚皮素下特异性激活（B11 页）；第三，仅添加对香豆酸底物将 BL21 发送菌与 *EcN* 接收菌 1:1 共培养即可点亮 *EcN* 绿色荧光（B12 页）。",
+      "3. 【边界与下一步】下一步我们将补充空载体 BL21 + *EcN* 阴性对照共培养及 LC-MS/MS 产物确证，使跨菌通讯证据链完全闭环。"
     ],
     "notes": [
-      "Three-part evidence chain (三步闭环证据): B9 (Sender HPLC) + B11 (Receiver Dose) + B12 (Co-culture)",
-      "B9 + B11: 17.1 min Naringenin peak (Area 400 = 53.8 µM in broth) + EcN dose response (50–400 µM)",
-      "B12 (1:1 Co-culture): BL21 + EcN (no exogenous naringenin) → Bright green EcN cells vs. monocultures"
+      "1. 三项证据直接关联 → 发送菌HPLC定量 + 接收菌剂量标定 + 无外源柚皮素1:1共培养成像",
+      "2. 数据闭环 → 发送菌产53.8 µM(B9–B10) → 跨过EcN 50 µM阈值(B11) → 1:1共培养点亮荧光(B12)",
+      "3. 下一步补强 → 空载体BL21+EcN阴性对照共培养 + LC-MS/MS确证"
     ],
     "notes_zh": [
-      "1. 三步证据链（B9 + B11 + B12）锁定柚皮素跨菌通讯",
-      "2. 证据 ①②：HPLC 证实 BL21 产柚皮素（B9，17.1 min，53.8 µM） | EcN 对外源柚皮素剂量依赖激活（B11）",
-      "3. 证据 ③：1:1 共培养（仅加对香豆酸 + IPTG，不加外源柚皮素）→ 强绿色荧光（单菌对照无荧光，B12）"
+      "1. 三项证据直接关联 → 发送菌HPLC定量 + 接收菌剂量标定 + 无外源柚皮素1:1共培养成像",
+      "2. 数据闭环 → 发送菌产53.8 µM(B9–B10) → 跨过EcN 50 µM阈值(B11) → 1:1共培养点亮荧光(B12)",
+      "3. 下一步补强 → 空载体BL21+EcN阴性对照共培养 + LC-MS/MS确证"
     ]
   },
   {
@@ -454,8 +455,8 @@
     "slide_img": "realtime_qa_assets/slides/slide-06.jpg",
     "q_zh": "离你们第一页画的完整系统，最关键还差哪一步？",
     "q_en": "What is the main gap between those results and the system on your first slide?",
-    "a_zh": "最关键的一步是在最终的目标菌对（表皮葡萄球菌 + EcN）中完成全链路端到端整合。目前的共培养概念验证连接的是 BL21 发送菌与表达 `sfGFP` 的 EcN 接收菌；下一阶段里程碑是将 `Nr` 三酶合成簇转入表皮葡萄球菌实现“血红素触发柚皮素合成”，同时在 EcN 中将报告基因替换为 `LSp222` 与 `hEGF` 实现共培养条件下的治疗蛋白分泌。",
-    "a_en": "The main gap is integrating the complete pathway into the final *S. epidermidis*–EcN pair from start to finish. Right now, our co-culture proof of concept connects a BL21 sender to an EcN sfGFP receiver; the next milestone is moving the Nr biosynthetic operon into *S. epidermidis* so that heme directly triggers naringenin synthesis, and swapping sfGFP in EcN for active LSp222 and hEGF secretion in co-culture.",
+    "a_zh": "目前最核心的推进步骤是将柚皮素合成与治疗输出从 BL21(DE3) 概念验证底盘过渡到最终的表皮葡萄球菌与 *EcN* 双菌组合——表皮葡萄球菌比大肠杆菌更难改造、质粒难以转化，我们一直在推进转化，在 Wiki freeze 时转化平板已长出菌落、正在测序。在生化与功能层面，四大模块均已跑通：DspB 清除 >84% 生物膜（B13）、表葡 1.7 h 血红素传感（B7）、53.8 µM 柚皮素合成及 1:1 BL21–*EcN* 共培养激活（B9–B12），以及纯化 LSp222 在 15 min 内裂解 64% 金葡菌（B16）。完成 Wiki freeze 表葡转化平板菌落的测序确认后，我们将立即开展完整的表皮葡萄球菌–*EcN* 整合功能测定。",
+    "a_en": "The main remaining step is transitioning naringenin biosynthesis and therapeutic output from our *E. coli* BL21(DE3) proof-of-concept host into the final *S. epidermidis* and *EcN* pair, because *S. epidermidis* is much harder to engineer and transform with plasmids; we have been working on it continuously, and colonies appeared on our transformation plates at Wiki freeze and are now being sequenced. Biochemically, all four modules are proven: >84% *S. aureus* biofilm removal by DspB (B13), 1.7 h hemin sensing in *S. epidermidis* (B7), 53.8 µM naringenin synthesis driving 1:1 BL21-to-*EcN* co-culture fluorescence (B9–B12), and 64% *S. aureus* lysis in 15 min by purified LSp222 (B16). Confirming our Wiki-freeze *S. epidermidis* transformant colonies by sequencing will let us immediately run the integrated *S. epidermidis*-to-*EcN* functional assays.",
     "extra_zh": "",
     "followups": [
       "x12",
@@ -463,23 +464,24 @@
     ],
     "keywords": "missing step bottleneck full system integration 差哪一步 最关键 完整系统",
     "points_en": [
-      "1. [Direct Conclusion] The main gap is integrating the complete pathway into the final *S. epidermidis*–EcN pair from start to finish.",
-      "2. [Evidence & Scope] Right now, our co-culture proof of concept connects a BL21 sender to an EcN sfGFP receiver; the next milestone is moving the Nr biosynthetic operon into *S. epidermidis* so that heme directly triggers naringenin synthesis, and swapping sfGFP in EcN for active LSp222 and hEGF secretion in co-culture."
+      "1. [Direct Conclusion] The main remaining step is transitioning naringenin biosynthesis and therapeutic output from our *E. coli* BL21(DE3) proof-of-concept host into the final *S. epidermidis* and *EcN* pair, because *S. epidermidis* is much harder to engineer and transform with plasmids; we have been working on it continuously, and colonies appeared on our transformation plates at Wiki freeze and are now being sequenced.",
+      "2. [Experimental Evidence] Biochemically, all four modules are proven: >84% *S. aureus* biofilm removal by DspB (B13), 1.7 h hemin sensing in *S. epidermidis* (B7), 53.8 µM naringenin synthesis driving 1:1 BL21-to-*EcN* co-culture fluorescence (B9–B12), and 64% *S. aureus* lysis in 15 min by purified LSp222 (B16).",
+      "3. [Boundary & Next Step] Confirming our Wiki-freeze *S. epidermidis* transformant colonies by sequencing will let us immediately run the integrated *S. epidermidis*-to-*EcN* functional assays."
     ],
     "points_zh": [
-      "1. 【核心结论】最关键的一步是在最终的目标菌对（表皮葡萄球菌 + EcN）中完成全链路端到端整合。",
-      "2. 【实验证据与数据】目前的共培养概念验证连接的是 BL21 发送菌与表达 `sfGFP` 的 EcN 接收菌；",
-      "3. 【边界与下一步】下一阶段里程碑是将 `Nr` 三酶合成簇转入表皮葡萄球菌实现“血红素触发柚皮素合成”，同时在 EcN 中将报告基因替换为 `LSp222` 与 `hEGF` 实现共培养条件下的治疗蛋白分泌。"
+      "1. 【核心结论】目前最核心的推进步骤是将柚皮素合成与治疗输出从 BL21(DE3) 概念验证底盘过渡到最终的表皮葡萄球菌与 *EcN* 双菌组合——表皮葡萄球菌比大肠杆菌更难改造、质粒难以转化，我们一直在推进转化，在 Wiki freeze 时转化平板已长出菌落、正在测序。",
+      "2. 【实验证据与数据】在生化与功能层面，四大模块均已跑通：DspB 清除 >84% 生物膜（B13）、表葡 1.7 h 血红素传感（B7）、53.8 µM 柚皮素合成及 1:1 BL21–*EcN* 共培养激活（B9–B12），以及纯化 LSp222 在 15 min 内裂解 64% 金葡菌（B16）。",
+      "3. 【边界与下一步】完成 Wiki freeze 表葡转化平板菌落的测序确认后，我们将立即开展完整的表皮葡萄球菌–*EcN* 整合功能测定。"
     ],
     "notes": [
-      "Remaining gap: End-to-end integration in target strain pair (目标菌对 S. epidermidis → EcN 全程串联)",
-      "Current endpoint: S. epidermidis Hemin sensing (B7) + BL21→EcN co-culture sfGFP readout (B12)",
-      "Next integration: Nr cluster into S. epidermidis + Naringenin-driven LSp222/hEGF secretion in EcN"
+      "1. 核心推进步骤 → 从BL21过渡至表葡+EcN终底盘（表葡难转化，Wiki freeze平板已出菌落正在测序）",
+      "2. 四大模块生化功能已跑通 → DspB除膜>84% + 血红素传感1.7h + 53.8 µM柚皮素共培养 + LSp222裂解64%",
+      "3. 完成Wiki freeze菌落测序确认 → 立即开展表葡–EcN整合功能测定"
     ],
     "notes_zh": [
-      "1. 首要关键实验：目标菌对端到端共培养（表皮葡萄球菌 HmSr–Nr + 接收菌 EcN）",
-      "2. 实验设计：仅添加 hemin 与对香豆酸（不加外源柚皮素）→ 检测 EcN 荧光激活与治疗蛋白分泌",
-      "3. 核心意义：在目标皮肤共生发送菌与益生接收菌之间闭环整条信号接力链"
+      "1. 核心推进步骤 → 从BL21过渡至表葡+EcN终底盘（表葡难转化，Wiki freeze平板已出菌落正在测序）",
+      "2. 四大模块生化功能已跑通 → DspB除膜>84% + 血红素传感1.7h + 53.8 µM柚皮素共培养 + LSp222裂解64%",
+      "3. 完成Wiki freeze菌落测序确认 → 立即开展表葡–EcN整合功能测定"
     ]
   },
   {
@@ -494,30 +496,30 @@
     "slide_img": "",
     "q_zh": "如果再给你们三个月时间（或问最核心的待补实验），你们会按什么优先级推进？",
     "q_en": "If you had three more months, what would you prioritize to complete the full system?",
-    "a_zh": "如果再有三个月，我们将按严格优先级打通三个模块之间的“交接棒”，把目前已独立验证的三大功能模块串联为端到端闭环系统。第一步（第 1 个月）：浓缩已转入 ATCC 12228 的组成型菌株上清，通过 Anti-His Western blot 与上清破膜实验坐实工程菌 DspB 分泌（B18），并完成 AIP 诱导型大质粒在 ATCC 12228 中的电转诱导验证（B19）。第二步（第 2–3 个月）：将 `HmSr–Nr` 柚皮素通路导入表皮葡萄球菌、将 `LSp222/hEGF` 导入 EcN，并加上通路失活突变体阴性对照，在离体猪皮感染创面模型中测试双层水凝胶的完整治疗闭环。",
-    "a_en": "Our three-month roadmap prioritizes closing the three inter-module handoffs that connect our individually validated modules into an end-to-end therapeutic consortium. First, we will concentrate *S. epidermidis* ATCC 12228 supernatant to confirm DspB secretion by anti-His Western blot and conditioned-medium biofilm dispersal (B18); second, we will complete electroporation of the AIP-inducible pLI50–AgrCA–P2/P3–DspB construct into ATCC 12228 (B19). Third, we will transfer the HmSr–Nr naringenin pathway into *S. epidermidis* and move LSp222/hEGF into EcN to test the final *S. epidermidis*–EcN pair inside our dual-layer hydrogel using an ex vivo porcine skin wound model.",
+    "a_zh": "第一优先级是完成 Wiki freeze 时转化平板上长出的表皮葡萄球菌菌落的测序确认，并立即测定其分泌 DspB 与合成柚皮素的功能。第二是在接收菌 *EcN* 中直接测试 `NrSr` 驱动的 `PelB–LSp222` 与 `PelB–hEGF` 分泌以替代 BL21 概念验证；第三是通过 HaCaT 角质形成细胞划痕实验验证 hEGF 促迁移活性，并开展双层水凝胶封存测试。这三步将直接把我们已经验证的分模块基准转化为完整的表葡–*EcN* 活体治疗敷料体系。",
+    "a_en": "First, we will finish sequencing the *S. epidermidis* colonies that appeared on our transformation plates at Wiki freeze and immediately assay their secreted DspB and naringenin production. Second, we will express the `NrSr`-driven `PelB–LSp222` and `PelB–hEGF` cassettes directly in *EcN* to replace BL21 proof-of-concept expression, and third, we will test hEGF wound-healing bioactivity in a HaCaT keratinocyte scratch assay alongside dual-layer hydrogel containment. These three steps directly convert our modular proof-of-concept benchmarks into a complete *S. epidermidis*-to-*EcN* therapeutic dressing.",
     "extra_zh": "",
     "followups": [],
     "keywords": "three more months priority roadmap biggest weakness most afraid question S6 B18 B19 多三个月 下一步优先级 最大弱点",
     "points_en": [
-      "1. [Direct Conclusion] Our three-month roadmap prioritizes closing the three inter-module handoffs that connect our individually validated modules into an end-to-end therapeutic consortium.",
-      "2. [Experimental Evidence] First, we will concentrate *S. epidermidis* ATCC 12228 supernatant to confirm DspB secretion by anti-His Western blot and conditioned-medium biofilm dispersal (B18); second, we will complete electroporation of the AIP-inducible pLI50–AgrCA–P2/P3–DspB construct into ATCC 12228 (B19).",
-      "3. [Boundary & Next Step] Third, we will transfer the HmSr–Nr naringenin pathway into *S. epidermidis* and move LSp222/hEGF into EcN to test the final *S. epidermidis*–EcN pair inside our dual-layer hydrogel using an ex vivo porcine skin wound model."
+      "1. [Direct Conclusion] First, we will finish sequencing the *S. epidermidis* colonies that appeared on our transformation plates at Wiki freeze and immediately assay their secreted DspB and naringenin production.",
+      "2. [Experimental Evidence] Second, we will express the `NrSr`-driven `PelB–LSp222` and `PelB–hEGF` cassettes directly in *EcN* to replace BL21 proof-of-concept expression, and third, we will test hEGF wound-healing bioactivity in a HaCaT keratinocyte scratch assay alongside dual-layer hydrogel containment.",
+      "3. [Boundary & Next Step] These three steps directly convert our modular proof-of-concept benchmarks into a complete *S. epidermidis*-to-*EcN* therapeutic dressing."
     ],
     "points_zh": [
-      "1. 【核心结论】如果再有三个月，我们将按严格优先级打通三个模块之间的“交接棒”，把目前已独立验证的三大功能模块串联为端到端闭环系统。",
-      "2. 【实验证据与数据】第一步（第 1 个月）：浓缩已转入 ATCC 12228 的组成型菌株上清，通过 Anti-His Western blot 与上清破膜实验坐实工程菌 DspB 分泌（B18），并完成 AIP 诱导型大质粒在 ATCC 12228 中的电转诱导验证（B19）。",
-      "3. 【边界与下一步】第二步（第 2–3 个月）：将 `HmSr–Nr` 柚皮素通路导入表皮葡萄球菌、将 `LSp222/hEGF` 导入 EcN，并加上通路失活突变体阴性对照，在离体猪皮感染创面模型中测试双层水凝胶的完整治疗闭环。"
+      "1. 【核心结论】第一优先级是完成 Wiki freeze 时转化平板上长出的表皮葡萄球菌菌落的测序确认，并立即测定其分泌 DspB 与合成柚皮素的功能。",
+      "2. 【实验证据与数据】第二是在接收菌 *EcN* 中直接测试 `NrSr` 驱动的 `PelB–LSp222` 与 `PelB–hEGF` 分泌以替代 BL21 概念验证；第三是通过 HaCaT 角质形成细胞划痕实验验证 hEGF 促迁移活性，并开展双层水凝胶封存测试。",
+      "3. 【边界与下一步】这三步将直接把我们已经验证的分模块基准转化为完整的表葡–*EcN* 活体治疗敷料体系。"
     ],
     "notes": [
-      "1. 第一优先级（破膜闭环）→ 浓缩 ATCC 12228 上清做 His-Western 与破膜活性 + 完成 AIP 诱导型电转 (B18/B19)",
-      "2. 第二优先级（终极底盘对接）→ 表皮葡萄球菌产柚皮素 + EcN 产 LSp222/hEGF 全链路联调（含失活通路对照）",
-      "3. 第三优先级（近临床模型）→ 双层水凝胶封装下的离体猪皮创面感染模型与细胞划痕修复验证"
+      "1. 第一优先级 → 完成Wiki freeze表葡转化平板菌落测序，测定DspB与柚皮素功能",
+      "2. 第二、三步 → 在EcN中测试NrSr驱动治疗蛋白分泌 + HaCaT划痕实验测hEGF活性与水凝胶封存",
+      "3. 三步闭环 → 将分模块验证转化为完整表葡–EcN治疗敷料"
     ],
     "notes_zh": [
-      "1. 第一优先级（破膜闭环）→ 浓缩 ATCC 12228 上清做 His-Western 与破膜活性 + 完成 AIP 诱导型电转 (B18/B19)",
-      "2. 第二优先级（终极底盘对接）→ 表皮葡萄球菌产柚皮素 + EcN 产 LSp222/hEGF 全链路联调（含失活通路对照）",
-      "3. 第三优先级（近临床模型）→ 双层水凝胶封装下的离体猪皮创面感染模型与细胞划痕修复验证"
+      "1. 第一优先级 → 完成Wiki freeze表葡转化平板菌落测序，测定DspB与柚皮素功能",
+      "2. 第二、三步 → 在EcN中测试NrSr驱动治疗蛋白分泌 + HaCaT划痕实验测hEGF活性与水凝胶封存",
+      "3. 三步闭环 → 将分模块验证转化为完整表葡–EcN治疗敷料"
     ]
   },
   {
@@ -573,30 +575,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-07.jpg",
     "q_zh": "能直接给我看最能支持“两株菌之间有通讯”的那张图吗？",
     "q_en": "Can you show us the most direct evidence of communication between the strains?",
-    "a_zh": "请直接看 B12 页。该页将 BL21 发送菌单培养、EcN 接收菌单培养以及 1:1 双菌共培养的荧光显微图并列对比，可以直观看到只有在双菌共培养时才出现大面积亮绿色荧光细胞。如果要进一步核实定量证据，B9 页展示了发送端合成柚皮素的 HPLC 色谱峰，B11 页展示了接收菌 EcN 对不同浓度柚皮素的剂量响应曲线。",
-    "a_en": "Certainly. Slide B12 shows our most direct visual evidence: it places the BL21 sender monoculture, the EcN receiver monoculture, and the 1:1 co-culture side by side, showing a clear rise in green fluorescence only when both strains are cultured together. To back that up quantitatively, Slide B9 shows naringenin production by the sender on HPLC, and Slide B11 shows the dose-response curve of the EcN receiver to exogenous naringenin.",
+    "a_zh": "B9 至 B12 四页备份幻灯片展示了柚皮素介导跨菌通讯最直接的完整证据链。B9 与 B10 页通过 HPLC（$R^2 = 0.99998$）证实 `Nr` 三酶通路以对香豆酸为底物合成了 53.8 µM（14.65 mg/L）柚皮素；B11 页证实该浓度跨过了 *EcN* 接收菌 `FdeR/PfdeAR` 的 50 µM 激活阈值；B12 页则展示了在不加外源柚皮素条件下 1:1 BL21–*EcN* 共培养直接点亮接收菌荧光。这四页数据将化学定性定量、受体响应阈值与活体双菌信号传递完整串联起来。",
+    "a_en": "Slides B9 through B12 provide our most direct chain of evidence for naringenin-mediated intercellular communication. Slides B9 and B10 prove via HPLC ($R^2 = 0.99998$) that our three-enzyme `Nr` pathway synthesizes 53.8 µM (14.65 mg/L) naringenin from *p*-coumaric acid; Slide B11 shows that 53.8 µM exceeds the 50 µM threshold required to activate the `FdeR/PfdeAR` receiver in *EcN*; and Slide B12 demonstrates direct 1:1 BL21-to-*EcN* activation in co-culture without adding exogenous naringenin. Together, these four backup slides connect chemical identity, quantitative titer, receptor threshold, and live two-strain signal transfer.",
     "extra_zh": "",
     "followups": [],
     "keywords": "best slide communication evidence B12 B9 B11 最能支持 两株菌通讯 哪张图 索引",
     "points_en": [
-      "1. [Direct Conclusion] Certainly.",
-      "2. [Experimental Evidence] Slide B12 shows our most direct visual evidence: it places the BL21 sender monoculture, the EcN receiver monoculture, and the 1:1 co-culture side by side, showing a clear rise in green fluorescence only when both strains are cultured together.",
-      "3. [Boundary & Next Step] To back that up quantitatively, Slide B9 shows naringenin production by the sender on HPLC, and Slide B11 shows the dose-response curve of the EcN receiver to exogenous naringenin."
+      "1. [Direct Conclusion] Slides B9 through B12 provide our most direct chain of evidence for naringenin-mediated intercellular communication.",
+      "2. [Experimental Evidence] Slides B9 and B10 prove via HPLC ($R^2 = 0.99998$) that our three-enzyme `Nr` pathway synthesizes 53.8 µM (14.65 mg/L) naringenin from *p*-coumaric acid; Slide B11 shows that 53.8 µM exceeds the 50 µM threshold required to activate the `FdeR/PfdeAR` receiver in *EcN*; and Slide B12 demonstrates direct 1:1 BL21-to-*EcN* activation in co-culture without adding exogenous naringenin.",
+      "3. [Boundary & Next Step] Together, these four backup slides connect chemical identity, quantitative titer, receptor threshold, and live two-strain signal transfer."
     ],
     "points_zh": [
-      "1. 【核心结论】请直接看 B12 页。",
-      "2. 【实验证据与数据】该页将 BL21 发送菌单培养、EcN 接收菌单培养以及 1:1 双菌共培养的荧光显微图并列对比，可以直观看到只有在双菌共培养时才出现大面积亮绿色荧光细胞。",
-      "3. 【边界与下一步】如果要进一步核实定量证据，B9 页展示了发送端合成柚皮素的 HPLC 色谱峰，B11 页展示了接收菌 EcN 对不同浓度柚皮素的剂量响应曲线。"
+      "1. 【核心结论】B9 至 B12 四页备份幻灯片展示了柚皮素介导跨菌通讯最直接的完整证据链。",
+      "2. 【实验证据与数据】B9 与 B10 页通过 HPLC（$R^2 = 0.99998$）证实 `Nr` 三酶通路以对香豆酸为底物合成了 53.8 µM（14.65 mg/L）柚皮素；B11 页证实该浓度跨过了 *EcN* 接收菌 `FdeR/PfdeAR` 的 50 µM 激活阈值；B12 页则展示了在不加外源柚皮素条件下 1:1 BL21–*EcN* 共培养直接点亮接收菌荧光。",
+      "3. 【边界与下一步】这四页数据将化学定性定量、受体响应阈值与活体双菌信号传递完整串联起来。"
     ],
     "notes": [
-      "Primary slide: Jump to B12 (1:1 Co-culture microscopy vs. 2 monocultures)",
-      "Chemical proof: Jump to B9 (Sender HPLC 17.1 min peak) + B10 (53.8 µM calibration)",
-      "Receiver proof: Jump to B11 (EcN 0–400 µM naringenin dose-response curves)"
+      "1. 最直接证据链在B9–B12页 → 串联化学定量、受体阈值与共培养激活",
+      "2. 核心数据 → HPLC测得53.8 µM(B9–B10) → 超过EcN 50 µM阈值(B11) → 1:1共培养点亮荧光(B12)",
+      "3. 完整闭环 → 从小分子合成到活体跨菌信号传递"
     ],
     "notes_zh": [
-      "1. 完整通讯证据链（4 页）：B7 → B9 / B10 → B11 → B12",
-      "2. B7（表皮葡萄球菌血红素输入）→ B9 & B10（HPLC 定性 17.1 min + 标曲定量 53.8 µM）",
-      "3. B11（EcN 接收端 0–400 µM 剂量响应）→ B12（1:1 BL21–EcN 共培养跨菌激活与单菌对照）"
+      "1. 最直接证据链在B9–B12页 → 串联化学定量、受体阈值与共培养激活",
+      "2. 核心数据 → HPLC测得53.8 µM(B9–B10) → 超过EcN 50 µM阈值(B11) → 1:1共培养点亮荧光(B12)",
+      "3. 完整闭环 → 从小分子合成到活体跨菌信号传递"
     ]
   },
   {
@@ -892,34 +894,32 @@
     "slide_page": 11,
     "slide_title": "Host Choice & Validation — Backup · B4",
     "slide_img": "realtime_qa_assets/slides/slide-11.jpg",
-    "q_zh": "你们为什么选择表皮葡萄球菌、EcN 和 BL21 这三种宿主？各自的选择理由和职责是什么？",
-    "q_en": "Why did you use three hosts? What did each one contribute?",
-    "a_zh": "我们将最终治疗双菌体系与概念验证底盘明确区分，三株宿主各有清晰的选择理由与职责分工：**表皮葡萄球菌（*S. epidermidis*，目标发送菌）**：选择理由是其为天然人体皮肤共生菌（生物安全性高），且拥有内源性血红素双组分感应系统（`HssRS`）；职责是表达分泌 `DspB` 破坏金葡菌生物膜，并通过 `HmSr + Nr` 响应血红素合成柚皮素。2. **大肠杆菌 Nissle 1917（*EcN*，目标接收菌）**：选择理由是其具备成熟的益生菌生物安全性，且遗传操作便捷、易于验证回路；职责是通过 `NrSr` 响应柚皮素，合成抗菌裂解酶 `LSp222` 与促修复因子 `hEGF`。3. **大肠杆菌 BL21(DE3)（仅用于概念验证）**：由于革兰氏阳性表皮葡萄球菌的工程改造周期较长，我们选用成熟的 BL21 底盘**仅用于概念验证（strictly for proof-of-concept validation）**，负责验证 `LSp222` 与 `hEGF` 的大肠杆菌表达可行性，以及 `Nr` 途径合成柚皮素的能力。",
-    "a_en": "Each host was chosen for a specific role, separating our final therapeutic pair from our proof-of-concept chassis:  ***S. epidermidis* (Target Sender)**: We chose it because it is a natural human skin commensal with high biosafety and possesses an endogenous heme-sensing system (`HssRS`). Its assigned duties are dispersing the *S. aureus* biofilm (`DspB`) and sensing heme to synthesize naringenin (`HmSr + Nr`). 2. **EcN (*E. coli* Nissle 1917, Target Receiver)**: We chose it for its established probiotic biosafety and tractable genetics. Its duty is to sense naringenin (`NrSr`) and produce the therapeutic proteins `LSp222` and `hEGF`. 3. ***E. coli* BL21(DE3) (Proof-of-Concept Only)**: Because genetic manipulation in *S. epidermidis* takes longer, we used BL21 strictly as a mature proof-of-concept host to validate *E. coli* expression of `LSp222` and `hEGF` and to verify naringenin biosynthesis via the `Nr` pathway.",
+    "q_zh": "既然最终设计使用表皮葡萄球菌和 EcN，为什么在柚皮素生产和治疗蛋白表达上使用 BL21？为什么使用三种宿主？",
+    "q_en": "Why did you use BL21 for naringenin production and therapeutic protein expression when the final design uses S. epidermidis and EcN? Why use three hosts?",
+    "a_zh": "表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在做这项转化工作，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。在最终双菌治疗设计中，皮肤共生菌表皮葡萄球菌作为发送菌（利用内源 `HssRS` 感应血红素，分泌 `DspB` 并合成柚皮素），益生菌 *EcN* 作为接收菌（通过 `NrSr` 响应柚皮素表达 `LSp222` 与 `hEGF`）；而在攻克表葡转化的同时，我们并行使用 BL21(DE3) 验证了 53.8 µM 柚皮素合成、1:1 共培养通讯以及 `LSp222`/`hEGF` 蛋白活性。待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接在表皮葡萄球菌与 *EcN* 中开展柚皮素液相检测及生物膜解聚功能实验。",
+    "a_en": "*S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced. In our final two-strain therapeutic design, *S. epidermidis* is the skin-commensal sender (carrying native `HssRS` heme sensing to secrete `DspB` and synthesize naringenin) and probiotic *EcN* is the receiver (`NrSr` driving `LSp222` and `hEGF`), while *E. coli* BL21(DE3) was run in parallel so we could validate 53.8 µM naringenin synthesis, 1:1 co-culture signaling, and `LSp222`/`hEGF` activity while *S. epidermidis* transformation was underway. Once sequencing of the Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will run the naringenin HPLC and biofilm dispersal assays directly in *S. epidermidis* alongside *EcN*.",
     "extra_zh": "",
     "followups": [],
-    "keywords": "three hosts S. epidermidis EcN BL21(DE3) rationale role why three strains 三种宿主 选择理由 职责 为什么用BL21",
+    "keywords": "three hosts S. epidermidis EcN BL21(DE3) rationale role why three strains 三种宿主 选择理由 职责 为什么用BL21 M23 harder to engineer plasmid transformation Wiki freeze colonies sequencing 表葡更难改造 质粒难以转化 转化平板 菌落 正在测序",
     "points_en": [
-      "1. [Direct Conclusion] Each host was chosen for a specific role, separating our final therapeutic pair from our proof-of-concept chassis:",
-      "2. ",
-      "3. [Experimental Evidence] ***S. epidermidis* (Target Sender)**: We chose it because it is a natural human skin commensal with high biosafety and possesses an endogenous heme-sensing system (`HssRS`). Its assigned duties are dispersing the *S. aureus* biofilm (`DspB`) and sensing heme to synthesize naringenin (`HmSr + Nr`). 2. **EcN (*E. coli* Nissle 1917, Target Receiver)**: We chose it for its established probiotic biosafety and tractable genetics. Its duty is to sense naringenin (`NrSr`) and produce the therapeutic proteins `LSp222` and `hEGF`. 3.",
-      "4. [Boundary & Next Step] ***E. coli* BL21(DE3) (Proof-of-Concept Only)**: Because genetic manipulation in *S. epidermidis* takes longer, we used BL21 strictly as a mature proof-of-concept host to validate *E. coli* expression of `LSp222` and `hEGF` and to verify naringenin biosynthesis via the `Nr` pathway."
+      "1. [Direct Conclusion] *S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.",
+      "2. [Experimental Evidence] In our final two-strain therapeutic design, *S. epidermidis* is the skin-commensal sender (carrying native `HssRS` heme sensing to secrete `DspB` and synthesize naringenin) and probiotic *EcN* is the receiver (`NrSr` driving `LSp222` and `hEGF`), while *E. coli* BL21(DE3) was run in parallel so we could validate 53.8 µM naringenin synthesis, 1:1 co-culture signaling, and `LSp222`/`hEGF` activity while *S. epidermidis* transformation was underway.",
+      "3. [Boundary & Next Step] Once sequencing of the Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will run the naringenin HPLC and biofilm dispersal assays directly in *S. epidermidis* alongside *EcN*."
     ],
     "points_zh": [
-      "1. 【核心结论】我们将最终治疗双菌体系与概念验证底盘明确区分，三株宿主各有清晰的选择理由与职责分工：",
-      "2. **表皮葡萄球菌（*S. epidermidis*，目标发送菌）**：选择理由是其为天然人体皮肤共生菌（生物安全性高），且拥有内源性血红素双组分感应系统（`HssRS`）；",
-      "3. 【实验证据与数据】职责是表达分泌 `DspB` 破坏金葡菌生物膜，并通过 `HmSr + Nr` 响应血红素合成柚皮素。2. **大肠杆菌 Nissle 1917（*EcN*，目标接收菌）**：选择理由是其具备成熟的益生菌生物安全性，且遗传操作便捷、易于验证回路；职责是通过 `NrSr` 响应柚皮素，合成抗菌裂解酶 `LSp222` 与促修复因子 `hEGF`。",
-      "4. 【边界与下一步】3. **大肠杆菌 BL21(DE3)（仅用于概念验证）**：由于革兰氏阳性表皮葡萄球菌的工程改造周期较长，我们选用成熟的 BL21 底盘**仅用于概念验证（strictly for proof-of-concept validation）**，负责验证 `LSp222` 与 `hEGF` 的大肠杆菌表达可行性，以及 `Nr` 途径合成柚皮素的能力。"
+      "1. 【核心结论】表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在做这项转化工作，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。",
+      "2. 【实验证据与数据】在最终双菌治疗设计中，皮肤共生菌表皮葡萄球菌作为发送菌（利用内源 `HssRS` 感应血红素，分泌 `DspB` 并合成柚皮素），益生菌 *EcN* 作为接收菌（通过 `NrSr` 响应柚皮素表达 `LSp222` 与 `hEGF`）；而在攻克表葡转化的同时，我们并行使用 BL21(DE3) 验证了 53.8 µM 柚皮素合成、1:1 共培养通讯以及 `LSp222`/`hEGF` 蛋白活性。",
+      "3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接在表皮葡萄球菌与 *EcN* 中开展柚皮素液相检测及生物膜解聚功能实验。"
     ],
     "notes": [
-      "1) S. epidermidis (Target Sender): Skin commensal + Native HssRS heme sensor → DspB + Naringenin synthesis",
-      "2) E. coli Nissle 1917 / EcN (Target Receiver): Safe probiotic + Tractable genetics → NrSr senses Naringenin → LSp222 & hEGF",
-      "3) E. coli BL21(DE3) (Strictly Proof-of-Concept 仅概念验证): Fast expression testbed → Nr HPLC (B9), Co-culture (B12), LSp222/hEGF gels (B14)"
+      "1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze转化平板已长出菌落、正在测序",
+      "2. 最终双菌为表葡(发送) + EcN(接收) → 并行用BL21完成53.8 µM柚皮素、共培养与LSp222/hEGF活性验证",
+      "3. 待Wiki freeze菌落测序确认 → 直接在表葡与EcN中开展HPLC与功能测定"
     ],
     "notes_zh": [
-      "1. 最终治疗菌群（2 株）：表皮葡萄球菌（发送菌）+ 大肠杆菌 EcN（接收菌）",
-      "2. 概念验证底盘（1 株）：大肠杆菌 BL21(DE3) → 仅用于快速验证三酶产柚皮素与治疗蛋白表达",
-      "3. 选择理由：表皮葡萄球菌（皮肤共生安全 + 内源 HssRS 感知血红素） | EcN（益生菌安全 + 遗传操作成熟）"
+      "1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze转化平板已长出菌落、正在测序",
+      "2. 最终双菌为表葡(发送) + EcN(接收) → 并行用BL21完成53.8 µM柚皮素、共培养与LSp222/hEGF活性验证",
+      "3. 待Wiki freeze菌落测序确认 → 直接在表葡与EcN中开展HPLC与功能测定"
     ]
   },
   {
@@ -936,32 +936,32 @@
     "slide_img": "realtime_qa_assets/slides/slide-11.jpg",
     "q_zh": "能把 BL21 的柚皮素生产结果直接算到表皮葡萄球菌头上吗？",
     "q_en": "Can you attribute BL21’s naringenin production to S. epidermidis?",
-    "a_zh": "不能直接算到表皮葡萄球菌头上，我们对两者的实验结论做了严格区分。HPLC 测得的柚皮素产量以及双菌共培养中的发送端数据均来自概念验证底盘 BL21(DE3)，这证明了 `Nr` 三酶途径合成的柚皮素足以跨菌激活 EcN。在表皮葡萄球菌中，我们目前已实测验证的是上游 `HmSr` 对血红素的感知响应（B7 页）；将 `Nr` 整合进表皮葡萄球菌并直接测定其柚皮素产量是下一步工作。",
-    "a_en": "No, we keep those claims strictly separate. Our HPLC naringenin yield and co-culture sender data come from BL21(DE3), which proves that the three-enzyme `Nr` pathway produces enough naringenin to activate EcN. In *S. epidermidis*, what we have experimentally verified so far is the upstream `HmSr` heme-sensing response (Slide B7). Quantifying naringenin titers directly from engineered *S. epidermidis* is our next step.",
+    "a_zh": "不能混为一谈——53.8 µM（14.65 mg/L）柚皮素产量是在 BL21(DE3) 中测得的，因为表皮葡萄球菌更难改造、质粒难以转化；我们一直在推进表葡转化，在 Wiki freeze 时转化平板上已长出菌落，目前正在测序。在表皮葡萄球菌 ATCC 12228 本身中，我们已验证了上游 `HssRS` 血红素传感器（1 µM 血红素下 1.7 h 达峰，B7 页）并通过 RN4220 中转确认了 `pBUS1-Pcap-DspB` 导入（B5 页）；同时利用 BL21 证实了三酶通路合成的柚皮素足以在 1:1 共培养中激活 *EcN*（B9–B12 页）。待 Wiki freeze 转化平板上的表葡菌落测序完成后，我们将立即通过 HPLC 直接测定表皮葡萄球菌上清中的血红素诱导柚皮素产量。",
+    "a_en": "No—the 53.8 µM (14.65 mg/L) naringenin titer was measured in *E. coli* BL21(DE3) because *S. epidermidis* is much harder to engineer and transform with plasmids; we have been working on *S. epidermidis* transformation continuously, and colonies appeared on our transformation plates right at Wiki freeze and are currently being sequenced. In *S. epidermidis* ATCC 12228 itself, we have already validated the upstream `HssRS` heme sensor (peaking at 1.7 h under 1 µM hemin, Slide B7) and confirmed plasmid entry of `pBUS1-Pcap-DspB` after RN4220 passage (Slide B5), while BL21 proved that our three-enzyme `At4CL–PhCHS–CmCHI` pathway synthesizes enough naringenin to activate *EcN* in 1:1 co-culture (Slides B9–B12). As soon as sequencing of the Wiki-freeze *S. epidermidis* transformation colonies completes, we will quantify heme-triggered naringenin secretion directly in *S. epidermidis* supernatant by HPLC.",
     "extra_zh": "",
     "followups": [
       "x13"
     ],
-    "keywords": "BL21 naringenin production equate to S. epidermidis 算到表皮葡萄球菌 替代 等同",
+    "keywords": "BL21 naringenin production equate to S. epidermidis 算到表皮葡萄球菌 替代 等同 M23 Wiki freeze colonies sequencing 表葡转化 菌落测序",
     "points_en": [
-      "1. [Direct Conclusion] No, we keep those claims strictly separate.",
-      "2. [Experimental Evidence] Our HPLC naringenin yield and co-culture sender data come from BL21(DE3), which proves that the three-enzyme `Nr` pathway produces enough naringenin to activate EcN. In *S. epidermidis*, what we have experimentally verified so far is the upstream `HmSr` heme-sensing response (Slide B7).",
-      "3. [Boundary & Next Step] Quantifying naringenin titers directly from engineered *S. epidermidis* is our next step."
+      "1. [Direct Conclusion] No—the 53.8 µM (14.65 mg/L) naringenin titer was measured in *E. coli* BL21(DE3) because *S. epidermidis* is much harder to engineer and transform with plasmids; we have been working on *S. epidermidis* transformation continuously, and colonies appeared on our transformation plates right at Wiki freeze and are currently being sequenced.",
+      "2. [Experimental Evidence] In *S. epidermidis* ATCC 12228 itself, we have already validated the upstream `HssRS` heme sensor (peaking at 1.7 h under 1 µM hemin, Slide B7) and confirmed plasmid entry of `pBUS1-Pcap-DspB` after RN4220 passage (Slide B5), while BL21 proved that our three-enzyme `At4CL–PhCHS–CmCHI` pathway synthesizes enough naringenin to activate *EcN* in 1:1 co-culture (Slides B9–B12).",
+      "3. [Boundary & Next Step] As soon as sequencing of the Wiki-freeze *S. epidermidis* transformation colonies completes, we will quantify heme-triggered naringenin secretion directly in *S. epidermidis* supernatant by HPLC."
     ],
     "points_zh": [
-      "1. 【核心结论】不能直接算到表皮葡萄球菌头上，我们对两者的实验结论做了严格区分。",
-      "2. 【实验证据与数据】HPLC 测得的柚皮素产量以及双菌共培养中的发送端数据均来自概念验证底盘 BL21(DE3)，这证明了 `Nr` 三酶途径合成的柚皮素足以跨菌激活 EcN。在表皮葡萄球菌中，我们目前已实测验证的是上游 `HmSr` 对血红素的感知响应（B7 页）；",
-      "3. 【边界与下一步】将 `Nr` 整合进表皮葡萄球菌并直接测定其柚皮素产量是下一步工作。"
+      "1. 【核心结论】不能混为一谈——53.8 µM（14.65 mg/L）柚皮素产量是在 BL21(DE3) 中测得的，因为表皮葡萄球菌更难改造、质粒难以转化；我们一直在推进表葡转化，在 Wiki freeze 时转化平板上已长出菌落，目前正在测序。",
+      "2. 【实验证据与数据】在表皮葡萄球菌 ATCC 12228 本身中，我们已验证了上游 `HssRS` 血红素传感器（1 µM 血红素下 1.7 h 达峰，B7 页）并通过 RN4220 中转确认了 `pBUS1-Pcap-DspB` 导入（B5 页）；同时利用 BL21 证实了三酶通路合成的柚皮素足以在 1:1 共培养中激活 *EcN*（B9–B12 页）。",
+      "3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序完成后，我们将立即通过 HPLC 直接测定表皮葡萄球菌上清中的血红素诱导柚皮素产量。"
     ],
     "notes": [
-      "Not directly interchangeable: BL21 = Proof-of-concept for Nr enzyme cascade (验证三酶合成可行性)",
-      "Verified in BL21: At4CL–PhCHS–CmCHI → 53.8 µM Naringenin (B9) + Activates EcN in co-culture (B12)",
-      "Verified in S. epidermidis: HmSr hemin sensing (B7) → Next: Transfer Nr into S. epidermidis & run HPLC"
+      "1. 不混为一谈 → 53.8 µM产自BL21 → 表葡更难改造、质粒难转化，Wiki freeze平板已出菌落正在测序",
+      "2. 表葡已验证HssRS血红素传感(1.7h达峰)与pBUS1导入 → BL21验证三酶合成与1:1共培养激活EcN",
+      "3. 待Wiki freeze菌落测序完成 → 直接用HPLC测表葡上清柚皮素产量"
     ],
     "notes_zh": [
-      "1. 双层水凝胶在创面外表面原位快速通讯：两层间距仅 40 µm → 柚皮素扩散仅需数秒至数分钟",
-      "2. 厌氧与营养限制应对：EcN 为兼性厌氧菌（适应创面低氧环境）+ 水凝胶预载基础营养与对香豆酸前体",
-      "3. 下一步：在与创面微环境匹配的离体皮肤模型中验证双菌存活与信号转导"
+      "1. 不混为一谈 → 53.8 µM产自BL21 → 表葡更难改造、质粒难转化，Wiki freeze平板已出菌落正在测序",
+      "2. 表葡已验证HssRS血红素传感(1.7h达峰)与pBUS1导入 → BL21验证三酶合成与1:1共培养激活EcN",
+      "3. 待Wiki freeze菌落测序完成 → 直接用HPLC测表葡上清柚皮素产量"
     ]
   },
   {
@@ -1286,30 +1286,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-22.jpg",
     "q_zh": "荧光变强会不会只是因为细菌长得更多？",
     "q_en": "Could the hemin fluorescence signal simply mean that more bacteria grew?",
-    "a_zh": "不是因为细菌长得更多，原因有两点：第一，B7 页的所有荧光曲线均已除以同一时间点的菌体密度（`RFU/OD₆₀₀`），并扣除了同时间点 0 µM 对照组的基线；第二，将 B8 页与 B7 页的 1 µM hemin 组对照来看，B8 上的菌体密度 `OD₆₀₀` 在 5 小时内持续平稳上升，而 B7 上的单位菌体荧光 `RFU/OD₆₀₀` 却在 1.7 小时处出现尖锐峰值并随后回落。这种截然不同的动力学波形证明信号来自启动子特异性激活，而非菌体数量增长。",
-    "a_en": "No, for two reasons. First, every fluorescence curve on Slide B7 is already normalized to cell density (`RFU/OD₆₀₀`) and referenced against the time-matched 0 µM control. Second, when you compare Slide B8 and Slide B7 at 1 µM hemin, cell density (`OD₆₀₀`) increases steadily over 5 hours on B8, whereas normalized fluorescence (`RFU/OD₆₀₀`) rises to a sharp peak at 1.7 hours on B7 and then comes back down. That distinct kinetic peak proves specific promoter activation rather than simple bacterial growth.",
+    "a_zh": "不是——荧光升高源于 `pHrtBA` 启动子的特异性转录激活而非菌体密度增加，因为所有读数均已做 $\\text{OD}_{600}$ 归一化且峰值出现在指数生长期之前。在 B7 页中，归一化荧光（$\\Delta(\\text{Fluorescence}/\\text{OD}_{600})$）在 1 µM 血红素下于 1.7 h 迅速达峰、2.5 µM 下于 2.3–2.4 h 达峰，早于 B8 页中各组 $\\text{OD}_{600}$ 在对数中期（4–12 h）拉开差距的时间窗口。此外，B8 页中 5 µM 组的平台期 $\\text{OD}_{600}$ 略高于 1 µM 组，但其在 B7 页的早期归一化荧光峰值却显著更低，证实信号反映的是启动子激活而非菌浓变化。",
+    "a_en": "No—the fluorescence increase is driven by specific `pHrtBA` promoter activation rather than higher cell density, because every readout is already normalized to $\\text{OD}_{600}$ and peaks before exponential growth. On Slide B7, normalized fluorescence ($\\Delta(\\text{Fluorescence}/\\text{OD}_{600})$) spikes sharply at 1.7 hours for 1 µM hemin and 2.3–2.4 hours for 2.5 µM hemin—well before the cultures diverge in $\\text{OD}_{600}$ during mid-exponential phase (4–12 hours, Slide B8). Furthermore, 5 µM hemin yields a slightly higher stationary $\\text{OD}_{600}$ than 1 µM on Slide B8 yet produces a much smaller early fluorescence peak on Slide B7, confirming that normalized fluorescence reflects promoter induction rather than cell number.",
     "extra_zh": "",
     "followups": [],
     "keywords": "growth change interfere fluorescence normalization OD600 B7 vs B8 生长变化干扰荧光 细菌长得更多",
     "points_en": [
-      "1. [Direct Conclusion] No, for two reasons.",
-      "2. [Experimental Evidence] First, every fluorescence curve on Slide B7 is already normalized to cell density (`RFU/OD₆₀₀`) and referenced against the time-matched 0 µM control. Second, when you compare Slide B8 and Slide B7 at 1 µM hemin, cell density (`OD₆₀₀`) increases steadily over 5 hours on B8, whereas normalized fluorescence (`RFU/OD₆₀₀`) rises to a sharp peak at 1.7 hours on B7 and then comes back down.",
-      "3. [Boundary & Next Step] That distinct kinetic peak proves specific promoter activation rather than simple bacterial growth."
+      "1. [Direct Conclusion] No—the fluorescence increase is driven by specific `pHrtBA` promoter activation rather than higher cell density, because every readout is already normalized to $\\text{OD}_{600}$ and peaks before exponential growth.",
+      "2. [Experimental Evidence] On Slide B7, normalized fluorescence ($\\Delta(\\text{Fluorescence}/\\text{OD}_{600})$) spikes sharply at 1.7 hours for 1 µM hemin and 2.3–2.4 hours for 2.5 µM hemin—well before the cultures diverge in $\\text{OD}_{600}$ during mid-exponential phase (4–12 hours, Slide B8).",
+      "3. [Boundary & Next Step] Furthermore, 5 µM hemin yields a slightly higher stationary $\\text{OD}_{600}$ than 1 µM on Slide B8 yet produces a much smaller early fluorescence peak on Slide B7, confirming that normalized fluorescence reflects promoter induction rather than cell number."
     ],
     "points_zh": [
-      "1. 【核心结论】不是因为细菌长得更多，原因有两点：第一，B7 页的所有荧光曲线均已除以同一时间点的菌体密度（`RFU/OD₆₀₀`），并扣除了同时间点 0 µM 对照组的基线；",
-      "2. 【实验证据与数据】第二，将 B8 页与 B7 页的 1 µM hemin 组对照来看，B8 上的菌体密度 `OD₆₀₀` 在 5 小时内持续平稳上升，而 B7 上的单位菌体荧光 `RFU/OD₆₀₀` 却在 1.7 小时处出现尖锐峰值并随后回落。",
-      "3. 【边界与下一步】这种截然不同的动力学波形证明信号来自启动子特异性激活，而非菌体数量增长。"
+      "1. 【核心结论】不是——荧光升高源于 `pHrtBA` 启动子的特异性转录激活而非菌体密度增加，因为所有读数均已做 $\\text{OD}_{600}$ 归一化且峰值出现在指数生长期之前。",
+      "2. 【实验证据与数据】在 B7 页中，归一化荧光（$\\Delta(\\text{Fluorescence}/\\text{OD}_{600})$）在 1 µM 血红素下于 1.7 h 迅速达峰、2.5 µM 下于 2.3–2.4 h 达峰，早于 B8 页中各组 $\\text{OD}_{600}$ 在对数中期（4–12 h）拉开差距的时间窗口。",
+      "3. 【边界与下一步】此外，B8 页中 5 µM 组的平台期 $\\text{OD}_{600}$ 略高于 1 µM 组，但其在 B7 页的早期归一化荧光峰值却显著更低，证实信号反映的是启动子激活而非菌浓变化。"
     ],
     "notes": [
-      "Normalization control: B7 plots `RFU / OD600` (per-cell fluorescence) minus time-matched 0 µM control",
-      "B7 vs. B8 comparison: At 1 µM hemin, cells keep growing over 6 h (B8), while `RFU/OD600` peaks sharply at 1.7 h and drops (B7)",
-      "Conclusion: 1.7 h peak = True promoter kinetics, not bacterial overgrowth"
+      "1. 不是菌浓假象 → 数据已除以OD600归一化，且达峰时间早于对数生长期",
+      "2. 时间错位证据 → 荧光在1.7h/2.3h达峰(B7)，早于4–12h的OD600增长期(B8)",
+      "3. 剂量反证 → 5 µM组OD600更高但早期荧光峰值反而低于1 µM组"
     ],
     "notes_zh": [
-      "1. 双图联读目的：排除「细菌生长量差异」或「血红素毒性」对荧光读数的干扰",
-      "2. 低浓度区（1 µM / 2.5 µM）：OD600 生长曲线与 0 µM 正常对照几乎完全重合 → 证实 1.7 h 荧光峰是真实的基因转录激活，而非生长假象",
-      "3. 高浓度区（10 µM）：OD600 显著受抑 → 解释了 B7 中 10 µM 组荧光贴近零线源于高浓度血红素的生长毒性"
+      "1. 不是菌浓假象 → 数据已除以OD600归一化，且达峰时间早于对数生长期",
+      "2. 时间错位证据 → 荧光在1.7h/2.3h达峰(B7)，早于4–12h的OD600增长期(B8)",
+      "3. 剂量反证 → 5 µM组OD600更高但早期荧光峰值反而低于1 µM组"
     ]
   },
   {
@@ -1481,32 +1481,32 @@
     "slide_img": "realtime_qa_assets/slides/slide-19.jpg",
     "q_zh": "结合 B7 的样品峰面积和 B13 的标曲，怎样估算原发酵样品的柚皮素浓度？",
     "q_en": "How do you get from peak area to an estimated concentration in the original sample?",
-    "a_zh": "换算分两步完成：第一步，将 B9 页测得的 17.1 分钟样品峰面积（$\\text{Area} \u0007pprox 400$）代入标准曲线方程，求得 HPLC 进样小瓶中的浓度 $C_{\\text{vial}} = (400 - 77.4206) / 44{,}052.0432 = 0.007323\\text{ g/L}$，即 **7.32 mg/L（26.9 µM）**。第二步，根据我们的提取方案（500 µL 发酵液与 500 µL 无水乙醇 1:1 等体积混合，即 2 倍稀释），乘以稀释倍数 2 得到原发酵液中的柚皮素实际浓度为 **14.65 mg/L（约 53.8 µM）**。这表明发送菌合成的柚皮素浓度恰好达到 B11 页中 EcN 接收菌 50 µM 以上的有效激活区间。",
-    "a_en": "It is a two-step calculation. First, substituting the sample peak area from Slide B9 ($\\text{Area} \\approx 400$) into the calibration equation gives $C_{\\text{vial}} = (400 - 77.4206) / 44{,}052.0432 = 0.007323\\text{ g/L}$, or **7.32 mg/L (26.9 µM)** in the HPLC vial. Second, because our extraction protocol mixes 500 µL of fermentation broth with an equal 500 µL volume of anhydrous ethanol (a 1:1 dilution), multiplying by 2 gives **14.65 mg/L, or 53.8 µM**, in the original fermentation broth. This shows our sender produces naringenin in the 50+ µM range where EcN responds on Slide B11.",
+    "a_zh": "将 17.1 min 处约 400 的样品峰面积代入线性标准曲线（$y = 44052.04x + 77.42$），再乘以 1:1 乙醇萃取的 2 倍稀释因子，即可算得发酵原液中柚皮素浓度为 14.65 mg/L（53.8 µM）。具体计算为：进样混合液浓度 $(400 - 77.42) / 44052.04 = 0.007323\\text{ g/L}$（$7.32\\text{ mg/L}$，即 $26.9\\ \\mu\\text{M}$）；乘以 2 倍稀释因子得发酵液浓度 $14.65\\text{ mg/L}$，再除以柚皮素分子量 $272.25\\text{ g/mol}$ 即得 $53.8\\ \\mu\\text{M}$。53.8 µM 的原液浓度恰好跨过 *EcN* 接收菌 50 µM 的响应阈值（B11 页）。",
+    "a_en": "Substituting the sample peak area of ~400 at 17.1 min into our linear calibration curve ($y = 44052.04x + 77.42$) and multiplying by the 2-fold ethanol dilution factor gives 14.65 mg/L (53.8 µM) naringenin in the fermentation broth. Specifically, $(400 - 77.42) / 44052.04 = 0.007323\\text{ g/L}$ ($7.32\\text{ mg/L}$, or $26.9\\ \\mu\\text{M}$) in the injected 1:1 ethanol-broth mixture; multiplying by 2 for the 1:1 extraction dilution yields $14.65\\text{ mg/L}$, and dividing by the molecular weight of naringenin ($272.25\\text{ g/mol}$) gives $53.8\\ \\mu\\text{M}$. This 53.8 µM supernatant concentration sits directly above the 50 µM activation threshold of our *EcN* receiver strain (Slide B11).",
     "extra_zh": "",
     "followups": [
       "x05"
     ],
     "keywords": "calculate fermentation broth concentration from Area 400 and B10 7.32 14.65 mg/L 53.8 uM 标曲折算 发酵液浓度 计算过程",
     "points_en": [
-      "1. [Direct Conclusion] It is a two-step calculation.",
-      "2. [Experimental Evidence] First, substituting the sample peak area from Slide B9 ($\\text{Area} \\approx 400$) into the calibration equation gives $C_{\\text{vial}} = (400 - 77.4206) / 44{,}052.0432 = 0.007323\\text{ g/L}$, or **7.32 mg/L (26.9 µM)** in the HPLC vial. Second, because our extraction protocol mixes 500 µL of fermentation broth with an equal 500 µL volume of anhydrous ethanol (a 1:1 dilution), multiplying by 2 gives **14.65 mg/L, or 53.8 µM**, in the original fermentation broth.",
-      "3. [Boundary & Next Step] This shows our sender produces naringenin in the 50+ µM range where EcN responds on Slide B11."
+      "1. [Direct Conclusion] Substituting the sample peak area of ~400 at 17.1 min into our linear calibration curve ($y = 44052.04x + 77.42$) and multiplying by the 2-fold ethanol dilution factor gives 14.65 mg/L (53.8 µM) naringenin in the fermentation broth.",
+      "2. [Experimental Evidence] Specifically, $(400 - 77.42) / 44052.04 = 0.007323\\text{ g/L}$ ($7.32\\text{ mg/L}$, or $26.9\\ \\mu\\text{M}$) in the injected 1:1 ethanol-broth mixture; multiplying by 2 for the 1:1 extraction dilution yields $14.65\\text{ mg/L}$, and dividing by the molecular weight of naringenin ($272.25\\text{ g/mol}$) gives $53.8\\ \\mu\\text{M}$.",
+      "3. [Boundary & Next Step] This 53.8 µM supernatant concentration sits directly above the 50 µM activation threshold of our *EcN* receiver strain (Slide B11)."
     ],
     "points_zh": [
-      "1. 【核心结论】换算分两步完成：第一步，将 B9 页测得的 17.1 分钟样品峰面积（$\\text{Area} \u0007pprox 400$）代入标准曲线方程，求得 HPLC 进样小瓶中的浓度 $C_{\\text{vial}} = (400 - 77.4206) / 44{,}052.0432 = 0.007323\\text{ g/L}$，即 **7.32 mg/L（26.9 µM）**。",
-      "2. 【实验证据与数据】第二步，根据我们的提取方案（500 µL 发酵液与 500 µL 无水乙醇 1:1 等体积混合，即 2 倍稀释），乘以稀释倍数 2 得到原发酵液中的柚皮素实际浓度为 **14.65 mg/L（约 53.8 µM）**。",
-      "3. 【边界与下一步】这表明发送菌合成的柚皮素浓度恰好达到 B11 页中 EcN 接收菌 50 µM 以上的有效激活区间。"
+      "1. 【核心结论】将 17.1 min 处约 400 的样品峰面积代入线性标准曲线（$y = 44052.04x + 77.42$），再乘以 1:1 乙醇萃取的 2 倍稀释因子，即可算得发酵原液中柚皮素浓度为 14.65 mg/L（53.8 µM）。",
+      "2. 【实验证据与数据】具体计算为：进样混合液浓度 $(400 - 77.42) / 44052.04 = 0.007323\\text{ g/L}$（$7.32\\text{ mg/L}$，即 $26.9\\ \\mu\\text{M}$）；乘以 2 倍稀释因子得发酵液浓度 $14.65\\text{ mg/L}$，再除以柚皮素分子量 $272.25\\text{ g/mol}$ 即得 $53.8\\ \\mu\\text{M}$。",
+      "3. 【边界与下一步】53.8 µM 的原液浓度恰好跨过 *EcN* 接收菌 50 µM 的响应阈值（B11 页）。"
     ],
     "notes": [
-      "Step 1 (HPLC vial): C = (400 − 77.42) / 44052.04 = 0.00732 g/L = 7.32 mg/L (26.9 µM)",
-      "Step 2 (Fermentation broth): Protocol P-04 1:1 equal-volume ethanol extraction (2× dilution) → 7.32 × 2 = 14.65 mg/L (53.8 µM)",
-      "System link: 53.8 µM broth titer ≥ 50 µM active receiver threshold on B11"
+      "1. 代入标曲再乘2倍稀释因子 → 直接算出原液浓度 14.65 mg/L (53.8 µM)",
+      "2. 两步换算 → (400-77.42)/44052.04 = 7.32 mg/L(进样液) → ×2 = 14.65 mg/L ÷ 272.25 = 53.8 µM",
+      "3. 生物学意义 → 53.8 µM超过EcN接收菌50 µM激活阈值(B11)"
     ],
     "notes_zh": [
-      "1. 样品点位置：Area ≈ 400 位于整条宽范围标曲（最高至 2.0 g/L）的低浓度端，故单独放大展示",
-      "2. 定量可靠性：① 远高于非诱导空白基线（Area = 0） ② 位于标曲正截距（77.42）之上 ③ 保留时间（17.1 min）严格吻合",
-      "3. 生物活性佐证：换算出的 53.8 µM 恰好处在 EcN 接收端激活窗口（≥50 µM），与 B12 共培养发光结果互相印证"
+      "1. 代入标曲再乘2倍稀释因子 → 直接算出原液浓度 14.65 mg/L (53.8 µM)",
+      "2. 两步换算 → (400-77.42)/44052.04 = 7.32 mg/L(进样液) → ×2 = 14.65 mg/L ÷ 272.25 = 53.8 µM",
+      "3. 生物学意义 → 53.8 µM超过EcN接收菌50 µM激活阈值(B11)"
     ]
   },
   {
@@ -2250,30 +2250,30 @@
     "slide_img": "",
     "q_zh": "你们证明了自己的工程菌分泌 DspB 吗？B18 页的证据边界具体指什么？",
     "q_en": "Did you show that your engineered strain secretes active DspB? What is the exact evidence boundary on Slide B18?",
-    "a_zh": "我们已分别完成了“DspB 酶学破膜有效性验证”与“目标宿主 ATCC 12228 的基因构建转入”，而工程菌上清液的直接蛋白检出是紧接着的下一步实验。目前确立了三项扎实证据：(1) 克隆的 Sec/SPII–DspB–6xHis 经 Sanger 测序达到 965/971 碱基匹配（99% 一致，B6）；(2) 质粒已通过 RN4220 成功转入最终底盘表皮葡萄球菌 ATCC 12228 并完成菌落 PCR 确证（B5）；(3) 商业化 DspB 在 18 h 内可清除 >84% 的成熟金葡菌生物膜（B13）。为了将底盘表达与破膜表型直接闭环，下一步我们将超滤浓缩 ATCC 12228 培养上清，开展 Anti-His Western blot 印迹检测与条件培养基破膜活性实验。",
-    "a_en": "We validated the enzymatic biofilm clearance and the genetic construct in the final host separately, while direct protein detection in the *S. epidermidis* supernatant is our next experimental step. Specifically, we established three facts: first, cloned Sec/SPII–DspB–6xHis matches the reference across 965 of 971 bases (99% identity, B6); second, the plasmid was passaged through RN4220 into *S. epidermidis* ATCC 12228 and confirmed by colony PCR (B5); third, commercial DspB removes over 84% of mature *S. aureus* biofilm in 18 hours (B13). To bridge the genetic construct and the enzymatic readout directly, our immediate next step is to concentrate the ATCC 12228 culture supernatant for an anti-His Western blot and a conditioned-medium crystal violet biofilm assay.",
+    "a_zh": "表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在推进转化实验，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。截至 Wiki freeze，我们已确立三项实验证据：克隆的 `Sec/SPII–DspB–6xHis` 经 Sanger 测序达 965/971 bp 匹配（99% 一致，B6 页），组成型 `pBUS1–Pcap–DspB` 已通过 RN4220 转入表葡 ATCC 12228 并经菌落 PCR 验证（B5 页），且纯酶 DspB 在 18 h 内清除了 >84% 的成熟金葡菌生物膜（B13 页）。待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接收集培养上清开展 Anti-His Western blot 与结晶紫生物膜清除活性测定。",
+    "a_en": "*S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on it continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced. Up to Wiki freeze, we established three pieces of evidence: cloned `Sec/SPII–DspB–6xHis` matches the reference across 965/971 bp by Sanger sequencing (99% identity, Slide B6), constitutive `pBUS1–Pcap–DspB` was passaged through RN4220 into *S. epidermidis* ATCC 12228 and verified by colony PCR (Slide B5), and purified DspB clears >84% of mature *S. aureus* biofilm over 18 hours (Slide B13). Once sequencing of our Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will assay conditioned supernatant directly for extracellular DspB by anti-His Western blot and crystal violet biofilm clearance.",
     "extra_zh": "",
     "followups": [],
-    "keywords": "DspB secretion evidence boundary B18 supernatant Western blot PNAG 工程菌分泌 证据边界 上清活性",
+    "keywords": "DspB secretion evidence boundary B18 supernatant Western blot PNAG 工程菌分泌 证据边界 上清活性 M10 M27 Wiki freeze colonies sequencing 转化平板 菌落测序",
     "points_en": [
-      "1. [Direct Conclusion] We validated the enzymatic biofilm clearance and the genetic construct in the final host separately, while direct protein detection in the *S. epidermidis* supernatant is our next experimental step.",
-      "2. [Experimental Evidence] Specifically, we established three facts: first, cloned Sec/SPII–DspB–6xHis matches the reference across 965 of 971 bases (99% identity, B6); second, the plasmid was passaged through RN4220 into *S. epidermidis* ATCC 12228 and confirmed by colony PCR (B5); third, commercial DspB removes over 84% of mature *S. aureus* biofilm in 18 hours (B13).",
-      "3. [Boundary & Next Step] To bridge the genetic construct and the enzymatic readout directly, our immediate next step is to concentrate the ATCC 12228 culture supernatant for an anti-His Western blot and a conditioned-medium crystal violet biofilm assay."
+      "1. [Direct Conclusion] *S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on it continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.",
+      "2. [Experimental Evidence] Up to Wiki freeze, we established three pieces of evidence: cloned `Sec/SPII–DspB–6xHis` matches the reference across 965/971 bp by Sanger sequencing (99% identity, Slide B6), constitutive `pBUS1–Pcap–DspB` was passaged through RN4220 into *S. epidermidis* ATCC 12228 and verified by colony PCR (Slide B5), and purified DspB clears >84% of mature *S. aureus* biofilm over 18 hours (Slide B13).",
+      "3. [Boundary & Next Step] Once sequencing of our Wiki-freeze *S. epidermidis* colonies confirms the transformants, we will assay conditioned supernatant directly for extracellular DspB by anti-His Western blot and crystal violet biofilm clearance."
     ],
     "points_zh": [
-      "1. 【核心结论】我们已分别完成了“DspB 酶学破膜有效性验证”与“目标宿主 ATCC 12228 的基因构建转入”，而工程菌上清液的直接蛋白检出是紧接着的下一步实验。",
-      "2. 【实验证据与数据】目前确立了三项扎实证据：(1) 克隆的 Sec/SPII–DspB–6xHis 经 Sanger 测序达到 965/971 碱基匹配（99% 一致，B6）；(2) 质粒已通过 RN4220 成功转入最终底盘表皮葡萄球菌 ATCC 12228 并完成菌落 PCR 确证（B5）；(3) 商业化 DspB 在 18 h 内可清除 >84% 的成熟金葡菌生物膜（B13）。",
-      "3. 【边界与下一步】为了将底盘表达与破膜表型直接闭环，下一步我们将超滤浓缩 ATCC 12228 培养上清，开展 Anti-His Western blot 印迹检测与条件培养基破膜活性实验。"
+      "1. 【核心结论】表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在推进转化实验，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。",
+      "2. 【实验证据与数据】截至 Wiki freeze，我们已确立三项实验证据：克隆的 `Sec/SPII–DspB–6xHis` 经 Sanger 测序达 965/971 bp 匹配（99% 一致，B6 页），组成型 `pBUS1–Pcap–DspB` 已通过 RN4220 转入表葡 ATCC 12228 并经菌落 PCR 验证（B5 页），且纯酶 DspB 在 18 h 内清除了 >84% 的成熟金葡菌生物膜（B13 页）。",
+      "3. 【边界与下一步】待 Wiki freeze 转化平板上的表葡菌落测序确认后，我们将直接收集培养上清开展 Anti-His Western blot 与结晶紫生物膜清除活性测定。"
     ],
     "notes": [
-      "1. 证据分界清晰 → 已完成“酶学破膜验证 + 最终宿主基因转入”，待测“工程菌上清分泌蛋白”",
-      "2. 已确立三项证据 → Sanger 测序 965/971 (B6) + 转入 ATCC 12228 菌落 PCR (B5) + 纯酶 18h 破膜 >84% (B13)",
-      "3. 下一步闭环实验 → 超滤浓缩 ATCC 12228 上清 → Anti-His Western blot + 上清液结晶紫破膜测试"
+      "1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze平板长出菌落、正在测序",
+      "2. 已确立三项证据 → 测序965/971匹配(B6) + RN4220中转入ATCC 12228(B5) + 纯酶18h除膜>84%(B13)",
+      "3. 待Wiki freeze菌落测序确认 → 直接测表葡上清Western blot与结晶紫破膜活性"
     ],
     "notes_zh": [
-      "1. 证据分界清晰 → 已完成“酶学破膜验证 + 最终宿主基因转入”，待测“工程菌上清分泌蛋白”",
-      "2. 已确立三项证据 → Sanger 测序 965/971 (B6) + 转入 ATCC 12228 菌落 PCR (B5) + 纯酶 18h 破膜 >84% (B13)",
-      "3. 下一步闭环实验 → 超滤浓缩 ATCC 12228 上清 → Anti-His Western blot + 上清液结晶紫破膜测试"
+      "1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze平板长出菌落、正在测序",
+      "2. 已确立三项证据 → 测序965/971匹配(B6) + RN4220中转入ATCC 12228(B5) + 纯酶18h除膜>84%(B13)",
+      "3. 待Wiki freeze菌落测序确认 → 直接测表葡上清Western blot与结晶紫破膜活性"
     ]
   },
   {
@@ -2364,30 +2364,30 @@
     "slide_img": "",
     "q_zh": "AIP 诱导型 DspB 目前做到哪一步了？为什么要用 AIP 诱导而不是直接组成型表达 DspB？",
     "q_en": "What is the current status of AIP-inducible DspB on Slide B19, and why use AIP induction instead of constitutive DspB?",
-    "a_zh": "我们采用“双轨并行”策略：用组成型 `pBUS1–Pcap–DspB` 快速表征酶表达，用 AIP 诱导型 `pLI50–AgrCA–P2/P3–DspB` 实现仅在金葡菌感染时按需破膜。上游 `AgrCA–P2/P3` 传感器已于 2025 年通过 GFP 验证了 AIP 响应功能；今年我们将其下游替换为 `Sec/SPII–DspB` 并完成了测序确证。目前组成型质粒已成功转入 ATCC 12228，而分子量更大的 `pLI50` 诱导型质粒正在攻克 ATCC 12228 的限制修饰屏障。AIP 诱导门控可避免无感染时的持续代谢负担与共生菌基质干扰；在诱导型菌株完成电转的同时，已转入宿主的组成型菌株可直接作为阳性对照推进上清活性测试。",
-    "a_en": "We use constitutive pBUS1–Pcap–DspB to characterize enzyme expression and AIP-inducible pLI50–AgrCA–P2/P3–DspB to restrict biofilm dispersal specifically to *S. aureus* infection sites. The upstream AgrCA–P2/P3 sensor was functionally validated with GFP by our 2025 team, and this year we replaced GFP with Sec/SPII–DspB and confirmed the full sequence; while pBUS1–Pcap–DspB is already inside *S. epidermidis* ATCC 12228, the larger pLI50–AgrCA–P2/P3–DspB plasmid is currently being passaged across the ATCC 12228 restriction barrier. Tying DspB to AIP prevents unnecessary metabolic burden when no pathogen is present, while the completed constitutive construct serves as our immediate positive control for downstream secretion assays.",
+    "a_zh": "表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在推进这项转化，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。我们并行构建了组成型 `pBUS1–Pcap–DspB`（已通过 RN4220 转入 ATCC 12228 并完成菌落 PCR 验证，B5 页）以建立表葡分泌基线，以及 `pLI50–AgrCA–P2/P3–DspB`（B18–B19 页）以实现金葡菌群体感应信号 AIP 特异性诱导表达。待 Wiki freeze 转化平板上的菌落测序完成后，我们将立即对比未诱导与 AIP 诱导下表皮葡萄球菌上清的结晶紫生物膜清除活性。",
+    "a_en": "*S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced. We designed constitutive `pBUS1–Pcap–DspB` to establish baseline DspB secretion in *S. epidermidis* ATCC 12228 (verified by colony PCR after RN4220 passage, Slide B5) and built `pLI50–AgrCA–P2/P3–DspB` so DspB expression responds specifically to *S. aureus* quorum-sensing AIP (Slides B18–B19). As soon as sequencing of the Wiki-freeze transformation plate colonies is completed, we will compare uninduced versus AIP-stimulated *S. epidermidis* supernatants in crystal violet biofilm dispersal assays.",
     "extra_zh": "",
     "followups": [],
-    "keywords": "AIP induction constitutive Pcap AgrCA P2P3 ATCC 12228 restriction barrier B5 B19 组成型 诱导型 转化瓶颈",
+    "keywords": "AIP induction constitutive Pcap AgrCA P2P3 ATCC 12228 restriction barrier B5 B19 组成型 诱导型 转化瓶颈 M27 Wiki freeze colonies sequencing 转化平板 菌落测序",
     "points_en": [
-      "1. [Direct Conclusion] We use constitutive pBUS1–Pcap–DspB to characterize enzyme expression and AIP-inducible pLI50–AgrCA–P2/P3–DspB to restrict biofilm dispersal specifically to *S. aureus* infection sites.",
-      "2. [Experimental Evidence] The upstream AgrCA–P2/P3 sensor was functionally validated with GFP by our 2025 team, and this year we replaced GFP with Sec/SPII–DspB and confirmed the full sequence; while pBUS1–Pcap–DspB is already inside *S. epidermidis* ATCC 12228, the larger pLI50–AgrCA–P2/P3–DspB plasmid is currently being passaged across the ATCC 12228 restriction barrier.",
-      "3. [Boundary & Next Step] Tying DspB to AIP prevents unnecessary metabolic burden when no pathogen is present, while the completed constitutive construct serves as our immediate positive control for downstream secretion assays."
+      "1. [Direct Conclusion] *S. epidermidis* is much harder to engineer than *E. coli* and plasmids are difficult to transform into it; we have been working on that transformation continuously, and right at Wiki freeze colonies appeared on our transformation plates and are currently being sequenced.",
+      "2. [Experimental Evidence] We designed constitutive `pBUS1–Pcap–DspB` to establish baseline DspB secretion in *S. epidermidis* ATCC 12228 (verified by colony PCR after RN4220 passage, Slide B5) and built `pLI50–AgrCA–P2/P3–DspB` so DspB expression responds specifically to *S. aureus* quorum-sensing AIP (Slides B18–B19).",
+      "3. [Boundary & Next Step] As soon as sequencing of the Wiki-freeze transformation plate colonies is completed, we will compare uninduced versus AIP-stimulated *S. epidermidis* supernatants in crystal violet biofilm dispersal assays."
     ],
     "points_zh": [
-      "1. 【核心结论】我们采用“双轨并行”策略：用组成型 `pBUS1–Pcap–DspB` 快速表征酶表达，用 AIP 诱导型 `pLI50–AgrCA–P2/P3–DspB` 实现仅在金葡菌感染时按需破膜。",
-      "2. 【实验证据与数据】上游 `AgrCA–P2/P3` 传感器已于 2025 年通过 GFP 验证了 AIP 响应功能；今年我们将其下游替换为 `Sec/SPII–DspB` 并完成了测序确证。目前组成型质粒已成功转入 ATCC 12228，而分子量更大的 `pLI50` 诱导型质粒正在攻克 ATCC 12228 的限制修饰屏障。",
-      "3. 【边界与下一步】AIP 诱导门控可避免无感染时的持续代谢负担与共生菌基质干扰；在诱导型菌株完成电转的同时，已转入宿主的组成型菌株可直接作为阳性对照推进上清活性测试。"
+      "1. 【核心结论】表皮葡萄球菌比大肠杆菌更难改造，质粒难以转化；我们一直在推进这项转化，在 Wiki freeze 时转化平板上已经长出菌落，目前正在测序验证。",
+      "2. 【实验证据与数据】我们并行构建了组成型 `pBUS1–Pcap–DspB`（已通过 RN4220 转入 ATCC 12228 并完成菌落 PCR 验证，B5 页）以建立表葡分泌基线，以及 `pLI50–AgrCA–P2/P3–DspB`（B18–B19 页）以实现金葡菌群体感应信号 AIP 特异性诱导表达。",
+      "3. 【边界与下一步】待 Wiki freeze 转化平板上的菌落测序完成后，我们将立即对比未诱导与 AIP 诱导下表皮葡萄球菌上清的结晶紫生物膜清除活性。"
     ],
     "notes": [
-      "1. 双构建体分工 → 组成型 Pcap-DspB（验证表达与活性基准）+ 诱导型 P2/P3-DspB（按需精准开启）",
-      "2. 当前实验进展 → 2025 已验证 AgrCA-P2/P3 传感 + 2026 完成 DspB 替换测序 + 组成型已入 ATCC 12228",
-      "3. 攻克转化瓶颈 → 正通过 RN4220 去甲基化与电转优化将 pLI50 大质粒导入 ATCC 12228"
+      "1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze平板已出菌落、正在测序",
+      "2. 双质粒策略 → pBUS1–Pcap–DspB建分泌基线(B5已转入) + pLI50–AgrCA–P2/P3–DspB做AIP诱导(B18–B19)",
+      "3. 待Wiki freeze菌落测序完成 → 对比未诱导与AIP刺激下表葡上清破膜活性"
     ],
     "notes_zh": [
-      "1. 双构建体分工 → 组成型 Pcap-DspB（验证表达与活性基准）+ 诱导型 P2/P3-DspB（按需精准开启）",
-      "2. 当前实验进展 → 2025 已验证 AgrCA-P2/P3 传感 + 2026 完成 DspB 替换测序 + 组成型已入 ATCC 12228",
-      "3. 攻克转化瓶颈 → 正通过 RN4220 去甲基化与电转优化将 pLI50 大质粒导入 ATCC 12228"
+      "1. 表葡更难改造、质粒难转化 → 一直在做 → Wiki freeze平板已出菌落、正在测序",
+      "2. 双质粒策略 → pBUS1–Pcap–DspB建分泌基线(B5已转入) + pLI50–AgrCA–P2/P3–DspB做AIP诱导(B18–B19)",
+      "3. 待Wiki freeze菌落测序完成 → 对比未诱导与AIP刺激下表葡上清破膜活性"
     ]
   },
   {
@@ -2560,33 +2560,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-14.jpg",
     "q_zh": "图中的误差棒和阴影代表几次独立生物学重复？拟合曲线峰值时间有多大把握？",
     "q_en": "How many independent observations does an error bar represent? How much confidence should we place in the dashed curves and peak times?",
-    "a_zh": "各图的样本量与统计定义如下：- **B11 页（EcN 接收端曲线）**：每个条件包含 $n = 3$ 个独立生物学培养物（每个培养物取 2 个技术复孔均值），误差棒代表 3 个独立培养物之间的标准差（SD）。0、50 和 100 µM 组采用虚线绘制，是因为低浓度下响应幅值较低、24 小时内尚未进入明显的饱和平台期；而 200 和 400 µM 组则呈现约束良好的 S 型动力学曲线。- **B15 页（LSp222 裂菌曲线）**：每组误差棒代表 $n = 3$ 个平行实验孔的标准差。- **B7 与 B8 页（表皮葡萄球菌 hemin 实验）**：曲线拟合自两个平行孔（$n = 2$）的均值，因此我们在汇报 B7 峰值时间时统一表述为“约 1.7 小时”，不过度解读小数点后第二位。",
-    "a_en": "Let me break that down by figure: - On **Slide B11 (EcN receiver)**, each data point represents $n = 3$ independent biological cultures (each averaged across 2 technical duplicate wells), and error bars show the standard deviation across the 3 biological replicates. We plotted the 0, 50, and 100 µM kinetic fits as dashed curves because their lower amplitudes don't reach a sharp saturation plateau within 24 hours, whereas 200 and 400 µM show well-constrained sigmoidal fits. - On **Slide B15 (LSp222 lysis)**, error bars represent $n = 3$ replicate wells per group. - On **Slide B7 and B8 (*S. epidermidis* hemin assays)**, curves are fitted to duplicate wells ($n = 2$), which is why we report the peak time on B7 as \"about 1.7 hours\" rather than over-interpreting the second decimal place.",
+    "a_zh": "我们所有定量动力学图表中的误差线与置信带均代表每个条件 $n = 3$ 个独立生物学重复。具体而言，表葡与金葡的 `HmSr` 血红素传感动力学与生长曲线（B7–B8 页）、*EcN* 的 `NrSr` 柚皮素剂量响应曲线（B11 页）、6/12/18 小时结晶紫生物膜清除实验（B13 页）以及 `LSp222` 裂解动力学曲线（B15–B16 页）均采用 3 个生物学重复（$n = 3$，展示均值 $\\pm$ 标准差或 95% 置信带）。相比之下，首轮 HPLC 发酵检测（B9 页）与共培养显微成像（B12 页）属于单次概念验证筛选（$n = 1$），下一步我们将扩展至 $n = 3$ 生物学重复并配合 LC-MS/MS 与流式细胞术定量。",
+    "a_en": "Every error bar and confidence band in our quantitative kinetics plots represents $n = 3$ independent biological replicates per condition. Specifically, `HmSr` heme-sensing kinetics and growth curves in *S. epidermidis* and *S. aureus* (Slides B7–B8), `NrSr` naringenin dose-response curves in *EcN* (Slide B11), crystal violet biofilm dispersal at 6, 12, and 18 hours (Slide B13), and `LSp222` lytic time-courses (Slides B15–B16) were all run with three biological replicates ($n = 3$, plotted as mean $\\pm$ SD or 95% confidence band). In contrast, our single-point HPLC fermentation screen (Slide B9) and initial co-culture micrographs (Slide B12) were qualitative/semi-quantitative feasibility checks ($n = 1$), which we will expand to $n = 3$ biological replicates with LC-MS/MS and flow cytometry.",
     "extra_zh": "",
     "followups": [],
     "keywords": "error bars n=3 biological vs technical replicates dashed curve plateau 1.72h 误差棒 几个独立样本 虚线平台 生物学重复",
     "points_en": [
-      "1. [Direct Conclusion] Let me break that down by figure:",
-      "2. - On **Slide B11 (EcN receiver)**, each data point represents $n = 3$ independent biological cultures (each averaged across 2 technical duplicate wells), and error bars show the standard deviation across the 3 biological replicates.",
-      "3. [Evidence & Scope] We plotted the 0, 50, and 100 µM kinetic fits as dashed curves because their lower amplitudes don't reach a sharp saturation plateau within 24 hours, whereas 200 and 400 µM show well-constrained sigmoidal fits.",
-      "4. - On **Slide B15 (LSp222 lysis)**, error bars represent $n = 3$ replicate wells per group.",
-      "5. - On **Slide B7 and B8 (*S. epidermidis* hemin assays)**, curves are fitted to duplicate wells ($n = 2$), which is why we report the peak time on B7 as \"about 1.7 hours\" rather than over-interpreting the second decimal place."
+      "1. [Direct Conclusion] Every error bar and confidence band in our quantitative kinetics plots represents $n = 3$ independent biological replicates per condition.",
+      "2. [Experimental Evidence] Specifically, `HmSr` heme-sensing kinetics and growth curves in *S. epidermidis* and *S. aureus* (Slides B7–B8), `NrSr` naringenin dose-response curves in *EcN* (Slide B11), crystal violet biofilm dispersal at 6, 12, and 18 hours (Slide B13), and `LSp222` lytic time-courses (Slides B15–B16) were all run with three biological replicates ($n = 3$, plotted as mean $\\pm$ SD or 95% confidence band).",
+      "3. [Boundary & Next Step] In contrast, our single-point HPLC fermentation screen (Slide B9) and initial co-culture micrographs (Slide B12) were qualitative/semi-quantitative feasibility checks ($n = 1$), which we will expand to $n = 3$ biological replicates with LC-MS/MS and flow cytometry."
     ],
     "points_zh": [
-      "1. 【核心结论】各图的样本量与统计定义如下：",
-      "2. - **B11 页（EcN 接收端曲线）**：每个条件包含 $n = 3$ 个独立生物学培养物（每个培养物取 2 个技术复孔均值），误差棒代表 3 个独立培养物之间的标准差（SD）。",
-      "3. 【实验证据与数据】0、50 和 100 µM 组采用虚线绘制，是因为低浓度下响应幅值较低、24 小时内尚未进入明显的饱和平台期；而 200 和 400 µM 组则呈现约束良好的 S 型动力学曲线。- **B15 页（LSp222 裂菌曲线）**：每组误差棒代表 $n = 3$ 个平行实验孔的标准差。",
-      "4. 【边界与下一步】- **B7 与 B8 页（表皮葡萄球菌 hemin 实验）**：曲线拟合自两个平行孔（$n = 2$）的均值，因此我们在汇报 B7 峰值时间时统一表述为“约 1.7 小时”，不过度解读小数点后第二位。"
+      "1. 【核心结论】我们所有定量动力学图表中的误差线与置信带均代表每个条件 $n = 3$ 个独立生物学重复。",
+      "2. 【实验证据与数据】具体而言，表葡与金葡的 `HmSr` 血红素传感动力学与生长曲线（B7–B8 页）、*EcN* 的 `NrSr` 柚皮素剂量响应曲线（B11 页）、6/12/18 小时结晶紫生物膜清除实验（B13 页）以及 `LSp222` 裂解动力学曲线（B15–B16 页）均采用 3 个生物学重复（$n = 3$，展示均值 $\\pm$ 标准差或 95% 置信带）。",
+      "3. 【边界与下一步】相比之下，首轮 HPLC 发酵检测（B9 页）与共培养显微成像（B12 页）属于单次概念验证筛选（$n = 1$），下一步我们将扩展至 $n = 3$ 生物学重复并配合 LC-MS/MS 与流式细胞术定量。"
     ],
     "notes": [
-      "B11 (EcN dose curve): `n = 3` independent biological cultures (each averaging 2 technical wells), error bars = SD",
-      "Dashed curves (0/50/100 µM on B11): Empirical trend lines where 24 h data has not reached a hard saturation plateau",
-      "Other slides: B7 `1.72 h` = fitted peak (~1.7 h) | B15 = `3 wells/group` | B8 = `2 wells` + 95% CI band"
+      "1. 所有定量动力学误差线与置信带均代表 n = 3 独立生物学重复",
+      "2. n=3 实验涵盖 → B7–B8血红素传感与生长、B11柚皮素响应、B13结晶紫破膜、B15–B16裂解曲线",
+      "3. B9液相单点与B12显微成像为首轮验证(n=1) → 下一步扩展至n=3并测LC-MS/MS与流式"
     ],
     "notes_zh": [
-      "1. 完整四条回路（B1）：表皮葡萄球菌 2 条 + 大肠杆菌 EcN 2 条",
-      "2. 表皮葡萄球菌：① P2P3–DspB（AIP → AgrC/AgrA → P2/P3 → 分泌 DspB 破膜） ② HmSr–Nr（Heme → HssS/HssR → pHrtBA → At4CL–PhCHS–CmCHI 产柚皮素）",
-      "3. EcN 接收端：NrSr（柚皮素 → FdeR / PfdeAR）→ 分别驱动 PelB–LSp222–6×His（杀菌）与 PelB–hEGF–6×His（修复）"
+      "1. 所有定量动力学误差线与置信带均代表 n = 3 独立生物学重复",
+      "2. n=3 实验涵盖 → B7–B8血红素传感与生长、B11柚皮素响应、B13结晶紫破膜、B15–B16裂解曲线",
+      "3. B9液相单点与B12显微成像为首轮验证(n=1) → 下一步扩展至n=3并测LC-MS/MS与流式"
     ]
   },
   {
@@ -2720,30 +2717,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-14.jpg",
     "q_zh": "接收菌在 0 µM 柚皮素下也有基底荧光，会导致治疗蛋白在无信号时泄漏释放吗？",
     "q_en": "The receiver fluoresces even at 0 µM. Could it release a therapeutic protein without the signal?",
-    "a_zh": "这是一个非常关键的工程优化点。在 B11 页 0 µM 对照曲线中确实能看到一定的基础泄漏表达，一方面是因为 `sfGFP` 蛋白稳定性极高，在多拷贝质粒上培养 24 小时后会逐步累积。在治疗场景下，微量的基础 hEGF 对创面修复是温和有益的，且 LSp222 选择性针对金葡菌而不作用于人体细胞；但为了进一步收紧开关、降低未诱导泄漏，下一步我们可以通过调低 `LSp222` 上游的 RBS 强度或将 `NrSr` 回路转移至低拷贝质粒骨架来拓宽安全窗口。",
-    "a_en": "That is an important engineering point. We do see some basal promoter leakiness in the 0 µM `NrSr–sfGFP` curve on Slide B11, largely because sfGFP is a very stable protein that accumulates over 24 hours on a multi-copy plasmid. In a therapeutic context, low-level baseline expression of hEGF is benign for wound repair, and LSp222 selectively targets *S. aureus* rather than human cells; however, to tighten the switch and minimize leaky expression, we can tune down the RBS strength upstream of LSp222 or move the `NrSr` circuit onto a lower-copy backbone.",
+    "a_zh": "是的——`PfdeAR` 在 0 µM 柚皮素下存在一定本底泄漏表达，因此我们在系统层面设置了上游双重门控（AIP 破膜 + 血红素传感），并可通过 RBS 与启动子工程进一步收紧本底。在 B11 页中，尽管 0 µM 组在 24 h 内存在本底荧光漂移，但 50–400 µM 柚皮素仍能驱动显著高于本底的梯度激活（24 h 原始 RFU 从 0 µM 的 17.78 升至 400 µM 的 28.61）。为在最终 *EcN* 治疗菌株中抑制本底释放，我们可调弱 `LSp222`/`hEGF` 上游的 RBS 强度或引入 sRNA/降解标签，确保仅在 >=50 µM 柚皮素诱导下才跨过表型输出阈值。",
+    "a_en": "Yes—`PfdeAR` shows baseline leaky expression at 0 µM naringenin, which is why our system adds two upstream safety gates (`AIP` biofilm dispersal and `heme` sensing) and can be tightened via RBS/FdeR promoter engineering. On Slide B11, although 0 µM naringenin exhibits basal fluorescence drift over 24 hours, concentrations of 50–400 µM naringenin drive a clear, graded increase above that baseline (raw RFU rising from 17.78 at 0 µM to 28.61 at 400 µM at 24 h). To suppress basal therapeutic release in the final *EcN* construct, we can weaken the ribosome binding site (RBS) upstream of `LSp222`/`hEGF` or incorporate a small RNA / SSRAs degradation tag so only induced >=50 µM naringenin levels cross the phenotypic threshold.",
     "extra_zh": "",
     "followups": [],
     "keywords": "0 uM basal leakage FdeR PfdeAR therapeutic protein premature lysis RBS tuning 基底泄漏 没有信号也输出 0uM发绿 毒性",
     "points_en": [
-      "1. [Direct Conclusion] That is an important engineering point.",
-      "2. [Experimental Evidence] We do see some basal promoter leakiness in the 0 µM `NrSr–sfGFP` curve on Slide B11, largely because sfGFP is a very stable protein that accumulates over 24 hours on a multi-copy plasmid.",
-      "3. [Boundary & Next Step] In a therapeutic context, low-level baseline expression of hEGF is benign for wound repair, and LSp222 selectively targets *S. aureus* rather than human cells; however, to tighten the switch and minimize leaky expression, we can tune down the RBS strength upstream of LSp222 or move the `NrSr` circuit onto a lower-copy backbone."
+      "1. [Direct Conclusion] Yes—`PfdeAR` shows baseline leaky expression at 0 µM naringenin, which is why our system adds two upstream safety gates (`AIP` biofilm dispersal and `heme` sensing) and can be tightened via RBS/FdeR promoter engineering.",
+      "2. [Experimental Evidence] On Slide B11, although 0 µM naringenin exhibits basal fluorescence drift over 24 hours, concentrations of 50–400 µM naringenin drive a clear, graded increase above that baseline (raw RFU rising from 17.78 at 0 µM to 28.61 at 400 µM at 24 h).",
+      "3. [Boundary & Next Step] To suppress basal therapeutic release in the final *EcN* construct, we can weaken the ribosome binding site (RBS) upstream of `LSp222`/`hEGF` or incorporate a small RNA / SSRAs degradation tag so only induced >=50 µM naringenin levels cross the phenotypic threshold."
     ],
     "points_zh": [
-      "1. 【核心结论】这是一个非常关键的工程优化点。",
-      "2. 【实验证据与数据】在 B11 页 0 µM 对照曲线中确实能看到一定的基础泄漏表达，一方面是因为 `sfGFP` 蛋白稳定性极高，在多拷贝质粒上培养 24 小时后会逐步累积。在治疗场景下，微量的基础 hEGF 对创面修复是温和有益的，且 LSp222 选择性针对金葡菌而不作用于人体细胞；",
-      "3. 【边界与下一步】但为了进一步收紧开关、降低未诱导泄漏，下一步我们可以通过调低 `LSp222` 上游的 RBS 强度或将 `NrSr` 回路转移至低拷贝质粒骨架来拓宽安全窗口。"
+      "1. 【核心结论】是的——`PfdeAR` 在 0 µM 柚皮素下存在一定本底泄漏表达，因此我们在系统层面设置了上游双重门控（AIP 破膜 + 血红素传感），并可通过 RBS 与启动子工程进一步收紧本底。",
+      "2. 【实验证据与数据】在 B11 页中，尽管 0 µM 组在 24 h 内存在本底荧光漂移，但 50–400 µM 柚皮素仍能驱动显著高于本底的梯度激活（24 h 原始 RFU 从 0 µM 的 17.78 升至 400 µM 的 28.61）。",
+      "3. 【边界与下一步】为在最终 *EcN* 治疗菌株中抑制本底释放，我们可调弱 `LSp222`/`hEGF` 上游的 RBS 强度或引入 sRNA/降解标签，确保仅在 >=50 µM 柚皮素诱导下才跨过表型输出阈值。"
     ],
     "notes": [
-      "Cause of 0 µM green signal: Unliganded FdeR basal leakiness + High stability of sfGFP accumulating over 24 h (FdeR微漏+GFP稳定累积)",
-      "Risk with therapeutics: Premature LSp222 lysis or off-target hEGF release if uncalibrated",
-      "3 Solutions: 1) Weaker RBS library tuning | 2) C-terminal `ssrA` degradation tag on LSp222 | 3) Hydrogel containment"
+      "1. 存在0 µM本底泄漏 → 靠上游AIP+血红素双重门控及RBS/启动子优化收紧",
+      "2. B11数据显示 → 50–400 µM仍具显著梯度激活(24h原始RFU从17.78升至28.61)",
+      "3. 抑制本底工程手段 → 调弱LSp222/hEGF上游RBS或加降解标签，抬高表型激活门槛"
     ],
     "notes_zh": [
-      "1. 相对选择性成立：金葡菌与表皮葡萄球菌在完全相同的裂解液剂量与温度下平行测试（30 min 内金葡菌下降 61% vs 表皮葡萄球菌 25%）",
-      "2. TBS 对照漂移分析：表皮葡萄球菌 TBS 空白对照自身即有 ~23% 沉降漂移，而加酶组为 25%（净裂解不到 3%）",
-      "3. 结论强化：扣除各自 TBS 背景漂移后，LSp222 对金葡菌的净裂解率（~55–60%）远高于表皮葡萄球菌（<3%），选择性更加突出"
+      "1. 存在0 µM本底泄漏 → 靠上游AIP+血红素双重门控及RBS/启动子优化收紧",
+      "2. B11数据显示 → 50–400 µM仍具显著梯度激活(24h原始RFU从17.78升至28.61)",
+      "3. 抑制本底工程手段 → 调弱LSp222/hEGF上游RBS或加降解标签，抬高表型激活门槛"
     ]
   },
   {
@@ -2762,32 +2759,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-01.jpg",
     "q_zh": "破除生物膜真的能让血红素更容易被感知吗？如何区分感染创面与普通流血伤口？",
     "q_en": "Did biofilm removal actually make heme more accessible? How would you distinguish an infected wound from an ordinary bleeding wound?",
-    "a_zh": "这正是我们在设计上引入 **AIP 与血红素（heme）双输入协同机制**的原因：**致病菌特异性来自 AIP 支路**：只有当创面存在金黄色葡萄球菌感染并分泌群体感应肽 AIP 时，才会触发 `P2P3–DspB` 分泌破膜酶；普通无菌出血创面没有金葡菌 AIP，破膜支路不会启动。2. **破膜如何促进血红素感知**：在慢性金葡菌感染创面中，致密的 PNAG 生物膜既是物理扩散屏障，又会截留铁与血红素，而金葡菌分泌的溶血素会裂解红细胞释放血红素。我们的反应–扩散模型表明，降解生物膜有助于信号分子跨越创面界面传输；湿实验中我们也已分别验证了 84% 生物膜清除（B13）与微摩尔级血红素感知（B7）这两个关键环节。",
-    "a_en": "That is why our design uses two distinct sensory inputs, AIP and heme, working together:  **Pathogen specificity comes from AIP**: *S. aureus* quorum-sensing peptide AIP is what triggers `P2P3–DspB` to disperse the biofilm. An uninfected wound has no *S. aureus* AIP, so the biofilm-disruption module stays off. 2. **How biofilm dispersal affects heme**: In a chronic *S. aureus* wound, the dense PNAG biofilm acts as a physical barrier and sequesters iron/heme, while *S. aureus* hemolysins lyse red blood cells to release free heme. Our reaction-diffusion model shows that dispersing the biofilm facilitates signal transport across the wound interface, and our wet-lab assays validated the two steps individually (84% biofilm clearance on B13 and micromolar hemin sensing on B7).",
+    "a_zh": "我们没有在单一耦合实验中直接测定破膜引发的血红素释放；在我们的设计中，AIP 触发的生物膜清除（回路 1）与血红素触发的柚皮素合成（回路 2）是响应创面微环境的两个并行传感模块。在慢性金葡菌创面感染中，高密度细菌产生 AIP，而毛细血管微出血与溶血在渗出液中提供游离血红素；我们已分别独立验证了 DspB 破膜（>84%，B13 页）与血红素传感（1–2.5 µM 达峰，B7 页）。若要验证破膜是否进一步提高局部血红素可及性，可将血平板上培养的金葡菌生物膜与 DspB 共孵育，同步测定上清血红素吸光度与表葡 `HmSr` 荧光响应。",
+    "a_en": "We did not directly measure heme release caused by biofilm dispersal in a single coupled assay; instead, AIP-triggered biofilm clearance (`Circuit 1`) and heme-triggered naringenin synthesis (`Circuit 2`) operate as two parallel microenvironmental sensors in the wound. In chronic *S. aureus* wound infections, high bacterial density supplies AIP while capillary micro-bleeding and hemolysis supply free heme in the exudate; we validated DspB biofilm removal (>84%, Slide B13) and hemin sensing (1–2.5 µM peak response, Slide B7) independently. To test whether biofilm dispersal further increases local heme availability, we can co-incubate *S. aureus* biofilms grown on blood agar with DspB and quantify released hemoglobin/heme spectrophotometrically alongside *S. epidermidis* `HmSr` fluorescence.",
     "extra_zh": "",
     "followups": [],
     "keywords": "biofilm dispersal heme mass transfer false positive bleeding wound AND gate AIP 破膜后血红素到达 普通出血 误触发 传质模型",
     "points_en": [
-      "1. [Direct Conclusion] That is why our design uses two distinct sensory inputs, AIP and heme, working together:",
-      "2. ",
-      "3. [Experimental Evidence] **Pathogen specificity comes from AIP**: *S. aureus* quorum-sensing peptide AIP is what triggers `P2P3–DspB` to disperse the biofilm. An uninfected wound has no *S. aureus* AIP, so the biofilm-disruption module stays off. 2. **How biofilm dispersal affects heme**: In a chronic *S. aureus* wound, the dense PNAG biofilm acts as a physical barrier and sequesters iron/heme, while *S. aureus* hemolysins lyse red blood cells to release free heme.",
-      "4. [Boundary & Next Step] Our reaction-diffusion model shows that dispersing the biofilm facilitates signal transport across the wound interface, and our wet-lab assays validated the two steps individually (84% biofilm clearance on B13 and micromolar hemin sensing on B7)."
+      "1. [Direct Conclusion] We did not directly measure heme release caused by biofilm dispersal in a single coupled assay; instead, AIP-triggered biofilm clearance (`Circuit 1`) and heme-triggered naringenin synthesis (`Circuit 2`) operate as two parallel microenvironmental sensors in the wound.",
+      "2. [Experimental Evidence] In chronic *S. aureus* wound infections, high bacterial density supplies AIP while capillary micro-bleeding and hemolysis supply free heme in the exudate; we validated DspB biofilm removal (>84%, Slide B13) and hemin sensing (1–2.5 µM peak response, Slide B7) independently.",
+      "3. [Boundary & Next Step] To test whether biofilm dispersal further increases local heme availability, we can co-incubate *S. aureus* biofilms grown on blood agar with DspB and quantify released hemoglobin/heme spectrophotometrically alongside *S. epidermidis* `HmSr` fluorescence."
     ],
     "points_zh": [
-      "1. 【核心结论】这正是我们在设计上引入 **AIP 与血红素（heme）双输入协同机制**的原因：",
-      "2. **致病菌特异性来自 AIP 支路**：只有当创面存在金黄色葡萄球菌感染并分泌群体感应肽 AIP 时，才会触发 `P2P3–DspB` 分泌破膜酶；",
-      "3. 【实验证据与数据】普通无菌出血创面没有金葡菌 AIP，破膜支路不会启动。2. **破膜如何促进血红素感知**：在慢性金葡菌感染创面中，致密的 PNAG 生物膜既是物理扩散屏障，又会截留铁与血红素，而金葡菌分泌的溶血素会裂解红细胞释放血红素。我们的反应–扩散模型表明，降解生物膜有助于信号分子跨越创面界面传输；",
-      "4. 【边界与下一步】湿实验中我们也已分别验证了 84% 生物膜清除（B13）与微摩尔级血红素感知（B7）这两个关键环节。"
+      "1. 【核心结论】我们没有在单一耦合实验中直接测定破膜引发的血红素释放；在我们的设计中，AIP 触发的生物膜清除（回路 1）与血红素触发的柚皮素合成（回路 2）是响应创面微环境的两个并行传感模块。",
+      "2. 【实验证据与数据】在慢性金葡菌创面感染中，高密度细菌产生 AIP，而毛细血管微出血与溶血在渗出液中提供游离血红素；我们已分别独立验证了 DspB 破膜（>84%，B13 页）与血红素传感（1–2.5 µM 达峰，B7 页）。",
+      "3. 【边界与下一步】若要验证破膜是否进一步提高局部血红素可及性，可将血平板上培养的金葡菌生物膜与 DspB 共孵育，同步测定上清血红素吸光度与表葡 `HmSr` 荧光响应。"
     ],
     "notes": [
-      "Signal division: AIP = Pathogen-specific S. aureus quorum signal | Heme = Wound bleeding/lysis cue",
-      "Linkage: PDE mass-transfer model (Wiki Model Sec 4) shows DspB biofilm dispersal accelerates inward heme transport",
-      "Preventing false positives in non-infected bleeding: Require AIP branch for DspB + Next step: Genetic AND-gate (`AIP + Heme`)"
+      "1. 未测破膜直接释放血红素 → 回路1(AIP破膜)与回路2(血红素传感)为创面并行双传感",
+      "2. 创面生理机制 → 高密度金葡产AIP + 创面微出血/溶血提供游离血红素（已分别在B13和B7独立验证）",
+      "3. 耦合验证方案 → 血平板金葡生物膜加DspB处理 → 同步测游离血红素与表葡HmSr荧光"
     ],
     "notes_zh": [
-      "1. 明确进展边界：目前已完成分模块验证与 BL21→EcN 跨菌共培养接力，尚未在单次实验中跑通表皮葡萄球菌→EcN 全链路",
-      "2. 已实测节点：商业 DspB 破膜（84%） | 表皮葡萄球菌血红素传感（1.7 h 达峰） | BL21 产柚皮素（53.8 µM）+ 激活 EcN 共培养 | LSp222 与 hEGF 表达",
-      "3. 剩余两步集成：① Nr 三酶簇转入表皮葡萄球菌 ② EcN 端将 sfGFP 替换为 LSp222 与 hEGF 进行共培养验证"
+      "1. 未测破膜直接释放血红素 → 回路1(AIP破膜)与回路2(血红素传感)为创面并行双传感",
+      "2. 创面生理机制 → 高密度金葡产AIP + 创面微出血/溶血提供游离血红素（已分别在B13和B7独立验证）",
+      "3. 耦合验证方案 → 血平板金葡生物膜加DspB处理 → 同步测游离血红素与表葡HmSr荧光"
     ]
   },
   {
@@ -2802,30 +2797,30 @@
     "slide_img": "realtime_qa_assets/slides/slide-16.jpg",
     "q_zh": "如何证明 8–15 kDa 的两条带确实是 PelB-hEGF 前体与成熟体，而非宿主杂蛋白？",
     "q_en": "How can you tell whether the two bands are precursor and processed hEGF rather than unrelated proteins of similar size?",
-    "a_zh": "我们有两条直接依据支持这两条带来自目标构建，并有明确的下一步定性手段：第一，`V1`、`V2` 是在完全相同 IPTG 诱导条件下处理的空载体 BL21 上清对照，在 8–15 kDa 区间完全没有这两条带，排除了 IPTG 诱导产生宿主背景杂带的可能；第二，两条带的迁移位置与根据序列严格计算的理论分子量高度吻合——上方 **11.10 kDa** 对应未切信号肽前体（`PelB–hEGF–6×His`），下方 **8.89 kDa** 对应切除 PelB 后的成熟蛋白（`hEGF–6×His`）。由于考马斯亮蓝 SDS-PAGE 仅按分子量分离，下一步我们将通过 **Anti-His Western blot**（及 N 端测序）直接确认两条带均带有 C 端 6×His 标签。",
-    "a_en": "We have two strong reasons to assign those bands to our construct, plus a clear follow-up test to confirm them definitively. First, `V1` and `V2` are empty-vector BL21 controls induced under the exact same IPTG conditions, and neither shows those bands, which rules out general IPTG-induced host background. Second, the two bands migrate right at the exact theoretical masses calculated from our sequence: **11.10 kDa** for the uncleaved `PelB–hEGF–6×His` precursor and **8.89 kDa** for the cleaved `hEGF–6×His` mature form. Because Coomassie SDS-PAGE separates by size alone, our next step is an **anti-His Western blot** (and N-terminal sequencing), which will directly confirm that both bands carry our C-terminal 6×His tag.",
+    "a_zh": "8–15 kDa 区域的双条带在分子量上精确对应未切割的 `PelB–hEGF–Linker–6xHis` 前体（~11.10 kDa）与经信号肽酶切割后的成熟 `hEGF–Linker–6xHis`（~8.89 kDa）。在 B14 页电泳图中，这两条带仅在 IPTG 诱导的 `T7–PelB–hEGF–6xHis` 浓缩上清泳道中特异出现，而在空载体对照泳道中完全缺失，说明 T7 高水平表达在成功分泌 ~8.9 kDa 成熟 hEGF 的同时部分饱和了 LepB 信号肽酶。下一步我们将通过 Anti-His Western blot 及 N 端测序或质谱肽段鉴定直接确证这两条带的身份。",
+    "a_en": "The two bands in the 8–15 kDa region match the theoretical molecular weights of the uncleaved `PelB–hEGF–Linker–6xHis` precursor (~11.10 kDa) and the signal-peptidase-cleaved mature `hEGF–Linker–6xHis` (~8.89 kDa). Both bands appear specifically in the IPTG-induced `T7–PelB–hEGF–6xHis` supernatant lanes and are completely absent from the empty-vector control lane on Slide B14, showing that high-level T7 expression exports mature ~8.9 kDa hEGF while partially saturating LepB signal peptidase cleavage. We will confirm the identity of both bands directly by anti-His Western blot and N-terminal Edman sequencing or LC-MS/MS peptide mapping.",
     "extra_zh": "",
     "followups": [],
     "keywords": "distinguish two hEGF bands uncleaved precursor vs mature vs host protein Western blot 区分两条带 未切前体 已切产物 杂蛋白 Western",
     "points_en": [
-      "1. [Direct Conclusion] We have two strong reasons to assign those bands to our construct, plus a clear follow-up test to confirm them definitively.",
-      "2. [Experimental Evidence] First, `V1` and `V2` are empty-vector BL21 controls induced under the exact same IPTG conditions, and neither shows those bands, which rules out general IPTG-induced host background. Second, the two bands migrate right at the exact theoretical masses calculated from our sequence: **11.10 kDa** for the uncleaved `PelB–hEGF–6×His` precursor and **8.89 kDa** for the cleaved `hEGF–6×His` mature form.",
-      "3. [Boundary & Next Step] Because Coomassie SDS-PAGE separates by size alone, our next step is an **anti-His Western blot** (and N-terminal sequencing), which will directly confirm that both bands carry our C-terminal 6×His tag."
+      "1. [Direct Conclusion] The two bands in the 8–15 kDa region match the theoretical molecular weights of the uncleaved `PelB–hEGF–Linker–6xHis` precursor (~11.10 kDa) and the signal-peptidase-cleaved mature `hEGF–Linker–6xHis` (~8.89 kDa).",
+      "2. [Experimental Evidence] Both bands appear specifically in the IPTG-induced `T7–PelB–hEGF–6xHis` supernatant lanes and are completely absent from the empty-vector control lane on Slide B14, showing that high-level T7 expression exports mature ~8.9 kDa hEGF while partially saturating LepB signal peptidase cleavage.",
+      "3. [Boundary & Next Step] We will confirm the identity of both bands directly by anti-His Western blot and N-terminal Edman sequencing or LC-MS/MS peptide mapping."
     ],
     "points_zh": [
-      "1. 【核心结论】我们有两条直接依据支持这两条带来自目标构建，并有明确的下一步定性手段：第一，`V1`、`V2` 是在完全相同 IPTG 诱导条件下处理的空载体 BL21 上清对照，在 8–15 kDa 区间完全没有这两条带，排除了 IPTG 诱导产生宿主背景杂带的可能；",
-      "2. 【实验证据与数据】第二，两条带的迁移位置与根据序列严格计算的理论分子量高度吻合——上方 **11.10 kDa** 对应未切信号肽前体（`PelB–hEGF–6×His`），下方 **8.89 kDa** 对应切除 PelB 后的成熟蛋白（`hEGF–6×His`）。",
-      "3. 【边界与下一步】由于考马斯亮蓝 SDS-PAGE 仅按分子量分离，下一步我们将通过 **Anti-His Western blot**（及 N 端测序）直接确认两条带均带有 C 端 6×His 标签。"
+      "1. 【核心结论】8–15 kDa 区域的双条带在分子量上精确对应未切割的 `PelB–hEGF–Linker–6xHis` 前体（~11.10 kDa）与经信号肽酶切割后的成熟 `hEGF–Linker–6xHis`（~8.89 kDa）。",
+      "2. 【实验证据与数据】在 B14 页电泳图中，这两条带仅在 IPTG 诱导的 `T7–PelB–hEGF–6xHis` 浓缩上清泳道中特异出现，而在空载体对照泳道中完全缺失，说明 T7 高水平表达在成功分泌 ~8.9 kDa 成熟 hEGF 的同时部分饱和了 LepB 信号肽酶。",
+      "3. 【边界与下一步】下一步我们将通过 Anti-His Western blot 及 N 端测序或质谱肽段鉴定直接确证这两条带的身份。"
     ],
     "notes": [
-      "Why not host contaminant: Both bands absent in empty-vector control lanes `V1/V2` under identical 5× concentration (空载对照无此双带)",
-      "Theoretical mass match: `11.10 kDa` (PelB–hEGF–His precursor) + `8.89 kDa` (cleaved mature hEGF–His)",
-      "Definitive ID next step: Anti-His Western blot + N-terminal Edman sequencing / LC-MS + GroEL lysis marker check"
+      "1. 双条带精确对应理论分子量 → 未切割前体(~11.10 kDa) + 切割后成熟蛋白(~8.89 kDa)",
+      "2. 泳道对照明确(B14) → 仅在诱导上清泳道出现、空载对照完全缺失（T7高表达部分饱和LepB切割）",
+      "3. 下一步直接确证 → Anti-His Western blot + N端测序或LC-MS/MS鉴定"
     ],
     "notes_zh": [
-      "1. 双条带原因（B14 左图 8–15 kDa）：PelB 信号肽（~2.2 kDa）在强诱导表达下发生部分切除",
-      "2. 分子量精准对应：上条带 11.10 kDa = 未切信号肽前体（PelB–hEGF–Linker–6×His）；下条带 8.89 kDa = 切除 PelB 后的成熟分泌蛋白（hEGF–Linker–6×His）",
-      "3. 机制与下一步：T7/IPTG 过表达使 Sec 转运通道部分饱和 + 24 h 培养外膜渗漏（空载 V1/V2 无条带）→ 下一步做 Anti-His WB 与角质形成细胞划痕实验"
+      "1. 双条带精确对应理论分子量 → 未切割前体(~11.10 kDa) + 切割后成熟蛋白(~8.89 kDa)",
+      "2. 泳道对照明确(B14) → 仅在诱导上清泳道出现、空载对照完全缺失（T7高表达部分饱和LepB切割）",
+      "3. 下一步直接确证 → Anti-His Western blot + N端测序或LC-MS/MS鉴定"
     ]
   },
   {
@@ -2991,12 +2986,19 @@
     "id": "inc-1",
     "code": "INC.1",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — LabSafeMom & LabMate",
-    "q_en": "What is LabSafeMom, and how does it work?",
+    "slide_img": "",
     "q_zh": "什么是 LabSafeMom？它是如何工作的？",
-    "a_en": "LabSafeMom supports researchers who are planning pregnancy, pregnant, or breastfeeding. It turns experimental protocols into risk summaries, safety recommendations, and personal protective equipment checklists. Its basic risk assessment follows traceable rules rather than relying entirely on AI judgments. The goal is to help researchers discuss potential risks with laboratory safety staff and clinicians, without replacing professional advice.",
-    "a_zh": "LabSafeMom 支持备孕、怀孕或哺乳期的科研人员。它将实验操作流程转化为风险摘要、安全建议和个人防护装备（PPE）核对清单。其基础风险评估遵循可溯源的规则，而非完全依赖 AI 判断。目标是帮助科研人员与实验室安全人员和临床医生讨论潜在风险，而不替代专业建议。",
+    "q_en": "What is LabSafeMom, and how does it work?",
+    "a_zh": "LabSafeMom 支持备孕、怀孕或哺乳期的科研人员，将实验方案转化为风险摘要、安全建议和个人防护装备（PPE）清单。其基础风险评估遵循可溯源的规则，而非完全依赖 AI 判断。目标是帮助科研人员与实验室安全人员和临床医生讨论潜在风险，而不替代专业建议。",
+    "a_en": "LabSafeMom supports researchers who are planning pregnancy, pregnant, or breastfeeding by turning experimental protocols into risk summaries, safety recommendations, and personal protective equipment checklists. Its basic risk assessment follows traceable rules rather than relying entirely on AI judgments. The goal is to help researchers discuss potential risks with laboratory safety staff and clinicians, without replacing professional advice.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity LabSafeMom pregnant pregnancy breastfeeding risk summaries PPE traceable rules 备孕 怀孕 哺乳 风险评估",
     "points_en": [
       "1. LabSafeMom supports researchers who are planning pregnancy, pregnant, or breastfeeding by turning experimental protocols into risk summaries, safety recommendations, and personal protective equipment checklists.",
       "2. Its basic risk assessment follows traceable rules rather than relying entirely on AI judgments.",
@@ -3007,19 +3009,12 @@
       "2. 其基础风险评估遵循可溯源的规则，而非完全依赖 AI 判断。",
       "3. 目标是帮助科研人员与实验室安全人员和临床医生讨论潜在风险，而不替代专业建议。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 服务人群与产出 → 备孕/怀孕/哺乳期科研人员 → 协议转风险摘要 + 安全建议 + PPE 清单",
       "2. 核心机制 → 基于可溯源规则（Traceable rules）而非纯靠 AI 判断",
       "3. 定位边界 → 辅助与安全官及临床医生沟通，不替代专业医疗意见"
     ],
-    "keywords": "Inclusivity LabSafeMom pregnant pregnancy breastfeeding risk summaries PPE traceable rules 备孕 怀孕 哺乳 风险评估",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 服务人群与产出 → 备孕/怀孕/哺乳期科研人员 → 协议转风险摘要 + 安全建议 + PPE 清单",
       "2. 核心机制 → 基于可溯源规则（Traceable rules）而非纯靠 AI 判断",
       "3. 定位边界 → 辅助与安全官及临床医生沟通，不替代专业医疗意见"
@@ -3029,12 +3024,19 @@
     "id": "inc-2",
     "code": "INC.2",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — LabSafeMom & LabMate",
-    "q_en": "What is LabMate, and how does it help laboratory members?",
+    "slide_img": "",
     "q_zh": "什么是 LabMate？它如何帮助实验室成员？",
-    "a_en": "LabMate is designed to help new laboratory members follow experimental protocols more easily. It supports protocols in different formats and in both Chinese and English. It provides preparation checklists, step-by-step guidance, smart timers, and exportable laboratory records. Our goal is to reduce the difficulties beginners face when carrying out experiments.",
-    "a_zh": "LabMate 旨在帮助新进实验室成员更轻松地遵循实验操作流程。它支持不同格式及中英文双语的实验方案，提供准备清单、分步指导、智能计时器和可导出的实验记录。我们的目标是减少初学者在开展实验时面临的困难。",
+    "q_en": "What is LabMate, and how does it help laboratory members?",
+    "a_zh": "LabMate 旨在帮助实验室新人更轻松地执行实验方案，支持多种格式与中英双语协议。它提供实验前准备清单、分步引导、智能计时器以及可导出的实验记录。我们的目标是降低初学者开展实验的操作门槛。",
+    "a_en": "LabMate is designed to help new laboratory members follow experimental protocols more easily, supporting protocols in different formats and in both Chinese and English. It provides preparation checklists, step-by-step guidance, smart timers, and exportable laboratory records. Our goal is to reduce the difficulties beginners face when carrying out experiments.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity LabMate new laboratory members beginners protocols checklists smart timers records 实验室新人 分步指导 计时器",
     "points_en": [
       "1. LabMate is designed to help new laboratory members follow experimental protocols more easily, supporting protocols in different formats and in both Chinese and English.",
       "2. It provides preparation checklists, step-by-step guidance, smart timers, and exportable laboratory records.",
@@ -3045,19 +3047,12 @@
       "2. 它提供实验前准备清单、分步引导、智能计时器以及可导出的实验记录。",
       "3. 我们的目标是降低初学者开展实验的操作门槛。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 面向对象 → 实验室新手 + 支持多格式与中英双语协议",
       "2. 核心功能 → 准备清单 + 分步引导 + 智能计时器 + 可导出实验记录",
       "3. 设计目标 → 降低初学者实验操作困难"
     ],
-    "keywords": "Inclusivity LabMate new laboratory members beginners protocols checklists smart timers records 实验室新人 分步指导 计时器",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 面向对象 → 实验室新手 + 支持多格式与中英双语协议",
       "2. 核心功能 → 准备清单 + 分步引导 + 智能计时器 + 可导出实验记录",
       "3. 设计目标 → 降低初学者实验操作困难"
@@ -3067,12 +3062,19 @@
     "id": "inc-3",
     "code": "INC.3",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Deployment & Sharing",
-    "q_en": "How are the websites deployed?",
+    "slide_img": "",
     "q_zh": "这两个网站是如何部署的？",
-    "a_en": "LabMate is hosted on Tencent CloudBase, with browser-based local features and a separate function for optional AI parsing. LabSafeMom separates its frontend and backend; its deployment guide describes Vercel for the frontend and Render for the backend.",
-    "a_zh": "LabMate 托管在腾讯云开发（Tencent CloudBase）上，具备基于浏览器的本地功能以及用于可选 AI 解析的独立云函数。LabSafeMom 采用前后端分离架构，其部署指南使用 Vercel 部署前端、Render 部署后端。",
+    "q_en": "How are the websites deployed?",
+    "a_zh": "LabMate 托管于腾讯云开发（Tencent CloudBase），包含浏览器本地功能与可选 AI 解析的独立函数。LabSafeMom 采用前后端分离架构。其部署指南描述了使用 Vercel 部署前端、Render 部署后端。",
+    "a_en": "LabMate is hosted on Tencent CloudBase, with browser-based local features and a separate function for optional AI parsing. LabSafeMom separates its frontend and backend. Its deployment guide describes Vercel for the frontend and Render for the backend.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity websites deployed Tencent CloudBase Vercel Render frontend backend 网站部署 腾讯云",
     "points_en": [
       "1. LabMate is hosted on Tencent CloudBase, with browser-based local features and a separate function for optional AI parsing.",
       "2. LabSafeMom separates its frontend and backend.",
@@ -3083,19 +3085,12 @@
       "2. LabSafeMom 采用前后端分离架构。",
       "3. 其部署指南描述了使用 Vercel 部署前端、Render 部署后端。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. LabMate 部署 → 腾讯云 CloudBase + 浏览器本地功能 + 独立可选 AI 解析函数",
       "2. LabSafeMom 架构 → 前后端分离",
       "3. LabSafeMom 部署 → 前端 Vercel + 后端 Render"
     ],
-    "keywords": "Inclusivity websites deployed Tencent CloudBase Vercel Render frontend backend 网站部署 腾讯云",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. LabMate 部署 → 腾讯云 CloudBase + 浏览器本地功能 + 独立可选 AI 解析函数",
       "2. LabSafeMom 架构 → 前后端分离",
       "3. LabSafeMom 部署 → 前端 Vercel + 后端 Render"
@@ -3105,12 +3100,19 @@
     "id": "inc-4",
     "code": "INC.4",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Deployment & Sharing",
-    "q_en": "How do you share them?",
+    "slide_img": "",
     "q_zh": "你们是如何分享这些工具的？",
+    "q_en": "How do you share them?",
+    "a_zh": "我们的 Wiki 链接了在线应用及其公开的 GitLab 代码仓库。两款工具均采用 Apache 2.0 许可证并附带安装指南，便于其他队伍审查、改编和独立部署。用户还可以直接导出评估报告或实验记录。",
     "a_en": "Our wiki links to the applications and their public GitLab repositories. Both tools use the Apache 2.0 license and include setup instructions, so other teams can inspect, adapt and deploy their own copies. Users can also export reports or laboratory records.",
-    "a_zh": "我们的 Wiki 提供了应用链接及其公开的 GitLab 仓库。两个工具均采用 Apache 2.0 开源协议并附有部署说明，其他团队可以查看、修改并部署自己的副本。用户还可以导出报告或实验记录。",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity share GitLab Apache 2.0 license setup instructions export reports 开源分享 部署指南",
     "points_en": [
       "1. Our wiki links to the applications and their public GitLab repositories.",
       "2. Both tools use the Apache 2.0 license and include setup instructions, so other teams can inspect, adapt and deploy their own copies.",
@@ -3121,19 +3123,12 @@
       "2. 两款工具均采用 Apache 2.0 许可证并附带安装指南，便于其他队伍审查、改编和独立部署。",
       "3. 用户还可以直接导出评估报告或实验记录。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 开源入口 → Wiki 直链在线应用 + 公开 GitLab 仓库",
       "2. 开源协议 → Apache 2.0 协议 + 完整安装指南（支持审查/改编/自部署）",
       "3. 用户产出 → 支持导出风险报告或实验记录"
     ],
-    "keywords": "Inclusivity share GitLab Apache 2.0 license setup instructions export reports 开源分享 部署指南",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 开源入口 → Wiki 直链在线应用 + 公开 GitLab 仓库",
       "2. 开源协议 → Apache 2.0 协议 + 完整安装指南（支持审查/改编/自部署）",
       "3. 用户产出 → 支持导出风险报告或实验记录"
@@ -3143,12 +3138,19 @@
     "id": "inc-5",
     "code": "INC.5",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Adoption & Modes",
-    "q_en": "How will people adopt and continue using them? / How will you encourage widespread adoption and long-term use of your tools?",
+    "slide_img": "",
     "q_zh": "人们会如何采纳并持续使用这些工具？你们如何推动广泛采纳与长期使用？",
-    "a_en": "Making the tools public is only the beginning. We plan to run small pilots with intended users, provide sample protocols, collect feedback and improve the tools around real workflows. We have not yet demonstrated widespread or long-term adoption. We have shared these tools along with their source code. Our planned next steps include piloting them in routine laboratory training, gathering user feedback, and carrying out ongoing updates and iterations.",
-    "a_zh": "公开工具只是第一步。我们计划在目标用户中开展小规模试点，提供示例方案，收集反馈并围绕真实工作流改进工具。目前我们尚未证明广泛或长期的采纳。我们已经分享了这些工具及其源代码，下一步计划包括在日常实验室培训中进行试点、收集用户反馈并持续更新迭代。",
+    "q_en": "How will people adopt and continue using them? / How will you encourage widespread adoption and long-term use of your tools?",
+    "a_zh": "公开工具与源码只是起点，目前我们尚未声称已实现大规模或长期普及。我们计划面向目标用户开展小规模试点，提供示例协议，收集反馈并贴合真实工作流优化。下一步计划将其纳入日常实验室培训试点，持续收集反馈并迭代更新。",
+    "a_en": "Making the tools public is only the beginning; we have shared these tools along with their source code, though we have not yet demonstrated widespread or long-term adoption. We plan to run small pilots with intended users, provide sample protocols, collect feedback and improve the tools around real workflows. Our planned next steps include piloting them in routine laboratory training, gathering user feedback, and carrying out ongoing updates and iterations.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity adopt adoption continue using long-term use pilots routine laboratory training 持续使用 长期推广 试点",
     "points_en": [
       "1. Making the tools public is only the beginning; we have shared these tools along with their source code, though we have not yet demonstrated widespread or long-term adoption.",
       "2. We plan to run small pilots with intended users, provide sample protocols, collect feedback and improve the tools around real workflows.",
@@ -3159,19 +3161,12 @@
       "2. 我们计划面向目标用户开展小规模试点，提供示例协议，收集反馈并贴合真实工作流优化。",
       "3. 下一步计划将其纳入日常实验室培训试点，持续收集反馈并迭代更新。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 当前状态 → 已开源工具与源码，诚实界定尚未达到大规模长期普及",
       "2. 试点推进 → 目标用户小规模试点 + 提供示例协议 + 贴合真实工作流改进",
       "3. 长期机制 → 纳入日常实验室新人培训 + 收集反馈持续迭代"
     ],
-    "keywords": "Inclusivity adopt adoption continue using long-term use pilots routine laboratory training 持续使用 长期推广 试点",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 当前状态 → 已开源工具与源码，诚实界定尚未达到大规模长期普及",
       "2. 试点推进 → 目标用户小规模试点 + 提供示例协议 + 贴合真实工作流改进",
       "3. 长期机制 → 纳入日常实验室新人培训 + 收集反馈持续迭代"
@@ -3181,12 +3176,19 @@
     "id": "inc-6",
     "code": "INC.6",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Basic vs AI Modes",
-    "q_en": "What are the two modes?",
+    "slide_img": "",
     "q_zh": "这两个工具的两种模式（Basic mode 与 AI-enhanced mode）分别是什么？",
-    "a_en": "Basic mode: This uses built-in rules without AI or a model API key. LabSafeMom matches protocol information against its knowledge base and calculates risk scores. LabMate organizes protocols into guided steps, checklists and timing cues. AI-enhanced mode: This adds language-model assistance for less structured protocols or supporting explanations. It requires an AI service and may involve API costs. LabSafeMom’s risk scores remain rule-based, while LabMate can fall back to local parsing.",
-    "a_zh": "基础模式（Basic mode）：使用内置规则，无需 AI 或模型 API Key；LabSafeMom 将实验方案与知识库比对并计算风险分，LabMate 将方案整理为分步引导、清单和计时提示。AI 增强模式（AI-enhanced mode）：针对非结构化方案或辅助解释引入大语言模型支持，需要 AI 服务且可能产生 API 费用；但 LabSafeMom 的风险评分仍基于规则，LabMate 也可回退至本地解析。",
+    "q_en": "What are the two modes?",
+    "a_zh": "基础模式（Basic mode）使用内置规则，无需 AI 或 API Key：LabSafeMom 匹配知识库计算风险分，LabMate 将协议整理为分步指导、清单与计时提示。AI 增强模式（AI-enhanced mode）针对非结构化协议或补充解释引入语言模型辅助，需配置 AI 服务并可能涉及 API 成本。即使在 AI 模式下，LabSafeMom 的风险评分依然严格基于规则，而 LabMate 也可随时回退至本地解析。",
+    "a_en": "Basic mode uses built-in rules without AI or a model API key: LabSafeMom matches protocol information against its knowledge base and calculates risk scores, while LabMate organizes protocols into guided steps, checklists and timing cues. AI-enhanced mode adds language-model assistance for less structured protocols or supporting explanations, which requires an AI service and may involve API costs. Even in AI-enhanced mode, LabSafeMom’s risk scores remain rule-based, while LabMate can fall back to local parsing.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity two modes Basic mode AI-enhanced mode rule-based API key local parsing 两种模式 基础模式 AI模式",
     "points_en": [
       "1. Basic mode uses built-in rules without AI or a model API key: LabSafeMom matches protocol information against its knowledge base and calculates risk scores, while LabMate organizes protocols into guided steps, checklists and timing cues.",
       "2. AI-enhanced mode adds language-model assistance for less structured protocols or supporting explanations, which requires an AI service and may involve API costs.",
@@ -3197,19 +3199,12 @@
       "2. AI 增强模式（AI-enhanced mode）针对非结构化协议或补充解释引入语言模型辅助，需配置 AI 服务并可能涉及 API 成本。",
       "3. 即使在 AI 模式下，LabSafeMom 的风险评分依然严格基于规则，而 LabMate 也可随时回退至本地解析。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 基础模式（免 AI/API Key）→ LabSafeMom 规则匹配算分 | LabMate 整理步骤/清单/计时",
       "2. AI 增强模式 → 辅助解析非结构化协议与补充说明（需 AI 服务/API 成本）",
       "3. 兜底保障 → LabSafeMom 评分始终基于固定规则 | LabMate 支持回退本地解析"
     ],
-    "keywords": "Inclusivity two modes Basic mode AI-enhanced mode rule-based API key local parsing 两种模式 基础模式 AI模式",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 基础模式（免 AI/API Key）→ LabSafeMom 规则匹配算分 | LabMate 整理步骤/清单/计时",
       "2. AI 增强模式 → 辅助解析非结构化协议与补充说明（需 AI 服务/API 成本）",
       "3. 兜底保障 → LabSafeMom 评分始终基于固定规则 | LabMate 支持回退本地解析"
@@ -3219,12 +3214,19 @@
     "id": "inc-7",
     "code": "INC.7",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Privacy & Backend",
-    "q_en": "Does Basic mode mean everything stays in the browser?",
+    "slide_img": "",
     "q_zh": "基础模式（Basic mode）意味着所有数据都只留在浏览器本地吗？",
-    "a_en": "No. LabMate’s local parsing runs in the browser when AI is switched off. The public LabSafeMom implementation uses a backend even in Basic mode. When AI is enabled, protocol text is sent to the configured service.",
-    "a_zh": "不是。当关闭 AI 时，LabMate 的本地解析确实在浏览器中运行；但公开部署的 LabSafeMom 即使在基础模式下也使用后端服务。当开启 AI 时，实验方案文本会被发送至所配置的 AI 服务商。",
+    "q_en": "Does Basic mode mean everything stays in the browser?",
+    "a_zh": "不是全部留在浏览器：当关闭 AI 时，LabMate 的本地解析完全在浏览器内运行。但公开版的 LabSafeMom 即使在基础模式下也会调用后端进行知识库匹配。当启用 AI 模式时，实验协议文本则会发送至所配置的模型服务。",
+    "a_en": "No: LabMate’s local parsing runs in the browser when AI is switched off. However, the public LabSafeMom implementation uses a backend even in Basic mode. When AI is enabled, protocol text is sent to the configured service.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity Basic mode stays in browser local parsing backend privacy 浏览器本地 后端 数据隐私",
     "points_en": [
       "1. No: LabMate’s local parsing runs in the browser when AI is switched off.",
       "2. However, the public LabSafeMom implementation uses a backend even in Basic mode.",
@@ -3235,19 +3237,12 @@
       "2. 但公开版的 LabSafeMom 即使在基础模式下也会调用后端进行知识库匹配。",
       "3. 当启用 AI 模式时，实验协议文本则会发送至所配置的模型服务。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 明确区分 → 并非全部仅留浏览器本地",
       "2. 基础模式差异 → LabMate 关 AI 时纯浏览器本地解析 | LabSafeMom 基础模式仍经过后端",
       "3. 开启 AI 时 → 协议文本发送至所配置的 AI 接口服务"
     ],
-    "keywords": "Inclusivity Basic mode stays in browser local parsing backend privacy 浏览器本地 后端 数据隐私",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 明确区分 → 并非全部仅留浏览器本地",
       "2. 基础模式差异 → LabMate 关 AI 时纯浏览器本地解析 | LabSafeMom 基础模式仍经过后端",
       "3. 开启 AI 时 → 协议文本发送至所配置的 AI 接口服务"
@@ -3257,12 +3252,19 @@
     "id": "inc-8",
     "code": "INC.8",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Knowledge Base & Risk Score",
-    "q_en": "Where does our knowledge base come from?",
+    "slide_img": "",
     "q_zh": "你们的知识库数据来源是什么？",
+    "q_en": "Where does our knowledge base come from?",
+    "a_zh": "我们汇总公开的职业场所安全信息、化学品安全资料与毒理学参考文献，并转化为简明词条。目前知识库已包含 100 多个条目。它用于辅助早期风险初筛，但不能替代专业安全审查。",
     "a_en": "We collect public workplace-safety information, chemical safety information, and toxicology references, and turn them into simple entries. Right now we have more than 100 entries. It helps with early screening, but it does not replace a professional review.",
-    "a_zh": "我们收集公开的职业安全信息、化学品安全信息和毒理学参考资料，并将其转化为简明条目。目前知识库已收录超过 100 个条目。它有助于早期筛查，但不替代专业安全审查。",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity knowledge base workplace-safety chemical safety toxicology 100 entries 知识库来源 毒理学",
     "points_en": [
       "1. We collect public workplace-safety information, chemical safety information, and toxicology references, and turn them into simple entries.",
       "2. Right now we have more than 100 entries.",
@@ -3273,19 +3275,12 @@
       "2. 目前知识库已包含 100 多个条目。",
       "3. 它用于辅助早期风险初筛，但不能替代专业安全审查。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 数据来源 → 公开职业安全资料 + 化学品安全信息 + 毒理学文献",
       "2. 当前规模 → 100+ 结构化简明词条",
       "3. 功能定位 → 辅助早期初筛，不替代专业审查"
     ],
-    "keywords": "Inclusivity knowledge base workplace-safety chemical safety toxicology 100 entries 知识库来源 毒理学",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 数据来源 → 公开职业安全资料 + 化学品安全信息 + 毒理学文献",
       "2. 当前规模 → 100+ 结构化简明词条",
       "3. 功能定位 → 辅助早期初筛，不替代专业审查"
@@ -3295,12 +3290,19 @@
     "id": "inc-9",
     "code": "INC.9",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Knowledge Base & Risk Score",
-    "q_en": "How is the risk score calculated?",
+    "slide_img": "",
     "q_zh": "LabSafeMom 的风险评分是如何计算的？",
-    "a_en": "The score is based on fixed rules, not AI. The rules look at which chemicals are used, whether there is exposure information, and how the lab work is done. Each rule adds points separately for pregnancy, fertility, and breastfeeding. The total is from 0 to 100, with four levels: low, moderate, high, and critical. The report uses the highest score, not an average. This is only a screening score—it does not mean an 80 score is an 80% chance of harm.",
-    "a_zh": "评分基于固定规则而非 AI。规则综合考察所使用的化学品、是否存在暴露信息以及实验操作方式，并针对怀孕、生育力和哺乳期分别累加分值。总分范围为 0 到 100，分为低、中、高、极高四个等级；报告采用最高分而非平均分。这只是一个初筛评分——80 分并不代表有 80% 的受损概率。",
+    "q_en": "How is the risk score calculated?",
+    "a_zh": "评分基于固定规则而非 AI：规则检查所使用的化学品、暴露信息以及具体实验操作方式。每条规则分别对怀孕、生育力和哺乳期计分（0–100 分，分低、中、高、极高四级），最终报告取最高分而非平均值。这仅是一个初筛评分——80 分并不意味着有 80% 的伤害概率。",
+    "a_en": "The score is based on fixed rules, not AI: the rules look at which chemicals are used, whether there is exposure information, and how the lab work is done. Each rule adds points separately for pregnancy, fertility, and breastfeeding, on a 0 to 100 scale with four levels (low, moderate, high, and critical), and the report uses the highest score, not an average. This is only a screening score—it does not mean an 80 score is an 80% chance of harm.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity risk score calculated fixed rules pregnancy fertility breastfeeding 0 to 100 highest score 风险评分计算 最高分",
     "points_en": [
       "1. The score is based on fixed rules, not AI: the rules look at which chemicals are used, whether there is exposure information, and how the lab work is done.",
       "2. Each rule adds points separately for pregnancy, fertility, and breastfeeding, on a 0 to 100 scale with four levels (low, moderate, high, and critical), and the report uses the highest score, not an average.",
@@ -3311,19 +3313,12 @@
       "2. 每条规则分别对怀孕、生育力和哺乳期计分（0–100 分，分低、中、高、极高四级），最终报告取最高分而非平均值。",
       "3. 这仅是一个初筛评分——80 分并不意味着有 80% 的伤害概率。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 固定规则算分（非 AI）→ 考察化学品种类 + 暴露信息 + 实验操作方式",
       "2. 三维独立计分取最高值 → 怀孕 / 生育力 / 哺乳期（0–100 分，四级，取最高分而非均值）",
       "3. 分数物理意义 → 仅作风险初筛分级（80 分 ≠ 80% 伤害概率）"
     ],
-    "keywords": "Inclusivity risk score calculated fixed rules pregnancy fertility breastfeeding 0 to 100 highest score 风险评分计算 最高分",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 固定规则算分（非 AI）→ 考察化学品种类 + 暴露信息 + 实验操作方式",
       "2. 三维独立计分取最高值 → 怀孕 / 生育力 / 哺乳期（0–100 分，四级，取最高分而非均值）",
       "3. 分数物理意义 → 仅作风险初筛分级（80 分 ≠ 80% 伤害概率）"
@@ -3333,12 +3328,19 @@
     "id": "inc-10",
     "code": "INC.10",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Origin Stories",
-    "q_en": "Where did the idea for LabSafeMom come from?",
+    "slide_img": "",
     "q_zh": "LabSafeMom 的灵感来自哪里？",
-    "a_en": "It started from an online post by a pregnant researcher. She found safety information scattered and hard to connect to her daily experiments. We realized that getting into science does not mean you can stay in it. So LabSafeMom helps researchers organize experiment-specific questions so they can discuss them with safety and occupational-health professionals.",
-    "a_zh": "它源于一位怀孕科研人员的网络帖子。她发现安全信息非常零散，很难与日常实验对应起来。我们意识到“进入科学界并不意味着你能留在其中”。因此 LabSafeMom 帮助科研人员整理与具体实验相关的问题，以便与安全和职业健康专业人员沟通。",
+    "q_en": "Where did the idea for LabSafeMom come from?",
+    "a_zh": "它源于一位怀孕科研人员的求助帖，她发现安全信息零散且难以对应到日常具体实验。这让我们意识到：能够进入科研领域，并不天然意味着能够安全留在其中。因此 LabSafeMom 帮助研究者梳理针对具体实验的风险问题，以便与安全及职业健康专家高效沟通。",
+    "a_en": "It started from an online post by a pregnant researcher who found safety information scattered and hard to connect to her daily experiments. We realized that getting into science does not mean you can stay in it. So LabSafeMom helps researchers organize experiment-specific questions so they can discuss them with safety and occupational-health professionals.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity idea for LabSafeMom pregnant researcher online post stay in science 灵感来源 怀孕科研人员",
     "points_en": [
       "1. It started from an online post by a pregnant researcher who found safety information scattered and hard to connect to her daily experiments.",
       "2. We realized that getting into science does not mean you can stay in it.",
@@ -3349,19 +3351,12 @@
       "2. 这让我们意识到：能够进入科研领域，并不天然意味着能够安全留在其中。",
       "3. 因此 LabSafeMom 帮助研究者梳理针对具体实验的风险问题，以便与安全及职业健康专家高效沟通。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 灵感起点 → 怀孕科研人员发帖反映安全信息零散、难对接日常实验",
       "2. 核心洞察 → “进入科学界不等于能留在科学界”",
       "3. 解决方式 → 梳理具体实验风险问题，辅助与职业健康专家沟通"
     ],
-    "keywords": "Inclusivity idea for LabSafeMom pregnant researcher online post stay in science 灵感来源 怀孕科研人员",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 灵感起点 → 怀孕科研人员发帖反映安全信息零散、难对接日常实验",
       "2. 核心洞察 → “进入科学界不等于能留在科学界”",
       "3. 解决方式 → 梳理具体实验风险问题，辅助与职业健康专家沟通"
@@ -3371,12 +3366,19 @@
     "id": "inc-11",
     "code": "INC.11",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Origin Stories",
-    "q_en": "Where did the idea for LabMate come from?",
+    "slide_img": "",
     "q_zh": "LabMate 的灵感来自哪里？",
-    "a_en": "LabMate came from two first-year students starting in the lab. They faced scattered protocols, unfamiliar English terms, missed preparation steps, and difficulty managing timers and records. We turned these problems into guided steps, preparation checklists, timers, and exportable notes. The goal is to make lab work easier for beginners so they can focus on understanding the experiment.",
-    "a_zh": "LabMate 源于两位刚进实验室的大一新生。他们面临实验方案零散、英文术语生疏、遗漏准备步骤以及难以同时管理计时器和实验记录的问题。我们将这些痛点转化为分步引导、准备清单、计时器和可导出笔记，目标是让新手更轻松地完成实验操作，从而专注于理解实验本身。",
+    "q_en": "Where did the idea for LabMate come from?",
+    "a_zh": "LabMate 源于两位刚进实验室的大一新生，他们面临方案零散、英文术语生疏、漏做准备步骤及计时记录混乱等痛点。我们将这些问题转化为分步指导、准备清单、智能计时器与可导出笔记。目标是降低新手的操作负担，使其能专注于理解实验原理本身。",
+    "a_en": "LabMate came from two first-year students starting in the lab who faced scattered protocols, unfamiliar English terms, missed preparation steps, and difficulty managing timers and records. We turned these problems into guided steps, preparation checklists, timers, and exportable notes. The goal is to make lab work easier for beginners so they can focus on understanding the experiment.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity idea for LabMate first-year students beginners unfamiliar English terms 灵感来源 大一新生",
     "points_en": [
       "1. LabMate came from two first-year students starting in the lab who faced scattered protocols, unfamiliar English terms, missed preparation steps, and difficulty managing timers and records.",
       "2. We turned these problems into guided steps, preparation checklists, timers, and exportable notes.",
@@ -3387,19 +3389,12 @@
       "2. 我们将这些问题转化为分步指导、准备清单、智能计时器与可导出笔记。",
       "3. 目标是降低新手的操作负担，使其能专注于理解实验原理本身。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 痛点来源 → 两位大一新生进实验室面临协议零散、英文生疏、漏准备、计时记录难兼顾",
       "2. 功能转化 → 分步指导 + 准备清单 + 计时器 + 可导出笔记",
       "3. 最终目的 → 减轻新手操作负担，聚焦理解实验本身"
     ],
-    "keywords": "Inclusivity idea for LabMate first-year students beginners unfamiliar English terms 灵感来源 大一新生",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 痛点来源 → 两位大一新生进实验室面临协议零散、英文生疏、漏准备、计时记录难兼顾",
       "2. 功能转化 → 分步指导 + 准备清单 + 计时器 + 可导出笔记",
       "3. 最终目的 → 减轻新手操作负担，聚焦理解实验本身"
@@ -3409,12 +3404,19 @@
     "id": "inc-12",
     "code": "INC.12",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Framework (VOAP & HEALS)",
-    "q_en": "How did you integrate inclusivity into your project, and what are your future plans?",
+    "slide_img": "",
     "q_zh": "你们是如何将包容性（Inclusivity）融入项目的？未来计划是什么？",
+    "q_en": "How did you integrate inclusivity into your project, and what are your future plans?",
+    "a_zh": "我们围绕 Voice（发声）、Opportunity（机会）、Accessibility（可及性）和 Participation（参与）四个维度展开工作。通过 HEALS 闭环流程（Hear 倾听、Examine 审视、Act 行动、Learn 学习、Share 分享），我们从识别障碍推进到实际改变。下一步，我们将面向更多目标用户测试这些资源并持续提升无障碍可及性。",
     "a_en": "We organized our work around Voice, Opportunity, Accessibility, and Participation. Our HEALS process—Hear, Examine, Act, Learn, Share—helped us move from identifying barriers to making changes. Next, we want to test these resources with more target users and improve their accessibility.",
-    "a_zh": "我们围绕发声（Voice）、机会（Opportunity）、可及性（Accessibility）和参与（Participation）四个维度组织工作。我们的 HEALS 流程（倾听 Hear、审视 Examine、行动 Act、学习 Learn、分享 Share）帮助我们从识别障碍走向落实改变。下一步，我们希望在更多目标用户中测试这些资源并进一步提升其可及性。",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity integrate Voice Opportunity Accessibility Participation HEALS Hear Examine Act Learn Share 包容性框架",
     "points_en": [
       "1. We organized our work around Voice, Opportunity, Accessibility, and Participation.",
       "2. Our HEALS process—Hear, Examine, Act, Learn, Share—helped us move from identifying barriers to making changes.",
@@ -3425,19 +3427,12 @@
       "2. 通过 HEALS 闭环流程（Hear 倾听、Examine 审视、Act 行动、Learn 学习、Share 分享），我们从识别障碍推进到实际改变。",
       "3. 下一步，我们将面向更多目标用户测试这些资源并持续提升无障碍可及性。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 四大核心维度 → Voice（发声）+ Opportunity（机会）+ Accessibility（可及性）+ Participation（参与）",
       "2. HEALS 行动框架 → Hear（倾听）→ Examine（审视）→ Act（行动）→ Learn（学习）→ Share（分享）",
       "3. 未来计划 → 扩大目标用户测试范围 + 提升无障碍可及性"
     ],
-    "keywords": "Inclusivity integrate Voice Opportunity Accessibility Participation HEALS Hear Examine Act Learn Share 包容性框架",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 四大核心维度 → Voice（发声）+ Opportunity（机会）+ Accessibility（可及性）+ Participation（参与）",
       "2. HEALS 行动框架 → Hear（倾听）→ Examine（审视）→ Act（行动）→ Learn（学习）→ Share（分享）",
       "3. 未来计划 → 扩大目标用户测试范围 + 提升无障碍可及性"
@@ -3447,12 +3442,19 @@
     "id": "inc-13",
     "code": "INC.13",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Patient Communication & Photovoice",
-    "q_en": "What was the greatest challenge and the most rewarding experience in communicating with patients?",
+    "slide_img": "",
     "q_zh": "与患者沟通时最大的挑战和最有收获的经历分别是什么？",
-    "a_en": "The biggest challenge is getting them to put their specific difficulties into words. A lot of patients have lived with their condition for so long that they don’t really notice the everyday inconvenience anymore. And since most of them are older, we often have to piece together something useful from stories that are a bit all over the place. That’s exactly why we use methods like co-designed mapping and Photovoice. That was also the most rewarding one. Their photographs and stories became a public exhibition, so they were shaping the conversation rather than simply answering our questions.",
-    "a_zh": "最大的挑战是让他们把具体困难用语言表达出来。许多患者长期带病生活，已经对日常不便习以为常；而且他们大多是老年人，叙述往往比较发散，需要我们从中拼凑出关键信息。这正是我们采用协同设计地图（co-designed mapping）和影像发声（Photovoice）的原因。这也是最有收获的部分：他们的照片和故事最终成为了一场公共展览，使他们真正主导了对话，而不只是被动回答我们的问题。",
+    "q_en": "What was the greatest challenge and the most rewarding experience in communicating with patients?",
+    "a_zh": "最大挑战在于引导患者具象化表达日常困难：许多老年慢性创面患者长期带病已对不便习以为常，且口头叙述较为发散。为此我们引入了协同设计地图（Co-designed mapping）与影像发声法（Photovoice）。最有收获的经历正是他们的摄影作品与故事最终办成了公共展览，让患者成为对话的主导者而非被动受访者。",
+    "a_en": "The biggest challenge is getting them to put their specific difficulties into words: a lot of patients have lived with their condition for so long that they don’t really notice the everyday inconvenience anymore, and since most of them are older, we often have to piece together something useful from stories that are a bit all over the place. That’s exactly why we use methods like co-designed mapping and Photovoice. That was also the most rewarding one: their photographs and stories became a public exhibition, so they were shaping the conversation rather than simply answering our questions.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity communicating with patients challenge rewarding co-designed mapping Photovoice exhibition 患者沟通 影像发声",
     "points_en": [
       "1. The biggest challenge is getting them to put their specific difficulties into words: a lot of patients have lived with their condition for so long that they don’t really notice the everyday inconvenience anymore, and since most of them are older, we often have to piece together something useful from stories that are a bit all over the place.",
       "2. That’s exactly why we use methods like co-designed mapping and Photovoice.",
@@ -3463,19 +3465,12 @@
       "2. 为此我们引入了协同设计地图（Co-designed mapping）与影像发声法（Photovoice）。",
       "3. 最有收获的经历正是他们的摄影作品与故事最终办成了公共展览，让患者成为对话的主导者而非被动受访者。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 沟通最大挑战 → 老年患者对长期不便习以为常 + 叙述发散难提炼具体痛点",
       "2. 创新沟通方法 → 协同设计地图（Co-designed mapping）+ 影像发声（Photovoice）",
       "3. 最有收获时刻 → 患者照片与故事办成公共展览，从“被动答题”变为“主导对话”"
     ],
-    "keywords": "Inclusivity communicating with patients challenge rewarding co-designed mapping Photovoice exhibition 患者沟通 影像发声",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 沟通最大挑战 → 老年患者对长期不便习以为常 + 叙述发散难提炼具体痛点",
       "2. 创新沟通方法 → 协同设计地图（Co-designed mapping）+ 影像发声（Photovoice）",
       "3. 最有收获时刻 → 患者照片与故事办成公共展览，从“被动答题”变为“主导对话”"
@@ -3485,12 +3480,19 @@
     "id": "inc-14",
     "code": "INC.14",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Impact Assessment & Surveys",
-    "q_en": "How did you assess the impact of your activities?",
+    "slide_img": "",
     "q_zh": "你们是如何评估各项活动的影响力的？",
+    "q_en": "How did you assess the impact of your activities?",
+    "a_zh": "我们综合使用参与人数、参与者反馈与学习成效测评，针对不同活动量身定制评估指标。评估目标不仅看触达人数（Reach），更关注参与者实际学到了什么以及活动如何迭代。例如，我们在夏令营儿童与角色扮演活动参与者中均开展了活动前后（Pre/Post）对比问卷。",
     "a_en": "Overall, we evaluated our activities using participation figures, participant feedback, and learning assessments, selecting different metrics tailored to each specific activity. Our goal was to understand not only the reach of our initiatives—how many people we engaged—but also what participants learned and how we could make further improvements. For instance, we conducted pre- and post-activity surveys for children attending our summer camps and for participants in our role-playing activities.",
-    "a_zh": "总体而言，我们结合参与人数、参与者反馈和学习评估，针对不同活动选用定制化指标进行评估。我们的目标不仅是了解活动的覆盖面（触达了多少人），还要了解参与者真正学到了什么以及如何进一步改进。例如，我们对参加夏令营的儿童和角色扮演活动的参与者开展了活动前后的对比问卷调查。",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity assess impact participation figures feedback learning assessments pre- and post-activity surveys 活动评估 前后测",
     "points_en": [
       "1. Overall, we evaluated our activities using participation figures, participant feedback, and learning assessments, selecting different metrics tailored to each specific activity.",
       "2. Our goal was to understand not only the reach of our initiatives—how many people we engaged—but also what participants learned and how we could make further improvements.",
@@ -3501,19 +3503,12 @@
       "2. 评估目标不仅看触达人数（Reach），更关注参与者实际学到了什么以及活动如何迭代。",
       "3. 例如，我们在夏令营儿童与角色扮演活动参与者中均开展了活动前后（Pre/Post）对比问卷。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 三维评估指标 → 参与人数 + 参与者反馈 + 学习成效测评（按活动定制）",
       "2. 双重评估目标 → 既看覆盖广度（Reach），也看学习深度与改进方向",
       "3. 具体实例 → 夏令营与角色扮演活动均开展前后测（Pre/Post）对比问卷"
     ],
-    "keywords": "Inclusivity assess impact participation figures feedback learning assessments pre- and post-activity surveys 活动评估 前后测",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 三维评估指标 → 参与人数 + 参与者反馈 + 学习成效测评（按活动定制）",
       "2. 双重评估目标 → 既看覆盖广度（Reach），也看学习深度与改进方向",
       "3. 具体实例 → 夏令营与角色扮演活动均开展前后测（Pre/Post）对比问卷"
@@ -3523,12 +3518,19 @@
     "id": "inc-15",
     "code": "INC.15",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Highlights",
-    "q_en": "Which inclusivity work would you most like to highlight?",
+    "slide_img": "",
     "q_zh": "你们最想重点展示哪几项包容性（Inclusivity）工作？",
-    "a_en": "First, like we said earlier, our activities reach all kinds of groups, and each one is designed to fit its specific audience. Second, we talked in depth with our main target group—patients with chronic wounds—and used their feedback in our design process. We also made guidelines based on what they actually need. Third, we created and shared a bunch of resources people can reuse, like websites, activity toolkits, and educational materials.",
-    "a_zh": "第一，我们的活动触达了多元群体，且每项活动都针对特定受众量身定制。第二，我们与核心目标群体——慢性伤口患者进行了深度访谈，将他们的反馈融入设计过程，并根据他们的实际需求编写了护理指南。第三，我们开发并开源了一系列可复用资源，包括网站、活动工具包和教育材料。",
+    "q_en": "Which inclusivity work would you most like to highlight?",
+    "a_zh": "第一，活动覆盖多元受众群体，且每场活动均针对特定人群专门设计。第二，深入访谈核心目标人群（慢性创面患者），将其反馈融入工程设计并编写贴合实际需求的居家护理手册。第三，构建并开源了系列可复用资源，包括在线网站（LabSafeMom/LabMate）、活动工具包与科普教材。",
+    "a_en": "First, our activities reach all kinds of groups, and each one is designed to fit its specific audience. Second, we talked in depth with our main target group—patients with chronic wounds—and used their feedback in our design process, while making guidelines based on what they actually need. Third, we created and shared a bunch of resources people can reuse, like websites, activity toolkits, and educational materials.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity highlight chronic wounds patients guidelines websites activity toolkits 包容性亮点",
     "points_en": [
       "1. First, our activities reach all kinds of groups, and each one is designed to fit its specific audience.",
       "2. Second, we talked in depth with our main target group—patients with chronic wounds—and used their feedback in our design process, while making guidelines based on what they actually need.",
@@ -3539,19 +3541,12 @@
       "2. 第二，深入访谈核心目标人群（慢性创面患者），将其反馈融入工程设计并编写贴合实际需求的居家护理手册。",
       "3. 第三，构建并开源了系列可复用资源，包括在线网站（LabSafeMom/LabMate）、活动工具包与科普教材。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 亮点一（多元定制）→ 覆盖各类群体 + 按受众特点专门定制活动形式",
       "2. 亮点二（患者共创）→ 深度访谈慢性伤口患者 + 反馈反哺设计并制定护理指南",
       "3. 亮点三（开源复用）→ 共享网站、活动工具包与教育材料"
     ],
-    "keywords": "Inclusivity highlight chronic wounds patients guidelines websites activity toolkits 包容性亮点",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 亮点一（多元定制）→ 覆盖各类群体 + 按受众特点专门定制活动形式",
       "2. 亮点二（患者共创）→ 深度访谈慢性伤口患者 + 反馈反哺设计并制定护理指南",
       "3. 亮点三（开源复用）→ 共享网站、活动工具包与教育材料"
@@ -3561,12 +3556,19 @@
     "id": "inc-16",
     "code": "INC.16",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Summer Camp Assessment",
-    "q_en": "Did your surveys assess actual understanding, or only students’ impressions?",
+    "slide_img": "",
     "q_zh": "你们的问卷是评估了学生的真实理解，还是仅仅调查了主观印象？",
-    "a_en": "In the Life Science × AI summer camp, our surveys covered five areas: scientific knowledge, AI literacy, scientific inquiry, biosafety awareness, and learning interest. We included knowledge questions, attitude scales, and open-ended feedback. For example, we used eight knowledge and judgment questions, including DNA–RNA–protein information flow and whether AI predictions need experimental validation. By comparing students' answers before and after the camp, we assessed not only how they felt, but also what they actually understood.",
-    "a_zh": "在“生命科学 × AI”夏令营中，我们的问卷涵盖五个维度：科学知识、AI 素养、科学探究、生物安全意识和学习兴趣。问卷包含客观知识题、态度量表和开放式反馈。例如，我们设置了 8 道知识与判断题，涵盖中心法则（DNA–RNA–蛋白质信息流）以及 AI 预测是否需要实验验证。通过对比营前与营后的作答结果，我们不仅评估了学生的主观感受，更实测了他们的真实理解程度。",
+    "q_en": "Did your surveys assess actual understanding, or only students’ impressions?",
+    "a_zh": "在“生命科学 × AI”夏令营中，问卷覆盖科学知识、AI 素养、科学探究、生物安全意识与学习兴趣五大维度，结合客观知识题、态度量表与开放反馈。例如设置了 8 道客观知识与判断题，考察 DNA–RNA–蛋白质信息流及“AI 预测是否需湿实验验证”等核心概念。通过对比营前与营后作答准确率，我们不仅评估主观感受，更定量检验了学生的真实理解。",
+    "a_en": "In the Life Science × AI summer camp, our surveys covered five areas: scientific knowledge, AI literacy, scientific inquiry, biosafety awareness, and learning interest, using knowledge questions, attitude scales, and open-ended feedback. For example, we used eight knowledge and judgment questions, including DNA–RNA–protein information flow and whether AI predictions need experimental validation. By comparing students' answers before and after the camp, we assessed not only how they felt, but also what they actually understood.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity surveys actual understanding impressions Life Science AI summer camp DNA RNA protein 夏令营问卷 真实理解",
     "points_en": [
       "1. In the Life Science × AI summer camp, our surveys covered five areas: scientific knowledge, AI literacy, scientific inquiry, biosafety awareness, and learning interest, using knowledge questions, attitude scales, and open-ended feedback.",
       "2. For example, we used eight knowledge and judgment questions, including DNA–RNA–protein information flow and whether AI predictions need experimental validation.",
@@ -3577,19 +3579,12 @@
       "2. 例如设置了 8 道客观知识与判断题，考察 DNA–RNA–蛋白质信息流及“AI 预测是否需湿实验验证”等核心概念。",
       "3. 通过对比营前与营后作答准确率，我们不仅评估主观感受，更定量检验了学生的真实理解。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 五维综合测评 → 科学知识 + AI 素养 + 科学探究 + 生物安全意识 + 学习兴趣",
       "2. 硬核客观题设计 → 8 道知识判断题（涵盖中心法则 DNA-RNA-蛋白 + AI 预测需实验验证）",
       "3. 前后测对比 → 对比开营前后客观题作答，实测真实理解而非仅看主观印象"
     ],
-    "keywords": "Inclusivity surveys actual understanding impressions Life Science AI summer camp DNA RNA protein 夏令营问卷 真实理解",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 五维综合测评 → 科学知识 + AI 素养 + 科学探究 + 生物安全意识 + 学习兴趣",
       "2. 硬核客观题设计 → 8 道知识判断题（涵盖中心法则 DNA-RNA-蛋白 + AI 预测需实验验证）",
       "3. 前后测对比 → 对比开营前后客观题作答，实测真实理解而非仅看主观印象"
@@ -3599,12 +3594,19 @@
     "id": "inc-17",
     "code": "INC.17",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity & HP — Ward Interviews Impact",
-    "q_en": "What did you learn from outreach and patient interviews, and which feedback changed the project? / Which Human Practices activity changed the project the most?",
+    "slide_img": "",
     "q_zh": "你们从患者和医院访谈中学到了什么？哪项反馈或 HP 活动对项目改变最大？",
-    "a_en": "The hospital ward interviews with patients, clinicians, and care workers probably changed the project the most. They made us realize our design had to do more than just kill bacteria—it also had to fit into everyday wound care. Talking with patients, we found a big gap in what they knew about caring for wounds at home, so we made the dressing easy to use and design a hand book. And since current treatments often can’t do both—kill bacteria and help tissue repair—there’s a gap in the treatment process. That’s why we added hEGF. These interviews also changed the role of our project. Instead of presenting Dual-Armor as a stand-alone treatment, we now position it as a supportive dressing for ongoing care after debridement.",
-    "a_zh": "在医院病房对患者、临床医生和护工的访谈对项目改变最大。访谈让我们意识到设计不能只停留在杀菌，还必须融入日常创面护理。与患者交流时，我们发现他们对居家伤口护理知识存在很大缺口，因此我们简化了敷料使用方式并设计了护理手册；同时由于现有疗法往往无法兼顾“杀菌”与“组织修复”，我们在系统中加入了 hEGF。这些访谈也改变了项目的整体定位：我们不再将 Dual-Armor 视为独立替代疗法，而是将其定位为清创术后持续护理的辅助型敷料。",
+    "q_en": "What did you learn from outreach and patient interviews, and which feedback changed the project? / Which Human Practices activity changed the project the most?",
+    "a_zh": "医院病房对患者、医生和护工的深度访谈对项目改变最大：针对患者居家护理知识缺口，我们简化了敷料操作并编写了居家护理手册。针对现有治疗难以兼顾“抗菌”与“促组织修复”的临床断层，我们在下游治疗模块中新增了促愈合因子 hEGF。访谈还重塑了项目临床定位：不再将 Dual-Armor 当作孤立疗法，而是定位为清创术后持续护理的辅助敷料。",
+    "a_en": "The hospital ward interviews with patients, clinicians, and care workers changed the project the most: talking with patients revealed a big gap in home wound-care knowledge, so we made the dressing easy to use and designed a handbook. Because current treatments often cannot both kill bacteria and help tissue repair, we added hEGF to bridge that gap in the treatment process. These interviews also changed the role of our project: instead of presenting Dual-Armor as a stand-alone treatment, we now position it as a supportive dressing for ongoing care after debridement.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity Human Practices patient interviews changed the project hEGF debridement supportive dressing handbook 病房访谈 改变项目 清创术后",
     "points_en": [
       "1. The hospital ward interviews with patients, clinicians, and care workers changed the project the most: talking with patients revealed a big gap in home wound-care knowledge, so we made the dressing easy to use and designed a handbook.",
       "2. Because current treatments often cannot both kill bacteria and help tissue repair, we added hEGF to bridge that gap in the treatment process.",
@@ -3615,19 +3617,12 @@
       "2. 针对现有治疗难以兼顾“抗菌”与“促组织修复”的临床断层，我们在下游治疗模块中新增了促愈合因子 hEGF。",
       "3. 访谈还重塑了项目临床定位：不再将 Dual-Armor 当作孤立疗法，而是定位为清创术后持续护理的辅助敷料。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 病房访谈三大改变之一（使用端）→ 发现居家护理知识缺口 → 简化敷料操作 + 编写护理手册",
       "2. 改变之二（基因回路端）→ 临床缺乏“杀菌+修复”一体化方案 → 下游新增 hEGF 促愈合模块",
       "3. 改变之三（产品定位端）→ 从“独立替代疗法”调整为“清创术后持续护理辅助敷料”"
     ],
-    "keywords": "Inclusivity Human Practices patient interviews changed the project hEGF debridement supportive dressing handbook 病房访谈 改变项目 清创术后",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 病房访谈三大改变之一（使用端）→ 发现居家护理知识缺口 → 简化敷料操作 + 编写护理手册",
       "2. 改变之二（基因回路端）→ 临床缺乏“杀菌+修复”一体化方案 → 下游新增 hEGF 促愈合模块",
       "3. 改变之三（产品定位端）→ 从“独立替代疗法”调整为“清创术后持续护理辅助敷料”"
@@ -3637,12 +3632,19 @@
     "id": "inc-18",
     "code": "INC.18",
     "slide": "INC",
+    "slides": [
+      "INC"
+    ],
     "slide_page": 1,
     "slide_title": "Inclusivity — Patient Care Manual",
-    "q_en": "What does your care manual cover, and how did you ensure its reliability?",
+    "slide_img": "",
     "q_zh": "你们的患者护理手册涵盖哪些内容？如何确保其可靠性？",
-    "a_en": "Our care manual covers daily wound care, dressing changes, warning signs, and practical advice for home care. To make it reliable, we used published clinical guidelines and expert recommendations. We also interviewed patients to identify their everyday difficulties. Finally, clinicians reviewed the manual and provided feedback, which helped us revise the content and make it more practical.",
-    "a_zh": "我们的护理手册涵盖日常伤口护理、敷料更换、危险预警信号以及居家护理实用建议。为确保可靠性，我们参考了已发表的临床指南和专家建议，并访谈患者以锁定日常痛点。最后，临床医生对手册进行了审阅并提供反馈，帮助我们修订内容使其更加实用。",
+    "q_en": "What does your care manual cover, and how did you ensure its reliability?",
+    "a_zh": "护理手册涵盖日常创面护理、敷料更换步骤、感染危险信号识别及居家实用建议。为确保权威可靠，内容严格依据已发表临床指南与专家共识编写，并结合患者访谈锁定日常实操难点。最终由临床医生审阅把关并反馈修订，确保手册兼具医学准确性与居家实用性。",
+    "a_en": "Our care manual covers daily wound care, dressing changes, warning signs, and practical advice for home care. To make it reliable, we used published clinical guidelines and expert recommendations, and interviewed patients to identify their everyday difficulties. Finally, clinicians reviewed the manual and provided feedback, which helped us revise the content and make it more practical.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Inclusivity care manual reliability daily wound care dressing changes warning signs clinicians reviewed 护理手册 可靠性",
     "points_en": [
       "1. Our care manual covers daily wound care, dressing changes, warning signs, and practical advice for home care.",
       "2. To make it reliable, we used published clinical guidelines and expert recommendations, and interviewed patients to identify their everyday difficulties.",
@@ -3653,19 +3655,12 @@
       "2. 为确保权威可靠，内容严格依据已发表临床指南与专家共识编写，并结合患者访谈锁定日常实操难点。",
       "3. 最终由临床医生审阅把关并反馈修订，确保手册兼具医学准确性与居家实用性。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 手册四大内容 → 日常伤口护理 + 敷料更换 + 预警信号 + 居家实用建议",
       "2. 可靠性来源 → 权威临床指南 + 专家建议 + 患者痛点访谈",
       "3. 专业把关 → 临床医生逐项审阅反馈并修订落地"
     ],
-    "keywords": "Inclusivity care manual reliability daily wound care dressing changes warning signs clinicians reviewed 护理手册 可靠性",
-    "slides": [
-      "INC"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 手册四大内容 → 日常伤口护理 + 敷料更换 + 预警信号 + 居家实用建议",
       "2. 可靠性来源 → 权威临床指南 + 专家建议 + 患者痛点访谈",
       "3. 专业把关 → 临床医生逐项审阅反馈并修订落地"
@@ -3675,12 +3670,19 @@
     "id": "thr-1",
     "code": "THR.1",
     "slide": "S6",
+    "slides": [
+      "S6"
+    ],
     "slide_page": 6,
     "slide_title": "Therapeutics — Implementation & Biosafety",
-    "q_en": "What is the main barrier to real-world implementation, and how would you address it after the competition?",
+    "slide_img": "",
     "q_zh": "走向真实世界应用的主要障碍是什么？赛后你们会如何解决？",
-    "a_en": "We believe the biggest challenge is biosafety, especially when using living engineered bacteria on open wounds. Our dressing is designed with semi-permeable membranes to separate the bacteria from the wound while allowing therapeutic molecules to pass through. However, we still need to prove that this containment system is reliable. After the competition, we would focus on testing bacterial leakage, membrane stability, and long-term safety. We would also work with clinicians to improve the dressing and move toward preclinical testing.",
-    "a_zh": "我们认为最大的挑战是生物安全性，尤其是在开放性伤口上使用活体工程菌。我们的敷料设计有半透膜，将细菌与伤口隔开，同时允许治疗分子通过；但仍需证明该物理遏制系统的可靠性。赛后我们将重点测试细菌泄漏率、膜稳定性和长期安全性，并与临床医生合作改进敷料、推进临床前测试。",
+    "q_en": "What is the main barrier to real-world implementation, and how would you address it after the competition?",
+    "a_zh": "最大挑战在于生物安全性，尤其是在开放性创面上应用活体工程菌。我们的敷料采用半透膜将工程菌与创面隔离并允许治疗蛋白透过，但该遏制系统的可靠性仍需实验验证。赛后我们将重点测试活菌泄漏率、膜稳定性与长期安全性，并联合临床医生优化敷料推进临床前研究。",
+    "a_en": "We believe the biggest challenge is biosafety, especially when using living engineered bacteria on open wounds. Our dressing is designed with semi-permeable membranes to separate the bacteria from the wound while allowing therapeutic molecules to pass through, though we still need to prove that this containment system is reliable. After the competition, we would focus on testing bacterial leakage, membrane stability, and long-term safety, and work with clinicians to improve the dressing and move toward preclinical testing.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics main barrier real-world implementation biosafety open wounds semi-permeable membranes bacterial leakage 落地障碍 半透膜 生物安全",
     "points_en": [
       "1. We believe the biggest challenge is biosafety, especially when using living engineered bacteria on open wounds.",
       "2. Our dressing is designed with semi-permeable membranes to separate the bacteria from the wound while allowing therapeutic molecules to pass through, though we still need to prove that this containment system is reliable.",
@@ -3691,19 +3693,12 @@
       "2. 我们的敷料采用半透膜将工程菌与创面隔离并允许治疗蛋白透过，但该遏制系统的可靠性仍需实验验证。",
       "3. 赛后我们将重点测试活菌泄漏率、膜稳定性与长期安全性，并联合临床医生优化敷料推进临床前研究。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 最大落地障碍 → 开放性伤口使用活体工程菌的生物安全性",
       "2. 当前隔离设计 → 半透膜物理隔开细菌与创面，仅允许治疗分子透过",
       "3. 赛后验证重点 → 实测细菌泄漏率 + 膜稳定性 + 长期安全性 + 临床前测试"
     ],
-    "keywords": "Therapeutics main barrier real-world implementation biosafety open wounds semi-permeable membranes bacterial leakage 落地障碍 半透膜 生物安全",
-    "slides": [
-      "S6"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 最大落地障碍 → 开放性伤口使用活体工程菌的生物安全性",
       "2. 当前隔离设计 → 半透膜物理隔开细菌与创面，仅允许治疗分子透过",
       "3. 赛后验证重点 → 实测细菌泄漏率 + 膜稳定性 + 长期安全性 + 临床前测试"
@@ -3713,12 +3708,19 @@
     "id": "thr-2",
     "code": "THR.2",
     "slide": "S6",
+    "slides": [
+      "S6"
+    ],
     "slide_page": 6,
     "slide_title": "Therapeutics — Approach Limitations",
-    "q_en": "What do you consider the main limitations of your therapeutic approach?",
+    "slide_img": "",
     "q_zh": "你们认为当前治疗方案的主要局限性是什么？",
-    "a_en": "Our main limitation is that we have tested individual modules, but not yet the complete two-strain system. Although we have demonstrated biofilm disruption, antibacterial activity, and preliminary communication between strains, we still need to prove that they can work together reliably. Another challenge is the complexity of chronic wounds. They often contain multiple bacterial species, while our system mainly targets S. aureus. We also need to evaluate the effects on normal skin bacteria. In the future, we would test the integrated system under more realistic wound conditions and evaluate both its effectiveness and safety.",
-    "a_zh": "我们的主要局限在于目前分别测试了各个独立模块，尚未测试完整的双菌系统。虽然我们已经证明了生物膜破坏、抗菌活性和初步的菌间通讯，但仍需证明它们能可靠地协同工作。另一个挑战是慢性伤口的复杂性：创面通常包含多种细菌，而我们的系统主要针对金黄色葡萄球菌，且还需评估对正常皮肤菌群的影响。未来我们将在更真实的伤口条件下测试整合系统并评估其有效性与安全性。",
+    "q_en": "What do you consider the main limitations of your therapeutic approach?",
+    "a_zh": "主要局限在于目前我们分别验证了各个独立模块（破膜、抗菌与初步菌间通讯），尚未完成完整双菌系统的端到端联调。另一项挑战是慢性创面的多菌种复杂性：目前系统主要靶向金葡菌，且需进一步评估对正常皮肤共生菌群的影响。未来我们将在更接近真实创面的条件下测试完整集成系统，全面评估其有效性与安全性。",
+    "a_en": "Our main limitation is that we have tested individual modules—demonstrating biofilm disruption, antibacterial activity, and preliminary communication between strains—but have not yet tested the complete two-strain system working together reliably. Another challenge is the complexity of chronic wounds, which often contain multiple bacterial species while our system mainly targets S. aureus, and we also need to evaluate the effects on normal skin bacteria. In the future, we would test the integrated system under more realistic wound conditions and evaluate both its effectiveness and safety.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics main limitations therapeutic approach individual modules chronic wounds multiple bacterial species 治疗局限性 多菌种",
     "points_en": [
       "1. Our main limitation is that we have tested individual modules—demonstrating biofilm disruption, antibacterial activity, and preliminary communication between strains—but have not yet tested the complete two-strain system working together reliably.",
       "2. Another challenge is the complexity of chronic wounds, which often contain multiple bacterial species while our system mainly targets S. aureus, and we also need to evaluate the effects on normal skin bacteria.",
@@ -3729,19 +3731,12 @@
       "2. 另一项挑战是慢性创面的多菌种复杂性：目前系统主要靶向金葡菌，且需进一步评估对正常皮肤共生菌群的影响。",
       "3. 未来我们将在更接近真实创面的条件下测试完整集成系统，全面评估其有效性与安全性。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 局限一（系统集成度）→ 已分别验证破膜/通讯/杀菌单模块，待完成完整双菌全链路联调",
       "2. 局限二（创面复杂性）→ 慢性伤口常为多菌种混合感染（当前主攻金葡菌）+ 需评估对皮肤共生菌影响",
       "3. 未来推进方向 → 在逼真创面模型下测试完整集成系统的疗效与安全性"
     ],
-    "keywords": "Therapeutics main limitations therapeutic approach individual modules chronic wounds multiple bacterial species 治疗局限性 多菌种",
-    "slides": [
-      "S6"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 局限一（系统集成度）→ 已分别验证破膜/通讯/杀菌单模块，待完成完整双菌全链路联调",
       "2. 局限二（创面复杂性）→ 慢性伤口常为多菌种混合感染（当前主攻金葡菌）+ 需评估对皮肤共生菌影响",
       "3. 未来推进方向 → 在逼真创面模型下测试完整集成系统的疗效与安全性"
@@ -3751,12 +3746,19 @@
     "id": "thr-3",
     "code": "THR.3",
     "slide": "B4",
+    "slides": [
+      "B4"
+    ],
     "slide_page": 11,
     "slide_title": "Therapeutics & Model — Two Chassis Division of Labor",
-    "q_en": "Why did you choose two bacterial chassis instead of one?",
+    "slide_img": "",
     "q_zh": "为什么你们选择两个细菌底盘而不是一个？",
-    "a_en": "We chose two strains mainly to achieve division of labor and reduce metabolic burden. S. epidermidis is responsible for sensing signals and disrupting biofilms, while EcN produces therapeutic proteins for bacterial killing and tissue repair. Putting all these functions into one strain could increase metabolic burden and make regulation more complicated. Our metabolic burden model also supports this design choice.",
-    "a_zh": "我们选择两株菌主要是为了实现分工并减轻代谢负担。表皮葡萄球菌负责感知信号和破坏生物膜，而 EcN 负责生产用于杀菌和组织修复的治疗蛋白。将所有功能放入同一株菌会增加代谢负担并使调控更加复杂。我们的代谢负担模型（metabolic burden model）也支持这一设计选择。",
+    "q_en": "Why did you choose two bacterial chassis instead of one?",
+    "a_zh": "选择两株菌主要是为了实现劳动分工（Division of labor）并降低单菌代谢负担。表皮葡萄球菌负责感知感染信号与瓦解生物膜，而 EcN 负责生产用于杀菌和组织修复的治疗蛋白。若将所有功能塞入单株菌会显著加重代谢负荷并使调控复杂化，我们的代谢负担干实验模型也定量支持这一双菌设计。",
+    "a_en": "We chose two strains mainly to achieve division of labor and reduce metabolic burden. S. epidermidis is responsible for sensing signals and disrupting biofilms, while EcN produces therapeutic proteins for bacterial killing and tissue repair. Putting all these functions into one strain could increase metabolic burden and make regulation more complicated, and our metabolic burden model also supports this design choice.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics Model two bacterial chassis division of labor metabolic burden model S. epidermidis EcN 两个底盘 代谢负担模型",
     "points_en": [
       "1. We chose two strains mainly to achieve division of labor and reduce metabolic burden.",
       "2. S. epidermidis is responsible for sensing signals and disrupting biofilms, while EcN produces therapeutic proteins for bacterial killing and tissue repair.",
@@ -3767,19 +3769,12 @@
       "2. 表皮葡萄球菌负责感知感染信号与瓦解生物膜，而 EcN 负责生产用于杀菌和组织修复的治疗蛋白。",
       "3. 若将所有功能塞入单株菌会显著加重代谢负荷并使调控复杂化，我们的代谢负担干实验模型也定量支持这一双菌设计。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 核心动因 → 劳动分工（Division of labor）+ 降低单菌代谢负担",
       "2. 双菌职责 → 表皮葡萄球菌（感知信号 + 破生物膜）| EcN（产杀菌与组织修复蛋白）",
       "3. 建模支撑 → 单菌集成会导致高代谢负荷与调控复杂，代谢负担模型定量支持双菌方案"
     ],
-    "keywords": "Therapeutics Model two bacterial chassis division of labor metabolic burden model S. epidermidis EcN 两个底盘 代谢负担模型",
-    "slides": [
-      "B4"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 核心动因 → 劳动分工（Division of labor）+ 降低单菌代谢负担",
       "2. 双菌职责 → 表皮葡萄球菌（感知信号 + 破生物膜）| EcN（产杀菌与组织修复蛋白）",
       "3. 建模支撑 → 单菌集成会导致高代谢负荷与调控复杂，代谢负担模型定量支持双菌方案"
@@ -3789,12 +3784,19 @@
     "id": "thr-4",
     "code": "THR.4",
     "slide": "S1",
+    "slides": [
+      "S1"
+    ],
     "slide_page": 1,
     "slide_title": "Therapeutics — Living-Cell Dressing vs Direct Protein",
-    "q_en": "Why use a living-cell dressing instead of directly applying therapeutic proteins?",
+    "slide_img": "",
     "q_zh": "为什么要使用活菌敷料，而不是直接涂抹治疗蛋白？",
-    "a_en": "Directly applying proteins is possible, but proteins may be degraded in the wound environment, reducing their stability and effective duration. Our living-cell dressing is designed to produce therapeutic proteins locally and respond to changes in the wound environment.",
-    "a_zh": "直接涂抹蛋白质是可行的，但蛋白质在富含蛋白酶的伤口环境中容易被降解，从而降低其稳定性和有效作用时间。我们的活菌敷料旨在局部原位生产治疗蛋白，并根据伤口环境的变化做出动态响应。",
+    "q_en": "Why use a living-cell dressing instead of directly applying therapeutic proteins?",
+    "a_zh": "直接外用涂抹蛋白虽可行，但在创面环境中蛋白极易被降解，导致稳定性差、有效作用时间短。活菌敷料能够在创面局部持续原位合成并补充治疗蛋白。同时活菌系统能根据创面感染与出血信号的变化做出按需动态响应。",
+    "a_en": "Directly applying proteins is possible, but proteins may be degraded in the wound environment, reducing their stability and effective duration. Our living-cell dressing is designed to produce therapeutic proteins locally on demand. It can also respond dynamically to changes in the wound environment.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics living-cell dressing directly applying therapeutic proteins degraded stability locally respond 活菌敷料 直接涂抹蛋白",
     "points_en": [
       "1. Directly applying proteins is possible, but proteins may be degraded in the wound environment, reducing their stability and effective duration.",
       "2. Our living-cell dressing is designed to produce therapeutic proteins locally on demand.",
@@ -3805,19 +3807,12 @@
       "2. 活菌敷料能够在创面局部持续原位合成并补充治疗蛋白。",
       "3. 同时活菌系统能根据创面感染与出血信号的变化做出按需动态响应。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 直接涂抹蛋白痛点 → 创面环境易降解外源蛋白 → 稳定性差、作用时间短",
       "2. 活菌敷料优势一 → 局部原位持续合成治疗蛋白",
       "3. 活菌敷料优势二 → 智能感知创面环境变化并按需响应"
     ],
-    "keywords": "Therapeutics living-cell dressing directly applying therapeutic proteins degraded stability locally respond 活菌敷料 直接涂抹蛋白",
-    "slides": [
-      "S1"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 直接涂抹蛋白痛点 → 创面环境易降解外源蛋白 → 稳定性差、作用时间短",
       "2. 活菌敷料优势一 → 局部原位持续合成治疗蛋白",
       "3. 活菌敷料优势二 → 智能感知创面环境变化并按需响应"
@@ -3827,12 +3822,19 @@
     "id": "thr-5",
     "code": "THR.5",
     "slide": "B3",
+    "slides": [
+      "B3"
+    ],
     "slide_page": 10,
     "slide_title": "Therapeutics — Why Naringenin",
-    "q_en": "Why did you choose naringenin as the signaling molecule?",
+    "slide_img": "",
     "q_zh": "为什么选择柚皮素作为跨菌信号分子？（简明三点版）",
-    "a_en": "We chose naringenin for three main reasons. First, biocompatibility. Naringenin is a naturally occurring molecule with relatively low toxicity at appropriate concentrations. Second, less interference. Naringenin provides a separate communication channel between our two strains, with less interference from natural signals in the wound environment. Third, additional therapeutic benefits. Studies have shown that naringenin has antioxidant and anti-inflammatory effects, which may also help support wound healing.",
-    "a_zh": "我们选择柚皮素主要基于三个原因：第一，生物相容性——柚皮素是天然存在的分子，在工作浓度下毒性较低；第二，低干扰（正交性）——柚皮素在两株工程菌之间提供了独立的通讯通道，不易受伤口环境中天然信号的干扰；第三，附加治疗益处——研究表明柚皮素具有抗氧化和抗炎作用，也有助于支持伤口愈合。",
+    "q_en": "Why did you choose naringenin as the signaling molecule?",
+    "a_zh": "第一，生物相容性好：柚皮素是天然植物代谢物，在工作浓度下细胞毒性低。第二，背景干扰小：柚皮素为两株工程菌提供独立的专用通讯通道，不受创面天然信号干扰。第三，附加治疗获益：文献证实柚皮素本身兼具抗氧化与抗炎活性，有助于协同促进创面愈合。",
+    "a_en": "First, biocompatibility: naringenin is a naturally occurring molecule with relatively low toxicity at appropriate concentrations. Second, less interference: naringenin provides a separate communication channel between our two strains, with less interference from natural signals in the wound environment. Third, additional therapeutic benefits: studies have shown that naringenin has antioxidant and anti-inflammatory effects, which may also help support wound healing.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics choose naringenin signaling molecule biocompatibility less interference antioxidant anti-inflammatory 为什么选柚皮素 生物相容性",
     "points_en": [
       "1. First, biocompatibility: naringenin is a naturally occurring molecule with relatively low toxicity at appropriate concentrations.",
       "2. Second, less interference: naringenin provides a separate communication channel between our two strains, with less interference from natural signals in the wound environment.",
@@ -3843,19 +3845,12 @@
       "2. 第二，背景干扰小：柚皮素为两株工程菌提供独立的专用通讯通道，不受创面天然信号干扰。",
       "3. 第三，附加治疗获益：文献证实柚皮素本身兼具抗氧化与抗炎活性，有助于协同促进创面愈合。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 生物相容性（Biocompatibility）→ 天然植物分子，工作浓度下低毒安全",
       "2. 低背景干扰（Less interference）→ 独立跨菌通讯通道，不受创面天然信号串扰",
       "3. 附加治疗益处（Therapeutic benefits）→ 兼具抗氧化与抗炎作用，协同促愈合"
     ],
-    "keywords": "Therapeutics choose naringenin signaling molecule biocompatibility less interference antioxidant anti-inflammatory 为什么选柚皮素 生物相容性",
-    "slides": [
-      "B3"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 生物相容性（Biocompatibility）→ 天然植物分子，工作浓度下低毒安全",
       "2. 低背景干扰（Less interference）→ 独立跨菌通讯通道，不受创面天然信号串扰",
       "3. 附加治疗益处（Therapeutic benefits）→ 兼具抗氧化与抗炎作用，协同促愈合"
@@ -3865,12 +3860,19 @@
     "id": "thr-6",
     "code": "THR.6",
     "slide": "S1",
+    "slides": [
+      "S1"
+    ],
     "slide_page": 1,
     "slide_title": "Therapeutics & Hardware — Layered Hydrogel Structure",
-    "q_en": "Are the two strains mixed together in the hydrogel, or kept in separate layers?",
+    "slide_img": "",
     "q_zh": "两株工程菌在水凝胶里是混合在一起的，还是分层放置的？",
-    "a_en": "We keep the two strains in separate layers. EcN is placed in the upper layer, while S. epidermidis is placed below it. A semi-permeable membrane separates them. Another membrane and a hydrogel layer separate the bacteria from the wound. This layered design allows the two strains to communicate through signaling molecules while keeping the bacterial cells physically separated.",
-    "a_zh": "我们将两株菌放置在不同的独立层中：EcN 位于上层，表皮葡萄球菌位于其下层，两层之间由半透膜隔开；底部还有另一层半透膜和水凝胶层将细菌与创面隔开。这种分层设计使两株菌能够通过信号分子进行通讯，同时在物理上保持菌体相互隔离。",
+    "q_en": "Are the two strains mixed together in the hydrogel, or kept in separate layers?",
+    "a_zh": "两株菌分层放置：EcN 位于上层，表皮葡萄球菌位于下层，中间由一层半透膜隔开。下方还有另一层半透膜与水凝胶层将细菌与伤口创面隔开。这种分层设计既允许两株菌通过小分子信号跨膜通讯，又在物理上将菌体彼此隔离。",
+    "a_en": "We keep the two strains in separate layers: EcN is placed in the upper layer, while S. epidermidis is placed below it, and a semi-permeable membrane separates them. Another membrane and a hydrogel layer separate the bacteria from the wound. This layered design allows the two strains to communicate through signaling molecules while keeping the bacterial cells physically separated.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics mixed together hydrogel separate layers upper layer EcN lower S. epidermidis semi-permeable membrane 水凝胶分层 上下层",
     "points_en": [
       "1. We keep the two strains in separate layers: EcN is placed in the upper layer, while S. epidermidis is placed below it, and a semi-permeable membrane separates them.",
       "2. Another membrane and a hydrogel layer separate the bacteria from the wound.",
@@ -3881,19 +3883,12 @@
       "2. 下方还有另一层半透膜与水凝胶层将细菌与伤口创面隔开。",
       "3. 这种分层设计既允许两株菌通过小分子信号跨膜通讯，又在物理上将菌体彼此隔离。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 上下分层排布 → 上层放 EcN + 下层放表皮葡萄球菌 + 中间半透膜隔开",
       "2. 创面接触界面 → 底部另有一层半透膜与水凝胶层隔开细菌与伤口",
       "3. 分层核心功能 → 信号分子自由跨膜通讯 + 细菌细胞物理隔离"
     ],
-    "keywords": "Therapeutics mixed together hydrogel separate layers upper layer EcN lower S. epidermidis semi-permeable membrane 水凝胶分层 上下层",
-    "slides": [
-      "S1"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 上下分层排布 → 上层放 EcN + 下层放表皮葡萄球菌 + 中间半透膜隔开",
       "2. 创面接触界面 → 底部另有一层半透膜与水凝胶层隔开细菌与伤口",
       "3. 分层核心功能 → 信号分子自由跨膜通讯 + 细菌细胞物理隔离"
@@ -3903,12 +3898,19 @@
     "id": "thr-7",
     "code": "THR.7",
     "slide": "S1",
+    "slides": [
+      "S1"
+    ],
     "slide_page": 1,
     "slide_title": "Therapeutics & Hardware — Freeze-Dried Activation",
-    "q_en": "How do you activate the bacteria before using the dressing?",
+    "slide_img": "",
     "q_zh": "在使用敷料前，你们是如何激活休眠细菌的？",
-    "a_en": "During storage, the bacteria are freeze-dried, while the nutrient gel is kept in a separate outer compartment. Before use, the idea is to press this compartment, allowing the gel to come into contact with the bacteria and reactivate them.",
-    "a_zh": "在储存期间，细菌处于冻干（freeze-dried）状态，而营养凝胶保存在独立的外部隔室中。在使用前，通过按压该隔室，使营养凝胶与冻干细菌接触从而将其复苏激活。",
+    "q_en": "How do you activate the bacteria before using the dressing?",
+    "a_zh": "在储存阶段，工程菌以冻干粉（Freeze-dried）形式保存。营养凝胶则储存在独立的外部隔室（Outer compartment）中。使用前只需按压外部隔室，使营养凝胶与冻干菌接触即可实现原位复苏激活。",
+    "a_en": "During storage, the bacteria are freeze-dried. Meanwhile, the nutrient gel is kept in a separate outer compartment. Before use, the idea is to press this compartment, allowing the gel to come into contact with the bacteria and reactivate them.",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics activate bacteria before using dressing storage freeze-dried nutrient gel press compartment reactivate 冻干 激活细菌 按压隔室",
     "points_en": [
       "1. During storage, the bacteria are freeze-dried.",
       "2. Meanwhile, the nutrient gel is kept in a separate outer compartment.",
@@ -3919,19 +3921,12 @@
       "2. 营养凝胶则储存在独立的外部隔室（Outer compartment）中。",
       "3. 使用前只需按压外部隔室，使营养凝胶与冻干菌接触即可实现原位复苏激活。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 储存状态 → 细菌冻干保存（Freeze-dried）",
       "2. 营养液隔离 → 营养凝胶置于独立外部隔室",
       "3. 使用前激活 → 按压隔室使营养凝胶接触菌体，原位复苏激活"
     ],
-    "keywords": "Therapeutics activate bacteria before using dressing storage freeze-dried nutrient gel press compartment reactivate 冻干 激活细菌 按压隔室",
-    "slides": [
-      "S1"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 储存状态 → 细菌冻干保存（Freeze-dried）",
       "2. 营养液隔离 → 营养凝胶置于独立外部隔室",
       "3. 使用前激活 → 按压隔室使营养凝胶接触菌体，原位复苏激活"
@@ -3941,12 +3936,19 @@
     "id": "thr-8",
     "code": "THR.8",
     "slide": "S1",
+    "slides": [
+      "S1"
+    ],
     "slide_page": 1,
     "slide_title": "Therapeutics & Hardware — Membrane Pore Size Control",
-    "q_en": "How does the membrane control which substances enter the wound?",
+    "slide_img": "",
     "q_zh": "半透膜是如何控制哪些物质进入伤口的？",
+    "q_en": "How does the membrane control which substances enter the wound?",
+    "a_zh": "我们通过控制半透膜孔径（Pore size），允许治疗蛋白透过并限制活菌及非预期大分子产物释放。但仅靠物理孔径本身无法完全区分治疗蛋白与其他分子量相近的细菌代谢物。因此，膜的分子选择性与生物安全性仍需进一步实验验证。",
     "a_en": "We aim to control the membrane's pore size to allow therapeutic proteins to pass through while limiting the release of unwanted bacterial products. However, pore size alone cannot perfectly distinguish therapeutic proteins from other molecules. Therefore, membrane selectivity and safety will need further experimental validation.",
-    "a_zh": "我们旨在控制半透膜的孔径大小（pore size），以允许治疗性蛋白质通过，同时限制不需要的细菌产物释放並截留活菌。然而，单靠孔径本身无法完美区分治疗蛋白与其他分子量相近的分子，因此膜的选择性和安全性仍需进一步的实验验证。",
+    "extra_zh": "",
+    "followups": [],
+    "keywords": "Therapeutics membrane control substances enter wound pore size therapeutic proteins selectivity 膜孔径 选择性",
     "points_en": [
       "1. We aim to control the membrane's pore size to allow therapeutic proteins to pass through while limiting the release of unwanted bacterial products.",
       "2. However, pore size alone cannot perfectly distinguish therapeutic proteins from other molecules.",
@@ -3957,19 +3959,12 @@
       "2. 但仅靠物理孔径本身无法完全区分治疗蛋白与其他分子量相近的细菌代谢物。",
       "3. 因此，膜的分子选择性与生物安全性仍需进一步实验验证。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 孔径筛选机制 → 控制半透膜孔径（Pore size），放行治疗蛋白、截留细菌与大分子杂质",
       "2. 客观物理边界 → 仅靠孔径无法完全区分同尺寸的治疗蛋白与其他小分子",
       "3. 下一步验证 → 补测膜选择性透过率与安全性实验"
     ],
-    "keywords": "Therapeutics membrane control substances enter wound pore size therapeutic proteins selectivity 膜孔径 选择性",
-    "slides": [
-      "S1"
-    ],
-    "slide_img": "",
-    "extra_zh": "",
-    "followups": [],
-    "notes": [
+    "notes_zh": [
       "1. 孔径筛选机制 → 控制半透膜孔径（Pore size），放行治疗蛋白、截留细菌与大分子杂质",
       "2. 客观物理边界 → 仅靠孔径无法完全区分同尺寸的治疗蛋白与其他小分子",
       "3. 下一步验证 → 补测膜选择性透过率与安全性实验"
