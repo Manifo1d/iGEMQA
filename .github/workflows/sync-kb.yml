@@ -1,0 +1,48 @@
+name: Auto-Sync QA Database
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/qa_items.md'
+      - 'data/qa_items.json'
+      - 'data/docs.json'
+      - 'data/glossary.json'
+      - 'data/slides.json'
+      - 'data/system_prompt.md'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-kb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Detect modified source and rebuild knowledge_base.js
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD || true)
+          if echo "$CHANGED" | grep -q "data/qa_items.md" && ! echo "$CHANGED" | grep -q "data/qa_items.json"; then
+            python3 scripts/sync_db.py --from-md
+          else
+            python3 scripts/sync_db.py --to-md
+          fi
+
+      - name: Commit and push updated bundle if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/qa_items.md data/qa_items.json data/knowledge_base.js
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(db): auto-sync knowledge_base.js from updated data files [skip ci]"
+            git push
+          fi
