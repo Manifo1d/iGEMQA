@@ -180,5 +180,12 @@
     "title": "AIP-Responsive DspB Progress — Backup · B19",
     "headline": "The 2025 AgrCA-P2/P3 sensor is validated; the Sec/SPII-DspB output is sequenced",
     "text": "pLI50-AgrCA-P2/P3-DspB built & sequenced; optimizing electroporation across ATCC 12228 restriction barrier for AIP induction test"
+  },
+  {
+    "page": 27,
+    "code": "INC",
+    "title": "Inclusivity & Human Practices — LabSafeMom / LabMate / Patient Care",
+    "headline": "Voice, Opportunity, Accessibility, Participation (HEALS) & Ward Interviews",
+    "text": "LabSafeMom (traceable rule-based pregnancy/breastfeeding risk score 0-100) | LabMate (bilingual beginner protocol guide) | Photovoice & Patient Care Manual"
   }
 ]

@@ -1731,3 +1731,601 @@
 3. 下游替换：保留柚皮素跨菌接力至益生菌 EcN，将下游输出替换为抗炎细胞因子 IL-10 或黏膜修复肽 TFF3
 
 ---
+
+## [INC.1] 什么是 LabSafeMom？它是如何工作的？
+- **ID**: `inc-1`
+- **Slide**: `INC` (Page 1)
+- **English Question**: What is LabSafeMom, and how does it work?
+- **Keywords**: Inclusivity LabSafeMom pregnant pregnancy breastfeeding risk summaries PPE traceable rules 备孕 怀孕 哺乳 风险评估
+
+### 英文分点 (1·2·3)
+1. LabSafeMom supports researchers who are planning pregnancy, pregnant, or breastfeeding by turning experimental protocols into risk summaries, safety recommendations, and personal protective equipment checklists.
+2. Its basic risk assessment follows traceable rules rather than relying entirely on AI judgments.
+3. The goal is to help researchers discuss potential risks with laboratory safety staff and clinicians, without replacing professional advice.
+
+### 中文分点 (1·2·3)
+1. LabSafeMom 支持备孕、怀孕或哺乳期的科研人员，将实验方案转化为风险摘要、安全建议和个人防护装备（PPE）清单。
+2. 其基础风险评估遵循可溯源的规则，而非完全依赖 AI 判断。
+3. 目标是帮助科研人员与实验室安全人员和临床医生讨论潜在风险，而不替代专业建议。
+
+### 答题思路速记 (中文关键词链)
+1. 服务人群与产出 → 备孕/怀孕/哺乳期科研人员 → 协议转风险摘要 + 安全建议 + PPE 清单
+2. 核心机制 → 基于可溯源规则（Traceable rules）而非纯靠 AI 判断
+3. 定位边界 → 辅助与安全官及临床医生沟通，不替代专业医疗意见
+
+---
+
+## [INC.2] 什么是 LabMate？它如何帮助实验室成员？
+- **ID**: `inc-2`
+- **Slide**: `INC` (Page 1)
+- **English Question**: What is LabMate, and how does it help laboratory members?
+- **Keywords**: Inclusivity LabMate new laboratory members beginners protocols checklists smart timers records 实验室新人 分步指导 计时器
+
+### 英文分点 (1·2·3)
+1. LabMate is designed to help new laboratory members follow experimental protocols more easily, supporting protocols in different formats and in both Chinese and English.
+2. It provides preparation checklists, step-by-step guidance, smart timers, and exportable laboratory records.
+3. Our goal is to reduce the difficulties beginners face when carrying out experiments.
+
+### 中文分点 (1·2·3)
+1. LabMate 旨在帮助实验室新人更轻松地执行实验方案，支持多种格式与中英双语协议。
+2. 它提供实验前准备清单、分步引导、智能计时器以及可导出的实验记录。
+3. 我们的目标是降低初学者开展实验的操作门槛。
+
+### 答题思路速记 (中文关键词链)
+1. 面向对象 → 实验室新手 + 支持多格式与中英双语协议
+2. 核心功能 → 准备清单 + 分步引导 + 智能计时器 + 可导出实验记录
+3. 设计目标 → 降低初学者实验操作困难
+
+---
+
+## [INC.3] 这两个网站是如何部署的？
+- **ID**: `inc-3`
+- **Slide**: `INC` (Page 1)
+- **English Question**: How are the websites deployed?
+- **Keywords**: Inclusivity websites deployed Tencent CloudBase Vercel Render frontend backend 网站部署 腾讯云
+
+### 英文分点 (1·2·3)
+1. LabMate is hosted on Tencent CloudBase, with browser-based local features and a separate function for optional AI parsing.
+2. LabSafeMom separates its frontend and backend.
+3. Its deployment guide describes Vercel for the frontend and Render for the backend.
+
+### 中文分点 (1·2·3)
+1. LabMate 托管于腾讯云开发（Tencent CloudBase），包含浏览器本地功能与可选 AI 解析的独立函数。
+2. LabSafeMom 采用前后端分离架构。
+3. 其部署指南描述了使用 Vercel 部署前端、Render 部署后端。
+
+### 答题思路速记 (中文关键词链)
+1. LabMate 部署 → 腾讯云 CloudBase + 浏览器本地功能 + 独立可选 AI 解析函数
+2. LabSafeMom 架构 → 前后端分离
+3. LabSafeMom 部署 → 前端 Vercel + 后端 Render
+
+---
+
+## [INC.4] 你们是如何分享这些工具的？
+- **ID**: `inc-4`
+- **Slide**: `INC` (Page 1)
+- **English Question**: How do you share them?
+- **Keywords**: Inclusivity share GitLab Apache 2.0 license setup instructions export reports 开源分享 部署指南
+
+### 英文分点 (1·2·3)
+1. Our wiki links to the applications and their public GitLab repositories.
+2. Both tools use the Apache 2.0 license and include setup instructions, so other teams can inspect, adapt and deploy their own copies.
+3. Users can also export reports or laboratory records.
+
+### 中文分点 (1·2·3)
+1. 我们的 Wiki 链接了在线应用及其公开的 GitLab 代码仓库。
+2. 两款工具均采用 Apache 2.0 许可证并附带安装指南，便于其他队伍审查、改编和独立部署。
+3. 用户还可以直接导出评估报告或实验记录。
+
+### 答题思路速记 (中文关键词链)
+1. 开源入口 → Wiki 直链在线应用 + 公开 GitLab 仓库
+2. 开源协议 → Apache 2.0 协议 + 完整安装指南（支持审查/改编/自部署）
+3. 用户产出 → 支持导出风险报告或实验记录
+
+---
+
+## [INC.5] 人们会如何采纳并持续使用这些工具？你们如何推动广泛采纳与长期使用？
+- **ID**: `inc-5`
+- **Slide**: `INC` (Page 1)
+- **English Question**: How will people adopt and continue using them? / How will you encourage widespread adoption and long-term use of your tools?
+- **Keywords**: Inclusivity adopt adoption continue using long-term use pilots routine laboratory training 持续使用 长期推广 试点
+
+### 英文分点 (1·2·3)
+1. Making the tools public is only the beginning; we have shared these tools along with their source code, though we have not yet demonstrated widespread or long-term adoption.
+2. We plan to run small pilots with intended users, provide sample protocols, collect feedback and improve the tools around real workflows.
+3. Our planned next steps include piloting them in routine laboratory training, gathering user feedback, and carrying out ongoing updates and iterations.
+
+### 中文分点 (1·2·3)
+1. 公开工具与源码只是起点，目前我们尚未声称已实现大规模或长期普及。
+2. 我们计划面向目标用户开展小规模试点，提供示例协议，收集反馈并贴合真实工作流优化。
+3. 下一步计划将其纳入日常实验室培训试点，持续收集反馈并迭代更新。
+
+### 答题思路速记 (中文关键词链)
+1. 当前状态 → 已开源工具与源码，诚实界定尚未达到大规模长期普及
+2. 试点推进 → 目标用户小规模试点 + 提供示例协议 + 贴合真实工作流改进
+3. 长期机制 → 纳入日常实验室新人培训 + 收集反馈持续迭代
+
+---
+
+## [INC.6] 这两个工具的两种模式（Basic mode 与 AI-enhanced mode）分别是什么？
+- **ID**: `inc-6`
+- **Slide**: `INC` (Page 1)
+- **English Question**: What are the two modes?
+- **Keywords**: Inclusivity two modes Basic mode AI-enhanced mode rule-based API key local parsing 两种模式 基础模式 AI模式
+
+### 英文分点 (1·2·3)
+1. Basic mode uses built-in rules without AI or a model API key: LabSafeMom matches protocol information against its knowledge base and calculates risk scores, while LabMate organizes protocols into guided steps, checklists and timing cues.
+2. AI-enhanced mode adds language-model assistance for less structured protocols or supporting explanations, which requires an AI service and may involve API costs.
+3. Even in AI-enhanced mode, LabSafeMom’s risk scores remain rule-based, while LabMate can fall back to local parsing.
+
+### 中文分点 (1·2·3)
+1. 基础模式（Basic mode）使用内置规则，无需 AI 或 API Key：LabSafeMom 匹配知识库计算风险分，LabMate 将协议整理为分步指导、清单与计时提示。
+2. AI 增强模式（AI-enhanced mode）针对非结构化协议或补充解释引入语言模型辅助，需配置 AI 服务并可能涉及 API 成本。
+3. 即使在 AI 模式下，LabSafeMom 的风险评分依然严格基于规则，而 LabMate 也可随时回退至本地解析。
+
+### 答题思路速记 (中文关键词链)
+1. 基础模式（免 AI/API Key）→ LabSafeMom 规则匹配算分 | LabMate 整理步骤/清单/计时
+2. AI 增强模式 → 辅助解析非结构化协议与补充说明（需 AI 服务/API 成本）
+3. 兜底保障 → LabSafeMom 评分始终基于固定规则 | LabMate 支持回退本地解析
+
+---
+
+## [INC.7] 基础模式（Basic mode）意味着所有数据都只留在浏览器本地吗？
+- **ID**: `inc-7`
+- **Slide**: `INC` (Page 1)
+- **English Question**: Does Basic mode mean everything stays in the browser?
+- **Keywords**: Inclusivity Basic mode stays in browser local parsing backend privacy 浏览器本地 后端 数据隐私
+
+### 英文分点 (1·2·3)
+1. No: LabMate’s local parsing runs in the browser when AI is switched off.
+2. However, the public LabSafeMom implementation uses a backend even in Basic mode.
+3. When AI is enabled, protocol text is sent to the configured service.
+
+### 中文分点 (1·2·3)
+1. 不是全部留在浏览器：当关闭 AI 时，LabMate 的本地解析完全在浏览器内运行。
+2. 但公开版的 LabSafeMom 即使在基础模式下也会调用后端进行知识库匹配。
+3. 当启用 AI 模式时，实验协议文本则会发送至所配置的模型服务。
+
+### 答题思路速记 (中文关键词链)
+1. 明确区分 → 并非全部仅留浏览器本地
+2. 基础模式差异 → LabMate 关 AI 时纯浏览器本地解析 | LabSafeMom 基础模式仍经过后端
+3. 开启 AI 时 → 协议文本发送至所配置的 AI 接口服务
+
+---
+
+## [INC.8] 你们的知识库数据来源是什么？
+- **ID**: `inc-8`
+- **Slide**: `INC` (Page 1)
+- **English Question**: Where does our knowledge base come from?
+- **Keywords**: Inclusivity knowledge base workplace-safety chemical safety toxicology 100 entries 知识库来源 毒理学
+
+### 英文分点 (1·2·3)
+1. We collect public workplace-safety information, chemical safety information, and toxicology references, and turn them into simple entries.
+2. Right now we have more than 100 entries.
+3. It helps with early screening, but it does not replace a professional review.
+
+### 中文分点 (1·2·3)
+1. 我们汇总公开的职业场所安全信息、化学品安全资料与毒理学参考文献，并转化为简明词条。
+2. 目前知识库已包含 100 多个条目。
+3. 它用于辅助早期风险初筛，但不能替代专业安全审查。
+
+### 答题思路速记 (中文关键词链)
+1. 数据来源 → 公开职业安全资料 + 化学品安全信息 + 毒理学文献
+2. 当前规模 → 100+ 结构化简明词条
+3. 功能定位 → 辅助早期初筛，不替代专业审查
+
+---
+
+## [INC.9] LabSafeMom 的风险评分是如何计算的？
+- **ID**: `inc-9`
+- **Slide**: `INC` (Page 1)
+- **English Question**: How is the risk score calculated?
+- **Keywords**: Inclusivity risk score calculated fixed rules pregnancy fertility breastfeeding 0 to 100 highest score 风险评分计算 最高分
+
+### 英文分点 (1·2·3)
+1. The score is based on fixed rules, not AI: the rules look at which chemicals are used, whether there is exposure information, and how the lab work is done.
+2. Each rule adds points separately for pregnancy, fertility, and breastfeeding, on a 0 to 100 scale with four levels (low, moderate, high, and critical), and the report uses the highest score, not an average.
+3. This is only a screening score—it does not mean an 80 score is an 80% chance of harm.
+
+### 中文分点 (1·2·3)
+1. 评分基于固定规则而非 AI：规则检查所使用的化学品、暴露信息以及具体实验操作方式。
+2. 每条规则分别对怀孕、生育力和哺乳期计分（0–100 分，分低、中、高、极高四级），最终报告取最高分而非平均值。
+3. 这仅是一个初筛评分——80 分并不意味着有 80% 的伤害概率。
+
+### 答题思路速记 (中文关键词链)
+1. 固定规则算分（非 AI）→ 考察化学品种类 + 暴露信息 + 实验操作方式
+2. 三维独立计分取最高值 → 怀孕 / 生育力 / 哺乳期（0–100 分，四级，取最高分而非均值）
+3. 分数物理意义 → 仅作风险初筛分级（80 分 ≠ 80% 伤害概率）
+
+---
+
+## [INC.10] LabSafeMom 的灵感来自哪里？
+- **ID**: `inc-10`
+- **Slide**: `INC` (Page 1)
+- **English Question**: Where did the idea for LabSafeMom come from?
+- **Keywords**: Inclusivity idea for LabSafeMom pregnant researcher online post stay in science 灵感来源 怀孕科研人员
+
+### 英文分点 (1·2·3)
+1. It started from an online post by a pregnant researcher who found safety information scattered and hard to connect to her daily experiments.
+2. We realized that getting into science does not mean you can stay in it.
+3. So LabSafeMom helps researchers organize experiment-specific questions so they can discuss them with safety and occupational-health professionals.
+
+### 中文分点 (1·2·3)
+1. 它源于一位怀孕科研人员的求助帖，她发现安全信息零散且难以对应到日常具体实验。
+2. 这让我们意识到：能够进入科研领域，并不天然意味着能够安全留在其中。
+3. 因此 LabSafeMom 帮助研究者梳理针对具体实验的风险问题，以便与安全及职业健康专家高效沟通。
+
+### 答题思路速记 (中文关键词链)
+1. 灵感起点 → 怀孕科研人员发帖反映安全信息零散、难对接日常实验
+2. 核心洞察 → “进入科学界不等于能留在科学界”
+3. 解决方式 → 梳理具体实验风险问题，辅助与职业健康专家沟通
+
+---
+
+## [INC.11] LabMate 的灵感来自哪里？
+- **ID**: `inc-11`
+- **Slide**: `INC` (Page 1)
+- **English Question**: Where did the idea for LabMate come from?
+- **Keywords**: Inclusivity idea for LabMate first-year students beginners unfamiliar English terms 灵感来源 大一新生
+
+### 英文分点 (1·2·3)
+1. LabMate came from two first-year students starting in the lab who faced scattered protocols, unfamiliar English terms, missed preparation steps, and difficulty managing timers and records.
+2. We turned these problems into guided steps, preparation checklists, timers, and exportable notes.
+3. The goal is to make lab work easier for beginners so they can focus on understanding the experiment.
+
+### 中文分点 (1·2·3)
+1. LabMate 源于两位刚进实验室的大一新生，他们面临方案零散、英文术语生疏、漏做准备步骤及计时记录混乱等痛点。
+2. 我们将这些问题转化为分步指导、准备清单、智能计时器与可导出笔记。
+3. 目标是降低新手的操作负担，使其能专注于理解实验原理本身。
+
+### 答题思路速记 (中文关键词链)
+1. 痛点来源 → 两位大一新生进实验室面临协议零散、英文生疏、漏准备、计时记录难兼顾
+2. 功能转化 → 分步指导 + 准备清单 + 计时器 + 可导出笔记
+3. 最终目的 → 减轻新手操作负担，聚焦理解实验本身
+
+---
+
+## [INC.12] 你们是如何将包容性（Inclusivity）融入项目的？未来计划是什么？
+- **ID**: `inc-12`
+- **Slide**: `INC` (Page 1)
+- **English Question**: How did you integrate inclusivity into your project, and what are your future plans?
+- **Keywords**: Inclusivity integrate Voice Opportunity Accessibility Participation HEALS Hear Examine Act Learn Share 包容性框架
+
+### 英文分点 (1·2·3)
+1. We organized our work around Voice, Opportunity, Accessibility, and Participation.
+2. Our HEALS process—Hear, Examine, Act, Learn, Share—helped us move from identifying barriers to making changes.
+3. Next, we want to test these resources with more target users and improve their accessibility.
+
+### 中文分点 (1·2·3)
+1. 我们围绕 Voice（发声）、Opportunity（机会）、Accessibility（可及性）和 Participation（参与）四个维度展开工作。
+2. 通过 HEALS 闭环流程（Hear 倾听、Examine 审视、Act 行动、Learn 学习、Share 分享），我们从识别障碍推进到实际改变。
+3. 下一步，我们将面向更多目标用户测试这些资源并持续提升无障碍可及性。
+
+### 答题思路速记 (中文关键词链)
+1. 四大核心维度 → Voice（发声）+ Opportunity（机会）+ Accessibility（可及性）+ Participation（参与）
+2. HEALS 行动框架 → Hear（倾听）→ Examine（审视）→ Act（行动）→ Learn（学习）→ Share（分享）
+3. 未来计划 → 扩大目标用户测试范围 + 提升无障碍可及性
+
+---
+
+## [INC.13] 与患者沟通时最大的挑战和最有收获的经历分别是什么？
+- **ID**: `inc-13`
+- **Slide**: `INC` (Page 1)
+- **English Question**: What was the greatest challenge and the most rewarding experience in communicating with patients?
+- **Keywords**: Inclusivity communicating with patients challenge rewarding co-designed mapping Photovoice exhibition 患者沟通 影像发声
+
+### 英文分点 (1·2·3)
+1. The biggest challenge is getting them to put their specific difficulties into words: a lot of patients have lived with their condition for so long that they don’t really notice the everyday inconvenience anymore, and since most of them are older, we often have to piece together something useful from stories that are a bit all over the place.
+2. That’s exactly why we use methods like co-designed mapping and Photovoice.
+3. That was also the most rewarding one: their photographs and stories became a public exhibition, so they were shaping the conversation rather than simply answering our questions.
+
+### 中文分点 (1·2·3)
+1. 最大挑战在于引导患者具象化表达日常困难：许多老年慢性创面患者长期带病已对不便习以为常，且口头叙述较为发散。
+2. 为此我们引入了协同设计地图（Co-designed mapping）与影像发声法（Photovoice）。
+3. 最有收获的经历正是他们的摄影作品与故事最终办成了公共展览，让患者成为对话的主导者而非被动受访者。
+
+### 答题思路速记 (中文关键词链)
+1. 沟通最大挑战 → 老年患者对长期不便习以为常 + 叙述发散难提炼具体痛点
+2. 创新沟通方法 → 协同设计地图（Co-designed mapping）+ 影像发声（Photovoice）
+3. 最有收获时刻 → 患者照片与故事办成公共展览，从“被动答题”变为“主导对话”
+
+---
+
+## [INC.14] 你们是如何评估各项活动的影响力的？
+- **ID**: `inc-14`
+- **Slide**: `INC` (Page 1)
+- **English Question**: How did you assess the impact of your activities?
+- **Keywords**: Inclusivity assess impact participation figures feedback learning assessments pre- and post-activity surveys 活动评估 前后测
+
+### 英文分点 (1·2·3)
+1. Overall, we evaluated our activities using participation figures, participant feedback, and learning assessments, selecting different metrics tailored to each specific activity.
+2. Our goal was to understand not only the reach of our initiatives—how many people we engaged—but also what participants learned and how we could make further improvements.
+3. For instance, we conducted pre- and post-activity surveys for children attending our summer camps and for participants in our role-playing activities.
+
+### 中文分点 (1·2·3)
+1. 我们综合使用参与人数、参与者反馈与学习成效测评，针对不同活动量身定制评估指标。
+2. 评估目标不仅看触达人数（Reach），更关注参与者实际学到了什么以及活动如何迭代。
+3. 例如，我们在夏令营儿童与角色扮演活动参与者中均开展了活动前后（Pre/Post）对比问卷。
+
+### 答题思路速记 (中文关键词链)
+1. 三维评估指标 → 参与人数 + 参与者反馈 + 学习成效测评（按活动定制）
+2. 双重评估目标 → 既看覆盖广度（Reach），也看学习深度与改进方向
+3. 具体实例 → 夏令营与角色扮演活动均开展前后测（Pre/Post）对比问卷
+
+---
+
+## [INC.15] 你们最想重点展示哪几项包容性（Inclusivity）工作？
+- **ID**: `inc-15`
+- **Slide**: `INC` (Page 1)
+- **English Question**: Which inclusivity work would you most like to highlight?
+- **Keywords**: Inclusivity highlight chronic wounds patients guidelines websites activity toolkits 包容性亮点
+
+### 英文分点 (1·2·3)
+1. First, our activities reach all kinds of groups, and each one is designed to fit its specific audience.
+2. Second, we talked in depth with our main target group—patients with chronic wounds—and used their feedback in our design process, while making guidelines based on what they actually need.
+3. Third, we created and shared a bunch of resources people can reuse, like websites, activity toolkits, and educational materials.
+
+### 中文分点 (1·2·3)
+1. 第一，活动覆盖多元受众群体，且每场活动均针对特定人群专门设计。
+2. 第二，深入访谈核心目标人群（慢性创面患者），将其反馈融入工程设计并编写贴合实际需求的居家护理手册。
+3. 第三，构建并开源了系列可复用资源，包括在线网站（LabSafeMom/LabMate）、活动工具包与科普教材。
+
+### 答题思路速记 (中文关键词链)
+1. 亮点一（多元定制）→ 覆盖各类群体 + 按受众特点专门定制活动形式
+2. 亮点二（患者共创）→ 深度访谈慢性伤口患者 + 反馈反哺设计并制定护理指南
+3. 亮点三（开源复用）→ 共享网站、活动工具包与教育材料
+
+---
+
+## [INC.16] 你们的问卷是评估了学生的真实理解，还是仅仅调查了主观印象？
+- **ID**: `inc-16`
+- **Slide**: `INC` (Page 1)
+- **English Question**: Did your surveys assess actual understanding, or only students’ impressions?
+- **Keywords**: Inclusivity surveys actual understanding impressions Life Science AI summer camp DNA RNA protein 夏令营问卷 真实理解
+
+### 英文分点 (1·2·3)
+1. In the Life Science × AI summer camp, our surveys covered five areas: scientific knowledge, AI literacy, scientific inquiry, biosafety awareness, and learning interest, using knowledge questions, attitude scales, and open-ended feedback.
+2. For example, we used eight knowledge and judgment questions, including DNA–RNA–protein information flow and whether AI predictions need experimental validation.
+3. By comparing students' answers before and after the camp, we assessed not only how they felt, but also what they actually understood.
+
+### 中文分点 (1·2·3)
+1. 在“生命科学 × AI”夏令营中，问卷覆盖科学知识、AI 素养、科学探究、生物安全意识与学习兴趣五大维度，结合客观知识题、态度量表与开放反馈。
+2. 例如设置了 8 道客观知识与判断题，考察 DNA–RNA–蛋白质信息流及“AI 预测是否需湿实验验证”等核心概念。
+3. 通过对比营前与营后作答准确率，我们不仅评估主观感受，更定量检验了学生的真实理解。
+
+### 答题思路速记 (中文关键词链)
+1. 五维综合测评 → 科学知识 + AI 素养 + 科学探究 + 生物安全意识 + 学习兴趣
+2. 硬核客观题设计 → 8 道知识判断题（涵盖中心法则 DNA-RNA-蛋白 + AI 预测需实验验证）
+3. 前后测对比 → 对比开营前后客观题作答，实测真实理解而非仅看主观印象
+
+---
+
+## [INC.17] 你们从患者和医院访谈中学到了什么？哪项反馈或 HP 活动对项目改变最大？
+- **ID**: `inc-17`
+- **Slide**: `INC` (Page 1)
+- **English Question**: What did you learn from outreach and patient interviews, and which feedback changed the project? / Which Human Practices activity changed the project the most?
+- **Keywords**: Inclusivity Human Practices patient interviews changed the project hEGF debridement supportive dressing handbook 病房访谈 改变项目 清创术后
+
+### 英文分点 (1·2·3)
+1. The hospital ward interviews with patients, clinicians, and care workers changed the project the most: talking with patients revealed a big gap in home wound-care knowledge, so we made the dressing easy to use and designed a handbook.
+2. Because current treatments often cannot both kill bacteria and help tissue repair, we added hEGF to bridge that gap in the treatment process.
+3. These interviews also changed the role of our project: instead of presenting Dual-Armor as a stand-alone treatment, we now position it as a supportive dressing for ongoing care after debridement.
+
+### 中文分点 (1·2·3)
+1. 医院病房对患者、医生和护工的深度访谈对项目改变最大：针对患者居家护理知识缺口，我们简化了敷料操作并编写了居家护理手册。
+2. 针对现有治疗难以兼顾“抗菌”与“促组织修复”的临床断层，我们在下游治疗模块中新增了促愈合因子 hEGF。
+3. 访谈还重塑了项目临床定位：不再将 Dual-Armor 当作孤立疗法，而是定位为清创术后持续护理的辅助敷料。
+
+### 答题思路速记 (中文关键词链)
+1. 病房访谈三大改变之一（使用端）→ 发现居家护理知识缺口 → 简化敷料操作 + 编写护理手册
+2. 改变之二（基因回路端）→ 临床缺乏“杀菌+修复”一体化方案 → 下游新增 hEGF 促愈合模块
+3. 改变之三（产品定位端）→ 从“独立替代疗法”调整为“清创术后持续护理辅助敷料”
+
+---
+
+## [INC.18] 你们的患者护理手册涵盖哪些内容？如何确保其可靠性？
+- **ID**: `inc-18`
+- **Slide**: `INC` (Page 1)
+- **English Question**: What does your care manual cover, and how did you ensure its reliability?
+- **Keywords**: Inclusivity care manual reliability daily wound care dressing changes warning signs clinicians reviewed 护理手册 可靠性
+
+### 英文分点 (1·2·3)
+1. Our care manual covers daily wound care, dressing changes, warning signs, and practical advice for home care.
+2. To make it reliable, we used published clinical guidelines and expert recommendations, and interviewed patients to identify their everyday difficulties.
+3. Finally, clinicians reviewed the manual and provided feedback, which helped us revise the content and make it more practical.
+
+### 中文分点 (1·2·3)
+1. 护理手册涵盖日常创面护理、敷料更换步骤、感染危险信号识别及居家实用建议。
+2. 为确保权威可靠，内容严格依据已发表临床指南与专家共识编写，并结合患者访谈锁定日常实操难点。
+3. 最终由临床医生审阅把关并反馈修订，确保手册兼具医学准确性与居家实用性。
+
+### 答题思路速记 (中文关键词链)
+1. 手册四大内容 → 日常伤口护理 + 敷料更换 + 预警信号 + 居家实用建议
+2. 可靠性来源 → 权威临床指南 + 专家建议 + 患者痛点访谈
+3. 专业把关 → 临床医生逐项审阅反馈并修订落地
+
+---
+
+## [THR.1] 走向真实世界应用的主要障碍是什么？赛后你们会如何解决？
+- **ID**: `thr-1`
+- **Slide**: `S6` (Page 6)
+- **English Question**: What is the main barrier to real-world implementation, and how would you address it after the competition?
+- **Keywords**: Therapeutics main barrier real-world implementation biosafety open wounds semi-permeable membranes bacterial leakage 落地障碍 半透膜 生物安全
+
+### 英文分点 (1·2·3)
+1. We believe the biggest challenge is biosafety, especially when using living engineered bacteria on open wounds.
+2. Our dressing is designed with semi-permeable membranes to separate the bacteria from the wound while allowing therapeutic molecules to pass through, though we still need to prove that this containment system is reliable.
+3. After the competition, we would focus on testing bacterial leakage, membrane stability, and long-term safety, and work with clinicians to improve the dressing and move toward preclinical testing.
+
+### 中文分点 (1·2·3)
+1. 最大挑战在于生物安全性，尤其是在开放性创面上应用活体工程菌。
+2. 我们的敷料采用半透膜将工程菌与创面隔离并允许治疗蛋白透过，但该遏制系统的可靠性仍需实验验证。
+3. 赛后我们将重点测试活菌泄漏率、膜稳定性与长期安全性，并联合临床医生优化敷料推进临床前研究。
+
+### 答题思路速记 (中文关键词链)
+1. 最大落地障碍 → 开放性伤口使用活体工程菌的生物安全性
+2. 当前隔离设计 → 半透膜物理隔开细菌与创面，仅允许治疗分子透过
+3. 赛后验证重点 → 实测细菌泄漏率 + 膜稳定性 + 长期安全性 + 临床前测试
+
+---
+
+## [THR.2] 你们认为当前治疗方案的主要局限性是什么？
+- **ID**: `thr-2`
+- **Slide**: `S6` (Page 6)
+- **English Question**: What do you consider the main limitations of your therapeutic approach?
+- **Keywords**: Therapeutics main limitations therapeutic approach individual modules chronic wounds multiple bacterial species 治疗局限性 多菌种
+
+### 英文分点 (1·2·3)
+1. Our main limitation is that we have tested individual modules—demonstrating biofilm disruption, antibacterial activity, and preliminary communication between strains—but have not yet tested the complete two-strain system working together reliably.
+2. Another challenge is the complexity of chronic wounds, which often contain multiple bacterial species while our system mainly targets S. aureus, and we also need to evaluate the effects on normal skin bacteria.
+3. In the future, we would test the integrated system under more realistic wound conditions and evaluate both its effectiveness and safety.
+
+### 中文分点 (1·2·3)
+1. 主要局限在于目前我们分别验证了各个独立模块（破膜、抗菌与初步菌间通讯），尚未完成完整双菌系统的端到端联调。
+2. 另一项挑战是慢性创面的多菌种复杂性：目前系统主要靶向金葡菌，且需进一步评估对正常皮肤共生菌群的影响。
+3. 未来我们将在更接近真实创面的条件下测试完整集成系统，全面评估其有效性与安全性。
+
+### 答题思路速记 (中文关键词链)
+1. 局限一（系统集成度）→ 已分别验证破膜/通讯/杀菌单模块，待完成完整双菌全链路联调
+2. 局限二（创面复杂性）→ 慢性伤口常为多菌种混合感染（当前主攻金葡菌）+ 需评估对皮肤共生菌影响
+3. 未来推进方向 → 在逼真创面模型下测试完整集成系统的疗效与安全性
+
+---
+
+## [THR.3] 为什么你们选择两个细菌底盘而不是一个？
+- **ID**: `thr-3`
+- **Slide**: `B4` (Page 11)
+- **English Question**: Why did you choose two bacterial chassis instead of one?
+- **Keywords**: Therapeutics Model two bacterial chassis division of labor metabolic burden model S. epidermidis EcN 两个底盘 代谢负担模型
+
+### 英文分点 (1·2·3)
+1. We chose two strains mainly to achieve division of labor and reduce metabolic burden.
+2. S. epidermidis is responsible for sensing signals and disrupting biofilms, while EcN produces therapeutic proteins for bacterial killing and tissue repair.
+3. Putting all these functions into one strain could increase metabolic burden and make regulation more complicated, and our metabolic burden model also supports this design choice.
+
+### 中文分点 (1·2·3)
+1. 选择两株菌主要是为了实现劳动分工（Division of labor）并降低单菌代谢负担。
+2. 表皮葡萄球菌负责感知感染信号与瓦解生物膜，而 EcN 负责生产用于杀菌和组织修复的治疗蛋白。
+3. 若将所有功能塞入单株菌会显著加重代谢负荷并使调控复杂化，我们的代谢负担干实验模型也定量支持这一双菌设计。
+
+### 答题思路速记 (中文关键词链)
+1. 核心动因 → 劳动分工（Division of labor）+ 降低单菌代谢负担
+2. 双菌职责 → 表皮葡萄球菌（感知信号 + 破生物膜）| EcN（产杀菌与组织修复蛋白）
+3. 建模支撑 → 单菌集成会导致高代谢负荷与调控复杂，代谢负担模型定量支持双菌方案
+
+---
+
+## [THR.4] 为什么要使用活菌敷料，而不是直接涂抹治疗蛋白？
+- **ID**: `thr-4`
+- **Slide**: `S1` (Page 1)
+- **English Question**: Why use a living-cell dressing instead of directly applying therapeutic proteins?
+- **Keywords**: Therapeutics living-cell dressing directly applying therapeutic proteins degraded stability locally respond 活菌敷料 直接涂抹蛋白
+
+### 英文分点 (1·2·3)
+1. Directly applying proteins is possible, but proteins may be degraded in the wound environment, reducing their stability and effective duration.
+2. Our living-cell dressing is designed to produce therapeutic proteins locally on demand.
+3. It can also respond dynamically to changes in the wound environment.
+
+### 中文分点 (1·2·3)
+1. 直接外用涂抹蛋白虽可行，但在创面环境中蛋白极易被降解，导致稳定性差、有效作用时间短。
+2. 活菌敷料能够在创面局部持续原位合成并补充治疗蛋白。
+3. 同时活菌系统能根据创面感染与出血信号的变化做出按需动态响应。
+
+### 答题思路速记 (中文关键词链)
+1. 直接涂抹蛋白痛点 → 创面环境易降解外源蛋白 → 稳定性差、作用时间短
+2. 活菌敷料优势一 → 局部原位持续合成治疗蛋白
+3. 活菌敷料优势二 → 智能感知创面环境变化并按需响应
+
+---
+
+## [THR.5] 为什么选择柚皮素作为跨菌信号分子？（简明三点版）
+- **ID**: `thr-5`
+- **Slide**: `B3` (Page 10)
+- **English Question**: Why did you choose naringenin as the signaling molecule?
+- **Keywords**: Therapeutics choose naringenin signaling molecule biocompatibility less interference antioxidant anti-inflammatory 为什么选柚皮素 生物相容性
+
+### 英文分点 (1·2·3)
+1. First, biocompatibility: naringenin is a naturally occurring molecule with relatively low toxicity at appropriate concentrations.
+2. Second, less interference: naringenin provides a separate communication channel between our two strains, with less interference from natural signals in the wound environment.
+3. Third, additional therapeutic benefits: studies have shown that naringenin has antioxidant and anti-inflammatory effects, which may also help support wound healing.
+
+### 中文分点 (1·2·3)
+1. 第一，生物相容性好：柚皮素是天然植物代谢物，在工作浓度下细胞毒性低。
+2. 第二，背景干扰小：柚皮素为两株工程菌提供独立的专用通讯通道，不受创面天然信号干扰。
+3. 第三，附加治疗获益：文献证实柚皮素本身兼具抗氧化与抗炎活性，有助于协同促进创面愈合。
+
+### 答题思路速记 (中文关键词链)
+1. 生物相容性（Biocompatibility）→ 天然植物分子，工作浓度下低毒安全
+2. 低背景干扰（Less interference）→ 独立跨菌通讯通道，不受创面天然信号串扰
+3. 附加治疗益处（Therapeutic benefits）→ 兼具抗氧化与抗炎作用，协同促愈合
+
+---
+
+## [THR.6] 两株工程菌在水凝胶里是混合在一起的，还是分层放置的？
+- **ID**: `thr-6`
+- **Slide**: `S1` (Page 1)
+- **English Question**: Are the two strains mixed together in the hydrogel, or kept in separate layers?
+- **Keywords**: Therapeutics mixed together hydrogel separate layers upper layer EcN lower S. epidermidis semi-permeable membrane 水凝胶分层 上下层
+
+### 英文分点 (1·2·3)
+1. We keep the two strains in separate layers: EcN is placed in the upper layer, while S. epidermidis is placed below it, and a semi-permeable membrane separates them.
+2. Another membrane and a hydrogel layer separate the bacteria from the wound.
+3. This layered design allows the two strains to communicate through signaling molecules while keeping the bacterial cells physically separated.
+
+### 中文分点 (1·2·3)
+1. 两株菌分层放置：EcN 位于上层，表皮葡萄球菌位于下层，中间由一层半透膜隔开。
+2. 下方还有另一层半透膜与水凝胶层将细菌与伤口创面隔开。
+3. 这种分层设计既允许两株菌通过小分子信号跨膜通讯，又在物理上将菌体彼此隔离。
+
+### 答题思路速记 (中文关键词链)
+1. 上下分层排布 → 上层放 EcN + 下层放表皮葡萄球菌 + 中间半透膜隔开
+2. 创面接触界面 → 底部另有一层半透膜与水凝胶层隔开细菌与伤口
+3. 分层核心功能 → 信号分子自由跨膜通讯 + 细菌细胞物理隔离
+
+---
+
+## [THR.7] 在使用敷料前，你们是如何激活休眠细菌的？
+- **ID**: `thr-7`
+- **Slide**: `S1` (Page 1)
+- **English Question**: How do you activate the bacteria before using the dressing?
+- **Keywords**: Therapeutics activate bacteria before using dressing storage freeze-dried nutrient gel press compartment reactivate 冻干 激活细菌 按压隔室
+
+### 英文分点 (1·2·3)
+1. During storage, the bacteria are freeze-dried.
+2. Meanwhile, the nutrient gel is kept in a separate outer compartment.
+3. Before use, the idea is to press this compartment, allowing the gel to come into contact with the bacteria and reactivate them.
+
+### 中文分点 (1·2·3)
+1. 在储存阶段，工程菌以冻干粉（Freeze-dried）形式保存。
+2. 营养凝胶则储存在独立的外部隔室（Outer compartment）中。
+3. 使用前只需按压外部隔室，使营养凝胶与冻干菌接触即可实现原位复苏激活。
+
+### 答题思路速记 (中文关键词链)
+1. 储存状态 → 细菌冻干保存（Freeze-dried）
+2. 营养液隔离 → 营养凝胶置于独立外部隔室
+3. 使用前激活 → 按压隔室使营养凝胶接触菌体，原位复苏激活
+
+---
+
+## [THR.8] 半透膜是如何控制哪些物质进入伤口的？
+- **ID**: `thr-8`
+- **Slide**: `S1` (Page 1)
+- **English Question**: How does the membrane control which substances enter the wound?
+- **Keywords**: Therapeutics membrane control substances enter wound pore size therapeutic proteins selectivity 膜孔径 选择性
+
+### 英文分点 (1·2·3)
+1. We aim to control the membrane's pore size to allow therapeutic proteins to pass through while limiting the release of unwanted bacterial products.
+2. However, pore size alone cannot perfectly distinguish therapeutic proteins from other molecules.
+3. Therefore, membrane selectivity and safety will need further experimental validation.
+
+### 中文分点 (1·2·3)
+1. 我们通过控制半透膜孔径（Pore size），允许治疗蛋白透过并限制活菌及非预期大分子产物释放。
+2. 但仅靠物理孔径本身无法完全区分治疗蛋白与其他分子量相近的细菌代谢物。
+3. 因此，膜的分子选择性与生物安全性仍需进一步实验验证。
+
+### 答题思路速记 (中文关键词链)
+1. 孔径筛选机制 → 控制半透膜孔径（Pore size），放行治疗蛋白、截留细菌与大分子杂质
+2. 客观物理边界 → 仅靠孔径无法完全区分同尺寸的治疗蛋白与其他小分子
+3. 下一步验证 → 补测膜选择性透过率与安全性实验
+
+---

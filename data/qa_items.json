@@ -486,8 +486,18 @@
     "id": "s6-3",
     "code": "S6.3",
     "slide": "S6",
+    "slides": [
+      "S6"
+    ],
+    "slide_page": 6,
+    "slide_title": "Overall Achievements — Summary",
+    "slide_img": "",
     "q_zh": "如果再给你们三个月时间（或问最核心的待补实验），你们会按什么优先级推进？",
     "q_en": "If you had three more months, what would you prioritize to complete the full system?",
+    "a_zh": "如果再有三个月，我们将按严格优先级打通三个模块之间的“交接棒”，把目前已独立验证的三大功能模块串联为端到端闭环系统。第一步（第 1 个月）：浓缩已转入 ATCC 12228 的组成型菌株上清，通过 Anti-His Western blot 与上清破膜实验坐实工程菌 DspB 分泌（B18），并完成 AIP 诱导型大质粒在 ATCC 12228 中的电转诱导验证（B19）。第二步（第 2–3 个月）：将 `HmSr–Nr` 柚皮素通路导入表皮葡萄球菌、将 `LSp222/hEGF` 导入 EcN，并加上通路失活突变体阴性对照，在离体猪皮感染创面模型中测试双层水凝胶的完整治疗闭环。",
+    "a_en": "Our three-month roadmap prioritizes closing the three inter-module handoffs that connect our individually validated modules into an end-to-end therapeutic consortium. First, we will concentrate *S. epidermidis* ATCC 12228 supernatant to confirm DspB secretion by anti-His Western blot and conditioned-medium biofilm dispersal (B18); second, we will complete electroporation of the AIP-inducible pLI50–AgrCA–P2/P3–DspB construct into ATCC 12228 (B19). Third, we will transfer the HmSr–Nr naringenin pathway into *S. epidermidis* and move LSp222/hEGF into EcN to test the final *S. epidermidis*–EcN pair inside our dual-layer hydrogel using an ex vivo porcine skin wound model.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "three more months priority roadmap biggest weakness most afraid question S6 B18 B19 多三个月 下一步优先级 最大弱点",
     "points_en": [
       "1. [Direct Conclusion] Our three-month roadmap prioritizes closing the three inter-module handoffs that connect our individually validated modules into an end-to-end therapeutic consortium.",
@@ -499,33 +509,33 @@
       "2. 【实验证据与数据】第一步（第 1 个月）：浓缩已转入 ATCC 12228 的组成型菌株上清，通过 Anti-His Western blot 与上清破膜实验坐实工程菌 DspB 分泌（B18），并完成 AIP 诱导型大质粒在 ATCC 12228 中的电转诱导验证（B19）。",
       "3. 【边界与下一步】第二步（第 2–3 个月）：将 `HmSr–Nr` 柚皮素通路导入表皮葡萄球菌、将 `LSp222/hEGF` 导入 EcN，并加上通路失活突变体阴性对照，在离体猪皮感染创面模型中测试双层水凝胶的完整治疗闭环。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 第一优先级（破膜闭环）→ 浓缩 ATCC 12228 上清做 His-Western 与破膜活性 + 完成 AIP 诱导型电转 (B18/B19)",
       "2. 第二优先级（终极底盘对接）→ 表皮葡萄球菌产柚皮素 + EcN 产 LSp222/hEGF 全链路联调（含失活通路对照）",
       "3. 第三优先级（近临床模型）→ 双层水凝胶封装下的离体猪皮创面感染模型与细胞划痕修复验证"
     ],
-    "extra_zh": "",
+    "notes_zh": [
+      "1. 第一优先级（破膜闭环）→ 浓缩 ATCC 12228 上清做 His-Western 与破膜活性 + 完成 AIP 诱导型电转 (B18/B19)",
+      "2. 第二优先级（终极底盘对接）→ 表皮葡萄球菌产柚皮素 + EcN 产 LSp222/hEGF 全链路联调（含失活通路对照）",
+      "3. 第三优先级（近临床模型）→ 双层水凝胶封装下的离体猪皮创面感染模型与细胞划痕修复验证"
+    ]
+  },
+  {
+    "id": "s6-4",
+    "code": "S6.4",
+    "slide": "S6",
     "slides": [
       "S6"
     ],
     "slide_page": 6,
     "slide_title": "Overall Achievements — Summary",
     "slide_img": "",
-    "followups": [],
-    "notes": [
-      "1. 第一优先级（破膜闭环）→ 浓缩 ATCC 12228 上清做 His-Western 与破膜活性 + 完成 AIP 诱导型电转 (B18/B19)",
-      "2. 第二优先级（终极底盘对接）→ 表皮葡萄球菌产柚皮素 + EcN 产 LSp222/hEGF 全链路联调（含失活通路对照）",
-      "3. 第三优先级（近临床模型）→ 双层水凝胶封装下的离体猪皮创面感染模型与细胞划痕修复验证"
-    ],
-    "a_en": "Our three-month roadmap prioritizes closing the three inter-module handoffs that connect our individually validated modules into an end-to-end therapeutic consortium. First, we will concentrate *S. epidermidis* ATCC 12228 supernatant to confirm DspB secretion by anti-His Western blot and conditioned-medium biofilm dispersal (B18); second, we will complete electroporation of the AIP-inducible pLI50–AgrCA–P2/P3–DspB construct into ATCC 12228 (B19). Third, we will transfer the HmSr–Nr naringenin pathway into *S. epidermidis* and move LSp222/hEGF into EcN to test the final *S. epidermidis*–EcN pair inside our dual-layer hydrogel using an ex vivo porcine skin wound model.",
-    "a_zh": "如果再有三个月，我们将按严格优先级打通三个模块之间的“交接棒”，把目前已独立验证的三大功能模块串联为端到端闭环系统。第一步（第 1 个月）：浓缩已转入 ATCC 12228 的组成型菌株上清，通过 Anti-His Western blot 与上清破膜实验坐实工程菌 DspB 分泌（B18），并完成 AIP 诱导型大质粒在 ATCC 12228 中的电转诱导验证（B19）。第二步（第 2–3 个月）：将 `HmSr–Nr` 柚皮素通路导入表皮葡萄球菌、将 `LSp222/hEGF` 导入 EcN，并加上通路失活突变体阴性对照，在离体猪皮感染创面模型中测试双层水凝胶的完整治疗闭环。"
-  },
-  {
-    "id": "s6-4",
-    "code": "S6.4",
-    "slide": "S6",
     "q_zh": "你们在真实伤口模型里测过吗？活菌敷料未来走什么监管路径（FDA/NMPA）才能到病人身上？",
     "q_en": "Have you tested this in a wound model, and what is the clinical and regulatory path to reach patients?",
+    "a_zh": "今年的所有湿实验数据均为体外（in vitro）概念验证；在临床转化路径上，该工程菌水凝胶敷料属于外用“活体生物治疗产品（LBP）药械组合产品”。参照 FDA 与 NMPA 对基因工程活菌药物的监管要求，进入临床前需完成三项生物安全升级：以 D-丙氨酸双基因营养缺陷型（alr/dadX 与 dal/dat）替代抗生素抗性筛选标记、采用染色体整合消除质粒水平基因转移（HGT）风险、并验证水凝胶物理截留率。临床前有效性验证将按“人工伤口渗出液 → 离体猪皮生物膜模型 → 小鼠全层皮肤缺损感染模型”三级推进，并同步开展冻干赋形剂筛选与室温保质期稳定性研究。",
+    "a_en": "All wet-lab data this year are in vitro proof-of-concept measurements, and clinically this dual-strain hydrogel dressing would be regulated as a topical Live Biotherapeutic Product (LBP) Combination Product. Following FDA/NMPA guidance for engineered LBPs, translational development requires three safety upgrades before human trials: replacing antibiotic resistance cassettes with double D-alanine auxotrophy (alr/dadX in EcN, dal/dat in *S. epidermidis*), chromosomal integration to block horizontal gene transfer, and physical containment inside the hydrogel dressing. Our preclinical validation ladder moves from artificial wound exudate to ex vivo porcine skin biofilm models and murine excisional wound models, alongside lyophilization and room-temperature viability stability testing.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "wound model in vivo ex vivo regulatory path FDA LBP live biotherapeutic product lyophilization S6 B4 伤口模型 监管路径 活体生物药",
     "points_en": [
       "1. [Direct Conclusion] All wet-lab data this year are in vitro proof-of-concept measurements, and clinically this dual-strain hydrogel dressing would be regulated as a topical Live Biotherapeutic Product (LBP) Combination Product.",
@@ -537,26 +547,16 @@
       "2. 【实验证据与数据】参照 FDA 与 NMPA 对基因工程活菌药物的监管要求，进入临床前需完成三项生物安全升级：以 D-丙氨酸双基因营养缺陷型（alr/dadX 与 dal/dat）替代抗生素抗性筛选标记、采用染色体整合消除质粒水平基因转移（HGT）风险、并验证水凝胶物理截留率。",
       "3. 【边界与下一步】临床前有效性验证将按“人工伤口渗出液 → 离体猪皮生物膜模型 → 小鼠全层皮肤缺损感染模型”三级推进，并同步开展冻干赋形剂筛选与室温保质期稳定性研究。"
     ],
-    "notes_zh": [
-      "1. 监管定位清晰 → 外用活体生物治疗产品（LBP）+ 水凝胶药械组合产品",
-      "2. 三重安全合规升级 → 无抗性标记（D-Ala 营养缺陷型）+ 染色体整合防水平基因转移 + 水凝胶物理截留",
-      "3. 临床前三级验证阶梯 → 人工伤口渗出液 → 离体猪皮生物膜模型 → 小鼠创面模型 + 冻干稳定性"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "S6"
-    ],
-    "slide_page": 6,
-    "slide_title": "Overall Achievements — Summary",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 监管定位清晰 → 外用活体生物治疗产品（LBP）+ 水凝胶药械组合产品",
       "2. 三重安全合规升级 → 无抗性标记（D-Ala 营养缺陷型）+ 染色体整合防水平基因转移 + 水凝胶物理截留",
       "3. 临床前三级验证阶梯 → 人工伤口渗出液 → 离体猪皮生物膜模型 → 小鼠创面模型 + 冻干稳定性"
     ],
-    "a_en": "All wet-lab data this year are in vitro proof-of-concept measurements, and clinically this dual-strain hydrogel dressing would be regulated as a topical Live Biotherapeutic Product (LBP) Combination Product. Following FDA/NMPA guidance for engineered LBPs, translational development requires three safety upgrades before human trials: replacing antibiotic resistance cassettes with double D-alanine auxotrophy (alr/dadX in EcN, dal/dat in *S. epidermidis*), chromosomal integration to block horizontal gene transfer, and physical containment inside the hydrogel dressing. Our preclinical validation ladder moves from artificial wound exudate to ex vivo porcine skin biofilm models and murine excisional wound models, alongside lyophilization and room-temperature viability stability testing.",
-    "a_zh": "今年的所有湿实验数据均为体外（in vitro）概念验证；在临床转化路径上，该工程菌水凝胶敷料属于外用“活体生物治疗产品（LBP）药械组合产品”。参照 FDA 与 NMPA 对基因工程活菌药物的监管要求，进入临床前需完成三项生物安全升级：以 D-丙氨酸双基因营养缺陷型（alr/dadX 与 dal/dat）替代抗生素抗性筛选标记、采用染色体整合消除质粒水平基因转移（HGT）风险、并验证水凝胶物理截留率。临床前有效性验证将按“人工伤口渗出液 → 离体猪皮生物膜模型 → 小鼠全层皮肤缺损感染模型”三级推进，并同步开展冻干赋形剂筛选与室温保质期稳定性研究。"
+    "notes_zh": [
+      "1. 监管定位清晰 → 外用活体生物治疗产品（LBP）+ 水凝胶药械组合产品",
+      "2. 三重安全合规升级 → 无抗性标记（D-Ala 营养缺陷型）+ 染色体整合防水平基因转移 + 水凝胶物理截留",
+      "3. 临床前三级验证阶梯 → 人工伤口渗出液 → 离体猪皮生物膜模型 → 小鼠创面模型 + 冻干稳定性"
+    ]
   },
   {
     "id": "idx-1",
@@ -968,8 +968,18 @@
     "id": "b4-3",
     "code": "B4.3",
     "slide": "B4",
+    "slides": [
+      "B4"
+    ],
+    "slide_page": 11,
+    "slide_title": "Host Choice & Validation — Backup · B4",
+    "slide_img": "",
     "q_zh": "为什么要用“表皮葡萄球菌 + EcN”两株菌分工，而不是把所有回路放进同一株工程菌？它们在伤口里能共存吗？",
     "q_en": "Why use two bacterial strains instead of one single strain, and will S. epidermidis and EcN coexist stably in a wound?",
+    "a_zh": "采用双菌联合体是为了发挥“皮肤共生革兰氏阳性菌天然传感”与“益生菌革兰氏阴性底盘高效产蛋白”的各自优势，避免单株菌因承载 4 条回路而崩溃。若将 AIP 传感、DspB 分泌、三酶柚皮素合成、FdeR 调控及 LSp222/hEGF 双治疗输出强行塞入同一底盘，不仅质粒拷贝与代谢负荷过高，也会丧失 Part Collection 发送端与接收端解耦复用的核心价值。为了避免两株菌在创面直接竞争营养或受 LSp222 交叉影响，我们的双层水凝胶敷料将两株菌物理分隔在不同凝胶层（间距 40 µm），仅通过小分子柚皮素穿膜通讯；下一步将实测表皮葡萄球菌与 EcN 在分层水凝胶中的长期共培养稳定性。",
+    "a_en": "Splitting the system across two specialized strains leverages *S. epidermidis*'s native Gram-positive heme/AIP sensing and *E. coli* Nissle 1917's high-yield Gram-negative protein expression while preventing severe metabolic overload in a single chassis. Cramming AIP sensing, DspB secretion, three-enzyme naringenin biosynthesis, FdeR regulation, LSp222, and hEGF into one cell would exceed plasmid stability limits and eliminate the modularsender/receiver architecture of our Part Collection. To prevent direct nutrient competition or LSp222 cross-lysis between the two species, our dressing design houses *S. epidermidis* and EcN in separate hydrogel layers (40 µm apart) connected only by diffusible naringenin; testing long-term *S. epidermidis*–EcN co-viability in this layered hydrogel is our next step.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "two strains vs one strain division of labor metabolic burden coexistence hydrogel B4 B12 为什么用两株菌 双菌分工 共存",
     "points_en": [
       "1. [Direct Conclusion] Splitting the system across two specialized strains leverages *S. epidermidis*'s native Gram-positive heme/AIP sensing and *E. coli* Nissle 1917's high-yield Gram-negative protein expression while preventing severe metabolic overload in a single chassis.",
@@ -981,26 +991,16 @@
       "2. 【实验证据与数据】若将 AIP 传感、DspB 分泌、三酶柚皮素合成、FdeR 调控及 LSp222/hEGF 双治疗输出强行塞入同一底盘，不仅质粒拷贝与代谢负荷过高，也会丧失 Part Collection 发送端与接收端解耦复用的核心价值。",
       "3. 【边界与下一步】为了避免两株菌在创面直接竞争营养或受 LSp222 交叉影响，我们的双层水凝胶敷料将两株菌物理分隔在不同凝胶层（间距 40 µm），仅通过小分子柚皮素穿膜通讯；下一步将实测表皮葡萄球菌与 EcN 在分层水凝胶中的长期共培养稳定性。"
     ],
-    "notes_zh": [
-      "1. 底盘优势互补 → 表皮葡萄球菌（天然皮肤定植 + HssRS/Agr 传感）+ EcN（强效合成与分泌治疗蛋白）",
-      "2. 降低代谢负荷 → 避免单菌同时承载 4 条基因回路与 3 酶代谢通路导致生长崩溃",
-      "3. 分层共存机制 → 双层水凝胶物理隔离两菌（40 µm 间距）防营养竞争，仅靠柚皮素小分子跨层通讯"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B4"
-    ],
-    "slide_page": 11,
-    "slide_title": "Host Choice & Validation — Backup · B4",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 底盘优势互补 → 表皮葡萄球菌（天然皮肤定植 + HssRS/Agr 传感）+ EcN（强效合成与分泌治疗蛋白）",
       "2. 降低代谢负荷 → 避免单菌同时承载 4 条基因回路与 3 酶代谢通路导致生长崩溃",
       "3. 分层共存机制 → 双层水凝胶物理隔离两菌（40 µm 间距）防营养竞争，仅靠柚皮素小分子跨层通讯"
     ],
-    "a_en": "Splitting the system across two specialized strains leverages *S. epidermidis*'s native Gram-positive heme/AIP sensing and *E. coli* Nissle 1917's high-yield Gram-negative protein expression while preventing severe metabolic overload in a single chassis. Cramming AIP sensing, DspB secretion, three-enzyme naringenin biosynthesis, FdeR regulation, LSp222, and hEGF into one cell would exceed plasmid stability limits and eliminate the modularsender/receiver architecture of our Part Collection. To prevent direct nutrient competition or LSp222 cross-lysis between the two species, our dressing design houses *S. epidermidis* and EcN in separate hydrogel layers (40 µm apart) connected only by diffusible naringenin; testing long-term *S. epidermidis*–EcN co-viability in this layered hydrogel is our next step.",
-    "a_zh": "采用双菌联合体是为了发挥“皮肤共生革兰氏阳性菌天然传感”与“益生菌革兰氏阴性底盘高效产蛋白”的各自优势，避免单株菌因承载 4 条回路而崩溃。若将 AIP 传感、DspB 分泌、三酶柚皮素合成、FdeR 调控及 LSp222/hEGF 双治疗输出强行塞入同一底盘，不仅质粒拷贝与代谢负荷过高，也会丧失 Part Collection 发送端与接收端解耦复用的核心价值。为了避免两株菌在创面直接竞争营养或受 LSp222 交叉影响，我们的双层水凝胶敷料将两株菌物理分隔在不同凝胶层（间距 40 µm），仅通过小分子柚皮素穿膜通讯；下一步将实测表皮葡萄球菌与 EcN 在分层水凝胶中的长期共培养稳定性。"
+    "notes_zh": [
+      "1. 底盘优势互补 → 表皮葡萄球菌（天然皮肤定植 + HssRS/Agr 传感）+ EcN（强效合成与分泌治疗蛋白）",
+      "2. 降低代谢负荷 → 避免单菌同时承载 4 条基因回路与 3 酶代谢通路导致生长崩溃",
+      "3. 分层共存机制 → 双层水凝胶物理隔离两菌（40 µm 间距）防营养竞争，仅靠柚皮素小分子跨层通讯"
+    ]
   },
   {
     "id": "b5-1",
@@ -1239,8 +1239,18 @@
     "id": "b7-3",
     "code": "B7.3",
     "slide": "B7",
+    "slides": [
+      "B7"
+    ],
+    "slide_page": 14,
+    "slide_title": "Sender Submodule: Hemin Time Course — Backup · B7",
+    "slide_img": "",
     "q_zh": "HssRS 是表皮葡萄球菌天然的吗？创面中血红素多与蛋白结合且金葡菌会通过 Isd 掠夺血红素，如何维持有效输入？",
     "q_en": "Is HssRS native to S. epidermidis, and how do you maintain the input when heme is protein-bound or scavenged by S. aureus Isd proteins?",
+    "a_zh": "是的，HssRS 是表皮葡萄球菌的内源血红素感应双组分系统，因此我们只需将报告基因或柚皮素合成通路置于 `pHrtBA` 启动子下游，无需额外表达外源受体蛋白，显著降低了底盘代谢负担。B7 与 B8 页数据表明，仅需 1–2.5 µM 的低微摩尔游离血红素即可在 1.7–2.3 h 触发清晰的转录脉冲，且在此浓度窗口下表皮葡萄球菌生长优于对照组，而金葡菌生长已受到一定抑制。由于接力系统只需短时微摩尔级游离血红素即可启动柚皮素合成脉冲，发送菌无需与金葡菌 Isd 系统长期争夺铁源；下一步我们将补充全血红蛋白及人工伤口渗出液条件下的激活测试。",
+    "a_en": "Yes, HssRS is endogenous to *S. epidermidis*, so we only needed to place our reporter or naringenin pathway under the responsive pHrtBA promoter without expressing heterologous receptors. Our dose-response on Slides B7 and B8 shows that *S. epidermidis* activates cleanly at just 1–2.5 µM free hemin—a low micromolar window where *S. epidermidis* grows above the untreated control while *S. aureus* growth is already partially suppressed. Because only transient micromolar free heme is required to trigger a naringenin pulse, the sender does not need to outcompete *S. aureus* Isd scavenging over long periods; our next step is to validate pHrtBA induction in serum- and hemoglobin-spiked artificial wound fluid.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "HssRS native pHrtBA heme toxicity Isd scavenging hemoglobin wound exudate B7 B8 天然双组分 血红素结合 掠夺",
     "points_en": [
       "1. [Direct Conclusion] Yes, HssRS is endogenous to *S. epidermidis*, so we only needed to place our reporter or naringenin pathway under the responsive pHrtBA promoter without expressing heterologous receptors.",
@@ -1252,26 +1262,16 @@
       "2. 【实验证据与数据】B7 与 B8 页数据表明，仅需 1–2.5 µM 的低微摩尔游离血红素即可在 1.7–2.3 h 触发清晰的转录脉冲，且在此浓度窗口下表皮葡萄球菌生长优于对照组，而金葡菌生长已受到一定抑制。",
       "3. 【边界与下一步】由于接力系统只需短时微摩尔级游离血红素即可启动柚皮素合成脉冲，发送菌无需与金葡菌 Isd 系统长期争夺铁源；下一步我们将补充全血红蛋白及人工伤口渗出液条件下的激活测试。"
     ],
-    "notes_zh": [
-      "1. 内源受体优势 → 利用表皮葡萄球菌天然 HssRS 双组分系统 + 仅引入 pHrtBA 启动子，零外源受体负担",
-      "2. 低阈值脉冲触发 → 1–2.5 µM 即可在 1.7–2.3h 达峰，且发送菌生长良好、金葡菌受抑",
-      "3. 抗掠夺与下一步 → 瞬时触发无需长期抢夺血红素 + 下一步补测血红蛋白/人工伤口渗出液"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B7"
-    ],
-    "slide_page": 14,
-    "slide_title": "Sender Submodule: Hemin Time Course — Backup · B7",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 内源受体优势 → 利用表皮葡萄球菌天然 HssRS 双组分系统 + 仅引入 pHrtBA 启动子，零外源受体负担",
       "2. 低阈值脉冲触发 → 1–2.5 µM 即可在 1.7–2.3h 达峰，且发送菌生长良好、金葡菌受抑",
       "3. 抗掠夺与下一步 → 瞬时触发无需长期抢夺血红素 + 下一步补测血红蛋白/人工伤口渗出液"
     ],
-    "a_en": "Yes, HssRS is endogenous to *S. epidermidis*, so we only needed to place our reporter or naringenin pathway under the responsive pHrtBA promoter without expressing heterologous receptors. Our dose-response on Slides B7 and B8 shows that *S. epidermidis* activates cleanly at just 1–2.5 µM free hemin—a low micromolar window where *S. epidermidis* grows above the untreated control while *S. aureus* growth is already partially suppressed. Because only transient micromolar free heme is required to trigger a naringenin pulse, the sender does not need to outcompete *S. aureus* Isd scavenging over long periods; our next step is to validate pHrtBA induction in serum- and hemoglobin-spiked artificial wound fluid.",
-    "a_zh": "是的，HssRS 是表皮葡萄球菌的内源血红素感应双组分系统，因此我们只需将报告基因或柚皮素合成通路置于 `pHrtBA` 启动子下游，无需额外表达外源受体蛋白，显著降低了底盘代谢负担。B7 与 B8 页数据表明，仅需 1–2.5 µM 的低微摩尔游离血红素即可在 1.7–2.3 h 触发清晰的转录脉冲，且在此浓度窗口下表皮葡萄球菌生长优于对照组，而金葡菌生长已受到一定抑制。由于接力系统只需短时微摩尔级游离血红素即可启动柚皮素合成脉冲，发送菌无需与金葡菌 Isd 系统长期争夺铁源；下一步我们将补充全血红蛋白及人工伤口渗出液条件下的激活测试。"
+    "notes_zh": [
+      "1. 内源受体优势 → 利用表皮葡萄球菌天然 HssRS 双组分系统 + 仅引入 pHrtBA 启动子，零外源受体负担",
+      "2. 低阈值脉冲触发 → 1–2.5 µM 即可在 1.7–2.3h 达峰，且发送菌生长良好、金葡菌受抑",
+      "3. 抗掠夺与下一步 → 瞬时触发无需长期抢夺血红素 + 下一步补测血红蛋白/人工伤口渗出液"
+    ]
   },
   {
     "id": "b8-1",
@@ -1513,8 +1513,18 @@
     "id": "b10-3",
     "code": "B10.3",
     "slide": "B10",
+    "slides": [
+      "B10"
+    ],
+    "slide_page": 17,
+    "slide_title": "Naringenin HPLC Calibration — Backup · B10",
+    "slide_img": "",
     "q_zh": "发送菌产出的 53.8 µM 柚皮素只比接收菌 50 µM 激活阈值高一点，这个工作余量够稳健吗？",
     "q_en": "Your sender produces 53.8 µM naringenin, which is just over the 50 µM receiver threshold. Is that margin robust enough?",
+    "a_zh": "在未经底盘代谢工程改造的首版菌株中，原上清达到 53.8 µM（14.65 mg/L）已成功跨过 EcN 接收端 50 µM 的激活门槛，并在 1:1 共培养（B12）中实证点亮了下游报告基因。如 B11 页剂量曲线所示，EcN 接收端在 50–400 µM 范围内呈持续梯度上升，说明接收端在当前发送浓度之上仍留有 8 倍的动态响应空间，系统限速步明确位于发送端合成通量。由于瓶颈定位清晰，下一轮 DBTL 循环可通过优化限速酶查尔酮合酶（PhCHS）的 RBS 强度及提升胞内丙二酰辅酶 A 前体供给，进一步拉大 50 µM 阈值之上的工作余量。",
+    "a_en": "Achieving 53.8 µM (14.65 mg/L) in our first-pass unoptimized BL21 strain successfully crossed the 50 µM EcN activation threshold and drove clear receiver activation in 1:1 co-culture. On Slide B11, the EcN receiver shows a graded response from 50 µM up to 400 µM, meaning the receiver still has an 8-fold dynamic headroom above our current sender titer. Because sender biosynthesis is the rate-limiting step, we can widen this operating margin in the next DBTL cycle by tuning RBS strength on PhCHS (chalcone synthase) and increasing malonyl-CoA precursor availability.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "53.8 uM 50 uM threshold margin robust yield flux B9 B10 B11 B12 阈值 余量 产量 稳健性",
     "points_en": [
       "1. [Direct Conclusion] Achieving 53.8 µM (14.65 mg/L) in our first-pass unoptimized BL21 strain successfully crossed the 50 µM EcN activation threshold and drove clear receiver activation in 1:1 co-culture.",
@@ -1526,26 +1536,16 @@
       "2. 【实验证据与数据】如 B11 页剂量曲线所示，EcN 接收端在 50–400 µM 范围内呈持续梯度上升，说明接收端在当前发送浓度之上仍留有 8 倍的动态响应空间，系统限速步明确位于发送端合成通量。",
       "3. 【边界与下一步】由于瓶颈定位清晰，下一轮 DBTL 循环可通过优化限速酶查尔酮合酶（PhCHS）的 RBS 强度及提升胞内丙二酰辅酶 A 前体供给，进一步拉大 50 µM 阈值之上的工作余量。"
     ],
-    "notes_zh": [
-      "1. 首版即跨过阈值 → 未优化初版菌株达 53.8 µM（>50 µM 门槛）+ 1:1 共培养实证激活 (B12)",
-      "2. 接收端空间充足 → EcN 在 50–400 µM 持续响应（仍有 8 倍动态上限），限速步明确在发送端",
-      "3. 扩充余量路径 → 增强限速酶 PhCHS 表达 + 提升丙二酰 CoA 前体通量"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B10"
-    ],
-    "slide_page": 17,
-    "slide_title": "Naringenin HPLC Calibration — Backup · B10",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 首版即跨过阈值 → 未优化初版菌株达 53.8 µM（>50 µM 门槛）+ 1:1 共培养实证激活 (B12)",
       "2. 接收端空间充足 → EcN 在 50–400 µM 持续响应（仍有 8 倍动态上限），限速步明确在发送端",
       "3. 扩充余量路径 → 增强限速酶 PhCHS 表达 + 提升丙二酰 CoA 前体通量"
     ],
-    "a_en": "Achieving 53.8 µM (14.65 mg/L) in our first-pass unoptimized BL21 strain successfully crossed the 50 µM EcN activation threshold and drove clear receiver activation in 1:1 co-culture. On Slide B11, the EcN receiver shows a graded response from 50 µM up to 400 µM, meaning the receiver still has an 8-fold dynamic headroom above our current sender titer. Because sender biosynthesis is the rate-limiting step, we can widen this operating margin in the next DBTL cycle by tuning RBS strength on PhCHS (chalcone synthase) and increasing malonyl-CoA precursor availability.",
-    "a_zh": "在未经底盘代谢工程改造的首版菌株中，原上清达到 53.8 µM（14.65 mg/L）已成功跨过 EcN 接收端 50 µM 的激活门槛，并在 1:1 共培养（B12）中实证点亮了下游报告基因。如 B11 页剂量曲线所示，EcN 接收端在 50–400 µM 范围内呈持续梯度上升，说明接收端在当前发送浓度之上仍留有 8 倍的动态响应空间，系统限速步明确位于发送端合成通量。由于瓶颈定位清晰，下一轮 DBTL 循环可通过优化限速酶查尔酮合酶（PhCHS）的 RBS 强度及提升胞内丙二酰辅酶 A 前体供给，进一步拉大 50 µM 阈值之上的工作余量。"
+    "notes_zh": [
+      "1. 首版即跨过阈值 → 未优化初版菌株达 53.8 µM（>50 µM 门槛）+ 1:1 共培养实证激活 (B12)",
+      "2. 接收端空间充足 → EcN 在 50–400 µM 持续响应（仍有 8 倍动态上限），限速步明确在发送端",
+      "3. 扩充余量路径 → 增强限速酶 PhCHS 表达 + 提升丙二酰 CoA 前体通量"
+    ]
   },
   {
     "id": "b11-1",
@@ -1630,8 +1630,18 @@
     "id": "b11-3",
     "code": "B11.3",
     "slide": "B11",
+    "slides": [
+      "B11"
+    ],
+    "slide_page": 18,
+    "slide_title": "Receiver Submodule: EcN Dose-Response — Backup · B11",
+    "slide_img": "",
     "q_zh": "柚皮素疏水且水溶性低，怎么在两株菌之间扩散？FdeR 对柚皮素特异吗，会被其他植物黄酮误激活吗？",
     "q_en": "Naringenin is hydrophobic—how does it diffuse between strains, and is FdeR specific against other flavonoids?",
+    "a_zh": "在 50–400 µM（约 14–109 mg/L）的工作浓度窗口内，柚皮素可在水相与水凝胶微孔中有效扩散并跨膜激活 EcN 胞内的 FdeR，这一点已由纯品梯度实验（B11）与无外源添加的 1:1 共培养（B12）共同证实。适度的脂溶性反而有利于柚皮素直接通过被动扩散穿过革兰氏阴性菌 EcN 的双层膜，无需额外工程化转运蛋白；同时 FdeR 是源自固氮螺菌、天然特异响应柚皮素的 LysR 家族转录激活因子。考虑到真实创面中的血清白蛋白（BSA）可能结合部分游离柚皮素、或外敷草药中含其他黄酮，下一步我们将开展黄酮正交性测试面板（芹菜素、山奈酚、槲皮素）及含血清培养基中的有效浓度标定。",
+    "a_en": "At our working micromolar range (50–400 µM, ~14–109 mg/L), naringenin passively diffuses across bacterial membranes and aqueous media to activate intracellular FdeR in EcN, as confirmed by both monoculture titration and 1:1 co-culture. Moderate lipophilicity actually helps naringenin cross the Gram-negative outer and inner membranes of EcN without requiring an engineered importer, while FdeR is a LysR-type transcriptional activator evolved in *Herbaspirillum seropedicae* specifically for naringenin sensing. In clinical wounds, serum albumin binding or dietary plant flavonoids could shift the free concentration or cross-react; our next step is to run a flavonoid orthogonality panel (apigenin, kaempferol, quercetin) and test hydrogel release in BSA-supplemented wound fluid.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "hydrophobic solubility diffusion serum albumin FdeR specificity flavonoids apigenin kaempferol B3 B11 B12 疏水 溶解度 白蛋白 黄酮特异性",
     "points_en": [
       "1. [Direct Conclusion] At our working micromolar range (50–400 µM, ~14–109 mg/L), naringenin passively diffuses across bacterial membranes and aqueous media to activate intracellular FdeR in EcN, as confirmed by both monoculture titration and 1:1 co-culture.",
@@ -1643,26 +1653,16 @@
       "2. 【实验证据与数据】适度的脂溶性反而有利于柚皮素直接通过被动扩散穿过革兰氏阴性菌 EcN 的双层膜，无需额外工程化转运蛋白；同时 FdeR 是源自固氮螺菌、天然特异响应柚皮素的 LysR 家族转录激活因子。",
       "3. 【边界与下一步】考虑到真实创面中的血清白蛋白（BSA）可能结合部分游离柚皮素、或外敷草药中含其他黄酮，下一步我们将开展黄酮正交性测试面板（芹菜素、山奈酚、槲皮素）及含血清培养基中的有效浓度标定。"
     ],
-    "notes_zh": [
-      "1. 微摩尔级有效扩散 → 50–400 µM 窗口内无需转运蛋白即可被动跨膜激活 EcN（B11/B12 已证实）",
-      "2. 受体天然专一性 → FdeR 为天然特异识别柚皮素的 LysR 型调控蛋白",
-      "3. 下一步正交与血清测试 → 补测芹菜素/山奈酚交叉反应面板 + 含 BSA 血清白蛋白结合率标定"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B11"
-    ],
-    "slide_page": 18,
-    "slide_title": "Receiver Submodule: EcN Dose-Response — Backup · B11",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 微摩尔级有效扩散 → 50–400 µM 窗口内无需转运蛋白即可被动跨膜激活 EcN（B11/B12 已证实）",
       "2. 受体天然专一性 → FdeR 为天然特异识别柚皮素的 LysR 型调控蛋白",
       "3. 下一步正交与血清测试 → 补测芹菜素/山奈酚交叉反应面板 + 含 BSA 血清白蛋白结合率标定"
     ],
-    "a_en": "At our working micromolar range (50–400 µM, ~14–109 mg/L), naringenin passively diffuses across bacterial membranes and aqueous media to activate intracellular FdeR in EcN, as confirmed by both monoculture titration and 1:1 co-culture. Moderate lipophilicity actually helps naringenin cross the Gram-negative outer and inner membranes of EcN without requiring an engineered importer, while FdeR is a LysR-type transcriptional activator evolved in *Herbaspirillum seropedicae* specifically for naringenin sensing. In clinical wounds, serum albumin binding or dietary plant flavonoids could shift the free concentration or cross-react; our next step is to run a flavonoid orthogonality panel (apigenin, kaempferol, quercetin) and test hydrogel release in BSA-supplemented wound fluid.",
-    "a_zh": "在 50–400 µM（约 14–109 mg/L）的工作浓度窗口内，柚皮素可在水相与水凝胶微孔中有效扩散并跨膜激活 EcN 胞内的 FdeR，这一点已由纯品梯度实验（B11）与无外源添加的 1:1 共培养（B12）共同证实。适度的脂溶性反而有利于柚皮素直接通过被动扩散穿过革兰氏阴性菌 EcN 的双层膜，无需额外工程化转运蛋白；同时 FdeR 是源自固氮螺菌、天然特异响应柚皮素的 LysR 家族转录激活因子。考虑到真实创面中的血清白蛋白（BSA）可能结合部分游离柚皮素、或外敷草药中含其他黄酮，下一步我们将开展黄酮正交性测试面板（芹菜素、山奈酚、槲皮素）及含血清培养基中的有效浓度标定。"
+    "notes_zh": [
+      "1. 微摩尔级有效扩散 → 50–400 µM 窗口内无需转运蛋白即可被动跨膜激活 EcN（B11/B12 已证实）",
+      "2. 受体天然专一性 → FdeR 为天然特异识别柚皮素的 LysR 型调控蛋白",
+      "3. 下一步正交与血清测试 → 补测芹菜素/山奈酚交叉反应面板 + 含 BSA 血清白蛋白结合率标定"
+    ]
   },
   {
     "id": "b12-1",
@@ -1901,8 +1901,18 @@
     "id": "b14-3",
     "code": "B14.3",
     "slide": "B14",
+    "slides": [
+      "B14"
+    ],
+    "slide_page": 21,
+    "slide_title": "Therapeutic Module: Protein Expression — Backup · B14",
+    "slide_img": "",
     "q_zh": "大肠杆菌分泌的 hEGF 能正确折叠出 3 对二硫键吗？hEGF 具有促有丝分裂活性，用于伤口安全吗？",
     "q_en": "Does bacterially secreted hEGF fold its three disulfide bonds correctly, and is mitogenic hEGF safe for wound application?",
+    "a_zh": "我们利用 `PelB` 信号肽将 hEGF 引导至具有氧化环境的大肠杆菌周质空间，由内源 DsbA/DsbC 二硫键异构酶系催化 3 对二硫键折叠；且外用重组人表皮生长因子（rhEGF）在临床创面修复中已有成熟的安全性记录。B14 页 5 倍浓缩上清 SDS-PAGE 清晰检出 8.89 kDa 的信号肽切除后成熟 hEGF 条带（空载对照 V1/V2 完全无此带），证实蛋白已成功跨内膜进入周质并分泌至胞外。鉴于 SDS-PAGE 仅反映分子量，下一步我们将开展 HaCaT 人角质形成细胞划痕迁移实验与 EGFR 磷酸化检测以确证生物学活性；同时我们的瞬时血红素—柚皮素接力机制天然限制了给药时长，避免长期持续促增殖暴露。",
+    "a_en": "Directing hEGF to the oxidizing *E. coli* periplasm via the PelB leader peptide enables native disulfide bond formation by the DsbA/DsbC system, and topical recombinant hEGF has an established clinical safety record in acute and chronic wound care. On Slide B14, our 5x concentrated supernatant shows the expected 8.89 kDa mature cleaved hEGF band (absent in empty-vector lanes V1 and V2), confirming successful PelB-mediated export across the inner membrane. Because SDS-PAGE verifies molecular weight rather than tertiary folding or receptor activation, our next step is an in vitro HaCaT keratinocyte scratch-wound migration assay and EGFR phosphorylation ELISA, paired with pulse-limited dosing via our transient heme-naringenin relay to avoid prolonged mitogenic exposure.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "hEGF three disulfide bonds periplasm PelB folding mitogenic safety keratinocyte B14 二硫键 周质折叠 安全性 促增殖",
     "points_en": [
       "1. [Direct Conclusion] Directing hEGF to the oxidizing *E. coli* periplasm via the PelB leader peptide enables native disulfide bond formation by the DsbA/DsbC system, and topical recombinant hEGF has an established clinical safety record in acute and chronic wound care.",
@@ -1914,26 +1924,16 @@
       "2. 【实验证据与数据】B14 页 5 倍浓缩上清 SDS-PAGE 清晰检出 8.89 kDa 的信号肽切除后成熟 hEGF 条带（空载对照 V1/V2 完全无此带），证实蛋白已成功跨内膜进入周质并分泌至胞外。",
       "3. 【边界与下一步】鉴于 SDS-PAGE 仅反映分子量，下一步我们将开展 HaCaT 人角质形成细胞划痕迁移实验与 EGFR 磷酸化检测以确证生物学活性；同时我们的瞬时血红素—柚皮素接力机制天然限制了给药时长，避免长期持续促增殖暴露。"
     ],
-    "notes_zh": [
-      "1. 周质氧化折叠 → PelB 引导进入大肠杆菌周质空间 → 内源 DsbA/DsbC 催化 3 对二硫键形成",
-      "2. 分泌证据与活性待测 → 已检出上清 8.89 kDa 成熟条带（B14）→ 下一步做 HaCaT 细胞划痕与 EGFR 磷酸化",
-      "3. 给药安全边界 → 外用 rhEGF 临床安全成熟 + 脉冲式信号接力避免长期持续暴露"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B14"
-    ],
-    "slide_page": 21,
-    "slide_title": "Therapeutic Module: Protein Expression — Backup · B14",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 周质氧化折叠 → PelB 引导进入大肠杆菌周质空间 → 内源 DsbA/DsbC 催化 3 对二硫键形成",
       "2. 分泌证据与活性待测 → 已检出上清 8.89 kDa 成熟条带（B14）→ 下一步做 HaCaT 细胞划痕与 EGFR 磷酸化",
       "3. 给药安全边界 → 外用 rhEGF 临床安全成熟 + 脉冲式信号接力避免长期持续暴露"
     ],
-    "a_en": "Directing hEGF to the oxidizing *E. coli* periplasm via the PelB leader peptide enables native disulfide bond formation by the DsbA/DsbC system, and topical recombinant hEGF has an established clinical safety record in acute and chronic wound care. On Slide B14, our 5x concentrated supernatant shows the expected 8.89 kDa mature cleaved hEGF band (absent in empty-vector lanes V1 and V2), confirming successful PelB-mediated export across the inner membrane. Because SDS-PAGE verifies molecular weight rather than tertiary folding or receptor activation, our next step is an in vitro HaCaT keratinocyte scratch-wound migration assay and EGFR phosphorylation ELISA, paired with pulse-limited dosing via our transient heme-naringenin relay to avoid prolonged mitogenic exposure.",
-    "a_zh": "我们利用 `PelB` 信号肽将 hEGF 引导至具有氧化环境的大肠杆菌周质空间，由内源 DsbA/DsbC 二硫键异构酶系催化 3 对二硫键折叠；且外用重组人表皮生长因子（rhEGF）在临床创面修复中已有成熟的安全性记录。B14 页 5 倍浓缩上清 SDS-PAGE 清晰检出 8.89 kDa 的信号肽切除后成熟 hEGF 条带（空载对照 V1/V2 完全无此带），证实蛋白已成功跨内膜进入周质并分泌至胞外。鉴于 SDS-PAGE 仅反映分子量，下一步我们将开展 HaCaT 人角质形成细胞划痕迁移实验与 EGFR 磷酸化检测以确证生物学活性；同时我们的瞬时血红素—柚皮素接力机制天然限制了给药时长，避免长期持续促增殖暴露。"
+    "notes_zh": [
+      "1. 周质氧化折叠 → PelB 引导进入大肠杆菌周质空间 → 内源 DsbA/DsbC 催化 3 对二硫键形成",
+      "2. 分泌证据与活性待测 → 已检出上清 8.89 kDa 成熟条带（B14）→ 下一步做 HaCaT 细胞划痕与 EGFR 磷酸化",
+      "3. 给药安全边界 → 外用 rhEGF 临床安全成熟 + 脉冲式信号接力避免长期持续暴露"
+    ]
   },
   {
     "id": "b15-1",
@@ -2090,8 +2090,18 @@
     "id": "b16-3",
     "code": "B16.3",
     "slide": "B16",
+    "slides": [
+      "B16"
+    ],
+    "slide_page": 23,
+    "slide_title": "Therapeutic Module: Purified LSp222 — Backup · B16",
+    "slide_img": "",
     "q_zh": "粗提物里含有大肠杆菌宿主蛋白和内毒素（LPS），怎么排除非特异效应？金葡菌会对 LSp222 产生耐药性吗？",
     "q_en": "Crude extract contains host proteins and LPS—how do you rule out background effects, and will S. aureus evolve resistance to LSp222?",
+    "a_zh": "我们通过“物种匹配的缓冲液对照”与“Ni-NTA 亲和纯化蛋白独立复核”双重证据，确证快速杀菌活性直接来自 LSp222 酶本身而非粗提物背景。如 B16 页所示，经 Ni-NTA 纯化的 LSp222（约 30 kDa 主条带）在 10.94 µg/mL 低浓度下仅用 15 分钟即令金葡菌 OD600 下降 64%，与粗提物 30 分钟下降 61%（B15）高度一致。由于 LSp222 靶向金葡菌高度保守的细胞壁肽聚糖交联桥，细菌极难通过单点突变产生耐药性；在应用安全性上，水凝胶敷料将 EcN 菌体物理隔离在敷料内，后续若制备纯酶制剂还将引入内毒素去除工艺。",
+    "a_en": "We ruled out host-lysate artifacts both by including species-matched TBS controls in the crude assay and by purifying His-tagged LSp222 via Ni-NTA chromatography to confirm direct bactericidal activity. On Slide B16, Ni-NTA purified LSp222 (~30 kDa predominant band) at just 10.94 µg/mL reduced *S. aureus* OD600 by 64% within 15 minutes, matching the 61% reduction seen with crude extract in 30 minutes (B15). Because LSp222 is a chimeric peptidoglycan endopeptidase targeting highly conserved cell-wall cross-bridges, spontaneous resistance frequency is orders of magnitude lower than for small-molecule antibiotics; for clinical translation, our hydrogel membrane retains live EcN while we plan polymyxin-B / Triton X-114 endotoxin polishing for purified protein formulations.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "crude extract LPS endotoxin Ni-NTA purified LSp222 resistance peptidoglycan B15 B16 内毒素 纯化 耐药性",
     "points_en": [
       "1. [Direct Conclusion] We ruled out host-lysate artifacts both by including species-matched TBS controls in the crude assay and by purifying His-tagged LSp222 via Ni-NTA chromatography to confirm direct bactericidal activity.",
@@ -2103,33 +2113,33 @@
       "2. 【实验证据与数据】如 B16 页所示，经 Ni-NTA 纯化的 LSp222（约 30 kDa 主条带）在 10.94 µg/mL 低浓度下仅用 15 分钟即令金葡菌 OD600 下降 64%，与粗提物 30 分钟下降 61%（B15）高度一致。",
       "3. 【边界与下一步】由于 LSp222 靶向金葡菌高度保守的细胞壁肽聚糖交联桥，细菌极难通过单点突变产生耐药性；在应用安全性上，水凝胶敷料将 EcN 菌体物理隔离在敷料内，后续若制备纯酶制剂还将引入内毒素去除工艺。"
     ],
-    "notes_zh": [
-      "1. 纯化酶排除背景 → Ni-NTA 纯化 LSp222（~30 kDa，10.94 µg/mL）15 min 杀伤 64% 金葡菌（B16）",
-      "2. 低耐药进化风险 → 嵌合内肽酶靶向高度保守的细胞壁肽聚糖交联桥，远比抗生素难耐药",
-      "3. 内毒素控制策略 → 双层水凝胶截留活菌防接触创面 + 纯化端可接内毒素去除柱"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B16"
-    ],
-    "slide_page": 23,
-    "slide_title": "Therapeutic Module: Purified LSp222 — Backup · B16",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 纯化酶排除背景 → Ni-NTA 纯化 LSp222（~30 kDa，10.94 µg/mL）15 min 杀伤 64% 金葡菌（B16）",
       "2. 低耐药进化风险 → 嵌合内肽酶靶向高度保守的细胞壁肽聚糖交联桥，远比抗生素难耐药",
       "3. 内毒素控制策略 → 双层水凝胶截留活菌防接触创面 + 纯化端可接内毒素去除柱"
     ],
-    "a_en": "We ruled out host-lysate artifacts both by including species-matched TBS controls in the crude assay and by purifying His-tagged LSp222 via Ni-NTA chromatography to confirm direct bactericidal activity. On Slide B16, Ni-NTA purified LSp222 (~30 kDa predominant band) at just 10.94 µg/mL reduced *S. aureus* OD600 by 64% within 15 minutes, matching the 61% reduction seen with crude extract in 30 minutes (B15). Because LSp222 is a chimeric peptidoglycan endopeptidase targeting highly conserved cell-wall cross-bridges, spontaneous resistance frequency is orders of magnitude lower than for small-molecule antibiotics; for clinical translation, our hydrogel membrane retains live EcN while we plan polymyxin-B / Triton X-114 endotoxin polishing for purified protein formulations.",
-    "a_zh": "我们通过“物种匹配的缓冲液对照”与“Ni-NTA 亲和纯化蛋白独立复核”双重证据，确证快速杀菌活性直接来自 LSp222 酶本身而非粗提物背景。如 B16 页所示，经 Ni-NTA 纯化的 LSp222（约 30 kDa 主条带）在 10.94 µg/mL 低浓度下仅用 15 分钟即令金葡菌 OD600 下降 64%，与粗提物 30 分钟下降 61%（B15）高度一致。由于 LSp222 靶向金葡菌高度保守的细胞壁肽聚糖交联桥，细菌极难通过单点突变产生耐药性；在应用安全性上，水凝胶敷料将 EcN 菌体物理隔离在敷料内，后续若制备纯酶制剂还将引入内毒素去除工艺。"
+    "notes_zh": [
+      "1. 纯化酶排除背景 → Ni-NTA 纯化 LSp222（~30 kDa，10.94 µg/mL）15 min 杀伤 64% 金葡菌（B16）",
+      "2. 低耐药进化风险 → 嵌合内肽酶靶向高度保守的细胞壁肽聚糖交联桥，远比抗生素难耐药",
+      "3. 内毒素控制策略 → 双层水凝胶截留活菌防接触创面 + 纯化端可接内毒素去除柱"
+    ]
   },
   {
     "id": "b17-1",
     "code": "B17.1",
     "slide": "B17",
+    "slides": [
+      "B17"
+    ],
+    "slide_page": 24,
+    "slide_title": "Part Collection Status Table — Backup · B17",
+    "slide_img": "",
     "q_zh": "用一句话概括你们的 Part Collection 是什么？里面有多少个构建体，为什么和 Wiki 上的 38 个条目数量不同？",
     "q_en": "What is your Part Collection in one sentence, how many parts are in it, and why does the count differ from the 38 entries on the Wiki?",
+    "a_zh": "我们的 Part Collection 是一套基于柚皮素跨菌通讯的模块化工具箱，包含 13 个核心构建体与 4 个辅助表征构建体。工具箱中固定不变的是中间的柚皮素接力核（发送端的 At4CL-PhCHS-CmCHI 合成通路与接收端的 FdeR/PfdeAR 响应元件），上游感应启动子与下游效应蛋白均为可插拔替换接口。B17 页汇总了这 17 个复合功能构建体（其中血红素报告、柚皮素合成、接收端报告及 LSp222/hEGF 蛋白均已获实验数据支持）；而 Wiki 列出 38 个条目是因为将构建体内部的每个基础编码序列、启动子与信号肽也分别作为独立基础元件登记进了 Registry。",
+    "a_en": "Our Part Collection is a modular naringenin-mediated inter-bacterial communication toolkit consisting of 13 core constructs and 4 auxiliary characterization constructs. The fixed core is the naringenin relay—the three-enzyme synthesis module (At4CL-PhCHS-CmCHI) on the sender side and the FdeR/PfdeAR regulator on the receiver side—while the upstream input sensors and downstream therapeutic cargos serve as swappable plug-and-play interfaces. Slide B17 summarizes the 17 composite constructs (including functionally validated HmSr-sfGFP, T7/Pcap-Nr, NrSr-sfGFP, LSp222, and hEGF modules), whereas the Wiki lists 38 Registry entries because it also catalogs each individual basic coding sequence, promoter, signal peptide, and linker inside those constructs.",
+    "extra_zh": "关于 B17 表中 T7–Nr 的状态说明：T7–Nr 已在 BL21(DE3) 中完成构建并产出了 B9/B10 的 HPLC 定量数据（53.8 µM）与 B12 的共培养激活结果；Wiki Parts 页面记录的是早期提交时的阶段快照。",
+    "followups": [],
     "keywords": "collection one sentence how many parts 13 core 4 auxiliary 38 entries B17 一句话定义 元件数量 13个核心 38个条目",
     "points_en": [
       "1. [Direct Conclusion] Our Part Collection is a modular naringenin-mediated inter-bacterial communication toolkit consisting of 13 core constructs and 4 auxiliary characterization constructs.",
@@ -2141,33 +2151,33 @@
       "2. 【实验证据与数据】工具箱中固定不变的是中间的柚皮素接力核（发送端的 At4CL-PhCHS-CmCHI 合成通路与接收端的 FdeR/PfdeAR 响应元件），上游感应启动子与下游效应蛋白均为可插拔替换接口。",
       "3. 【边界与下一步】B17 页汇总了这 17 个复合功能构建体（其中血红素报告、柚皮素合成、接收端报告及 LSp222/hEGF 蛋白均已获实验数据支持）；而 Wiki 列出 38 个条目是因为将构建体内部的每个基础编码序列、启动子与信号肽也分别作为独立基础元件登记进了 Registry。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 一句话定义 → 柚皮素跨菌通讯接力工具箱（固定中间 Relay + 自由替换两端输入/输出）",
       "2. 复合构建体数量 → 13 个核心构建体 + 4 个辅助表征构建体（汇总于 B17）",
       "3. 与 Wiki 38 条目关系 → 38 条包含拆分的单个基础元件（At4CL / FdeR / PelB 等）"
     ],
-    "extra_zh": "关于 B17 表中 T7–Nr 的状态说明：T7–Nr 已在 BL21(DE3) 中完成构建并产出了 B9/B10 的 HPLC 定量数据（53.8 µM）与 B12 的共培养激活结果；Wiki Parts 页面记录的是早期提交时的阶段快照。",
+    "notes_zh": [
+      "1. 一句话定义 → 柚皮素跨菌通讯接力工具箱（固定中间 Relay + 自由替换两端输入/输出）",
+      "2. 复合构建体数量 → 13 个核心构建体 + 4 个辅助表征构建体（汇总于 B17）",
+      "3. 与 Wiki 38 条目关系 → 38 条包含拆分的单个基础元件（At4CL / FdeR / PelB 等）"
+    ]
+  },
+  {
+    "id": "b17-2",
+    "code": "B17.2",
+    "slide": "B17",
     "slides": [
       "B17"
     ],
     "slide_page": 24,
     "slide_title": "Part Collection Status Table — Backup · B17",
     "slide_img": "",
-    "followups": [],
-    "notes": [
-      "1. 一句话定义 → 柚皮素跨菌通讯接力工具箱（固定中间 Relay + 自由替换两端输入/输出）",
-      "2. 复合构建体数量 → 13 个核心构建体 + 4 个辅助表征构建体（汇总于 B17）",
-      "3. 与 Wiki 38 条目关系 → 38 条包含拆分的单个基础元件（At4CL / FdeR / PelB 等）"
-    ],
-    "a_en": "Our Part Collection is a modular naringenin-mediated inter-bacterial communication toolkit consisting of 13 core constructs and 4 auxiliary characterization constructs. The fixed core is the naringenin relay—the three-enzyme synthesis module (At4CL-PhCHS-CmCHI) on the sender side and the FdeR/PfdeAR regulator on the receiver side—while the upstream input sensors and downstream therapeutic cargos serve as swappable plug-and-play interfaces. Slide B17 summarizes the 17 composite constructs (including functionally validated HmSr-sfGFP, T7/Pcap-Nr, NrSr-sfGFP, LSp222, and hEGF modules), whereas the Wiki lists 38 Registry entries because it also catalogs each individual basic coding sequence, promoter, signal peptide, and linker inside those constructs.",
-    "a_zh": "我们的 Part Collection 是一套基于柚皮素跨菌通讯的模块化工具箱，包含 13 个核心构建体与 4 个辅助表征构建体。工具箱中固定不变的是中间的柚皮素接力核（发送端的 At4CL-PhCHS-CmCHI 合成通路与接收端的 FdeR/PfdeAR 响应元件），上游感应启动子与下游效应蛋白均为可插拔替换接口。B17 页汇总了这 17 个复合功能构建体（其中血红素报告、柚皮素合成、接收端报告及 LSp222/hEGF 蛋白均已获实验数据支持）；而 Wiki 列出 38 个条目是因为将构建体内部的每个基础编码序列、启动子与信号肽也分别作为独立基础元件登记进了 Registry。"
-  },
-  {
-    "id": "b17-2",
-    "code": "B17.2",
-    "slide": "B17",
     "q_zh": "集合中有哪些元件符合 RFC10 / RFC1000 组装标准？如何满足 Best Part Collection 的新元件与归属要求？",
     "q_en": "Which parts are RFC10 or RFC1000 assembly-compatible, and how do you handle attribution for borrowed parts?",
+    "a_zh": "我们的传感与合成构建体严格遵循标准组装规范，且所有引用的前人基础元件均在 Registry 中完整标注了祖先编号与来源队伍。具体而言，无标签版 NrSr–hEGF 完全符合 RFC10 标准、T7–Nr 符合 RFC1000 标准；而 4 个带有 PelB 与 6×His 标签的治疗融合构建体因含内部酶切位点，在文档中明确标注采用 Gibson 或 Type IIS 无缝组装。我们在 Registry 溯源字段中明确致谢了 AISSU_Union 2021（FdeR, BBa_K4012026）、TJUSLS-China 2024（PelB, BBa_K5292306）及本队 2025 年的 AgrCA–P2/P3 元件，并在此基础上贡献了全新的跨菌柚皮素接力复合构建体与共培养功能数据。",
+    "a_en": "Our sensing and biosynthesis constructs follow standard assembly rules, and every inherited basic element is explicitly attributed with its Registry ancestor. Specifically, our untagged NrSr–hEGF receiver construct is fully RFC10-compatible and T7–Nr is RFC1000-compatible, while the four His-tagged PelB fusion constructs contain internal restriction sites and are documented for Type IIS or Gibson assembly. In the Registry, we credit AISSU_Union 2021 (BBa_K4012026) for FdeR, TJUSLS-China 2024 (BBa_K5292306) for PelB, and our 2025 team (BBa_25NOD1M0 / BBa_25DXVP8T) for AgrCA–P2/P3, while contributing our newly engineered sender/receiver composite circuits and co-culture validation.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "RFC10 RFC1000 assembly compatibility three-part rule attribution ancestor FdeR PelB B17 组装兼容 三个新部件 归属 溯源",
     "points_en": [
       "1. [Direct Conclusion] Our sensing and biosynthesis constructs follow standard assembly rules, and every inherited basic element is explicitly attributed with its Registry ancestor.",
@@ -2179,33 +2189,33 @@
       "2. 【实验证据与数据】具体而言，无标签版 NrSr–hEGF 完全符合 RFC10 标准、T7–Nr 符合 RFC1000 标准；而 4 个带有 PelB 与 6×His 标签的治疗融合构建体因含内部酶切位点，在文档中明确标注采用 Gibson 或 Type IIS 无缝组装。",
       "3. 【边界与下一步】我们在 Registry 溯源字段中明确致谢了 AISSU_Union 2021（FdeR, BBa_K4012026）、TJUSLS-China 2024（PelB, BBa_K5292306）及本队 2025 年的 AgrCA–P2/P3 元件，并在此基础上贡献了全新的跨菌柚皮素接力复合构建体与共培养功能数据。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 组装兼容性 → 无标签 NrSr-hEGF 符合 RFC10 | T7-Nr 符合 RFC1000 | 带 His/PelB 融合件走 Gibson/Type IIS",
       "2. 清晰溯源致谢 → FdeR (AISSU 2021) + PelB (TJUSLS 2024) + AgrCA/P2P3 (本队 2025)",
       "3. 本队核心新贡献 → 柚皮素跨菌发送/接收复合构建体 + 53.8 µM 定量与 1:1 共培养验证"
     ],
-    "extra_zh": "",
+    "notes_zh": [
+      "1. 组装兼容性 → 无标签 NrSr-hEGF 符合 RFC10 | T7-Nr 符合 RFC1000 | 带 His/PelB 融合件走 Gibson/Type IIS",
+      "2. 清晰溯源致谢 → FdeR (AISSU 2021) + PelB (TJUSLS 2024) + AgrCA/P2P3 (本队 2025)",
+      "3. 本队核心新贡献 → 柚皮素跨菌发送/接收复合构建体 + 53.8 µM 定量与 1:1 共培养验证"
+    ]
+  },
+  {
+    "id": "b17-3",
+    "code": "B17.3",
+    "slide": "B17",
     "slides": [
       "B17"
     ],
     "slide_page": 24,
     "slide_title": "Part Collection Status Table — Backup · B17",
     "slide_img": "",
-    "followups": [],
-    "notes": [
-      "1. 组装兼容性 → 无标签 NrSr-hEGF 符合 RFC10 | T7-Nr 符合 RFC1000 | 带 His/PelB 融合件走 Gibson/Type IIS",
-      "2. 清晰溯源致谢 → FdeR (AISSU 2021) + PelB (TJUSLS 2024) + AgrCA/P2P3 (本队 2025)",
-      "3. 本队核心新贡献 → 柚皮素跨菌发送/接收复合构建体 + 53.8 µM 定量与 1:1 共培养验证"
-    ],
-    "a_en": "Our sensing and biosynthesis constructs follow standard assembly rules, and every inherited basic element is explicitly attributed with its Registry ancestor. Specifically, our untagged NrSr–hEGF receiver construct is fully RFC10-compatible and T7–Nr is RFC1000-compatible, while the four His-tagged PelB fusion constructs contain internal restriction sites and are documented for Type IIS or Gibson assembly. In the Registry, we credit AISSU_Union 2021 (BBa_K4012026) for FdeR, TJUSLS-China 2024 (BBa_K5292306) for PelB, and our 2025 team (BBa_25NOD1M0 / BBa_25DXVP8T) for AgrCA–P2/P3, while contributing our newly engineered sender/receiver composite circuits and co-culture validation.",
-    "a_zh": "我们的传感与合成构建体严格遵循标准组装规范，且所有引用的前人基础元件均在 Registry 中完整标注了祖先编号与来源队伍。具体而言，无标签版 NrSr–hEGF 完全符合 RFC10 标准、T7–Nr 符合 RFC1000 标准；而 4 个带有 PelB 与 6×His 标签的治疗融合构建体因含内部酶切位点，在文档中明确标注采用 Gibson 或 Type IIS 无缝组装。我们在 Registry 溯源字段中明确致谢了 AISSU_Union 2021（FdeR, BBa_K4012026）、TJUSLS-China 2024（PelB, BBa_K5292306）及本队 2025 年的 AgrCA–P2/P3 元件，并在此基础上贡献了全新的跨菌柚皮素接力复合构建体与共培养功能数据。"
-  },
-  {
-    "id": "b17-3",
-    "code": "B17.3",
-    "slide": "B17",
     "q_zh": "为什么 DspB 破膜模块没有放在 Part Collection 核心列表里？为什么你们的集合值得拿 Best Part Collection？",
     "q_en": "Why is DspB not part of the core Part Collection, and why should this toolkit win Best Part Collection?",
+    "a_zh": "我们将 Part Collection 聚焦于通用的“柚皮素跨菌通讯接力”本身，以便其他队伍无需连带引入葡萄球菌专用的破膜质粒即可直接复用通讯工具箱。DspB 运行在葡萄球菌穿梭载体（pBUS1 与 pLI50）上，作为创面预处理的独立交付模块（见 B5、B6、B13、B18）；而 Part Collection 则提供经过 BL21–EcN 共培养实证的完整发送—接收通讯桥。该集合竞逐 BPC 的核心价值在于：它不只是一张元件清单，而是将植物黄酮转化为一条低背景、可工作的跨菌通讯总线，让后续团队能够固定中间接力、按需替换疾病传感器或治疗蛋白。",
+    "a_en": "We intentionally scoped the Part Collection around the universal naringenin communication relay so other teams can adopt the signaling toolkit without importing staphylococcal-specific biofilm plasmids. DspB operates on staphylococcal shuttle vectors (pBUS1 and pLI50) as an upstream wound-preparation module (documented on Slides B5, B6, B13, and B18), whereas our Part Collection provides a self-contained sender-to-receiver communication bridge verified in BL21–EcN co-culture. What makes this collection valuable to the iGEM community is that it turns a plant flavonoid into a functional, low-background inter-bacterial cable where teams can swap the upstream disease sensor or downstream protein cargo one module at a time.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "why DspB not in collection win Best Part Collection BPC value B2 B17 为什么DspB不在集合 为什么拿BPC",
     "points_en": [
       "1. [Direct Conclusion] We intentionally scoped the Part Collection around the universal naringenin communication relay so other teams can adopt the signaling toolkit without importing staphylococcal-specific biofilm plasmids.",
@@ -2217,33 +2227,33 @@
       "2. 【实验证据与数据】DspB 运行在葡萄球菌穿梭载体（pBUS1 与 pLI50）上，作为创面预处理的独立交付模块（见 B5、B6、B13、B18）；而 Part Collection 则提供经过 BL21–EcN 共培养实证的完整发送—接收通讯桥。",
       "3. 【边界与下一步】该集合竞逐 BPC 的核心价值在于：它不只是一张元件清单，而是将植物黄酮转化为一条低背景、可工作的跨菌通讯总线，让后续团队能够固定中间接力、按需替换疾病传感器或治疗蛋白。"
     ],
-    "notes_zh": [
-      "1. 模块解耦设计 → Collection 聚焦通用“柚皮素跨菌通讯”，DspB（pBUS1/pLI50）作为独立创面破膜模块交付",
-      "2. 降低复用门槛 → 其他团队只需取 Nr 发送与 NrSr 接收模块，无需绑定葡萄球菌底盘",
-      "3. BPC 核心竞争力 → 已在 BL21–EcN 共培养跑通的活体通讯总线 + 输入/输出两端自由插拔"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B17"
-    ],
-    "slide_page": 24,
-    "slide_title": "Part Collection Status Table — Backup · B17",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 模块解耦设计 → Collection 聚焦通用“柚皮素跨菌通讯”，DspB（pBUS1/pLI50）作为独立创面破膜模块交付",
       "2. 降低复用门槛 → 其他团队只需取 Nr 发送与 NrSr 接收模块，无需绑定葡萄球菌底盘",
       "3. BPC 核心竞争力 → 已在 BL21–EcN 共培养跑通的活体通讯总线 + 输入/输出两端自由插拔"
     ],
-    "a_en": "We intentionally scoped the Part Collection around the universal naringenin communication relay so other teams can adopt the signaling toolkit without importing staphylococcal-specific biofilm plasmids. DspB operates on staphylococcal shuttle vectors (pBUS1 and pLI50) as an upstream wound-preparation module (documented on Slides B5, B6, B13, and B18), whereas our Part Collection provides a self-contained sender-to-receiver communication bridge verified in BL21–EcN co-culture. What makes this collection valuable to the iGEM community is that it turns a plant flavonoid into a functional, low-background inter-bacterial cable where teams can swap the upstream disease sensor or downstream protein cargo one module at a time.",
-    "a_zh": "我们将 Part Collection 聚焦于通用的“柚皮素跨菌通讯接力”本身，以便其他队伍无需连带引入葡萄球菌专用的破膜质粒即可直接复用通讯工具箱。DspB 运行在葡萄球菌穿梭载体（pBUS1 与 pLI50）上，作为创面预处理的独立交付模块（见 B5、B6、B13、B18）；而 Part Collection 则提供经过 BL21–EcN 共培养实证的完整发送—接收通讯桥。该集合竞逐 BPC 的核心价值在于：它不只是一张元件清单，而是将植物黄酮转化为一条低背景、可工作的跨菌通讯总线，让后续团队能够固定中间接力、按需替换疾病传感器或治疗蛋白。"
+    "notes_zh": [
+      "1. 模块解耦设计 → Collection 聚焦通用“柚皮素跨菌通讯”，DspB（pBUS1/pLI50）作为独立创面破膜模块交付",
+      "2. 降低复用门槛 → 其他团队只需取 Nr 发送与 NrSr 接收模块，无需绑定葡萄球菌底盘",
+      "3. BPC 核心竞争力 → 已在 BL21–EcN 共培养跑通的活体通讯总线 + 输入/输出两端自由插拔"
+    ]
   },
   {
     "id": "b18-1",
     "code": "B18.1",
     "slide": "B18",
+    "slides": [
+      "B18"
+    ],
+    "slide_page": 25,
+    "slide_title": "DspB Evidence Boundary — Backup · B18",
+    "slide_img": "",
     "q_zh": "你们证明了自己的工程菌分泌 DspB 吗？B18 页的证据边界具体指什么？",
     "q_en": "Did you show that your engineered strain secretes active DspB? What is the exact evidence boundary on Slide B18?",
+    "a_zh": "我们已分别完成了“DspB 酶学破膜有效性验证”与“目标宿主 ATCC 12228 的基因构建转入”，而工程菌上清液的直接蛋白检出是紧接着的下一步实验。目前确立了三项扎实证据：(1) 克隆的 Sec/SPII–DspB–6xHis 经 Sanger 测序达到 965/971 碱基匹配（99% 一致，B6）；(2) 质粒已通过 RN4220 成功转入最终底盘表皮葡萄球菌 ATCC 12228 并完成菌落 PCR 确证（B5）；(3) 商业化 DspB 在 18 h 内可清除 >84% 的成熟金葡菌生物膜（B13）。为了将底盘表达与破膜表型直接闭环，下一步我们将超滤浓缩 ATCC 12228 培养上清，开展 Anti-His Western blot 印迹检测与条件培养基破膜活性实验。",
+    "a_en": "We validated the enzymatic biofilm clearance and the genetic construct in the final host separately, while direct protein detection in the *S. epidermidis* supernatant is our next experimental step. Specifically, we established three facts: first, cloned Sec/SPII–DspB–6xHis matches the reference across 965 of 971 bases (99% identity, B6); second, the plasmid was passaged through RN4220 into *S. epidermidis* ATCC 12228 and confirmed by colony PCR (B5); third, commercial DspB removes over 84% of mature *S. aureus* biofilm in 18 hours (B13). To bridge the genetic construct and the enzymatic readout directly, our immediate next step is to concentrate the ATCC 12228 culture supernatant for an anti-His Western blot and a conditioned-medium crystal violet biofilm assay.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "DspB secretion evidence boundary B18 supernatant Western blot PNAG 工程菌分泌 证据边界 上清活性",
     "points_en": [
       "1. [Direct Conclusion] We validated the enzymatic biofilm clearance and the genetic construct in the final host separately, while direct protein detection in the *S. epidermidis* supernatant is our next experimental step.",
@@ -2255,33 +2265,33 @@
       "2. 【实验证据与数据】目前确立了三项扎实证据：(1) 克隆的 Sec/SPII–DspB–6xHis 经 Sanger 测序达到 965/971 碱基匹配（99% 一致，B6）；(2) 质粒已通过 RN4220 成功转入最终底盘表皮葡萄球菌 ATCC 12228 并完成菌落 PCR 确证（B5）；(3) 商业化 DspB 在 18 h 内可清除 >84% 的成熟金葡菌生物膜（B13）。",
       "3. 【边界与下一步】为了将底盘表达与破膜表型直接闭环，下一步我们将超滤浓缩 ATCC 12228 培养上清，开展 Anti-His Western blot 印迹检测与条件培养基破膜活性实验。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 证据分界清晰 → 已完成“酶学破膜验证 + 最终宿主基因转入”，待测“工程菌上清分泌蛋白”",
       "2. 已确立三项证据 → Sanger 测序 965/971 (B6) + 转入 ATCC 12228 菌落 PCR (B5) + 纯酶 18h 破膜 >84% (B13)",
       "3. 下一步闭环实验 → 超滤浓缩 ATCC 12228 上清 → Anti-His Western blot + 上清液结晶紫破膜测试"
     ],
-    "extra_zh": "",
+    "notes_zh": [
+      "1. 证据分界清晰 → 已完成“酶学破膜验证 + 最终宿主基因转入”，待测“工程菌上清分泌蛋白”",
+      "2. 已确立三项证据 → Sanger 测序 965/971 (B6) + 转入 ATCC 12228 菌落 PCR (B5) + 纯酶 18h 破膜 >84% (B13)",
+      "3. 下一步闭环实验 → 超滤浓缩 ATCC 12228 上清 → Anti-His Western blot + 上清液结晶紫破膜测试"
+    ]
+  },
+  {
+    "id": "b18-2",
+    "code": "B18.2",
+    "slide": "B18",
     "slides": [
       "B18"
     ],
     "slide_page": 25,
     "slide_title": "DspB Evidence Boundary — Backup · B18",
     "slide_img": "",
-    "followups": [],
-    "notes": [
-      "1. 证据分界清晰 → 已完成“酶学破膜验证 + 最终宿主基因转入”，待测“工程菌上清分泌蛋白”",
-      "2. 已确立三项证据 → Sanger 测序 965/971 (B6) + 转入 ATCC 12228 菌落 PCR (B5) + 纯酶 18h 破膜 >84% (B13)",
-      "3. 下一步闭环实验 → 超滤浓缩 ATCC 12228 上清 → Anti-His Western blot + 上清液结晶紫破膜测试"
-    ],
-    "a_en": "We validated the enzymatic biofilm clearance and the genetic construct in the final host separately, while direct protein detection in the *S. epidermidis* supernatant is our next experimental step. Specifically, we established three facts: first, cloned Sec/SPII–DspB–6xHis matches the reference across 965 of 971 bases (99% identity, B6); second, the plasmid was passaged through RN4220 into *S. epidermidis* ATCC 12228 and confirmed by colony PCR (B5); third, commercial DspB removes over 84% of mature *S. aureus* biofilm in 18 hours (B13). To bridge the genetic construct and the enzymatic readout directly, our immediate next step is to concentrate the ATCC 12228 culture supernatant for an anti-His Western blot and a conditioned-medium crystal violet biofilm assay.",
-    "a_zh": "我们已分别完成了“DspB 酶学破膜有效性验证”与“目标宿主 ATCC 12228 的基因构建转入”，而工程菌上清液的直接蛋白检出是紧接着的下一步实验。目前确立了三项扎实证据：(1) 克隆的 Sec/SPII–DspB–6xHis 经 Sanger 测序达到 965/971 碱基匹配（99% 一致，B6）；(2) 质粒已通过 RN4220 成功转入最终底盘表皮葡萄球菌 ATCC 12228 并完成菌落 PCR 确证（B5）；(3) 商业化 DspB 在 18 h 内可清除 >84% 的成熟金葡菌生物膜（B13）。为了将底盘表达与破膜表型直接闭环，下一步我们将超滤浓缩 ATCC 12228 培养上清，开展 Anti-His Western blot 印迹检测与条件培养基破膜活性实验。"
-  },
-  {
-    "id": "b18-2",
-    "code": "B18.2",
-    "slide": "B18",
     "q_zh": "DspB 靶向降解 PNAG，但发送菌表皮葡萄球菌自身也产生 PNAG，DspB 会破坏你们自己的发送菌吗？",
     "q_en": "DspB degrades PNAG, which S. epidermidis also produces. Will DspB damage your own sender strain?",
+    "a_zh": "DspB 是降解胞外多糖基质的水解酶而非裂解细胞壁的杀菌酶，因此它只分散 PNAG 基质，不会降低发送菌表皮葡萄球菌的存活率。与切割肽聚糖的裂解酶 LSp222 不同，DspB 仅专一性水解 β-1,6-GlcNAc 多糖链使细菌转为浮游态；同时在我们的双层水凝胶敷料中，发送菌依靠水凝胶网络物理固定，无需依赖自身生物膜定植。此外，采用金葡菌 AIP 诱导的 P2/P3 启动子可将 DspB 表达限制在有金葡菌感染的微环境中；下一步我们将对表皮葡萄球菌开展同剂量 DspB 处理的结晶紫与 CFU 活菌计数对照实验。",
+    "a_en": "DspB is a glycoside hydrolase that disperses extracellular PNAG matrix without lysing bacterial cell walls, so it does not reduce the viability of *S. epidermidis*. Unlike LSp222—which cleaves peptidoglycan and kills cells—DspB only hydrolyzes β-1,6-N-acetylglucosamine polymers to convert biofilm-embedded bacteria into the planktonic state, while our hydrogel dressing physically encapsulates the *S. epidermidis* sender so it does not rely on self-biofilm for retention. Furthermore, placing DspB under the AIP-inducible P2/P3 promoter restricts enzyme production to active *S. aureus* infection sites; we plan to run a crystal violet and CFU assay on *S. epidermidis* to quantify matrix remodeling versus cell survival directly.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "PNAG S. epidermidis own biofilm self damage DspB selectivity B13 B18 表皮葡萄球菌自身生物膜 误伤发送菌",
     "points_en": [
       "1. [Direct Conclusion] DspB is a glycoside hydrolase that disperses extracellular PNAG matrix without lysing bacterial cell walls, so it does not reduce the viability of *S. epidermidis*.",
@@ -2293,33 +2303,33 @@
       "2. 【实验证据与数据】与切割肽聚糖的裂解酶 LSp222 不同，DspB 仅专一性水解 β-1,6-GlcNAc 多糖链使细菌转为浮游态；同时在我们的双层水凝胶敷料中，发送菌依靠水凝胶网络物理固定，无需依赖自身生物膜定植。",
       "3. 【边界与下一步】此外，采用金葡菌 AIP 诱导的 P2/P3 启动子可将 DspB 表达限制在有金葡菌感染的微环境中；下一步我们将对表皮葡萄球菌开展同剂量 DspB 处理的结晶紫与 CFU 活菌计数对照实验。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 作用机制无杀伤 → DspB 仅水解胞外 PNAG 多糖（分散基质），不破坏细胞壁、不影响发送菌活率",
       "2. 敷料固定免依赖 → 发送菌封装在水凝胶微孔内，无需依赖自身 PNAG 生物膜维持定植",
       "3. 诱导门控与待测 → AIP 诱导限制表达时机 + 下一步补测表皮葡萄球菌 CFU 与生物膜对照"
     ],
-    "extra_zh": "",
+    "notes_zh": [
+      "1. 作用机制无杀伤 → DspB 仅水解胞外 PNAG 多糖（分散基质），不破坏细胞壁、不影响发送菌活率",
+      "2. 敷料固定免依赖 → 发送菌封装在水凝胶微孔内，无需依赖自身 PNAG 生物膜维持定植",
+      "3. 诱导门控与待测 → AIP 诱导限制表达时机 + 下一步补测表皮葡萄球菌 CFU 与生物膜对照"
+    ]
+  },
+  {
+    "id": "b18-3",
+    "code": "B18.3",
+    "slide": "B18",
     "slides": [
       "B18"
     ],
     "slide_page": 25,
     "slide_title": "DspB Evidence Boundary — Backup · B18",
     "slide_img": "",
-    "followups": [],
-    "notes": [
-      "1. 作用机制无杀伤 → DspB 仅水解胞外 PNAG 多糖（分散基质），不破坏细胞壁、不影响发送菌活率",
-      "2. 敷料固定免依赖 → 发送菌封装在水凝胶微孔内，无需依赖自身 PNAG 生物膜维持定植",
-      "3. 诱导门控与待测 → AIP 诱导限制表达时机 + 下一步补测表皮葡萄球菌 CFU 与生物膜对照"
-    ],
-    "a_en": "DspB is a glycoside hydrolase that disperses extracellular PNAG matrix without lysing bacterial cell walls, so it does not reduce the viability of *S. epidermidis*. Unlike LSp222—which cleaves peptidoglycan and kills cells—DspB only hydrolyzes β-1,6-N-acetylglucosamine polymers to convert biofilm-embedded bacteria into the planktonic state, while our hydrogel dressing physically encapsulates the *S. epidermidis* sender so it does not rely on self-biofilm for retention. Furthermore, placing DspB under the AIP-inducible P2/P3 promoter restricts enzyme production to active *S. aureus* infection sites; we plan to run a crystal violet and CFU assay on *S. epidermidis* to quantify matrix remodeling versus cell survival directly.",
-    "a_zh": "DspB 是降解胞外多糖基质的水解酶而非裂解细胞壁的杀菌酶，因此它只分散 PNAG 基质，不会降低发送菌表皮葡萄球菌的存活率。与切割肽聚糖的裂解酶 LSp222 不同，DspB 仅专一性水解 β-1,6-GlcNAc 多糖链使细菌转为浮游态；同时在我们的双层水凝胶敷料中，发送菌依靠水凝胶网络物理固定，无需依赖自身生物膜定植。此外，采用金葡菌 AIP 诱导的 P2/P3 启动子可将 DspB 表达限制在有金葡菌感染的微环境中；下一步我们将对表皮葡萄球菌开展同剂量 DspB 处理的结晶紫与 CFU 活菌计数对照实验。"
-  },
-  {
-    "id": "b18-3",
-    "code": "B18.3",
-    "slide": "B18",
     "q_zh": "真实伤口生物膜除 PNAG 外还有 eDNA 和蛋白质，单靠 DspB 够用吗？做过 DspB 剂量梯度吗？",
     "q_en": "Clinical wound biofilms also contain eDNA and proteins beyond PNAG, and did you test a DspB dose-response?",
+    "a_zh": "PNAG 是葡萄球菌生物膜最核心的骨架多糖，因此单药 DspB 在我们的 18 小时时间进程实验中即可清除 >84% 的成熟金葡菌生物膜生物量。在固定工作浓度的 0–18 h 动态监测中，结晶紫 OD590 从约 0.6 持续降至约 0.1，证实切断 PNAG 主干足以瓦解预先成型的金葡菌生物膜结构。考虑到真实慢性创面还含有 eDNA 与宿主纤维蛋白，下一步我们将在人工伤口渗出液模型中开展 DspB 浓度梯度滴定（确定最小有效剂量 MED），并评估与 DNase I 的协同破膜效果。",
+    "a_en": "PNAG is the primary structural scaffold in staphylococcal biofilms, enabling single-agent DspB to remove over 84% of mature *S. aureus* biofilm biomass in our 18-hour time-course assay. In our time-course experiment at a fixed working concentration, crystal violet OD590 dropped steadily from ~0.6 to ~0.1 over 18 hours, confirming that cleaving the PNAG backbone is sufficient to destabilize pre-formed laboratory *S. aureus* biofilm. Because polymicrobial chronic wounds also contain eDNA and host fibrin, our translational roadmap includes testing a DspB dose-response titration alongside DNase I in an artificial wound-fluid model to establish the minimum effective dose.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "eDNA protein mixed biofilm matrix DNase dose-response DspB B13 B18 混合基质 核酸 蛋白酶 剂量反应",
     "points_en": [
       "1. [Direct Conclusion] PNAG is the primary structural scaffold in staphylococcal biofilms, enabling single-agent DspB to remove over 84% of mature *S. aureus* biofilm biomass in our 18-hour time-course assay.",
@@ -2331,33 +2341,33 @@
       "2. 【实验证据与数据】在固定工作浓度的 0–18 h 动态监测中，结晶紫 OD590 从约 0.6 持续降至约 0.1，证实切断 PNAG 主干足以瓦解预先成型的金葡菌生物膜结构。",
       "3. 【边界与下一步】考虑到真实慢性创面还含有 eDNA 与宿主纤维蛋白，下一步我们将在人工伤口渗出液模型中开展 DspB 浓度梯度滴定（确定最小有效剂量 MED），并评估与 DNase I 的协同破膜效果。"
     ],
-    "notes_zh": [
-      "1. 主干瓦解效应 → PNAG 为葡萄球菌生物膜核心骨架 → 单用 DspB 18h 即可清除 >84% 成熟生物膜",
-      "2. 现有数据维度 → 已完成 0–18h 固定剂量时间动力学曲线（OD590 从 0.6 降至 0.1）",
-      "3. 临床转化扩展 → 下一步补做 DspB 浓度梯度滴定（确定最小有效剂量）+ 联合 DNase I 测混合基质"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B18"
-    ],
-    "slide_page": 25,
-    "slide_title": "DspB Evidence Boundary — Backup · B18",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 主干瓦解效应 → PNAG 为葡萄球菌生物膜核心骨架 → 单用 DspB 18h 即可清除 >84% 成熟生物膜",
       "2. 现有数据维度 → 已完成 0–18h 固定剂量时间动力学曲线（OD590 从 0.6 降至 0.1）",
       "3. 临床转化扩展 → 下一步补做 DspB 浓度梯度滴定（确定最小有效剂量）+ 联合 DNase I 测混合基质"
     ],
-    "a_en": "PNAG is the primary structural scaffold in staphylococcal biofilms, enabling single-agent DspB to remove over 84% of mature *S. aureus* biofilm biomass in our 18-hour time-course assay. In our time-course experiment at a fixed working concentration, crystal violet OD590 dropped steadily from ~0.6 to ~0.1 over 18 hours, confirming that cleaving the PNAG backbone is sufficient to destabilize pre-formed laboratory *S. aureus* biofilm. Because polymicrobial chronic wounds also contain eDNA and host fibrin, our translational roadmap includes testing a DspB dose-response titration alongside DNase I in an artificial wound-fluid model to establish the minimum effective dose.",
-    "a_zh": "PNAG 是葡萄球菌生物膜最核心的骨架多糖，因此单药 DspB 在我们的 18 小时时间进程实验中即可清除 >84% 的成熟金葡菌生物膜生物量。在固定工作浓度的 0–18 h 动态监测中，结晶紫 OD590 从约 0.6 持续降至约 0.1，证实切断 PNAG 主干足以瓦解预先成型的金葡菌生物膜结构。考虑到真实慢性创面还含有 eDNA 与宿主纤维蛋白，下一步我们将在人工伤口渗出液模型中开展 DspB 浓度梯度滴定（确定最小有效剂量 MED），并评估与 DNase I 的协同破膜效果。"
+    "notes_zh": [
+      "1. 主干瓦解效应 → PNAG 为葡萄球菌生物膜核心骨架 → 单用 DspB 18h 即可清除 >84% 成熟生物膜",
+      "2. 现有数据维度 → 已完成 0–18h 固定剂量时间动力学曲线（OD590 从 0.6 降至 0.1）",
+      "3. 临床转化扩展 → 下一步补做 DspB 浓度梯度滴定（确定最小有效剂量）+ 联合 DNase I 测混合基质"
+    ]
   },
   {
     "id": "b19-1",
     "code": "B19.1",
     "slide": "B19",
+    "slides": [
+      "B19"
+    ],
+    "slide_page": 26,
+    "slide_title": "AIP-Responsive DspB Progress — Backup · B19",
+    "slide_img": "",
     "q_zh": "AIP 诱导型 DspB 目前做到哪一步了？为什么要用 AIP 诱导而不是直接组成型表达 DspB？",
     "q_en": "What is the current status of AIP-inducible DspB on Slide B19, and why use AIP induction instead of constitutive DspB?",
+    "a_zh": "我们采用“双轨并行”策略：用组成型 `pBUS1–Pcap–DspB` 快速表征酶表达，用 AIP 诱导型 `pLI50–AgrCA–P2/P3–DspB` 实现仅在金葡菌感染时按需破膜。上游 `AgrCA–P2/P3` 传感器已于 2025 年通过 GFP 验证了 AIP 响应功能；今年我们将其下游替换为 `Sec/SPII–DspB` 并完成了测序确证。目前组成型质粒已成功转入 ATCC 12228，而分子量更大的 `pLI50` 诱导型质粒正在攻克 ATCC 12228 的限制修饰屏障。AIP 诱导门控可避免无感染时的持续代谢负担与共生菌基质干扰；在诱导型菌株完成电转的同时，已转入宿主的组成型菌株可直接作为阳性对照推进上清活性测试。",
+    "a_en": "We use constitutive pBUS1–Pcap–DspB to characterize enzyme expression and AIP-inducible pLI50–AgrCA–P2/P3–DspB to restrict biofilm dispersal specifically to *S. aureus* infection sites. The upstream AgrCA–P2/P3 sensor was functionally validated with GFP by our 2025 team, and this year we replaced GFP with Sec/SPII–DspB and confirmed the full sequence; while pBUS1–Pcap–DspB is already inside *S. epidermidis* ATCC 12228, the larger pLI50–AgrCA–P2/P3–DspB plasmid is currently being passaged across the ATCC 12228 restriction barrier. Tying DspB to AIP prevents unnecessary metabolic burden when no pathogen is present, while the completed constitutive construct serves as our immediate positive control for downstream secretion assays.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "AIP induction constitutive Pcap AgrCA P2P3 ATCC 12228 restriction barrier B5 B19 组成型 诱导型 转化瓶颈",
     "points_en": [
       "1. [Direct Conclusion] We use constitutive pBUS1–Pcap–DspB to characterize enzyme expression and AIP-inducible pLI50–AgrCA–P2/P3–DspB to restrict biofilm dispersal specifically to *S. aureus* infection sites.",
@@ -2369,33 +2379,33 @@
       "2. 【实验证据与数据】上游 `AgrCA–P2/P3` 传感器已于 2025 年通过 GFP 验证了 AIP 响应功能；今年我们将其下游替换为 `Sec/SPII–DspB` 并完成了测序确证。目前组成型质粒已成功转入 ATCC 12228，而分子量更大的 `pLI50` 诱导型质粒正在攻克 ATCC 12228 的限制修饰屏障。",
       "3. 【边界与下一步】AIP 诱导门控可避免无感染时的持续代谢负担与共生菌基质干扰；在诱导型菌株完成电转的同时，已转入宿主的组成型菌株可直接作为阳性对照推进上清活性测试。"
     ],
-    "notes_zh": [
+    "notes": [
       "1. 双构建体分工 → 组成型 Pcap-DspB（验证表达与活性基准）+ 诱导型 P2/P3-DspB（按需精准开启）",
       "2. 当前实验进展 → 2025 已验证 AgrCA-P2/P3 传感 + 2026 完成 DspB 替换测序 + 组成型已入 ATCC 12228",
       "3. 攻克转化瓶颈 → 正通过 RN4220 去甲基化与电转优化将 pLI50 大质粒导入 ATCC 12228"
     ],
-    "extra_zh": "",
+    "notes_zh": [
+      "1. 双构建体分工 → 组成型 Pcap-DspB（验证表达与活性基准）+ 诱导型 P2/P3-DspB（按需精准开启）",
+      "2. 当前实验进展 → 2025 已验证 AgrCA-P2/P3 传感 + 2026 完成 DspB 替换测序 + 组成型已入 ATCC 12228",
+      "3. 攻克转化瓶颈 → 正通过 RN4220 去甲基化与电转优化将 pLI50 大质粒导入 ATCC 12228"
+    ]
+  },
+  {
+    "id": "b19-2",
+    "code": "B19.2",
+    "slide": "B19",
     "slides": [
       "B19"
     ],
     "slide_page": 26,
     "slide_title": "AIP-Responsive DspB Progress — Backup · B19",
     "slide_img": "",
-    "followups": [],
-    "notes": [
-      "1. 双构建体分工 → 组成型 Pcap-DspB（验证表达与活性基准）+ 诱导型 P2/P3-DspB（按需精准开启）",
-      "2. 当前实验进展 → 2025 已验证 AgrCA-P2/P3 传感 + 2026 完成 DspB 替换测序 + 组成型已入 ATCC 12228",
-      "3. 攻克转化瓶颈 → 正通过 RN4220 去甲基化与电转优化将 pLI50 大质粒导入 ATCC 12228"
-    ],
-    "a_en": "We use constitutive pBUS1–Pcap–DspB to characterize enzyme expression and AIP-inducible pLI50–AgrCA–P2/P3–DspB to restrict biofilm dispersal specifically to *S. aureus* infection sites. The upstream AgrCA–P2/P3 sensor was functionally validated with GFP by our 2025 team, and this year we replaced GFP with Sec/SPII–DspB and confirmed the full sequence; while pBUS1–Pcap–DspB is already inside *S. epidermidis* ATCC 12228, the larger pLI50–AgrCA–P2/P3–DspB plasmid is currently being passaged across the ATCC 12228 restriction barrier. Tying DspB to AIP prevents unnecessary metabolic burden when no pathogen is present, while the completed constitutive construct serves as our immediate positive control for downstream secretion assays.",
-    "a_zh": "我们采用“双轨并行”策略：用组成型 `pBUS1–Pcap–DspB` 快速表征酶表达，用 AIP 诱导型 `pLI50–AgrCA–P2/P3–DspB` 实现仅在金葡菌感染时按需破膜。上游 `AgrCA–P2/P3` 传感器已于 2025 年通过 GFP 验证了 AIP 响应功能；今年我们将其下游替换为 `Sec/SPII–DspB` 并完成了测序确证。目前组成型质粒已成功转入 ATCC 12228，而分子量更大的 `pLI50` 诱导型质粒正在攻克 ATCC 12228 的限制修饰屏障。AIP 诱导门控可避免无感染时的持续代谢负担与共生菌基质干扰；在诱导型菌株完成电转的同时，已转入宿主的组成型菌株可直接作为阳性对照推进上清活性测试。"
-  },
-  {
-    "id": "b19-2",
-    "code": "B19.2",
-    "slide": "B19",
     "q_zh": "金黄色葡萄球菌有四个 agr 亚群（agr I–IV），你们的 AIP 传感器能识别不同临床分离株吗？",
     "q_en": "S. aureus has four agr specificity groups (agr I–IV). Will your AIP sensor respond to clinical isolates across different groups?",
+    "a_zh": "当前构建体采用金葡菌标准 AgrC–AgrA 受体对，主要响应同源亚群（临床皮肤软组织感染中占比最高的 *agr* I 型）。在金葡菌四个 *agr* 亚群中，下游转录因子 AgrA 与 P2/P3 启动子高度保守，亚群识别特异性完全由跨膜激酶受体 AgrC 决定。得益于模块化架构，针对不同地区流行的 *agr* II–IV 型临床菌株，只需在 P2/P3 上游替换对应亚群的 AgrC 受体（或构建多亚群感应组合），而下游 `Sec/SPII–DspB` 效应模块完全无需改动。",
+    "a_en": "Our current construct uses the native *S. aureus* AgrC–AgrA receptor pair, which responds primarily to its cognate *agr* group (predominantly *agr* group I, the most common group in clinical skin infections). Because all four *S. aureus* *agr* groups signal through the same conserved AgrA response regulator and P2/P3 promoter, the specificity is determined entirely by the transmembrane sensor kinase AgrC. Thanks to our modular design, extending coverage to *agr* II–IV clinical isolates only requires swapping the AgrC coding sequence (or co-expressing a broad-spectrum AgrC variant) upstream of P2/P3 without altering the DspB output module.",
+    "extra_zh": "",
+    "followups": [],
     "keywords": "agr groups I II III IV clinical isolates AgrC cross-inhibition specificity B5 B19 临床分离株 亚群特异性",
     "points_en": [
       "1. [Direct Conclusion] Our current construct uses the native *S. aureus* AgrC–AgrA receptor pair, which responds primarily to its cognate *agr* group (predominantly *agr* group I, the most common group in clinical skin infections).",
@@ -2407,26 +2417,16 @@
       "2. 【实验证据与数据】在金葡菌四个 *agr* 亚群中，下游转录因子 AgrA 与 P2/P3 启动子高度保守，亚群识别特异性完全由跨膜激酶受体 AgrC 决定。",
       "3. 【边界与下一步】得益于模块化架构，针对不同地区流行的 *agr* II–IV 型临床菌株，只需在 P2/P3 上游替换对应亚群的 AgrC 受体（或构建多亚群感应组合），而下游 `Sec/SPII–DspB` 效应模块完全无需改动。"
     ],
-    "notes_zh": [
-      "1. 当前覆盖靶标 → 针对皮肤感染最常见的金葡菌 agr I 型（标准 AgrC-AgrA 受体对）",
-      "2. 识别机制解耦 → P2/P3 启动子与 AgrA 保守，亚群特异性仅取决于跨膜受体 AgrC",
-      "3. 模块化扩展方案 → 保持下游 DspB 不变，仅替换上游 AgrC 变体即可覆盖 agr II–IV 临床株"
-    ],
-    "extra_zh": "",
-    "slides": [
-      "B19"
-    ],
-    "slide_page": 26,
-    "slide_title": "AIP-Responsive DspB Progress — Backup · B19",
-    "slide_img": "",
-    "followups": [],
     "notes": [
       "1. 当前覆盖靶标 → 针对皮肤感染最常见的金葡菌 agr I 型（标准 AgrC-AgrA 受体对）",
       "2. 识别机制解耦 → P2/P3 启动子与 AgrA 保守，亚群特异性仅取决于跨膜受体 AgrC",
       "3. 模块化扩展方案 → 保持下游 DspB 不变，仅替换上游 AgrC 变体即可覆盖 agr II–IV 临床株"
     ],
-    "a_en": "Our current construct uses the native *S. aureus* AgrC–AgrA receptor pair, which responds primarily to its cognate *agr* group (predominantly *agr* group I, the most common group in clinical skin infections). Because all four *S. aureus* *agr* groups signal through the same conserved AgrA response regulator and P2/P3 promoter, the specificity is determined entirely by the transmembrane sensor kinase AgrC. Thanks to our modular design, extending coverage to *agr* II–IV clinical isolates only requires swapping the AgrC coding sequence (or co-expressing a broad-spectrum AgrC variant) upstream of P2/P3 without altering the DspB output module.",
-    "a_zh": "当前构建体采用金葡菌标准 AgrC–AgrA 受体对，主要响应同源亚群（临床皮肤软组织感染中占比最高的 *agr* I 型）。在金葡菌四个 *agr* 亚群中，下游转录因子 AgrA 与 P2/P3 启动子高度保守，亚群识别特异性完全由跨膜激酶受体 AgrC 决定。得益于模块化架构，针对不同地区流行的 *agr* II–IV 型临床菌株，只需在 P2/P3 上游替换对应亚群的 AgrC 受体（或构建多亚群感应组合），而下游 `Sec/SPII–DspB` 效应模块完全无需改动。"
+    "notes_zh": [
+      "1. 当前覆盖靶标 → 针对皮肤感染最常见的金葡菌 agr I 型（标准 AgrC-AgrA 受体对）",
+      "2. 识别机制解耦 → P2/P3 启动子与 AgrA 保守，亚群特异性仅取决于跨膜受体 AgrC",
+      "3. 模块化扩展方案 → 保持下游 DspB 不变，仅替换上游 AgrC 变体即可覆盖 agr II–IV 临床株"
+    ]
   },
   {
     "id": "x01",
@@ -2985,6 +2985,994 @@
       "1. 通用跨菌通讯骨架：固定「Nr 三酶合成 → 柚皮素扩散 → NrSr（FdeR/PfdeAR）接收」，上下游模块均可插拔替换",
       "2. 具体复用方案（肠道炎症 IBD 工程菌群）：上游将血红素传感器替换为肠道炎症标志物传感器 —— 硫代硫酸盐（ThsSR）或一氧化氮（NorR）启动子",
       "3. 下游替换：保留柚皮素跨菌接力至益生菌 EcN，将下游输出替换为抗炎细胞因子 IL-10 或黏膜修复肽 TFF3"
+    ]
+  },
+  {
+    "id": "inc-1",
+    "code": "INC.1",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — LabSafeMom & LabMate",
+    "q_en": "What is LabSafeMom, and how does it work?",
+    "q_zh": "什么是 LabSafeMom？它是如何工作的？",
+    "a_en": "LabSafeMom supports researchers who are planning pregnancy, pregnant, or breastfeeding. It turns experimental protocols into risk summaries, safety recommendations, and personal protective equipment checklists. Its basic risk assessment follows traceable rules rather than relying entirely on AI judgments. The goal is to help researchers discuss potential risks with laboratory safety staff and clinicians, without replacing professional advice.",
+    "a_zh": "LabSafeMom 支持备孕、怀孕或哺乳期的科研人员。它将实验操作流程转化为风险摘要、安全建议和个人防护装备（PPE）核对清单。其基础风险评估遵循可溯源的规则，而非完全依赖 AI 判断。目标是帮助科研人员与实验室安全人员和临床医生讨论潜在风险，而不替代专业建议。",
+    "points_en": [
+      "1. LabSafeMom supports researchers who are planning pregnancy, pregnant, or breastfeeding by turning experimental protocols into risk summaries, safety recommendations, and personal protective equipment checklists.",
+      "2. Its basic risk assessment follows traceable rules rather than relying entirely on AI judgments.",
+      "3. The goal is to help researchers discuss potential risks with laboratory safety staff and clinicians, without replacing professional advice."
+    ],
+    "points_zh": [
+      "1. LabSafeMom 支持备孕、怀孕或哺乳期的科研人员，将实验方案转化为风险摘要、安全建议和个人防护装备（PPE）清单。",
+      "2. 其基础风险评估遵循可溯源的规则，而非完全依赖 AI 判断。",
+      "3. 目标是帮助科研人员与实验室安全人员和临床医生讨论潜在风险，而不替代专业建议。"
+    ],
+    "notes_zh": [
+      "1. 服务人群与产出 → 备孕/怀孕/哺乳期科研人员 → 协议转风险摘要 + 安全建议 + PPE 清单",
+      "2. 核心机制 → 基于可溯源规则（Traceable rules）而非纯靠 AI 判断",
+      "3. 定位边界 → 辅助与安全官及临床医生沟通，不替代专业医疗意见"
+    ],
+    "keywords": "Inclusivity LabSafeMom pregnant pregnancy breastfeeding risk summaries PPE traceable rules 备孕 怀孕 哺乳 风险评估",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 服务人群与产出 → 备孕/怀孕/哺乳期科研人员 → 协议转风险摘要 + 安全建议 + PPE 清单",
+      "2. 核心机制 → 基于可溯源规则（Traceable rules）而非纯靠 AI 判断",
+      "3. 定位边界 → 辅助与安全官及临床医生沟通，不替代专业医疗意见"
+    ]
+  },
+  {
+    "id": "inc-2",
+    "code": "INC.2",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — LabSafeMom & LabMate",
+    "q_en": "What is LabMate, and how does it help laboratory members?",
+    "q_zh": "什么是 LabMate？它如何帮助实验室成员？",
+    "a_en": "LabMate is designed to help new laboratory members follow experimental protocols more easily. It supports protocols in different formats and in both Chinese and English. It provides preparation checklists, step-by-step guidance, smart timers, and exportable laboratory records. Our goal is to reduce the difficulties beginners face when carrying out experiments.",
+    "a_zh": "LabMate 旨在帮助新进实验室成员更轻松地遵循实验操作流程。它支持不同格式及中英文双语的实验方案，提供准备清单、分步指导、智能计时器和可导出的实验记录。我们的目标是减少初学者在开展实验时面临的困难。",
+    "points_en": [
+      "1. LabMate is designed to help new laboratory members follow experimental protocols more easily, supporting protocols in different formats and in both Chinese and English.",
+      "2. It provides preparation checklists, step-by-step guidance, smart timers, and exportable laboratory records.",
+      "3. Our goal is to reduce the difficulties beginners face when carrying out experiments."
+    ],
+    "points_zh": [
+      "1. LabMate 旨在帮助实验室新人更轻松地执行实验方案，支持多种格式与中英双语协议。",
+      "2. 它提供实验前准备清单、分步引导、智能计时器以及可导出的实验记录。",
+      "3. 我们的目标是降低初学者开展实验的操作门槛。"
+    ],
+    "notes_zh": [
+      "1. 面向对象 → 实验室新手 + 支持多格式与中英双语协议",
+      "2. 核心功能 → 准备清单 + 分步引导 + 智能计时器 + 可导出实验记录",
+      "3. 设计目标 → 降低初学者实验操作困难"
+    ],
+    "keywords": "Inclusivity LabMate new laboratory members beginners protocols checklists smart timers records 实验室新人 分步指导 计时器",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 面向对象 → 实验室新手 + 支持多格式与中英双语协议",
+      "2. 核心功能 → 准备清单 + 分步引导 + 智能计时器 + 可导出实验记录",
+      "3. 设计目标 → 降低初学者实验操作困难"
+    ]
+  },
+  {
+    "id": "inc-3",
+    "code": "INC.3",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Deployment & Sharing",
+    "q_en": "How are the websites deployed?",
+    "q_zh": "这两个网站是如何部署的？",
+    "a_en": "LabMate is hosted on Tencent CloudBase, with browser-based local features and a separate function for optional AI parsing. LabSafeMom separates its frontend and backend; its deployment guide describes Vercel for the frontend and Render for the backend.",
+    "a_zh": "LabMate 托管在腾讯云开发（Tencent CloudBase）上，具备基于浏览器的本地功能以及用于可选 AI 解析的独立云函数。LabSafeMom 采用前后端分离架构，其部署指南使用 Vercel 部署前端、Render 部署后端。",
+    "points_en": [
+      "1. LabMate is hosted on Tencent CloudBase, with browser-based local features and a separate function for optional AI parsing.",
+      "2. LabSafeMom separates its frontend and backend.",
+      "3. Its deployment guide describes Vercel for the frontend and Render for the backend."
+    ],
+    "points_zh": [
+      "1. LabMate 托管于腾讯云开发（Tencent CloudBase），包含浏览器本地功能与可选 AI 解析的独立函数。",
+      "2. LabSafeMom 采用前后端分离架构。",
+      "3. 其部署指南描述了使用 Vercel 部署前端、Render 部署后端。"
+    ],
+    "notes_zh": [
+      "1. LabMate 部署 → 腾讯云 CloudBase + 浏览器本地功能 + 独立可选 AI 解析函数",
+      "2. LabSafeMom 架构 → 前后端分离",
+      "3. LabSafeMom 部署 → 前端 Vercel + 后端 Render"
+    ],
+    "keywords": "Inclusivity websites deployed Tencent CloudBase Vercel Render frontend backend 网站部署 腾讯云",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. LabMate 部署 → 腾讯云 CloudBase + 浏览器本地功能 + 独立可选 AI 解析函数",
+      "2. LabSafeMom 架构 → 前后端分离",
+      "3. LabSafeMom 部署 → 前端 Vercel + 后端 Render"
+    ]
+  },
+  {
+    "id": "inc-4",
+    "code": "INC.4",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Deployment & Sharing",
+    "q_en": "How do you share them?",
+    "q_zh": "你们是如何分享这些工具的？",
+    "a_en": "Our wiki links to the applications and their public GitLab repositories. Both tools use the Apache 2.0 license and include setup instructions, so other teams can inspect, adapt and deploy their own copies. Users can also export reports or laboratory records.",
+    "a_zh": "我们的 Wiki 提供了应用链接及其公开的 GitLab 仓库。两个工具均采用 Apache 2.0 开源协议并附有部署说明，其他团队可以查看、修改并部署自己的副本。用户还可以导出报告或实验记录。",
+    "points_en": [
+      "1. Our wiki links to the applications and their public GitLab repositories.",
+      "2. Both tools use the Apache 2.0 license and include setup instructions, so other teams can inspect, adapt and deploy their own copies.",
+      "3. Users can also export reports or laboratory records."
+    ],
+    "points_zh": [
+      "1. 我们的 Wiki 链接了在线应用及其公开的 GitLab 代码仓库。",
+      "2. 两款工具均采用 Apache 2.0 许可证并附带安装指南，便于其他队伍审查、改编和独立部署。",
+      "3. 用户还可以直接导出评估报告或实验记录。"
+    ],
+    "notes_zh": [
+      "1. 开源入口 → Wiki 直链在线应用 + 公开 GitLab 仓库",
+      "2. 开源协议 → Apache 2.0 协议 + 完整安装指南（支持审查/改编/自部署）",
+      "3. 用户产出 → 支持导出风险报告或实验记录"
+    ],
+    "keywords": "Inclusivity share GitLab Apache 2.0 license setup instructions export reports 开源分享 部署指南",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 开源入口 → Wiki 直链在线应用 + 公开 GitLab 仓库",
+      "2. 开源协议 → Apache 2.0 协议 + 完整安装指南（支持审查/改编/自部署）",
+      "3. 用户产出 → 支持导出风险报告或实验记录"
+    ]
+  },
+  {
+    "id": "inc-5",
+    "code": "INC.5",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Adoption & Modes",
+    "q_en": "How will people adopt and continue using them? / How will you encourage widespread adoption and long-term use of your tools?",
+    "q_zh": "人们会如何采纳并持续使用这些工具？你们如何推动广泛采纳与长期使用？",
+    "a_en": "Making the tools public is only the beginning. We plan to run small pilots with intended users, provide sample protocols, collect feedback and improve the tools around real workflows. We have not yet demonstrated widespread or long-term adoption. We have shared these tools along with their source code. Our planned next steps include piloting them in routine laboratory training, gathering user feedback, and carrying out ongoing updates and iterations.",
+    "a_zh": "公开工具只是第一步。我们计划在目标用户中开展小规模试点，提供示例方案，收集反馈并围绕真实工作流改进工具。目前我们尚未证明广泛或长期的采纳。我们已经分享了这些工具及其源代码，下一步计划包括在日常实验室培训中进行试点、收集用户反馈并持续更新迭代。",
+    "points_en": [
+      "1. Making the tools public is only the beginning; we have shared these tools along with their source code, though we have not yet demonstrated widespread or long-term adoption.",
+      "2. We plan to run small pilots with intended users, provide sample protocols, collect feedback and improve the tools around real workflows.",
+      "3. Our planned next steps include piloting them in routine laboratory training, gathering user feedback, and carrying out ongoing updates and iterations."
+    ],
+    "points_zh": [
+      "1. 公开工具与源码只是起点，目前我们尚未声称已实现大规模或长期普及。",
+      "2. 我们计划面向目标用户开展小规模试点，提供示例协议，收集反馈并贴合真实工作流优化。",
+      "3. 下一步计划将其纳入日常实验室培训试点，持续收集反馈并迭代更新。"
+    ],
+    "notes_zh": [
+      "1. 当前状态 → 已开源工具与源码，诚实界定尚未达到大规模长期普及",
+      "2. 试点推进 → 目标用户小规模试点 + 提供示例协议 + 贴合真实工作流改进",
+      "3. 长期机制 → 纳入日常实验室新人培训 + 收集反馈持续迭代"
+    ],
+    "keywords": "Inclusivity adopt adoption continue using long-term use pilots routine laboratory training 持续使用 长期推广 试点",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 当前状态 → 已开源工具与源码，诚实界定尚未达到大规模长期普及",
+      "2. 试点推进 → 目标用户小规模试点 + 提供示例协议 + 贴合真实工作流改进",
+      "3. 长期机制 → 纳入日常实验室新人培训 + 收集反馈持续迭代"
+    ]
+  },
+  {
+    "id": "inc-6",
+    "code": "INC.6",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Basic vs AI Modes",
+    "q_en": "What are the two modes?",
+    "q_zh": "这两个工具的两种模式（Basic mode 与 AI-enhanced mode）分别是什么？",
+    "a_en": "Basic mode: This uses built-in rules without AI or a model API key. LabSafeMom matches protocol information against its knowledge base and calculates risk scores. LabMate organizes protocols into guided steps, checklists and timing cues. AI-enhanced mode: This adds language-model assistance for less structured protocols or supporting explanations. It requires an AI service and may involve API costs. LabSafeMom’s risk scores remain rule-based, while LabMate can fall back to local parsing.",
+    "a_zh": "基础模式（Basic mode）：使用内置规则，无需 AI 或模型 API Key；LabSafeMom 将实验方案与知识库比对并计算风险分，LabMate 将方案整理为分步引导、清单和计时提示。AI 增强模式（AI-enhanced mode）：针对非结构化方案或辅助解释引入大语言模型支持，需要 AI 服务且可能产生 API 费用；但 LabSafeMom 的风险评分仍基于规则，LabMate 也可回退至本地解析。",
+    "points_en": [
+      "1. Basic mode uses built-in rules without AI or a model API key: LabSafeMom matches protocol information against its knowledge base and calculates risk scores, while LabMate organizes protocols into guided steps, checklists and timing cues.",
+      "2. AI-enhanced mode adds language-model assistance for less structured protocols or supporting explanations, which requires an AI service and may involve API costs.",
+      "3. Even in AI-enhanced mode, LabSafeMom’s risk scores remain rule-based, while LabMate can fall back to local parsing."
+    ],
+    "points_zh": [
+      "1. 基础模式（Basic mode）使用内置规则，无需 AI 或 API Key：LabSafeMom 匹配知识库计算风险分，LabMate 将协议整理为分步指导、清单与计时提示。",
+      "2. AI 增强模式（AI-enhanced mode）针对非结构化协议或补充解释引入语言模型辅助，需配置 AI 服务并可能涉及 API 成本。",
+      "3. 即使在 AI 模式下，LabSafeMom 的风险评分依然严格基于规则，而 LabMate 也可随时回退至本地解析。"
+    ],
+    "notes_zh": [
+      "1. 基础模式（免 AI/API Key）→ LabSafeMom 规则匹配算分 | LabMate 整理步骤/清单/计时",
+      "2. AI 增强模式 → 辅助解析非结构化协议与补充说明（需 AI 服务/API 成本）",
+      "3. 兜底保障 → LabSafeMom 评分始终基于固定规则 | LabMate 支持回退本地解析"
+    ],
+    "keywords": "Inclusivity two modes Basic mode AI-enhanced mode rule-based API key local parsing 两种模式 基础模式 AI模式",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 基础模式（免 AI/API Key）→ LabSafeMom 规则匹配算分 | LabMate 整理步骤/清单/计时",
+      "2. AI 增强模式 → 辅助解析非结构化协议与补充说明（需 AI 服务/API 成本）",
+      "3. 兜底保障 → LabSafeMom 评分始终基于固定规则 | LabMate 支持回退本地解析"
+    ]
+  },
+  {
+    "id": "inc-7",
+    "code": "INC.7",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Privacy & Backend",
+    "q_en": "Does Basic mode mean everything stays in the browser?",
+    "q_zh": "基础模式（Basic mode）意味着所有数据都只留在浏览器本地吗？",
+    "a_en": "No. LabMate’s local parsing runs in the browser when AI is switched off. The public LabSafeMom implementation uses a backend even in Basic mode. When AI is enabled, protocol text is sent to the configured service.",
+    "a_zh": "不是。当关闭 AI 时，LabMate 的本地解析确实在浏览器中运行；但公开部署的 LabSafeMom 即使在基础模式下也使用后端服务。当开启 AI 时，实验方案文本会被发送至所配置的 AI 服务商。",
+    "points_en": [
+      "1. No: LabMate’s local parsing runs in the browser when AI is switched off.",
+      "2. However, the public LabSafeMom implementation uses a backend even in Basic mode.",
+      "3. When AI is enabled, protocol text is sent to the configured service."
+    ],
+    "points_zh": [
+      "1. 不是全部留在浏览器：当关闭 AI 时，LabMate 的本地解析完全在浏览器内运行。",
+      "2. 但公开版的 LabSafeMom 即使在基础模式下也会调用后端进行知识库匹配。",
+      "3. 当启用 AI 模式时，实验协议文本则会发送至所配置的模型服务。"
+    ],
+    "notes_zh": [
+      "1. 明确区分 → 并非全部仅留浏览器本地",
+      "2. 基础模式差异 → LabMate 关 AI 时纯浏览器本地解析 | LabSafeMom 基础模式仍经过后端",
+      "3. 开启 AI 时 → 协议文本发送至所配置的 AI 接口服务"
+    ],
+    "keywords": "Inclusivity Basic mode stays in browser local parsing backend privacy 浏览器本地 后端 数据隐私",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 明确区分 → 并非全部仅留浏览器本地",
+      "2. 基础模式差异 → LabMate 关 AI 时纯浏览器本地解析 | LabSafeMom 基础模式仍经过后端",
+      "3. 开启 AI 时 → 协议文本发送至所配置的 AI 接口服务"
+    ]
+  },
+  {
+    "id": "inc-8",
+    "code": "INC.8",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Knowledge Base & Risk Score",
+    "q_en": "Where does our knowledge base come from?",
+    "q_zh": "你们的知识库数据来源是什么？",
+    "a_en": "We collect public workplace-safety information, chemical safety information, and toxicology references, and turn them into simple entries. Right now we have more than 100 entries. It helps with early screening, but it does not replace a professional review.",
+    "a_zh": "我们收集公开的职业安全信息、化学品安全信息和毒理学参考资料，并将其转化为简明条目。目前知识库已收录超过 100 个条目。它有助于早期筛查，但不替代专业安全审查。",
+    "points_en": [
+      "1. We collect public workplace-safety information, chemical safety information, and toxicology references, and turn them into simple entries.",
+      "2. Right now we have more than 100 entries.",
+      "3. It helps with early screening, but it does not replace a professional review."
+    ],
+    "points_zh": [
+      "1. 我们汇总公开的职业场所安全信息、化学品安全资料与毒理学参考文献，并转化为简明词条。",
+      "2. 目前知识库已包含 100 多个条目。",
+      "3. 它用于辅助早期风险初筛，但不能替代专业安全审查。"
+    ],
+    "notes_zh": [
+      "1. 数据来源 → 公开职业安全资料 + 化学品安全信息 + 毒理学文献",
+      "2. 当前规模 → 100+ 结构化简明词条",
+      "3. 功能定位 → 辅助早期初筛，不替代专业审查"
+    ],
+    "keywords": "Inclusivity knowledge base workplace-safety chemical safety toxicology 100 entries 知识库来源 毒理学",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 数据来源 → 公开职业安全资料 + 化学品安全信息 + 毒理学文献",
+      "2. 当前规模 → 100+ 结构化简明词条",
+      "3. 功能定位 → 辅助早期初筛，不替代专业审查"
+    ]
+  },
+  {
+    "id": "inc-9",
+    "code": "INC.9",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Knowledge Base & Risk Score",
+    "q_en": "How is the risk score calculated?",
+    "q_zh": "LabSafeMom 的风险评分是如何计算的？",
+    "a_en": "The score is based on fixed rules, not AI. The rules look at which chemicals are used, whether there is exposure information, and how the lab work is done. Each rule adds points separately for pregnancy, fertility, and breastfeeding. The total is from 0 to 100, with four levels: low, moderate, high, and critical. The report uses the highest score, not an average. This is only a screening score—it does not mean an 80 score is an 80% chance of harm.",
+    "a_zh": "评分基于固定规则而非 AI。规则综合考察所使用的化学品、是否存在暴露信息以及实验操作方式，并针对怀孕、生育力和哺乳期分别累加分值。总分范围为 0 到 100，分为低、中、高、极高四个等级；报告采用最高分而非平均分。这只是一个初筛评分——80 分并不代表有 80% 的受损概率。",
+    "points_en": [
+      "1. The score is based on fixed rules, not AI: the rules look at which chemicals are used, whether there is exposure information, and how the lab work is done.",
+      "2. Each rule adds points separately for pregnancy, fertility, and breastfeeding, on a 0 to 100 scale with four levels (low, moderate, high, and critical), and the report uses the highest score, not an average.",
+      "3. This is only a screening score—it does not mean an 80 score is an 80% chance of harm."
+    ],
+    "points_zh": [
+      "1. 评分基于固定规则而非 AI：规则检查所使用的化学品、暴露信息以及具体实验操作方式。",
+      "2. 每条规则分别对怀孕、生育力和哺乳期计分（0–100 分，分低、中、高、极高四级），最终报告取最高分而非平均值。",
+      "3. 这仅是一个初筛评分——80 分并不意味着有 80% 的伤害概率。"
+    ],
+    "notes_zh": [
+      "1. 固定规则算分（非 AI）→ 考察化学品种类 + 暴露信息 + 实验操作方式",
+      "2. 三维独立计分取最高值 → 怀孕 / 生育力 / 哺乳期（0–100 分，四级，取最高分而非均值）",
+      "3. 分数物理意义 → 仅作风险初筛分级（80 分 ≠ 80% 伤害概率）"
+    ],
+    "keywords": "Inclusivity risk score calculated fixed rules pregnancy fertility breastfeeding 0 to 100 highest score 风险评分计算 最高分",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 固定规则算分（非 AI）→ 考察化学品种类 + 暴露信息 + 实验操作方式",
+      "2. 三维独立计分取最高值 → 怀孕 / 生育力 / 哺乳期（0–100 分，四级，取最高分而非均值）",
+      "3. 分数物理意义 → 仅作风险初筛分级（80 分 ≠ 80% 伤害概率）"
+    ]
+  },
+  {
+    "id": "inc-10",
+    "code": "INC.10",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Origin Stories",
+    "q_en": "Where did the idea for LabSafeMom come from?",
+    "q_zh": "LabSafeMom 的灵感来自哪里？",
+    "a_en": "It started from an online post by a pregnant researcher. She found safety information scattered and hard to connect to her daily experiments. We realized that getting into science does not mean you can stay in it. So LabSafeMom helps researchers organize experiment-specific questions so they can discuss them with safety and occupational-health professionals.",
+    "a_zh": "它源于一位怀孕科研人员的网络帖子。她发现安全信息非常零散，很难与日常实验对应起来。我们意识到“进入科学界并不意味着你能留在其中”。因此 LabSafeMom 帮助科研人员整理与具体实验相关的问题，以便与安全和职业健康专业人员沟通。",
+    "points_en": [
+      "1. It started from an online post by a pregnant researcher who found safety information scattered and hard to connect to her daily experiments.",
+      "2. We realized that getting into science does not mean you can stay in it.",
+      "3. So LabSafeMom helps researchers organize experiment-specific questions so they can discuss them with safety and occupational-health professionals."
+    ],
+    "points_zh": [
+      "1. 它源于一位怀孕科研人员的求助帖，她发现安全信息零散且难以对应到日常具体实验。",
+      "2. 这让我们意识到：能够进入科研领域，并不天然意味着能够安全留在其中。",
+      "3. 因此 LabSafeMom 帮助研究者梳理针对具体实验的风险问题，以便与安全及职业健康专家高效沟通。"
+    ],
+    "notes_zh": [
+      "1. 灵感起点 → 怀孕科研人员发帖反映安全信息零散、难对接日常实验",
+      "2. 核心洞察 → “进入科学界不等于能留在科学界”",
+      "3. 解决方式 → 梳理具体实验风险问题，辅助与职业健康专家沟通"
+    ],
+    "keywords": "Inclusivity idea for LabSafeMom pregnant researcher online post stay in science 灵感来源 怀孕科研人员",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 灵感起点 → 怀孕科研人员发帖反映安全信息零散、难对接日常实验",
+      "2. 核心洞察 → “进入科学界不等于能留在科学界”",
+      "3. 解决方式 → 梳理具体实验风险问题，辅助与职业健康专家沟通"
+    ]
+  },
+  {
+    "id": "inc-11",
+    "code": "INC.11",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Origin Stories",
+    "q_en": "Where did the idea for LabMate come from?",
+    "q_zh": "LabMate 的灵感来自哪里？",
+    "a_en": "LabMate came from two first-year students starting in the lab. They faced scattered protocols, unfamiliar English terms, missed preparation steps, and difficulty managing timers and records. We turned these problems into guided steps, preparation checklists, timers, and exportable notes. The goal is to make lab work easier for beginners so they can focus on understanding the experiment.",
+    "a_zh": "LabMate 源于两位刚进实验室的大一新生。他们面临实验方案零散、英文术语生疏、遗漏准备步骤以及难以同时管理计时器和实验记录的问题。我们将这些痛点转化为分步引导、准备清单、计时器和可导出笔记，目标是让新手更轻松地完成实验操作，从而专注于理解实验本身。",
+    "points_en": [
+      "1. LabMate came from two first-year students starting in the lab who faced scattered protocols, unfamiliar English terms, missed preparation steps, and difficulty managing timers and records.",
+      "2. We turned these problems into guided steps, preparation checklists, timers, and exportable notes.",
+      "3. The goal is to make lab work easier for beginners so they can focus on understanding the experiment."
+    ],
+    "points_zh": [
+      "1. LabMate 源于两位刚进实验室的大一新生，他们面临方案零散、英文术语生疏、漏做准备步骤及计时记录混乱等痛点。",
+      "2. 我们将这些问题转化为分步指导、准备清单、智能计时器与可导出笔记。",
+      "3. 目标是降低新手的操作负担，使其能专注于理解实验原理本身。"
+    ],
+    "notes_zh": [
+      "1. 痛点来源 → 两位大一新生进实验室面临协议零散、英文生疏、漏准备、计时记录难兼顾",
+      "2. 功能转化 → 分步指导 + 准备清单 + 计时器 + 可导出笔记",
+      "3. 最终目的 → 减轻新手操作负担，聚焦理解实验本身"
+    ],
+    "keywords": "Inclusivity idea for LabMate first-year students beginners unfamiliar English terms 灵感来源 大一新生",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 痛点来源 → 两位大一新生进实验室面临协议零散、英文生疏、漏准备、计时记录难兼顾",
+      "2. 功能转化 → 分步指导 + 准备清单 + 计时器 + 可导出笔记",
+      "3. 最终目的 → 减轻新手操作负担，聚焦理解实验本身"
+    ]
+  },
+  {
+    "id": "inc-12",
+    "code": "INC.12",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Framework (VOAP & HEALS)",
+    "q_en": "How did you integrate inclusivity into your project, and what are your future plans?",
+    "q_zh": "你们是如何将包容性（Inclusivity）融入项目的？未来计划是什么？",
+    "a_en": "We organized our work around Voice, Opportunity, Accessibility, and Participation. Our HEALS process—Hear, Examine, Act, Learn, Share—helped us move from identifying barriers to making changes. Next, we want to test these resources with more target users and improve their accessibility.",
+    "a_zh": "我们围绕发声（Voice）、机会（Opportunity）、可及性（Accessibility）和参与（Participation）四个维度组织工作。我们的 HEALS 流程（倾听 Hear、审视 Examine、行动 Act、学习 Learn、分享 Share）帮助我们从识别障碍走向落实改变。下一步，我们希望在更多目标用户中测试这些资源并进一步提升其可及性。",
+    "points_en": [
+      "1. We organized our work around Voice, Opportunity, Accessibility, and Participation.",
+      "2. Our HEALS process—Hear, Examine, Act, Learn, Share—helped us move from identifying barriers to making changes.",
+      "3. Next, we want to test these resources with more target users and improve their accessibility."
+    ],
+    "points_zh": [
+      "1. 我们围绕 Voice（发声）、Opportunity（机会）、Accessibility（可及性）和 Participation（参与）四个维度展开工作。",
+      "2. 通过 HEALS 闭环流程（Hear 倾听、Examine 审视、Act 行动、Learn 学习、Share 分享），我们从识别障碍推进到实际改变。",
+      "3. 下一步，我们将面向更多目标用户测试这些资源并持续提升无障碍可及性。"
+    ],
+    "notes_zh": [
+      "1. 四大核心维度 → Voice（发声）+ Opportunity（机会）+ Accessibility（可及性）+ Participation（参与）",
+      "2. HEALS 行动框架 → Hear（倾听）→ Examine（审视）→ Act（行动）→ Learn（学习）→ Share（分享）",
+      "3. 未来计划 → 扩大目标用户测试范围 + 提升无障碍可及性"
+    ],
+    "keywords": "Inclusivity integrate Voice Opportunity Accessibility Participation HEALS Hear Examine Act Learn Share 包容性框架",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 四大核心维度 → Voice（发声）+ Opportunity（机会）+ Accessibility（可及性）+ Participation（参与）",
+      "2. HEALS 行动框架 → Hear（倾听）→ Examine（审视）→ Act（行动）→ Learn（学习）→ Share（分享）",
+      "3. 未来计划 → 扩大目标用户测试范围 + 提升无障碍可及性"
+    ]
+  },
+  {
+    "id": "inc-13",
+    "code": "INC.13",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Patient Communication & Photovoice",
+    "q_en": "What was the greatest challenge and the most rewarding experience in communicating with patients?",
+    "q_zh": "与患者沟通时最大的挑战和最有收获的经历分别是什么？",
+    "a_en": "The biggest challenge is getting them to put their specific difficulties into words. A lot of patients have lived with their condition for so long that they don’t really notice the everyday inconvenience anymore. And since most of them are older, we often have to piece together something useful from stories that are a bit all over the place. That’s exactly why we use methods like co-designed mapping and Photovoice. That was also the most rewarding one. Their photographs and stories became a public exhibition, so they were shaping the conversation rather than simply answering our questions.",
+    "a_zh": "最大的挑战是让他们把具体困难用语言表达出来。许多患者长期带病生活，已经对日常不便习以为常；而且他们大多是老年人，叙述往往比较发散，需要我们从中拼凑出关键信息。这正是我们采用协同设计地图（co-designed mapping）和影像发声（Photovoice）的原因。这也是最有收获的部分：他们的照片和故事最终成为了一场公共展览，使他们真正主导了对话，而不只是被动回答我们的问题。",
+    "points_en": [
+      "1. The biggest challenge is getting them to put their specific difficulties into words: a lot of patients have lived with their condition for so long that they don’t really notice the everyday inconvenience anymore, and since most of them are older, we often have to piece together something useful from stories that are a bit all over the place.",
+      "2. That’s exactly why we use methods like co-designed mapping and Photovoice.",
+      "3. That was also the most rewarding one: their photographs and stories became a public exhibition, so they were shaping the conversation rather than simply answering our questions."
+    ],
+    "points_zh": [
+      "1. 最大挑战在于引导患者具象化表达日常困难：许多老年慢性创面患者长期带病已对不便习以为常，且口头叙述较为发散。",
+      "2. 为此我们引入了协同设计地图（Co-designed mapping）与影像发声法（Photovoice）。",
+      "3. 最有收获的经历正是他们的摄影作品与故事最终办成了公共展览，让患者成为对话的主导者而非被动受访者。"
+    ],
+    "notes_zh": [
+      "1. 沟通最大挑战 → 老年患者对长期不便习以为常 + 叙述发散难提炼具体痛点",
+      "2. 创新沟通方法 → 协同设计地图（Co-designed mapping）+ 影像发声（Photovoice）",
+      "3. 最有收获时刻 → 患者照片与故事办成公共展览，从“被动答题”变为“主导对话”"
+    ],
+    "keywords": "Inclusivity communicating with patients challenge rewarding co-designed mapping Photovoice exhibition 患者沟通 影像发声",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 沟通最大挑战 → 老年患者对长期不便习以为常 + 叙述发散难提炼具体痛点",
+      "2. 创新沟通方法 → 协同设计地图（Co-designed mapping）+ 影像发声（Photovoice）",
+      "3. 最有收获时刻 → 患者照片与故事办成公共展览，从“被动答题”变为“主导对话”"
+    ]
+  },
+  {
+    "id": "inc-14",
+    "code": "INC.14",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Impact Assessment & Surveys",
+    "q_en": "How did you assess the impact of your activities?",
+    "q_zh": "你们是如何评估各项活动的影响力的？",
+    "a_en": "Overall, we evaluated our activities using participation figures, participant feedback, and learning assessments, selecting different metrics tailored to each specific activity. Our goal was to understand not only the reach of our initiatives—how many people we engaged—but also what participants learned and how we could make further improvements. For instance, we conducted pre- and post-activity surveys for children attending our summer camps and for participants in our role-playing activities.",
+    "a_zh": "总体而言，我们结合参与人数、参与者反馈和学习评估，针对不同活动选用定制化指标进行评估。我们的目标不仅是了解活动的覆盖面（触达了多少人），还要了解参与者真正学到了什么以及如何进一步改进。例如，我们对参加夏令营的儿童和角色扮演活动的参与者开展了活动前后的对比问卷调查。",
+    "points_en": [
+      "1. Overall, we evaluated our activities using participation figures, participant feedback, and learning assessments, selecting different metrics tailored to each specific activity.",
+      "2. Our goal was to understand not only the reach of our initiatives—how many people we engaged—but also what participants learned and how we could make further improvements.",
+      "3. For instance, we conducted pre- and post-activity surveys for children attending our summer camps and for participants in our role-playing activities."
+    ],
+    "points_zh": [
+      "1. 我们综合使用参与人数、参与者反馈与学习成效测评，针对不同活动量身定制评估指标。",
+      "2. 评估目标不仅看触达人数（Reach），更关注参与者实际学到了什么以及活动如何迭代。",
+      "3. 例如，我们在夏令营儿童与角色扮演活动参与者中均开展了活动前后（Pre/Post）对比问卷。"
+    ],
+    "notes_zh": [
+      "1. 三维评估指标 → 参与人数 + 参与者反馈 + 学习成效测评（按活动定制）",
+      "2. 双重评估目标 → 既看覆盖广度（Reach），也看学习深度与改进方向",
+      "3. 具体实例 → 夏令营与角色扮演活动均开展前后测（Pre/Post）对比问卷"
+    ],
+    "keywords": "Inclusivity assess impact participation figures feedback learning assessments pre- and post-activity surveys 活动评估 前后测",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 三维评估指标 → 参与人数 + 参与者反馈 + 学习成效测评（按活动定制）",
+      "2. 双重评估目标 → 既看覆盖广度（Reach），也看学习深度与改进方向",
+      "3. 具体实例 → 夏令营与角色扮演活动均开展前后测（Pre/Post）对比问卷"
+    ]
+  },
+  {
+    "id": "inc-15",
+    "code": "INC.15",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Highlights",
+    "q_en": "Which inclusivity work would you most like to highlight?",
+    "q_zh": "你们最想重点展示哪几项包容性（Inclusivity）工作？",
+    "a_en": "First, like we said earlier, our activities reach all kinds of groups, and each one is designed to fit its specific audience. Second, we talked in depth with our main target group—patients with chronic wounds—and used their feedback in our design process. We also made guidelines based on what they actually need. Third, we created and shared a bunch of resources people can reuse, like websites, activity toolkits, and educational materials.",
+    "a_zh": "第一，我们的活动触达了多元群体，且每项活动都针对特定受众量身定制。第二，我们与核心目标群体——慢性伤口患者进行了深度访谈，将他们的反馈融入设计过程，并根据他们的实际需求编写了护理指南。第三，我们开发并开源了一系列可复用资源，包括网站、活动工具包和教育材料。",
+    "points_en": [
+      "1. First, our activities reach all kinds of groups, and each one is designed to fit its specific audience.",
+      "2. Second, we talked in depth with our main target group—patients with chronic wounds—and used their feedback in our design process, while making guidelines based on what they actually need.",
+      "3. Third, we created and shared a bunch of resources people can reuse, like websites, activity toolkits, and educational materials."
+    ],
+    "points_zh": [
+      "1. 第一，活动覆盖多元受众群体，且每场活动均针对特定人群专门设计。",
+      "2. 第二，深入访谈核心目标人群（慢性创面患者），将其反馈融入工程设计并编写贴合实际需求的居家护理手册。",
+      "3. 第三，构建并开源了系列可复用资源，包括在线网站（LabSafeMom/LabMate）、活动工具包与科普教材。"
+    ],
+    "notes_zh": [
+      "1. 亮点一（多元定制）→ 覆盖各类群体 + 按受众特点专门定制活动形式",
+      "2. 亮点二（患者共创）→ 深度访谈慢性伤口患者 + 反馈反哺设计并制定护理指南",
+      "3. 亮点三（开源复用）→ 共享网站、活动工具包与教育材料"
+    ],
+    "keywords": "Inclusivity highlight chronic wounds patients guidelines websites activity toolkits 包容性亮点",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 亮点一（多元定制）→ 覆盖各类群体 + 按受众特点专门定制活动形式",
+      "2. 亮点二（患者共创）→ 深度访谈慢性伤口患者 + 反馈反哺设计并制定护理指南",
+      "3. 亮点三（开源复用）→ 共享网站、活动工具包与教育材料"
+    ]
+  },
+  {
+    "id": "inc-16",
+    "code": "INC.16",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Summer Camp Assessment",
+    "q_en": "Did your surveys assess actual understanding, or only students’ impressions?",
+    "q_zh": "你们的问卷是评估了学生的真实理解，还是仅仅调查了主观印象？",
+    "a_en": "In the Life Science × AI summer camp, our surveys covered five areas: scientific knowledge, AI literacy, scientific inquiry, biosafety awareness, and learning interest. We included knowledge questions, attitude scales, and open-ended feedback. For example, we used eight knowledge and judgment questions, including DNA–RNA–protein information flow and whether AI predictions need experimental validation. By comparing students' answers before and after the camp, we assessed not only how they felt, but also what they actually understood.",
+    "a_zh": "在“生命科学 × AI”夏令营中，我们的问卷涵盖五个维度：科学知识、AI 素养、科学探究、生物安全意识和学习兴趣。问卷包含客观知识题、态度量表和开放式反馈。例如，我们设置了 8 道知识与判断题，涵盖中心法则（DNA–RNA–蛋白质信息流）以及 AI 预测是否需要实验验证。通过对比营前与营后的作答结果，我们不仅评估了学生的主观感受，更实测了他们的真实理解程度。",
+    "points_en": [
+      "1. In the Life Science × AI summer camp, our surveys covered five areas: scientific knowledge, AI literacy, scientific inquiry, biosafety awareness, and learning interest, using knowledge questions, attitude scales, and open-ended feedback.",
+      "2. For example, we used eight knowledge and judgment questions, including DNA–RNA–protein information flow and whether AI predictions need experimental validation.",
+      "3. By comparing students' answers before and after the camp, we assessed not only how they felt, but also what they actually understood."
+    ],
+    "points_zh": [
+      "1. 在“生命科学 × AI”夏令营中，问卷覆盖科学知识、AI 素养、科学探究、生物安全意识与学习兴趣五大维度，结合客观知识题、态度量表与开放反馈。",
+      "2. 例如设置了 8 道客观知识与判断题，考察 DNA–RNA–蛋白质信息流及“AI 预测是否需湿实验验证”等核心概念。",
+      "3. 通过对比营前与营后作答准确率，我们不仅评估主观感受，更定量检验了学生的真实理解。"
+    ],
+    "notes_zh": [
+      "1. 五维综合测评 → 科学知识 + AI 素养 + 科学探究 + 生物安全意识 + 学习兴趣",
+      "2. 硬核客观题设计 → 8 道知识判断题（涵盖中心法则 DNA-RNA-蛋白 + AI 预测需实验验证）",
+      "3. 前后测对比 → 对比开营前后客观题作答，实测真实理解而非仅看主观印象"
+    ],
+    "keywords": "Inclusivity surveys actual understanding impressions Life Science AI summer camp DNA RNA protein 夏令营问卷 真实理解",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 五维综合测评 → 科学知识 + AI 素养 + 科学探究 + 生物安全意识 + 学习兴趣",
+      "2. 硬核客观题设计 → 8 道知识判断题（涵盖中心法则 DNA-RNA-蛋白 + AI 预测需实验验证）",
+      "3. 前后测对比 → 对比开营前后客观题作答，实测真实理解而非仅看主观印象"
+    ]
+  },
+  {
+    "id": "inc-17",
+    "code": "INC.17",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity & HP — Ward Interviews Impact",
+    "q_en": "What did you learn from outreach and patient interviews, and which feedback changed the project? / Which Human Practices activity changed the project the most?",
+    "q_zh": "你们从患者和医院访谈中学到了什么？哪项反馈或 HP 活动对项目改变最大？",
+    "a_en": "The hospital ward interviews with patients, clinicians, and care workers probably changed the project the most. They made us realize our design had to do more than just kill bacteria—it also had to fit into everyday wound care. Talking with patients, we found a big gap in what they knew about caring for wounds at home, so we made the dressing easy to use and design a hand book. And since current treatments often can’t do both—kill bacteria and help tissue repair—there’s a gap in the treatment process. That’s why we added hEGF. These interviews also changed the role of our project. Instead of presenting Dual-Armor as a stand-alone treatment, we now position it as a supportive dressing for ongoing care after debridement.",
+    "a_zh": "在医院病房对患者、临床医生和护工的访谈对项目改变最大。访谈让我们意识到设计不能只停留在杀菌，还必须融入日常创面护理。与患者交流时，我们发现他们对居家伤口护理知识存在很大缺口，因此我们简化了敷料使用方式并设计了护理手册；同时由于现有疗法往往无法兼顾“杀菌”与“组织修复”，我们在系统中加入了 hEGF。这些访谈也改变了项目的整体定位：我们不再将 Dual-Armor 视为独立替代疗法，而是将其定位为清创术后持续护理的辅助型敷料。",
+    "points_en": [
+      "1. The hospital ward interviews with patients, clinicians, and care workers changed the project the most: talking with patients revealed a big gap in home wound-care knowledge, so we made the dressing easy to use and designed a handbook.",
+      "2. Because current treatments often cannot both kill bacteria and help tissue repair, we added hEGF to bridge that gap in the treatment process.",
+      "3. These interviews also changed the role of our project: instead of presenting Dual-Armor as a stand-alone treatment, we now position it as a supportive dressing for ongoing care after debridement."
+    ],
+    "points_zh": [
+      "1. 医院病房对患者、医生和护工的深度访谈对项目改变最大：针对患者居家护理知识缺口，我们简化了敷料操作并编写了居家护理手册。",
+      "2. 针对现有治疗难以兼顾“抗菌”与“促组织修复”的临床断层，我们在下游治疗模块中新增了促愈合因子 hEGF。",
+      "3. 访谈还重塑了项目临床定位：不再将 Dual-Armor 当作孤立疗法，而是定位为清创术后持续护理的辅助敷料。"
+    ],
+    "notes_zh": [
+      "1. 病房访谈三大改变之一（使用端）→ 发现居家护理知识缺口 → 简化敷料操作 + 编写护理手册",
+      "2. 改变之二（基因回路端）→ 临床缺乏“杀菌+修复”一体化方案 → 下游新增 hEGF 促愈合模块",
+      "3. 改变之三（产品定位端）→ 从“独立替代疗法”调整为“清创术后持续护理辅助敷料”"
+    ],
+    "keywords": "Inclusivity Human Practices patient interviews changed the project hEGF debridement supportive dressing handbook 病房访谈 改变项目 清创术后",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 病房访谈三大改变之一（使用端）→ 发现居家护理知识缺口 → 简化敷料操作 + 编写护理手册",
+      "2. 改变之二（基因回路端）→ 临床缺乏“杀菌+修复”一体化方案 → 下游新增 hEGF 促愈合模块",
+      "3. 改变之三（产品定位端）→ 从“独立替代疗法”调整为“清创术后持续护理辅助敷料”"
+    ]
+  },
+  {
+    "id": "inc-18",
+    "code": "INC.18",
+    "slide": "INC",
+    "slide_page": 1,
+    "slide_title": "Inclusivity — Patient Care Manual",
+    "q_en": "What does your care manual cover, and how did you ensure its reliability?",
+    "q_zh": "你们的患者护理手册涵盖哪些内容？如何确保其可靠性？",
+    "a_en": "Our care manual covers daily wound care, dressing changes, warning signs, and practical advice for home care. To make it reliable, we used published clinical guidelines and expert recommendations. We also interviewed patients to identify their everyday difficulties. Finally, clinicians reviewed the manual and provided feedback, which helped us revise the content and make it more practical.",
+    "a_zh": "我们的护理手册涵盖日常伤口护理、敷料更换、危险预警信号以及居家护理实用建议。为确保可靠性，我们参考了已发表的临床指南和专家建议，并访谈患者以锁定日常痛点。最后，临床医生对手册进行了审阅并提供反馈，帮助我们修订内容使其更加实用。",
+    "points_en": [
+      "1. Our care manual covers daily wound care, dressing changes, warning signs, and practical advice for home care.",
+      "2. To make it reliable, we used published clinical guidelines and expert recommendations, and interviewed patients to identify their everyday difficulties.",
+      "3. Finally, clinicians reviewed the manual and provided feedback, which helped us revise the content and make it more practical."
+    ],
+    "points_zh": [
+      "1. 护理手册涵盖日常创面护理、敷料更换步骤、感染危险信号识别及居家实用建议。",
+      "2. 为确保权威可靠，内容严格依据已发表临床指南与专家共识编写，并结合患者访谈锁定日常实操难点。",
+      "3. 最终由临床医生审阅把关并反馈修订，确保手册兼具医学准确性与居家实用性。"
+    ],
+    "notes_zh": [
+      "1. 手册四大内容 → 日常伤口护理 + 敷料更换 + 预警信号 + 居家实用建议",
+      "2. 可靠性来源 → 权威临床指南 + 专家建议 + 患者痛点访谈",
+      "3. 专业把关 → 临床医生逐项审阅反馈并修订落地"
+    ],
+    "keywords": "Inclusivity care manual reliability daily wound care dressing changes warning signs clinicians reviewed 护理手册 可靠性",
+    "slides": [
+      "INC"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 手册四大内容 → 日常伤口护理 + 敷料更换 + 预警信号 + 居家实用建议",
+      "2. 可靠性来源 → 权威临床指南 + 专家建议 + 患者痛点访谈",
+      "3. 专业把关 → 临床医生逐项审阅反馈并修订落地"
+    ]
+  },
+  {
+    "id": "thr-1",
+    "code": "THR.1",
+    "slide": "S6",
+    "slide_page": 6,
+    "slide_title": "Therapeutics — Implementation & Biosafety",
+    "q_en": "What is the main barrier to real-world implementation, and how would you address it after the competition?",
+    "q_zh": "走向真实世界应用的主要障碍是什么？赛后你们会如何解决？",
+    "a_en": "We believe the biggest challenge is biosafety, especially when using living engineered bacteria on open wounds. Our dressing is designed with semi-permeable membranes to separate the bacteria from the wound while allowing therapeutic molecules to pass through. However, we still need to prove that this containment system is reliable. After the competition, we would focus on testing bacterial leakage, membrane stability, and long-term safety. We would also work with clinicians to improve the dressing and move toward preclinical testing.",
+    "a_zh": "我们认为最大的挑战是生物安全性，尤其是在开放性伤口上使用活体工程菌。我们的敷料设计有半透膜，将细菌与伤口隔开，同时允许治疗分子通过；但仍需证明该物理遏制系统的可靠性。赛后我们将重点测试细菌泄漏率、膜稳定性和长期安全性，并与临床医生合作改进敷料、推进临床前测试。",
+    "points_en": [
+      "1. We believe the biggest challenge is biosafety, especially when using living engineered bacteria on open wounds.",
+      "2. Our dressing is designed with semi-permeable membranes to separate the bacteria from the wound while allowing therapeutic molecules to pass through, though we still need to prove that this containment system is reliable.",
+      "3. After the competition, we would focus on testing bacterial leakage, membrane stability, and long-term safety, and work with clinicians to improve the dressing and move toward preclinical testing."
+    ],
+    "points_zh": [
+      "1. 最大挑战在于生物安全性，尤其是在开放性创面上应用活体工程菌。",
+      "2. 我们的敷料采用半透膜将工程菌与创面隔离并允许治疗蛋白透过，但该遏制系统的可靠性仍需实验验证。",
+      "3. 赛后我们将重点测试活菌泄漏率、膜稳定性与长期安全性，并联合临床医生优化敷料推进临床前研究。"
+    ],
+    "notes_zh": [
+      "1. 最大落地障碍 → 开放性伤口使用活体工程菌的生物安全性",
+      "2. 当前隔离设计 → 半透膜物理隔开细菌与创面，仅允许治疗分子透过",
+      "3. 赛后验证重点 → 实测细菌泄漏率 + 膜稳定性 + 长期安全性 + 临床前测试"
+    ],
+    "keywords": "Therapeutics main barrier real-world implementation biosafety open wounds semi-permeable membranes bacterial leakage 落地障碍 半透膜 生物安全",
+    "slides": [
+      "S6"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 最大落地障碍 → 开放性伤口使用活体工程菌的生物安全性",
+      "2. 当前隔离设计 → 半透膜物理隔开细菌与创面，仅允许治疗分子透过",
+      "3. 赛后验证重点 → 实测细菌泄漏率 + 膜稳定性 + 长期安全性 + 临床前测试"
+    ]
+  },
+  {
+    "id": "thr-2",
+    "code": "THR.2",
+    "slide": "S6",
+    "slide_page": 6,
+    "slide_title": "Therapeutics — Approach Limitations",
+    "q_en": "What do you consider the main limitations of your therapeutic approach?",
+    "q_zh": "你们认为当前治疗方案的主要局限性是什么？",
+    "a_en": "Our main limitation is that we have tested individual modules, but not yet the complete two-strain system. Although we have demonstrated biofilm disruption, antibacterial activity, and preliminary communication between strains, we still need to prove that they can work together reliably. Another challenge is the complexity of chronic wounds. They often contain multiple bacterial species, while our system mainly targets S. aureus. We also need to evaluate the effects on normal skin bacteria. In the future, we would test the integrated system under more realistic wound conditions and evaluate both its effectiveness and safety.",
+    "a_zh": "我们的主要局限在于目前分别测试了各个独立模块，尚未测试完整的双菌系统。虽然我们已经证明了生物膜破坏、抗菌活性和初步的菌间通讯，但仍需证明它们能可靠地协同工作。另一个挑战是慢性伤口的复杂性：创面通常包含多种细菌，而我们的系统主要针对金黄色葡萄球菌，且还需评估对正常皮肤菌群的影响。未来我们将在更真实的伤口条件下测试整合系统并评估其有效性与安全性。",
+    "points_en": [
+      "1. Our main limitation is that we have tested individual modules—demonstrating biofilm disruption, antibacterial activity, and preliminary communication between strains—but have not yet tested the complete two-strain system working together reliably.",
+      "2. Another challenge is the complexity of chronic wounds, which often contain multiple bacterial species while our system mainly targets S. aureus, and we also need to evaluate the effects on normal skin bacteria.",
+      "3. In the future, we would test the integrated system under more realistic wound conditions and evaluate both its effectiveness and safety."
+    ],
+    "points_zh": [
+      "1. 主要局限在于目前我们分别验证了各个独立模块（破膜、抗菌与初步菌间通讯），尚未完成完整双菌系统的端到端联调。",
+      "2. 另一项挑战是慢性创面的多菌种复杂性：目前系统主要靶向金葡菌，且需进一步评估对正常皮肤共生菌群的影响。",
+      "3. 未来我们将在更接近真实创面的条件下测试完整集成系统，全面评估其有效性与安全性。"
+    ],
+    "notes_zh": [
+      "1. 局限一（系统集成度）→ 已分别验证破膜/通讯/杀菌单模块，待完成完整双菌全链路联调",
+      "2. 局限二（创面复杂性）→ 慢性伤口常为多菌种混合感染（当前主攻金葡菌）+ 需评估对皮肤共生菌影响",
+      "3. 未来推进方向 → 在逼真创面模型下测试完整集成系统的疗效与安全性"
+    ],
+    "keywords": "Therapeutics main limitations therapeutic approach individual modules chronic wounds multiple bacterial species 治疗局限性 多菌种",
+    "slides": [
+      "S6"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 局限一（系统集成度）→ 已分别验证破膜/通讯/杀菌单模块，待完成完整双菌全链路联调",
+      "2. 局限二（创面复杂性）→ 慢性伤口常为多菌种混合感染（当前主攻金葡菌）+ 需评估对皮肤共生菌影响",
+      "3. 未来推进方向 → 在逼真创面模型下测试完整集成系统的疗效与安全性"
+    ]
+  },
+  {
+    "id": "thr-3",
+    "code": "THR.3",
+    "slide": "B4",
+    "slide_page": 11,
+    "slide_title": "Therapeutics & Model — Two Chassis Division of Labor",
+    "q_en": "Why did you choose two bacterial chassis instead of one?",
+    "q_zh": "为什么你们选择两个细菌底盘而不是一个？",
+    "a_en": "We chose two strains mainly to achieve division of labor and reduce metabolic burden. S. epidermidis is responsible for sensing signals and disrupting biofilms, while EcN produces therapeutic proteins for bacterial killing and tissue repair. Putting all these functions into one strain could increase metabolic burden and make regulation more complicated. Our metabolic burden model also supports this design choice.",
+    "a_zh": "我们选择两株菌主要是为了实现分工并减轻代谢负担。表皮葡萄球菌负责感知信号和破坏生物膜，而 EcN 负责生产用于杀菌和组织修复的治疗蛋白。将所有功能放入同一株菌会增加代谢负担并使调控更加复杂。我们的代谢负担模型（metabolic burden model）也支持这一设计选择。",
+    "points_en": [
+      "1. We chose two strains mainly to achieve division of labor and reduce metabolic burden.",
+      "2. S. epidermidis is responsible for sensing signals and disrupting biofilms, while EcN produces therapeutic proteins for bacterial killing and tissue repair.",
+      "3. Putting all these functions into one strain could increase metabolic burden and make regulation more complicated, and our metabolic burden model also supports this design choice."
+    ],
+    "points_zh": [
+      "1. 选择两株菌主要是为了实现劳动分工（Division of labor）并降低单菌代谢负担。",
+      "2. 表皮葡萄球菌负责感知感染信号与瓦解生物膜，而 EcN 负责生产用于杀菌和组织修复的治疗蛋白。",
+      "3. 若将所有功能塞入单株菌会显著加重代谢负荷并使调控复杂化，我们的代谢负担干实验模型也定量支持这一双菌设计。"
+    ],
+    "notes_zh": [
+      "1. 核心动因 → 劳动分工（Division of labor）+ 降低单菌代谢负担",
+      "2. 双菌职责 → 表皮葡萄球菌（感知信号 + 破生物膜）| EcN（产杀菌与组织修复蛋白）",
+      "3. 建模支撑 → 单菌集成会导致高代谢负荷与调控复杂，代谢负担模型定量支持双菌方案"
+    ],
+    "keywords": "Therapeutics Model two bacterial chassis division of labor metabolic burden model S. epidermidis EcN 两个底盘 代谢负担模型",
+    "slides": [
+      "B4"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 核心动因 → 劳动分工（Division of labor）+ 降低单菌代谢负担",
+      "2. 双菌职责 → 表皮葡萄球菌（感知信号 + 破生物膜）| EcN（产杀菌与组织修复蛋白）",
+      "3. 建模支撑 → 单菌集成会导致高代谢负荷与调控复杂，代谢负担模型定量支持双菌方案"
+    ]
+  },
+  {
+    "id": "thr-4",
+    "code": "THR.4",
+    "slide": "S1",
+    "slide_page": 1,
+    "slide_title": "Therapeutics — Living-Cell Dressing vs Direct Protein",
+    "q_en": "Why use a living-cell dressing instead of directly applying therapeutic proteins?",
+    "q_zh": "为什么要使用活菌敷料，而不是直接涂抹治疗蛋白？",
+    "a_en": "Directly applying proteins is possible, but proteins may be degraded in the wound environment, reducing their stability and effective duration. Our living-cell dressing is designed to produce therapeutic proteins locally and respond to changes in the wound environment.",
+    "a_zh": "直接涂抹蛋白质是可行的，但蛋白质在富含蛋白酶的伤口环境中容易被降解，从而降低其稳定性和有效作用时间。我们的活菌敷料旨在局部原位生产治疗蛋白，并根据伤口环境的变化做出动态响应。",
+    "points_en": [
+      "1. Directly applying proteins is possible, but proteins may be degraded in the wound environment, reducing their stability and effective duration.",
+      "2. Our living-cell dressing is designed to produce therapeutic proteins locally on demand.",
+      "3. It can also respond dynamically to changes in the wound environment."
+    ],
+    "points_zh": [
+      "1. 直接外用涂抹蛋白虽可行，但在创面环境中蛋白极易被降解，导致稳定性差、有效作用时间短。",
+      "2. 活菌敷料能够在创面局部持续原位合成并补充治疗蛋白。",
+      "3. 同时活菌系统能根据创面感染与出血信号的变化做出按需动态响应。"
+    ],
+    "notes_zh": [
+      "1. 直接涂抹蛋白痛点 → 创面环境易降解外源蛋白 → 稳定性差、作用时间短",
+      "2. 活菌敷料优势一 → 局部原位持续合成治疗蛋白",
+      "3. 活菌敷料优势二 → 智能感知创面环境变化并按需响应"
+    ],
+    "keywords": "Therapeutics living-cell dressing directly applying therapeutic proteins degraded stability locally respond 活菌敷料 直接涂抹蛋白",
+    "slides": [
+      "S1"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 直接涂抹蛋白痛点 → 创面环境易降解外源蛋白 → 稳定性差、作用时间短",
+      "2. 活菌敷料优势一 → 局部原位持续合成治疗蛋白",
+      "3. 活菌敷料优势二 → 智能感知创面环境变化并按需响应"
+    ]
+  },
+  {
+    "id": "thr-5",
+    "code": "THR.5",
+    "slide": "B3",
+    "slide_page": 10,
+    "slide_title": "Therapeutics — Why Naringenin",
+    "q_en": "Why did you choose naringenin as the signaling molecule?",
+    "q_zh": "为什么选择柚皮素作为跨菌信号分子？（简明三点版）",
+    "a_en": "We chose naringenin for three main reasons. First, biocompatibility. Naringenin is a naturally occurring molecule with relatively low toxicity at appropriate concentrations. Second, less interference. Naringenin provides a separate communication channel between our two strains, with less interference from natural signals in the wound environment. Third, additional therapeutic benefits. Studies have shown that naringenin has antioxidant and anti-inflammatory effects, which may also help support wound healing.",
+    "a_zh": "我们选择柚皮素主要基于三个原因：第一，生物相容性——柚皮素是天然存在的分子，在工作浓度下毒性较低；第二，低干扰（正交性）——柚皮素在两株工程菌之间提供了独立的通讯通道，不易受伤口环境中天然信号的干扰；第三，附加治疗益处——研究表明柚皮素具有抗氧化和抗炎作用，也有助于支持伤口愈合。",
+    "points_en": [
+      "1. First, biocompatibility: naringenin is a naturally occurring molecule with relatively low toxicity at appropriate concentrations.",
+      "2. Second, less interference: naringenin provides a separate communication channel between our two strains, with less interference from natural signals in the wound environment.",
+      "3. Third, additional therapeutic benefits: studies have shown that naringenin has antioxidant and anti-inflammatory effects, which may also help support wound healing."
+    ],
+    "points_zh": [
+      "1. 第一，生物相容性好：柚皮素是天然植物代谢物，在工作浓度下细胞毒性低。",
+      "2. 第二，背景干扰小：柚皮素为两株工程菌提供独立的专用通讯通道，不受创面天然信号干扰。",
+      "3. 第三，附加治疗获益：文献证实柚皮素本身兼具抗氧化与抗炎活性，有助于协同促进创面愈合。"
+    ],
+    "notes_zh": [
+      "1. 生物相容性（Biocompatibility）→ 天然植物分子，工作浓度下低毒安全",
+      "2. 低背景干扰（Less interference）→ 独立跨菌通讯通道，不受创面天然信号串扰",
+      "3. 附加治疗益处（Therapeutic benefits）→ 兼具抗氧化与抗炎作用，协同促愈合"
+    ],
+    "keywords": "Therapeutics choose naringenin signaling molecule biocompatibility less interference antioxidant anti-inflammatory 为什么选柚皮素 生物相容性",
+    "slides": [
+      "B3"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 生物相容性（Biocompatibility）→ 天然植物分子，工作浓度下低毒安全",
+      "2. 低背景干扰（Less interference）→ 独立跨菌通讯通道，不受创面天然信号串扰",
+      "3. 附加治疗益处（Therapeutic benefits）→ 兼具抗氧化与抗炎作用，协同促愈合"
+    ]
+  },
+  {
+    "id": "thr-6",
+    "code": "THR.6",
+    "slide": "S1",
+    "slide_page": 1,
+    "slide_title": "Therapeutics & Hardware — Layered Hydrogel Structure",
+    "q_en": "Are the two strains mixed together in the hydrogel, or kept in separate layers?",
+    "q_zh": "两株工程菌在水凝胶里是混合在一起的，还是分层放置的？",
+    "a_en": "We keep the two strains in separate layers. EcN is placed in the upper layer, while S. epidermidis is placed below it. A semi-permeable membrane separates them. Another membrane and a hydrogel layer separate the bacteria from the wound. This layered design allows the two strains to communicate through signaling molecules while keeping the bacterial cells physically separated.",
+    "a_zh": "我们将两株菌放置在不同的独立层中：EcN 位于上层，表皮葡萄球菌位于其下层，两层之间由半透膜隔开；底部还有另一层半透膜和水凝胶层将细菌与创面隔开。这种分层设计使两株菌能够通过信号分子进行通讯，同时在物理上保持菌体相互隔离。",
+    "points_en": [
+      "1. We keep the two strains in separate layers: EcN is placed in the upper layer, while S. epidermidis is placed below it, and a semi-permeable membrane separates them.",
+      "2. Another membrane and a hydrogel layer separate the bacteria from the wound.",
+      "3. This layered design allows the two strains to communicate through signaling molecules while keeping the bacterial cells physically separated."
+    ],
+    "points_zh": [
+      "1. 两株菌分层放置：EcN 位于上层，表皮葡萄球菌位于下层，中间由一层半透膜隔开。",
+      "2. 下方还有另一层半透膜与水凝胶层将细菌与伤口创面隔开。",
+      "3. 这种分层设计既允许两株菌通过小分子信号跨膜通讯，又在物理上将菌体彼此隔离。"
+    ],
+    "notes_zh": [
+      "1. 上下分层排布 → 上层放 EcN + 下层放表皮葡萄球菌 + 中间半透膜隔开",
+      "2. 创面接触界面 → 底部另有一层半透膜与水凝胶层隔开细菌与伤口",
+      "3. 分层核心功能 → 信号分子自由跨膜通讯 + 细菌细胞物理隔离"
+    ],
+    "keywords": "Therapeutics mixed together hydrogel separate layers upper layer EcN lower S. epidermidis semi-permeable membrane 水凝胶分层 上下层",
+    "slides": [
+      "S1"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 上下分层排布 → 上层放 EcN + 下层放表皮葡萄球菌 + 中间半透膜隔开",
+      "2. 创面接触界面 → 底部另有一层半透膜与水凝胶层隔开细菌与伤口",
+      "3. 分层核心功能 → 信号分子自由跨膜通讯 + 细菌细胞物理隔离"
+    ]
+  },
+  {
+    "id": "thr-7",
+    "code": "THR.7",
+    "slide": "S1",
+    "slide_page": 1,
+    "slide_title": "Therapeutics & Hardware — Freeze-Dried Activation",
+    "q_en": "How do you activate the bacteria before using the dressing?",
+    "q_zh": "在使用敷料前，你们是如何激活休眠细菌的？",
+    "a_en": "During storage, the bacteria are freeze-dried, while the nutrient gel is kept in a separate outer compartment. Before use, the idea is to press this compartment, allowing the gel to come into contact with the bacteria and reactivate them.",
+    "a_zh": "在储存期间，细菌处于冻干（freeze-dried）状态，而营养凝胶保存在独立的外部隔室中。在使用前，通过按压该隔室，使营养凝胶与冻干细菌接触从而将其复苏激活。",
+    "points_en": [
+      "1. During storage, the bacteria are freeze-dried.",
+      "2. Meanwhile, the nutrient gel is kept in a separate outer compartment.",
+      "3. Before use, the idea is to press this compartment, allowing the gel to come into contact with the bacteria and reactivate them."
+    ],
+    "points_zh": [
+      "1. 在储存阶段，工程菌以冻干粉（Freeze-dried）形式保存。",
+      "2. 营养凝胶则储存在独立的外部隔室（Outer compartment）中。",
+      "3. 使用前只需按压外部隔室，使营养凝胶与冻干菌接触即可实现原位复苏激活。"
+    ],
+    "notes_zh": [
+      "1. 储存状态 → 细菌冻干保存（Freeze-dried）",
+      "2. 营养液隔离 → 营养凝胶置于独立外部隔室",
+      "3. 使用前激活 → 按压隔室使营养凝胶接触菌体，原位复苏激活"
+    ],
+    "keywords": "Therapeutics activate bacteria before using dressing storage freeze-dried nutrient gel press compartment reactivate 冻干 激活细菌 按压隔室",
+    "slides": [
+      "S1"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 储存状态 → 细菌冻干保存（Freeze-dried）",
+      "2. 营养液隔离 → 营养凝胶置于独立外部隔室",
+      "3. 使用前激活 → 按压隔室使营养凝胶接触菌体，原位复苏激活"
+    ]
+  },
+  {
+    "id": "thr-8",
+    "code": "THR.8",
+    "slide": "S1",
+    "slide_page": 1,
+    "slide_title": "Therapeutics & Hardware — Membrane Pore Size Control",
+    "q_en": "How does the membrane control which substances enter the wound?",
+    "q_zh": "半透膜是如何控制哪些物质进入伤口的？",
+    "a_en": "We aim to control the membrane's pore size to allow therapeutic proteins to pass through while limiting the release of unwanted bacterial products. However, pore size alone cannot perfectly distinguish therapeutic proteins from other molecules. Therefore, membrane selectivity and safety will need further experimental validation.",
+    "a_zh": "我们旨在控制半透膜的孔径大小（pore size），以允许治疗性蛋白质通过，同时限制不需要的细菌产物释放並截留活菌。然而，单靠孔径本身无法完美区分治疗蛋白与其他分子量相近的分子，因此膜的选择性和安全性仍需进一步的实验验证。",
+    "points_en": [
+      "1. We aim to control the membrane's pore size to allow therapeutic proteins to pass through while limiting the release of unwanted bacterial products.",
+      "2. However, pore size alone cannot perfectly distinguish therapeutic proteins from other molecules.",
+      "3. Therefore, membrane selectivity and safety will need further experimental validation."
+    ],
+    "points_zh": [
+      "1. 我们通过控制半透膜孔径（Pore size），允许治疗蛋白透过并限制活菌及非预期大分子产物释放。",
+      "2. 但仅靠物理孔径本身无法完全区分治疗蛋白与其他分子量相近的细菌代谢物。",
+      "3. 因此，膜的分子选择性与生物安全性仍需进一步实验验证。"
+    ],
+    "notes_zh": [
+      "1. 孔径筛选机制 → 控制半透膜孔径（Pore size），放行治疗蛋白、截留细菌与大分子杂质",
+      "2. 客观物理边界 → 仅靠孔径无法完全区分同尺寸的治疗蛋白与其他小分子",
+      "3. 下一步验证 → 补测膜选择性透过率与安全性实验"
+    ],
+    "keywords": "Therapeutics membrane control substances enter wound pore size therapeutic proteins selectivity 膜孔径 选择性",
+    "slides": [
+      "S1"
+    ],
+    "slide_img": "",
+    "extra_zh": "",
+    "followups": [],
+    "notes": [
+      "1. 孔径筛选机制 → 控制半透膜孔径（Pore size），放行治疗蛋白、截留细菌与大分子杂质",
+      "2. 客观物理边界 → 仅靠孔径无法完全区分同尺寸的治疗蛋白与其他小分子",
+      "3. 下一步验证 → 补测膜选择性透过率与安全性实验"
     ]
   }
 ]
