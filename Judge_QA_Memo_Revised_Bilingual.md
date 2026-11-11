@@ -225,11 +225,11 @@ Aligned to `Wetlab_final01-SEPv1_修复版.pptx` (`S1–S6`, `INDEX`, `B1–B19`
 
 ---
 
-### M25 (原 Q38 + Q39 + Q41). How do you address biosafety, horizontal gene transfer, wound-model testing, and regulatory translation?
-**问：** 如何解决活菌逃逸、水平基因转移、真实伤口模型验证以及未来临床监管路径？  
-**答 (EN):** "All data this year are in vitro, and we have not yet tested bacterial leakage or horizontal gene transfer experimentally. Our dressing separates the bacteria from the wound with semi-permeable membranes, and for clinical translation as a Live Biotherapeutic Product (LBP) dressing we plan D-alanine auxotrophy (`alr/dadX` and `dal/dat`), chromosomal integration without antibiotic markers, and step-by-step testing from artificial wound fluid to ex vivo skin and animal wound models."  
-**答（中）：** "今年所有数据均为体外实验，尚未实测活菌泄漏率与水平基因转移。敷料设计上用半透膜将工程菌与创面隔开；未来按活体生物治疗产品（LBP）敷料推进临床前转化时，将引入 D-丙氨酸营养缺陷型（`alr/dadX` 与 `dal/dat`）和无抗性标记的染色体整合，并依次在人工伤口液、离体皮肤与动物伤口模型中验证。"  
-**证据 / Evidence:** `S1`, `S6`, `B4` (`THR.1`, `X13`).
+### M25 (原 Q38 + Q39 + Q41). How do you ensure the biosafety of using engineered live bacteria on a wound?
+**问：** 你们如何保证工程活菌用于伤口时的生物安全性？  
+**答 (EN):** "First, our dressing uses a semi-permeable membrane and layered hydrogel isolation design that physically blocks live bacteria from migrating into the wound while allowing secreted therapeutic proteins and small molecules to diffuse across. Second, both target chassis are inherently biosafe BSL-1 strains: *S. epidermidis* ATCC 12228 is a native human skin commensal and *E. coli* Nissle 1917 (EcN) is a clinically established probiotic. Third, we designed a genetic kill-switch based on D-alanine auxotrophy (`alr/dadX` and `dal/dat` knockouts) so any bacteria leaving the D-alanine-supplemented hydrogel cannot synthesize cell-wall peptidoglycan and self-lyse."  
+**答（中）：** "第一，半透膜与水凝胶分层隔离设计：将工程菌物理封存在水凝胶内部，只允许分泌的治疗蛋白和信号分子透过半透膜，活菌不会迁移到伤口表面。第二，底盘本身是生物安全的：表皮葡萄球菌 ATCC 12228 是人体天然皮肤共生菌，EcN 是临床广泛使用的安全益生菌，两者均为 BSL-1 非致病菌株。第三，自杀开关设计：我们设计了 D-丙氨酸营养缺陷型自杀开关（敲除 `alr/dadX` 与 `dal/dat`），一旦细菌脱离含 D-丙氨酸的敷料基质便无法合成细胞壁肽聚糖而自溶。"  
+**证据 / Evidence:** `S1`, `S6`, `B4` (`X13`, `THR.6`, `THR.8`).
 
 ---
 

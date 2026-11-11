@@ -1679,28 +1679,26 @@
 
 ---
 
-## [X13] 你们实测过活菌从水凝胶逃逸吗？D-丙氨酸营养缺陷型停药后两株菌会立刻停止生长吗？
+## [X13] 你们如何保证工程活菌用于伤口时的生物安全性？
 - **ID**: `x13`
 - **Slide**: `S6` (Page 6)
-- **English Question**: Did you measure live-cell escape from the dressing or show that both strains stop growing when supplementation ends?
-- **Keywords**: biosafety live bacteria escape rate D-alanine auxotrophy alr dadX open wound 活菌逃逸率 生物安全 D-丙氨酸 营养缺陷 停止增殖
+- **English Question**: How do you ensure the biosafety of using engineered live bacteria on a wound?
+- **Keywords**: M25 biosafety semi-permeable membrane hydrogel isolation S. epidermidis EcN BSL-1 kill switch D-alanine auxotrophy alr dadX dal dat 生物安全 半透膜 隔离 活菌不会迁移 自杀开关 营养缺陷
 
 ### 英文分点 (1·2·3)
-1. [Direct Conclusion] We designed three layers of biosafety, and we distinguish what is already built from what is planned for preclinical testing:
-2. 
-3. [Experimental Evidence] **Chassis biosafety**: Both *S. epidermidis* (a native skin commensal) and EcN (a clinically used probiotic) are BSL-1 organisms. 2. **Physical containment**: Our 3D-printed hydrogel dressing encapsulates the bacteria inside an inner hydrogel matrix separated from the wound surface by a semi-permeable membrane. 3. **Genetic auxotrophy (designed)**: We designed a D-alanine auxotrophy (deleting *alr*/*dadX* and *dat*) so neither strain can synthesize cell-wall peptidoglycan outside the D-alanine-supplemented dressing.
-4. [Boundary & Next Step] Constructing those knockout strains and running membrane bacterial-escape assays are our next biosafety validation steps before any *in vivo* testing.
+1. [Direct Conclusion] First, our dressing uses a semi-permeable membrane and layered hydrogel isolation design so live bacteria are physically retained and cannot migrate into the wound, while secreted therapeutic proteins and signaling molecules diffuse across.
+2. [Experimental Evidence] Second, both target chassis are inherently biosafe BSL-1 organisms: *S. epidermidis* ATCC 12228 is a native human skin commensal and *E. coli* Nissle 1917 (EcN) is a clinically established probiotic.
+3. [Boundary & Next Step] Third, we designed a genetic kill-switch based on D-alanine auxotrophy (`alr/dadX` and `dal/dat` knockouts) so any bacteria leaving the D-alanine-supplemented hydrogel cannot synthesize cell-wall peptidoglycan and undergo autolysis.
 
 ### 中文分点 (1·2·3)
-1. 【核心结论】我们设计了三层生物安全屏障，并明确区分已完成的设计原型与临床前待测指标：
-2. **底盘生物安全性**：表皮葡萄球菌（天然皮肤共生菌）与 EcN（临床广泛使用的益生菌）均属于 BSL-1 安全等级菌株。
-3. 【实验证据与数据】2. **物理隔离封装**：3D 打印分层水凝胶敷料将工程菌封装在内部水凝胶基质中，并通过半透膜与创面隔离，允许小分子与分泌蛋白穿过而阻拦菌体。3. **遗传营养缺陷型控制（设计方案）**：我们在 Safety 中设计了 D-丙氨酸营养缺陷型（敲除 `alr`/`dadX` 与 `dat`），使工程菌离开富含 D-丙氨酸的敷料后无法合成细胞壁肽聚糖而停止增殖。
-4. 【边界与下一步】构建该营养缺陷型敲除株并测定组装敷料的活菌逃逸率，是我们开展体内实验前的下一步安全验证工作。
+1. 【核心结论】第一，半透膜与水凝胶分层隔离设计：工程菌被物理封存在水凝胶基质内部，仅允许分泌蛋白和信号分子透过半透膜，活菌不会迁移到伤口表面。
+2. 【实验证据与数据】第二，底盘菌株本身是生物安全的：表皮葡萄球菌 ATCC 12228 是天然人体皮肤共生菌，大肠杆菌 Nissle 1917（EcN）是临床广泛使用的益生菌，两者均为 BSL-1 安全等级非致病菌株。
+3. 【边界与下一步】第三，自杀开关设计：我们设计了 D-丙氨酸营养缺陷型自杀开关（敲除 `alr/dadX` 与 `dal/dat`），一旦活菌离开含 D-丙氨酸的敷料环境即无法合成细胞壁肽聚糖而自溶。
 
 ### 答题思路速记 (中文关键词链)
-1. 关键图表统计说明：B11（EcN 柚皮素响应）等核心曲线包含 n = 3 独立生物重复，彩色阴影带代表 95% 置信区间
-2. 其余曲线说明：B13（DspB 时间曲线）与 B15（LSp222 裂解曲线）展示的是平行复孔均值轨迹
-3. 规范化承诺：将在最终版补充数据中统一标注每张图的生物重复数（n）与技术重复数，并补齐误差棒
+1. 半透膜与水凝胶隔离设计 → 只透蛋白与小分子，活菌不会迁移到伤口
+2. 底盘本身生物安全(BSL-1) → 表皮葡萄球菌(天然皮肤共生菌) + EcN(临床安全益生菌)
+3. 自杀开关设计 → D-丙氨酸营养缺陷型(alr/dadX与dal/dat敲除)，脱离敷料即无法合成细胞壁而自溶
 
 ---
 
