@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Judge Q&A Memo — 答辩背诵与速查手册 (SJTU-BioX-Shanghai)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --surface: #f1f5f9;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --accent: #0f172a;
+      --blue: #2563eb;
+      --blue-soft: #eff6ff;
+      --green: #059669;
+      --green-soft: #ecfdf5;
+      --amber: #d97706;
+      --amber-soft: #fffbeb;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+    html, body {
+      height: 100%;
+      height: 100dvh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ================= Top Sticky Header ================= */
+    .header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      flex-shrink: 0;
+      z-index: 30;
+    }
+    .header-row1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .title-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-right: 4px;
+    }
+    .title-badge {
+      background: var(--text);
+      color: #fff;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 5px;
+      letter-spacing: 0.02em;
+    }
+    .title-main {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    /* Search Box */
+    .search-box {
+      flex: 1 1 260px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      height: 36px;
+      padding: 0 11px;
+      background: var(--surface);
+      border: 1.5px solid var(--border-strong);
+      border-radius: 8px;
+      transition: all 0.15s;
+    }
+    .search-box:focus-within {
+      background: var(--card);
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+    .search-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 13.5px;
+      color: var(--text);
+      outline: none;
+      min-width: 110px;
+    }
+    .search-count {
+      font-size: 12px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .search-clear {
+      border: none;
+      background: var(--border-strong);
+      color: var(--text);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      font-size: 11px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-clear.visible {
+      display: inline-flex;
+    }
+
+    /* Segmented Recitation Modes */
+    .seg-bar {
+      display: inline-flex;
+      background: var(--surface);
+      padding: 2px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .seg-btn {
+      border: none;
+      background: transparent;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.12s;
+    }
+    .seg-btn:hover {
+      color: var(--text);
+    }
+    .seg-btn.active {
+      background: var(--card);
+      color: var(--text);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    }
+
+    .btn {
+      height: 34px;
+      padding: 0 11px;
+      border-radius: 7px;
+      border: 1px solid var(--border-strong);
+      background: var(--card);
+      color: var(--text-secondary);
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.12s;
+    }
+    .btn:hover {
+      background: var(--surface);
+      color: var(--text);
+    }
+    .btn.active {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    /* Progress Pill */
+    .progress-pill {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--green);
+      background: var(--green-soft);
+      border: 1px solid #a7f3d0;
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* Quick Jump Bar (Modules + Slides) */
+    .jump-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 2px;
+    }
+    .jump-row::-webkit-scrollbar { height: 0; }
+    .jump-tag {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      white-space: nowrap;
+      margin-right: 2px;
+    }
+    .pill {
+      padding: 4px 9px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.12s;
+    }
+    .pill:hover {
+      border-color: var(--text-secondary);
+      background: var(--card);
+      color: var(--text);
+    }
+    .pill.active {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+    .pill.sec-pill {
+      background: var(--blue-soft);
+      border-color: #bfdbfe;
+      color: #1d4ed8;
+    }
+    .pill.sec-pill:hover {
+      background: #dbeafe;
+    }
+    .divider {
+      width: 1px;
+      height: 15px;
+      background: var(--border-strong);
+      margin: 0 3px;
+      flex-shrink: 0;
+    }
+
+    /* ================= Body Layout: Left TOC + Main Content ================= */
+    .workspace {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      overflow: hidden;
+    }
+    .workspace.toc-collapsed {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .workspace.toc-collapsed .sidebar {
+      display: none;
+    }
+
+    /* Left Directory Sidebar */
+    .sidebar {
+      background: var(--card);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 12px 10px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .toc-group-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      padding: 10px 8px 4px;
+      line-height: 1.35;
+    }
+    .toc-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      text-decoration: none;
+      line-height: 1.35;
+      transition: background 0.1s;
+    }
+    .toc-item:hover {
+      background: var(--surface);
+      color: var(--text);
+    }
+    .toc-item.active {
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .toc-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      min-width: 30px;
+    }
+    .toc-title {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .toc-status {
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    /* Main Scrollable Reader */
+    .reader {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 22px 28px 80px;
+      scroll-behavior: smooth;
+    }
+    .reader-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Intro Hero Card (Core Rules + 30s Frame) */
+    .intro-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--text);
+      border-radius: 10px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      scroll-margin-top: 16px;
+    }
+    .intro-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 10px;
+    }
+    .rule-box {
+      background: var(--surface);
+      border-radius: 7px;
+      padding: 10px 12px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-secondary);
+    }
+    .rule-box strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 2px;
+    }
+    .frame-box {
+      background: var(--blue-soft);
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 12px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .frame-en {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #1e3a8a;
+      line-height: 1.55;
+    }
+    .frame-zh {
+      font-size: 13.5px;
+      color: #1e40af;
+      line-height: 1.55;
+    }
+
+    /* Section Header Banner */
+    .sec-header {
+      padding: 10px 14px;
+      margin-top: 10px;
+      background: var(--surface);
+      border-left: 4px solid var(--blue);
+      border-radius: 6px;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text);
+      scroll-margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Question & Answer Card */
+    .qa-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      scroll-margin-top: 16px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .qa-card:hover {
+      border-color: var(--border-strong);
+    }
+    .qa-card.mastered {
+      border-left: 4px solid var(--green);
+    }
+    .qa-card.starred {
+      border-left: 4px solid var(--amber);
+    }
+    .qa-card.flash-highlight {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .card-badges {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .m-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      font-weight: 700;
+      background: var(--text);
+      color: #fff;
+      padding: 2px 9px;
+      border-radius: 5px;
+    }
+    .orig-q {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .slide-chip {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 5px;
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+    .slide-chip:hover {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .act-btn {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 5px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+    .act-btn:hover {
+      border-color: var(--text-secondary);
+      color: var(--text);
+    }
+    .act-btn.star-active {
+      background: var(--amber-soft);
+      border-color: #fcd34d;
+      color: var(--amber);
+    }
+    .act-btn.master-active {
+      background: var(--green-soft);
+      border-color: #6ee7b7;
+      color: var(--green);
+    }
+
+    .q-block {
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .q-en {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .q-zh {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .a-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+    }
+    .a-en-row, .a-zh-row {
+      display: flex;
+      gap: 10px;
+      line-height: 1.68;
+    }
+    .a-en-row {
+      font-size: 15px;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .a-zh-row {
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding-top: 8px;
+      border-top: 1px dashed var(--border);
+    }
+    .lang-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      height: fit-content;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+    .lang-tag.en {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+    .lang-tag.zh {
+      background: var(--surface);
+      color: var(--text-secondary);
+    }
+
+    /* Key Numbers & Cloze Blanks */
+    .key-term {
+      font-weight: 700;
+      color: #0f172a;
+      background: #f1f5f9;
+      padding: 0 4px;
+      border-radius: 3px;
+      border-bottom: 1.5px solid #94a3b8;
+      transition: all 0.15s;
+    }
+    body.mode-cloze .key-term:not(.revealed) {
+      color: transparent;
+      background: #cbd5e1;
+      border-bottom-color: #64748b;
+      cursor: pointer;
+      user-select: none;
+    }
+    body.mode-cloze .key-term:not(.revealed):hover {
+      background: #94a3b8;
+    }
+
+    /* Recitation Blur Modes */
+    body.mode-hide-all .a-block:not(.revealed) .a-en-row,
+    body.mode-hide-all .a-block:not(.revealed) .a-zh-row {
+      filter: blur(7px);
+      user-select: none;
+      cursor: pointer;
+    }
+    body.mode-zh-cue .a-block:not(.revealed) .a-en-row {
+      filter: blur(7px);
+      user-select: none;
+      cursor: pointer;
+    }
+    .reveal-hint {
+      display: none;
+      font-size: 12px;
+      color: var(--blue);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    body.mode-hide-all .a-block:not(.revealed) .reveal-hint,
+    body.mode-zh-cue .a-block:not(.revealed) .reveal-hint {
+      display: inline-block;
+    }
+
+    mark {
+      background: #fef08a;
+      color: #0f172a;
+      font-weight: 700;
+      padding: 0 2px;
+      border-radius: 2px;
+    }
+
+    /* Tablet & Mobile Responsive */
+    @media (pointer: coarse), (max-width: 1024px) {
+      .btn, .search-box { height: 38px; }
+      .pill { padding: 6px 11px; font-size: 12.5px; }
+      .toc-item { padding: 8px 9px; font-size: 13px; }
+      .reader { padding: 16px 16px 70px; }
+    }
+    @media (max-width: 760px) {
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        display: none;
+      }
+      .workspace.mobile-toc-open {
+        grid-template-columns: 220px 1fr;
+      }
+      .workspace.mobile-toc-open .sidebar {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-row1">
+    <div class="title-group">
+      <span class="title-badge">SJTU-BioX</span>
+      <span class="title-main">Judge Q&amp;A 答辩背诵手册 (M1–M27)</span>
+    </div>
+
+    <button class="btn" id="toggleTocBtn" title="展开/收起左侧目录">☰ 目录</button>
+
+    <!-- Search Input -->
+    <div class="search-box">
+      <span>🔍</span>
+      <input type="text" class="search-input" id="searchInput" placeholder="查找题号 M1–M27 / 页码 B4 / 关键词 (如 表葡、测序、自杀开关、53.8、two bands)...">
+      <span class="search-count" id="searchCount">27 / 27 题</span>
+      <button class="search-clear" id="searchClearBtn" title="清空">✕</button>
+    </div>
+
+    <!-- Recitation Mode Switcher -->
+    <div class="seg-bar" id="modeBar">
+      <button class="seg-btn active" data-mode="read">📖 双语背诵</button>
+      <button class="seg-btn" data-mode="zh-cue">🇨🇳 看中背英</button>
+      <button class="seg-btn" data-mode="hide-all">🙈 遮挡自测</button>
+      <button class="seg-btn" data-mode="cloze">✏️ 关键数挖空</button>
+    </div>
+
+    <!-- Filter by Mastery / Star -->
+    <div class="seg-bar" id="statusFilterBar">
+      <button class="seg-btn active" data-status="all">全部</button>
+      <button class="seg-btn" data-status="unmastered">未背熟</button>
+      <button class="seg-btn" data-status="starred">★ 重点</button>
+    </div>
+
+    <span class="progress-pill" id="progressPill">已背熟 0 / 27</span>
+  </div>
+
+  <!-- Module & Slide Jump Bar -->
+  <div class="jump-row" id="jumpRow"></div>
+</header>
+
+<div class="workspace" id="workspace">
+  <!-- Left Directory Sidebar -->
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <!-- Main Reader -->
+  <main class="reader" id="reader">
+    <div class="reader-inner" id="readerInner">
+      <!-- 30-Second Frame & Core Principles Card -->
+      <section class="intro-card" id="sec-intro">
+        <div class="intro-title">
+          <span>⚡ 核心应答原则 &amp; 30 秒总框架 (The 30-Second Frame)</span>
+          <span style="font-size:12px;color:var(--text-muted);font-weight:500;">开门见山 · 零问题复述</span>
+        </div>
+        <div class="rules-grid">
+          <div class="rule-box">
+            <strong>1. 开门见山（不复述问题）</strong>
+            第一句直接给结论、真实原因或数字（<code>Yes</code> / <code>No</code> / <code>Because...</code>），绝不重复评委的问题或说套话。
+          </div>
+          <div class="rule-box">
+            <strong>2. 诚实交代底盘改造与最新进展</strong>
+            表皮葡萄球菌比大肠杆菌难改造得多、质粒难以转化；我们一直在做，<strong>在 Wiki freeze 时转化平板上已长出菌落，目前正在测序</strong>。
+          </div>
+          <div class="rule-box">
+            <strong>3. 生物安全三点标准框架 (M25)</strong>
+            ① 半透膜与水凝胶隔离（活菌不迁移到伤口）；② 表葡与 EcN 本身为 BSL-1 生物安全菌；③ D-丙氨酸营养缺陷型自杀开关设计。
+          </div>
+        </div>
+        <div class="frame-box">
+          <div class="frame-en">"Two engineered bacteria work in relay against <i>S. aureus</i> wound biofilms: <i>S. epidermidis</i> senses infection signals, disperses biofilm with DspB, and synthesizes naringenin; <i>E. coli</i> Nissle 1917 senses naringenin and delivers LSp222 and hEGF. Our Part Collection is the naringenin relay in the middle—other teams keep the relay fixed and swap the input sensor or output cargo."</div>
+          <div class="frame-zh">"两株工程菌接力清除金黄色葡萄球菌创面生物膜：表皮葡萄球菌感知感染信号、分泌 DspB 破除生物膜并合成柚皮素；大肠杆菌 Nissle 1917（EcN）读取柚皮素并输出 LSp222 与 hEGF。我们的 Part Collection 就是中间这条柚皮素接力——其他队伍固定中间接力不变，只换输入传感器或输出载荷。"</div>
+        </div>
+      </section>
+
+      <!-- M1-M27 Container -->
+      <div id="cardsContainer" style="display:flex;flex-direction:column;gap:14px;"></div>
+    </div>
+  </main>
+</div>
+
+<script>
+const MEMO_ITEMS = [{"code": "M1", "orig": "原 Q1", "sec_idx": 1, "section": "一、Collection 与 BPC 核心问答 / Collection and BPC", "q_en": "What is your collection, in one sentence?", "q_zh": "用一句话说，你们的 collection 是什么？", "a_en": "1. **It is a plug-and-play naringenin communication link between two bacteria.**", "a_zh": "1. **它是一条即插即用的“柚皮素跨菌通讯接力线”。**", "evidence": "", "refs": []}, {"code": "M2", "orig": "原 Q3 + Q46", "sec_idx": 1, "section": "一、Collection 与 BPC 核心问答 / Collection and BPC", "q_en": "How many parts are in the collection, and which ones are functionally validated?", "q_zh": "你们的 collection 里有多少个 part？哪些已经完成了功能验证？", "a_en": "1. **Our collection has 13 core composite constructs and 4 auxiliary test constructs on Slide B17.** The Wiki lists 38 Registry entries because each basic part inside those constructs (`At4CL`, `PhCHS`, `CmCHI`, `FdeR`, `PelB`, `sfGFP`) is also registered individually.", "a_zh": "1. **Collection 包含 13 个核心复合构建体和 4 个辅助测试构建体（见 B17 页）。** Wiki 共列出 38 个词条，是因为把复合构建体内部的基础元件（`At4CL`、`PhCHS`、`CmCHI`、`FdeR`、`PelB`、`sfGFP`）也逐一单独登记了。", "evidence": "", "refs": []}, {"code": "M3", "orig": "原 Q2 + Q28", "sec_idx": 1, "section": "一、Collection 与 BPC 核心问答 / Collection and BPC", "q_en": "What is actually new here? FdeR and naringenin are already known.", "q_zh": "这里真正新的是什么？FdeR 和柚皮素都不是新东西。", "a_en": "1. **What is new is using naringenin as an exported cell-to-cell signal between two bacterial species.**", "a_zh": "1. **核心创新在于把柚皮素用作两种细菌之间的“胞外跨菌通讯信号”。**", "evidence": "", "refs": []}, {"code": "M4", "orig": "原 Q4 + Q7", "sec_idx": 1, "section": "一、Collection 与 BPC 核心问答 / Collection and BPC", "q_en": "Which parts are assembly-compatible, and how do you handle attribution for borrowed parts?", "q_zh": "哪些元件符合组装标准？你们怎么处理其他队伍元件的归属？", "a_en": "1. **Untagged `NrSr–hEGF` is RFC10-compatible, and `T7–Nr` is RFC1000-compatible.**", "a_zh": "1. **无标签版 `NrSr–hEGF` 符合 RFC10 标准，`T7–Nr` 符合 RFC1000 标准。**", "evidence": "", "refs": []}, {"code": "M5", "orig": "原 Q5 + Q45", "sec_idx": 1, "section": "一、Collection 与 BPC 核心问答 / Collection and BPC", "q_en": "What can another team do with this collection tomorrow?", "q_zh": "别的队伍拿到你们的 collection 可以怎么复用？", "a_en": "1. **First, they put `NrSr–sfGFP` into their receiver strain and verify fluorescence response with added naringenin (B11).**", "a_zh": "1. **第一步，先把报告载体 `NrSr–sfGFP` 转入他们的接收菌，外加柚皮素确认荧光响应正常（B11）。**", "evidence": "", "refs": []}, {"code": "M6", "orig": "原 Q6", "sec_idx": 1, "section": "一、Collection 与 BPC 核心问答 / Collection and BPC", "q_en": "Why is DspB not in the core Part Collection?", "q_zh": "为什么 DspB 不在核心 Part Collection 里？", "a_en": "1. **We kept the core Collection focused strictly on the general-purpose naringenin communication link (B2, B17).**", "a_zh": "1. **因为我们将核心 Collection 严格聚焦在通用的“柚皮素跨菌通讯链路”上（B2、B17）。**", "evidence": "", "refs": []}, {"code": "M7", "orig": "原 Q44", "sec_idx": 1, "section": "一、Collection 与 BPC 核心问答 / Collection and BPC", "q_en": "Why should this project win Best Part Collection?", "q_zh": "为什么这个项目应该拿 Best Part Collection？", "a_en": "1. **Because it gives future teams a tested inter-bacterial communication link, not just a list of standalone parts (B2).**", "a_zh": "1. **因为它为后续团队提供了一条已经跑通的双菌通讯链路，而不是孤立零散的元件列表（B2）。**", "evidence": "", "refs": []}, {"code": "M8", "orig": "原 Q8", "sec_idx": 2, "section": "二、DspB 与生物膜模块 / DspB and Biofilm Module", "q_en": "Did you show that your engineered strain secretes DspB?", "q_zh": "你们证明了自己的工程菌分泌 DspB 吗？", "a_en": "1. **No—we have not yet detected DspB protein directly in our engineered strain's supernatant.**", "a_zh": "1. **还没有——我们尚未在工程菌上清中直接检出分泌的 DspB 蛋白。**", "evidence": "", "refs": []}, {"code": "M9", "orig": "原 Q9 + Q10", "sec_idx": 2, "section": "二、DspB 与生物膜模块 / DspB and Biofilm Module", "q_en": "What did your biofilm assay prove, and does crystal violet distinguish dispersal from killing?", "q_zh": "生物膜实验具体证明了什么？结晶紫能区分“分散基质”与“杀菌”吗？", "a_en": "1. **It proves that DspB detaches >84% of pre-formed, mature *S. aureus* biofilm within 18 hours, dropping crystal-violet $\\text{OD}_{590}$ from ~0.6 to ~0.1 (B13).**", "a_zh": "1. **它证明 DspB 能在 18 小时内剥离 >84% 预先成熟的金葡菌生物膜，使结晶紫 $\\text{OD}_{590}$ 从 ~0.6 降至 ~0.1（B13）。**", "evidence": "", "refs": []}, {"code": "M10", "orig": "原 Q11 + Q12", "sec_idx": 2, "section": "二、DspB 与生物膜模块 / DspB and Biofilm Module", "q_en": "Did you show AIP induction of DspB, and why use AIP induction instead of constitutive DspB?", "q_zh": "你们证明 AIP 诱导 DspB 了吗？为什么不用组成型 DspB？", "a_en": "1. **Not yet—the inducible plasmid is sequence-verified, and our *S. epidermidis* transformant colonies are now being sequenced.** Our 2025 team validated the `AgrCA–P2/P3` sensor with GFP, and this year we swapped in secreted `DspB`; transforming this large `pLI50` plasmid into *S. epidermidis* is hard, and colonies just appeared at Wiki freeze (B19).", "a_zh": "1. **还没有完成诱导测试——诱导型质粒已测序正确，转化菌落正在测序确认。** 上游 `AgrCA–P2/P3` 传感器去年已用 GFP 验证，今年我们换上了分泌型 `DspB`；大质粒 `pLI50` 转入表皮葡萄球菌难度很大，Wiki freeze 时平板刚长出菌落（B19）。", "evidence": "", "refs": []}, {"code": "M11", "orig": "原 Q13", "sec_idx": 2, "section": "二、DspB 与生物膜模块 / DspB and Biofilm Module", "q_en": "*S. aureus* has four *agr* groups. Will your AIP sensor respond to clinical isolates?", "q_zh": "金黄色葡萄球菌有四个 *agr* 亚群，你们的 AIP 传感器能响应不同临床分离株吗？", "a_en": "1. **Our current receptor is specific to *S. aureus* *agr* group I—the dominant group in skin infections—and we have not yet tested clinical isolates from *agr* groups II–IV.**", "a_zh": "1. **当前受体针对皮肤感染最常见的金葡菌 *agr* I 型，尚未测试覆盖 *agr* II–IV 型的临床分离株。**", "evidence": "", "refs": []}, {"code": "M12", "orig": "原 Q14", "sec_idx": 2, "section": "二、DspB 与生物膜模块 / DspB and Biofilm Module", "q_en": "DspB targets PNAG, which *S. epidermidis* also makes. Will it damage your own sender?", "q_zh": "DspB 靶向 PNAG，而表皮葡萄球菌也产 PNAG，它会破坏你们自己的发送菌吗？", "a_en": "1. **DspB can cleave extracellular PNAG around *S. epidermidis*, but it does not kill the cells because it only digests extracellular polysaccharide, not cell-wall peptidoglycan.**", "a_zh": "1. **DspB 可能会水解表皮葡萄球菌胞外的 PNAG 多糖，但不会杀死发送菌，因为它只切胞外多糖基质，不破坏细胞壁肽聚糖。**", "evidence": "", "refs": []}, {"code": "M13", "orig": "原 Q15 + Q16", "sec_idx": 2, "section": "二、DspB 与生物膜模块 / DspB and Biofilm Module", "q_en": "What about non-PNAG biofilm components (eDNA, proteins) and DspB dose-response?", "q_zh": "生物膜基质还有 eDNA 和蛋白，单靠 DspB 够吗？做过剂量梯度吗？", "a_en": "1. **In polymicrobial clinical wounds rich in eDNA and matrix proteins, DspB alone may not be enough and could be paired with DNase or a protease.**", "a_zh": "1. **在富含 eDNA 和基质蛋白的真实多菌创面中，单靠 DspB 可能不够，往往需要联用 DNase 或蛋白酶。**", "evidence": "", "refs": []}, {"code": "M14", "orig": "原 Q17 + Q20 + Q21", "sec_idx": 3, "section": "三、血红素发送端 / Heme Sender Module", "q_en": "Is HssRS native to *S. epidermidis*, and how does it work under wound heme scavenging?", "q_zh": "HssRS 是表皮葡萄球菌天然的吗？金葡菌会掠夺血红素且血红素常与蛋白结合，如何维持有效输入？", "a_en": "1. **Yes—`HssRS` is native to *S. epidermidis*, so we only introduced its target promoter `pHrtBA` (`HmSr`) to drive downstream expression (S3).**", "a_zh": "1. **是的，`HssRS` 是表皮葡萄球菌天然自带的双组分系统，我们只需引入下游 `pHrtBA` 启动子（`HmSr`）即可接入信号（S3）。**", "evidence": "", "refs": []}, {"code": "M15", "orig": "原 Q18", "sec_idx": 3, "section": "三、血红素发送端 / Heme Sender Module", "q_en": "The heme response is transient (~1.7–2.3 h peak). Is that a problem for a therapeutic relay?", "q_zh": "血红素响应是瞬时的（1.7–2.3 小时达峰），这对治疗接力是问题吗？", "a_en": "1. **No—a brief activation pulse is actually helpful for a two-strain relay.**", "a_zh": "1. **不是问题——短暂脉冲反而有利于双菌接力系统的稳定运行。**", "evidence": "", "refs": []}, {"code": "M16", "orig": "原 Q19", "sec_idx": 3, "section": "三、血红素发送端 / Heme Sender Module", "q_en": "Did hemin affect growth? Could the fluorescence signal be a growth artifact?", "q_zh": "血红素影响细菌生长吗？荧光升高会不会只是生长假象？", "a_en": "1. **No—we tracked $\\text{OD}_{600}$ growth curves separately on Slide B8 and normalized all fluorescence readings by $\\text{OD}_{600}$ against the 0 µM control.**", "a_zh": "1. **不是生长假象——我们在 B8 页单独测定了 $\\text{OD}_{600}$ 生长曲线，并将所有荧光值按 $\\text{OD}_{600}$ 归一化、扣除 0 µM 对照。**", "evidence": "", "refs": []}, {"code": "M17", "orig": "原 Q22", "sec_idx": 4, "section": "四、柚皮素跨菌通讯接力 / Naringenin Relay Module", "q_en": "Why choose naringenin over known quorum-sensing molecules or other plant metabolites?", "q_zh": "为什么选柚皮素，而不用常见群体感应分子或其他候选物？", "a_en": "1. **First, clean background:** naringenin is a plant flavonoid absent from human tissue and skin bacteria, giving near-zero background noise (B3).", "a_zh": "1. **第一，本底干净：** 柚皮素是植物黄酮，人体组织与皮肤菌群天然都不合成，背景噪声极低（B3）。", "evidence": "", "refs": []}, {"code": "M18", "orig": "原 Q23 + Q24 + Q25", "sec_idx": 4, "section": "四、柚皮素跨菌通讯接力 / Naringenin Relay Module", "q_en": "How did you calculate 53.8 µM naringenin, and is that margin over the 50 µM threshold robust?", "q_zh": "53.8 µM 的柚皮素原液浓度是怎么算出来的？略高于 50 µM 阈值够稳健吗？", "a_en": "1. **From our HPLC standard curve, the original culture broth contains 53.8 µM naringenin.** Specifically, the 17.1-minute peak (area ≈ 400, B9) plugs into $\\text{Area} = 44052.04 \\times C_{\\text{g/L}} + 77.42$ ($R^2 = 0.99998$, B10) to give $0.00732\\text{ g/L}$ ($7.32\\text{ mg/L}$, $26.9\\text{ µM}$) in the 1:1 ethanol extract, which doubles to $14.65\\text{ mg/L}$ ($53.8\\text{ µM}$) in the unextracted broth.", "a_zh": "1. **通过 HPLC 标准曲线换算，发酵原液中的柚皮素浓度为 53.8 µM。** 具体而言，将 B9 页 17.1 min 峰面积（约 400）代入 B10 页标曲 $\\text{Area} = 44052.04 \\times C_{\\text{g/L}} + 77.42$（$R^2 = 0.99998$，$C$ 单位为 $\\text{g/L}$），得 1:1 等体积乙醇萃取液浓度为 $0.00732\\text{ g/L}$（$7.32\\text{ mg/L}$，$26.9\\text{ µM}$），再乘以 2 倍萃取稀释系数即为原液 $14.65\\text{ mg/L}$（$53.8\\text{ µM}$）。", "evidence": "", "refs": []}, {"code": "M19", "orig": "原 Q26 + Q27", "sec_idx": 4, "section": "四、柚皮素跨菌通讯接力 / Naringenin Relay Module", "q_en": "Did you measure naringenin in the co-culture, and what controls did you run?", "q_zh": "共培养里直接测柚皮素了吗？做了哪些对照（前体对香豆酸在敷料里怎么给）？", "a_en": "1. **We demonstrated signaling functionally through controls rather than running HPLC directly on the co-culture supernatant.**", "a_zh": "1. **共培养中我们是通过平行对照功能验证的，没有直接对共培养上清做 HPLC。**", "evidence": "", "refs": []}, {"code": "M20", "orig": "原 Q29 + Q30", "sec_idx": 4, "section": "四、柚皮素跨菌通讯接力 / Naringenin Relay Module", "q_en": "How does hydrophobic naringenin diffuse between strains, and how clean is FdeR's baseline and specificity?", "q_zh": "柚皮素偏疏水怎么在菌间扩散？B11 的本底（含 0 h 负值与 24 h 泄漏）和黄酮特异性如何？", "a_en": "1. **At 50–400 µM, naringenin dissolves well enough in medium and hydrogel pores—crossing 40 µm in ~3.2 seconds in our diffusion model—and passively enters EcN to activate `FdeR` (B11, B12).**", "a_zh": "1. **在 50–400 µM 工作区间内，柚皮素在培养基和水凝胶微孔中可顺畅扩散——模型计算穿过 40 µm 层间距仅需约 3.2 秒，随后被动穿膜进入 EcN 激活 `FdeR`（B11、B12）。**", "evidence": "", "refs": []}, {"code": "M21", "orig": "原 Q31 + Q32", "sec_idx": 5, "section": "五、治疗输出模块 / Therapeutic Output Module", "q_en": "LSp222 kills 61% of *S. aureus* but also 25% of your sender—isn't that a problem, and how do you rule out LPS in crude extract?", "q_zh": "LSp222 杀伤 61% 金葡菌但也使发送菌下降 25%，这不是问题吗？怎么排除粗提物里的 LPS 或杂蛋白？", "a_en": "1. **Yes, that 25% drop in *S. epidermidis* is a real design constraint:** LSp222 provides a >2.4-fold selectivity window (61% *S. aureus* reduction vs. 25% *S. epidermidis* reduction in 30 minutes against matched buffer controls, B15), not complete immunity.", "a_zh": "1. **是的，表皮葡萄球菌下降 25% 确实是真实的设计约束：** LSp222 提供的是 >2.4 倍的选择性窗口（30 分钟内金葡菌降 61% vs 表皮葡萄球菌降 25%，均含同菌种缓冲液对照，B15），而非绝对免疫。", "evidence": "", "refs": []}, {"code": "M22", "orig": "原 Q33 + Q34", "sec_idx": 5, "section": "五、治疗输出模块 / Therapeutic Output Module", "q_en": "Why does hEGF show two bands (11.10 and 8.89 kDa), and did you show it is active on mammalian cells?", "q_zh": "为什么 hEGF 有两条带（11.10 和 8.89 kDa，比天然 6.2 kDa 大）？证明它对哺乳动物细胞有活性了吗？", "a_en": "1. **Both bands carry a `Linker–6xHis` tag: the lower 8.89 kDa band is mature cleaved `hEGF–Linker–6xHis`, and the upper 11.10 kDa band is the uncleaved `PelB–hEGF–Linker–6xHis` precursor.** Neither band appears in empty-vector controls (`V1/V2`) on 5× concentrated supernatant SDS-PAGE (B14).", "a_zh": "1. **两条带末端都连有 `Linker–6×His` 标签（所以比天然 6.2 kDa 大）：下方 8.89 kDa 是切掉 `PelB` 信号肽后的成熟体 `hEGF–Linker–6×His`，上方 11.10 kDa 是未切信号肽的前体 `PelB–hEGF–Linker–6×His`。** 在 5 倍浓缩上清胶图（B14）中，空载对照（`V1/V2`）两条带全无。", "evidence": "", "refs": []}, {"code": "M23", "orig": "原 Q35", "sec_idx": 5, "section": "五、治疗输出模块 / Therapeutic Output Module", "q_en": "Why use BL21(DE3) for naringenin and protein tests when the final chassis are *S. epidermidis* and EcN?", "q_zh": "最终底盘是表皮葡萄球菌和 EcN，为什么你们用 BL21 测柚皮素合成和治疗蛋白？", "a_en": "1. **Because *S. epidermidis* has a strong restriction barrier that makes plasmid transformation slow and difficult**—we worked on that transformation continuously, and colonies just appeared on our plates at Wiki freeze for sequencing (B19).", "a_zh": "1. **因为表皮葡萄球菌具有严格的限制修饰屏障，大质粒极难转化进去**——我们一直在推进这项转化，在 Wiki freeze 时平板上刚长出菌落，目前正在测序（B19）。", "evidence": "", "refs": []}, {"code": "M24", "orig": "原 Q36 + Q37", "sec_idx": 6, "section": "六、宿主选择、生物安全与临床转化 / Hosts, Biosafety, and Clinical Translation", "q_en": "Why use two strains instead of one, and will *S. epidermidis* and EcN coexist in a wound?", "q_zh": "为什么用两株菌分工而不是合在一株菌里？它们在伤口里能稳定共存吗？", "a_en": "1. **Splitting the workload prevents metabolic overload:** *S. epidermidis* handles skin sensing and biofilm dispersal while EcN produces the therapeutic proteins, matching our metabolic burden model (B4).", "a_zh": "1. **双菌分工是为了避免单菌代谢过载：** 表皮葡萄球菌负责皮肤信号感知与破生物膜，EcN 负责高产治疗蛋白，这与我们的代谢负担模型结论一致（B4）。", "evidence": "", "refs": []}, {"code": "M25", "orig": "原 Q38 + Q39 + Q41", "sec_idx": 6, "section": "六、宿主选择、生物安全与临床转化 / Hosts, Biosafety, and Clinical Translation", "q_en": "How do you ensure the biosafety of using engineered live bacteria on a wound?", "q_zh": "你们如何保证工程活菌用于伤口时的生物安全性？", "a_en": "1. **First, physical containment:** our dressing seals the bacteria inside layered hydrogels behind a semi-permeable membrane, allowing secreted proteins and small molecules to pass into the wound while blocking live cells.", "a_zh": "1. **第一重，物理封装隔离：** 敷料用分层水凝胶和底部半透膜将工程菌封存在内部，只允许分泌蛋白和小分子透过半透膜进入创面，活菌无法逸出。", "evidence": "", "refs": []}, {"code": "M26", "orig": "原 Q40", "sec_idx": 6, "section": "六、宿主选择、生物安全与临床转化 / Hosts, Biosafety, and Clinical Translation", "q_en": "How many biological replicates and what statistical definitions did you use?", "q_zh": "实验包含多少次独立生物学重复？误差棒和拟合曲线代表什么？", "a_en": "1. **The EcN dose-response (B11) and LSp222 lysis assays (B15) use $n = 3$ independent biological cultures**—each averaging 2 technical duplicate wells—plotted as mean ± SD.", "a_zh": "1. **EcN 剂量响应（B11）与 LSp222 裂解实验（B15）均采用 $n = 3$ 次独立生物学重复**（每次含 2 个技术复孔取均值），误差棒代表标准差（mean ± SD）。", "evidence": "", "refs": []}, {"code": "M27", "orig": "原 Q42 + Q43 + Q47", "sec_idx": 7, "section": "七、收尾综合与下一步路线图 / Closing & Three-Month Roadmap", "q_en": "What is the biggest weakness / most feared question, and what would you do with three more months?", "q_zh": "项目目前最大的弱点（或最怕被问的问题）是什么？如果多三个月会按什么顺序推进？", "a_en": "1. **Our biggest gap is completing the final handoffs in *S. epidermidis*:** we have not yet detected secreted DspB protein in *S. epidermidis* supernatant (B18), and our inducible/naringenin sender plasmids just yielded transformant colonies at Wiki freeze for sequencing (B19).", "a_zh": "1. **目前最大的短板在于表皮葡萄球菌发送端的最后两处交接：** 一是还没在表皮葡萄球菌上清里直接检出分泌的 DspB 蛋白（B18），二是诱导型与柚皮素合成大质粒在 Wiki freeze 时刚长出转化菌落、正在测序（B19）。", "evidence": "", "refs": []}];
+
+(function() {
+  const workspace = document.getElementById("workspace");
+  const sidebar = document.getElementById("sidebar");
+  const cardsContainer = document.getElementById("cardsContainer");
+  const jumpRow = document.getElementById("jumpRow");
+  const searchInput = document.getElementById("searchInput");
+  const searchCount = document.getElementById("searchCount");
+  const searchClearBtn = document.getElementById("searchClearBtn");
+  const progressPill = document.getElementById("progressPill");
+
+  let activeSlide = "";
+  let statusFilter = "all"; // "all" | "unmastered" | "starred"
+
+  // Load saved mastery & starred state
+  let masteredSet = new Set();
+  let starredSet = new Set();
+  try {
+    masteredSet = new Set(JSON.parse(localStorage.getItem("IGEM_MEMO_MASTERED") || "[]"));
+    starredSet = new Set(JSON.parse(localStorage.getItem("IGEM_MEMO_STARRED") || "[]"));
+  } catch (e) {}
+
+  function saveState() {
+    localStorage.setItem("IGEM_MEMO_MASTERED", JSON.stringify([...masteredSet]));
+    localStorage.setItem("IGEM_MEMO_STARRED", JSON.stringify([...starredSet]));
+    updateProgress();
+  }
+
+  function updateProgress() {
+    progressPill.textContent = `已背熟 ${masteredSet.size} / ${MEMO_ITEMS.length}`;
+  }
+
+  function escapeHtml(str) {
+    return String(str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  function formatMemoText(raw, queryTokens) {
+    let html = escapeHtml(raw)
+      .replace(/\$([^$]+)\$/g, "$1")
+      .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+      .replace(/\*([^*]+)\*/g, "<i>$1</i>")
+      .replace(/`([^`]+)`/g, '<span class="key-term" onclick="this.classList.toggle(\'revealed\')">$1</span>');
+
+    // Wrap numbers/units in .key-term for cloze & visual emphasis
+    html = html.replace(
+      /(\b\d+(?:\.\d+)?(?:\s*(?:%|µM|uM|mM|mg\/L|g\/L|µg\/mL|kDa|h|hours|min|minutes|RFU|bp|µm))?)/g,
+      '<span class="key-term" onclick="this.classList.toggle(\'revealed\')">$1</span>'
+    );
+
+    if (queryTokens && queryTokens.length) {
+      queryTokens.forEach(tok => {
+        if (tok.length < 2) return;
+        const safeTok = tok.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        try {
+          html = html.replace(new RegExp("(" + safeTok + ")", "gi"), "<mark>$1</mark>");
+        } catch (e) {}
+      });
+    }
+    return html;
+  }
+
+  window.jumpToId = function(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    el.classList.add("flash-highlight");
+    setTimeout(() => el.classList.remove("flash-highlight"), 1500);
+  };
+
+  window.filterBySlide = function(slideCode) {
+    if (activeSlide === slideCode) {
+      activeSlide = "";
+    } else {
+      activeSlide = slideCode;
+    }
+    buildJumpBar();
+    render();
+  };
+
+  function buildJumpBar() {
+    const secButtons = [
+      { label: "⚡ 30s总框架", target: "sec-intro" },
+      { label: "一、Collection (M1–M6)", target: "sec-1" },
+      { label: "二、DspB破膜 (M7–M10)", target: "sec-2" },
+      { label: "三、血红素传感 (M11–M14)", target: "sec-3" },
+      { label: "四、柚皮素共培养 (M15–M20)", target: "sec-4" },
+      { label: "五、蛋白与BL21 (M21–M23)", target: "sec-5" },
+      { label: "六、双菌与生物安全 (M24–M26)", target: "sec-6" },
+      { label: "七、路线图 (M27)", target: "sec-7" }
+    ];
+
+    jumpRow.innerHTML = '<span class="jump-tag">章节跳转:</span>';
+    secButtons.forEach(s => {
+      const b = document.createElement("button");
+      b.className = "pill sec-pill";
+      b.textContent = s.label;
+      b.onclick = () => {
+        if (activeSlide || searchInput.value.trim() || statusFilter !== "all") {
+          activeSlide = "";
+          searchInput.value = "";
+          statusFilter = "all";
+          document.querySelectorAll("#statusFilterBar .seg-btn").forEach(x => x.classList.toggle("active", x.dataset.status === "all"));
+          buildJumpBar();
+          render();
+        }
+        setTimeout(() => jumpToId(s.target), 30);
+      };
+      jumpRow.appendChild(b);
+    });
+
+    const div = document.createElement("span");
+    div.className = "divider";
+    jumpRow.appendChild(div);
+
+    const slideTag = document.createElement("span");
+    slideTag.className = "jump-tag";
+    slideTag.textContent = "按页码筛题:";
+    jumpRow.appendChild(slideTag);
+
+    const allBtn = document.createElement("button");
+    allBtn.className = "pill" + (activeSlide === "" ? " active" : "");
+    allBtn.textContent = "全部";
+    allBtn.onclick = () => { activeSlide = ""; buildJumpBar(); render(); };
+    jumpRow.appendChild(allBtn);
+
+    const slides = ["S1","S2","S3","S4","S5","S6","B1","B2","B3","B4","B5","B6","B7","B8","B9","B10","B11","B12","B13","B14","B15","B16","B17","B18","B19"];
+    slides.forEach(sl => {
+      const b = document.createElement("button");
+      b.className = "pill" + (activeSlide === sl ? " active" : "");
+      b.textContent = sl;
+      b.onclick = () => filterBySlide(sl);
+      jumpRow.appendChild(b);
+    });
+  }
+
+  function render() {
+    const qRaw = searchInput.value.trim();
+    const qLower = qRaw.toLowerCase();
+    const tokens = qLower ? qLower.split(/\s+/).filter(Boolean) : [];
+    searchClearBtn.classList.toggle("visible", Boolean(qRaw || activeSlide));
+
+    sidebar.innerHTML = "";
+    cardsContainer.innerHTML = "";
+
+    // Intro link in TOC
+    const introToc = document.createElement("a");
+    introToc.className = "toc-item";
+    introToc.innerHTML = `<span class="toc-code">⚡</span><span class="toc-title">核心原则与 30 秒总框架</span>`;
+    introToc.onclick = () => jumpToId("sec-intro");
+    sidebar.appendChild(introToc);
+
+    let lastSecIdx = -1;
+    let shownCount = 0;
+
+    MEMO_ITEMS.forEach(item => {
+      if (statusFilter === "unmastered" && masteredSet.has(item.code)) return;
+      if (statusFilter === "starred" && !starredSet.has(item.code)) return;
+      if (activeSlide && !item.refs.includes(activeSlide)) return;
+
+      if (qLower) {
+        const hay = `${item.code} ${item.orig} ${item.section} ${item.q_en} ${item.q_zh} ${item.a_en} ${item.a_zh} ${item.evidence}`.toLowerCase();
+        if (!hay.includes(qLower) && !tokens.every(t => hay.includes(t))) return;
+      }
+
+      shownCount++;
+
+      if (item.sec_idx !== lastSecIdx) {
+        lastSecIdx = item.sec_idx;
+        const secBanner = document.createElement("div");
+        secBanner.className = "sec-header";
+        secBanner.id = `sec-${item.sec_idx}`;
+        secBanner.innerHTML = `<span>${escapeHtml(item.section)}</span>`;
+        cardsContainer.appendChild(secBanner);
+
+        const tocSec = document.createElement("div");
+        tocSec.className = "toc-group-title";
+        tocSec.textContent = item.section.split("/")[0].trim();
+        sidebar.appendChild(tocSec);
+      }
+
+      const isMastered = masteredSet.has(item.code);
+      const isStarred = starredSet.has(item.code);
+      const cardId = `card-${item.code}`;
+
+      // Sidebar Item
+      const tocEl = document.createElement("a");
+      tocEl.className = "toc-item";
+      const statusIcon = isMastered ? '<span class="toc-status" style="color:var(--green)">✓</span>' : (isStarred ? '<span class="toc-status" style="color:var(--amber)">★</span>' : '');
+      tocEl.innerHTML = `<span class="toc-code">${escapeHtml(item.code)}</span><span class="toc-title">${escapeHtml(item.q_zh)}</span>${statusIcon}`;
+      tocEl.onclick = () => jumpToId(cardId);
+      sidebar.appendChild(tocEl);
+
+      // Card Element
+      const card = document.createElement("article");
+      card.className = "qa-card" + (isMastered ? " mastered" : "") + (isStarred ? " starred" : "");
+      card.id = cardId;
+
+      const slideChips = (item.refs || []).map(r =>
+        `<span class="slide-chip" onclick="filterBySlide('${r}')" title="筛选含 ${r} 的问题">${escapeHtml(r)}</span>`
+      ).join("");
+
+      card.innerHTML = `
+        <div class="card-top">
+          <div class="card-badges">
+            <span class="m-code">${escapeHtml(item.code)}</span>
+            <span class="orig-q">${escapeHtml(item.orig)}</span>
+            ${slideChips}
+          </div>
+          <div class="card-actions">
+            <button class="act-btn ${isStarred ? 'star-active' : ''}" data-action="star" data-code="${item.code}">★ 重点</button>
+            <button class="act-btn ${isMastered ? 'master-active' : ''}" data-action="master" data-code="${item.code}">${isMastered ? '✓ 已背熟' : '标记背熟'}</button>
+            <button class="act-btn" data-action="copy" data-text="${escapeHtml(item.a_en)}">复制英文</button>
+          </div>
+        </div>
+        <div class="q-block">
+          <div class="q-en">${formatMemoText(item.q_en, tokens)}</div>
+          <div class="q-zh">${formatMemoText(item.q_zh, tokens)}</div>
+        </div>
+        <div class="a-block" onclick="this.classList.toggle('revealed')">
+          <span class="reveal-hint">👆 点击显示/隐藏被遮挡的答案</span>
+          <div class="a-en-row">
+            <span class="lang-tag en">EN</span>
+            <div>${formatMemoText(item.a_en, tokens)}</div>
+          </div>
+          <div class="a-zh-row">
+            <span class="lang-tag zh">中</span>
+            <div>${formatMemoText(item.a_zh, tokens)}</div>
+          </div>
+        </div>
+      `;
+      cardsContainer.appendChild(card);
+    });
+
+    searchCount.textContent = activeSlide
+      ? `[${activeSlide}] ${shownCount} / ${MEMO_ITEMS.length} 题`
+      : `${shownCount} / ${MEMO_ITEMS.length} 题`;
+
+    // Bind card action buttons
+    cardsContainer.querySelectorAll(".act-btn").forEach(btn => {
+      btn.onclick = (e) => {
+        e.stopPropagation();
+        const act = btn.dataset.action;
+        const code = btn.dataset.code;
+        if (act === "star") {
+          if (starredSet.has(code)) starredSet.delete(code);
+          else starredSet.add(code);
+          saveState();
+          render();
+        } else if (act === "master") {
+          if (masteredSet.has(code)) masteredSet.delete(code);
+          else masteredSet.add(code);
+          saveState();
+          render();
+        } else if (act === "copy") {
+          navigator.clipboard.writeText(btn.dataset.text || "");
+          const old = btn.textContent;
+          btn.textContent = "✓ 已复制";
+          setTimeout(() => { btn.textContent = old; }, 1000);
+        }
+      };
+    });
+  }
+
+  // Event Listeners
+  searchInput.addEventListener("input", render);
+  searchClearBtn.addEventListener("click", () => {
+    searchInput.value = "";
+    activeSlide = "";
+    buildJumpBar();
+    render();
+  });
+
+  document.querySelectorAll("#modeBar .seg-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#modeBar .seg-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      document.body.classList.remove("mode-zh-cue", "mode-hide-all", "mode-cloze");
+      document.querySelectorAll(".a-block.revealed, .key-term.revealed").forEach(el => el.classList.remove("revealed"));
+      const m = btn.dataset.mode;
+      if (m === "zh-cue") document.body.classList.add("mode-zh-cue");
+      if (m === "hide-all") document.body.classList.add("mode-hide-all");
+      if (m === "cloze") document.body.classList.add("mode-cloze");
+    });
+  });
+
+  document.querySelectorAll("#statusFilterBar .seg-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#statusFilterBar .seg-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      statusFilter = btn.dataset.status;
+      render();
+    });
+  });
+
+  document.getElementById("toggleTocBtn").addEventListener("click", () => {
+    if (window.innerWidth <= 760) {
+      workspace.classList.toggle("mobile-toc-open");
+    } else {
+      workspace.classList.toggle("toc-collapsed");
+    }
+  });
+
+  window.addEventListener("keydown", (e) => {
+    if ((e.key === "/" || (e.metaKey && e.key.toLowerCase() === "k")) && document.activeElement !== searchInput) {
+      e.preventDefault();
+      searchInput.focus();
+      searchInput.select();
+    }
+  });
+
+  updateProgress();
+  buildJumpBar();
+  render();
+})();
+</script>
+</body>
+</html>

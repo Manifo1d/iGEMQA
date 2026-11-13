@@ -143,10 +143,14 @@ class DefenseAssistantHandler(http.server.SimpleHTTPRequestHandler):
         return self._send_json(404, {"ok": False, "error": "Not found"})
 
 
+class ReusableTCPServer(socketserver.TCPServer):
+    allow_reuse_address = True
+    allow_reuse_port = True
+
+
 def run_server(port: int = 8788):
     sync_main([])
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("0.0.0.0", port), DefenseAssistantHandler) as httpd:
+    with ReusableTCPServer(("0.0.0.0", port), DefenseAssistantHandler) as httpd:
         print(f"iGEM Real-Time Defense Assistant running at http://127.0.0.1:{port}/index.html", flush=True)
         print("REST API endpoints: GET/POST /api/qa | GET /api/kb | POST /api/reload", flush=True)
         httpd.serve_forever()
