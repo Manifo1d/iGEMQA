@@ -2,54 +2,64 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>iGEM Real-Time Defense Assistant</title>
   <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
 
-<!-- Top Control Bar -->
+<!-- Top Control Bar (Tablet & Desktop Responsive) -->
 <header class="topbar">
-  <button class="btn btn-mic" id="micBtn" title="Alt+S 开启/暂停监听">开启全场监听 (EN)</button>
-  <button class="btn" id="langBtn" title="切换语音识别语言 (EN / ZH)" style="padding:0 10px;">EN</button>
-  <select id="voiceModeSelect" class="ctrl-select" title="选择语音工作模式">
-    <option value="auto_detect" selected>模式: 自动识别并触发</option>
-    <option value="manual_grab">模式: 持续转写 · 按键取最后问句</option>
-    <option value="raw">模式: 传统全量语音</option>
-  </select>
-  <button class="btn btn-primary" id="grabLastQBtn" title="Alt+Q：从持续录音中提取最后一个评委问句并生成回答">提取最后问句 (Alt+Q)</button>
-  <button class="btn" id="prevAnswerBtn" title="Alt+Z：误触发时一键返回上一个问题的回答画面" disabled>← 上一回答</button>
-  <button class="btn" id="unlockNextBtn" title="Alt+N 手动解锁并准备接收下一题" style="display:none;">下一题解锁</button>
-  <input type="text" class="query-input" id="queryInput" placeholder="全场自动捕获评委问句，或手动输入关键词 / 题号 (如 B1, naringenin, two bands, 84%)...">
-  <button class="btn btn-primary" id="askBtn">生成回答</button>
-  <button class="btn" id="openDbBtn" title="可视化编辑、新增、导入/导出参考回答数据库">题库管理</button>
-  <select id="providerSelect" class="ctrl-select"></select>
-  <input type="text" id="customUrlInput" class="ctrl-key" style="display:none;width:150px;" placeholder="Base URL">
-  <input type="text" id="customModelInput" class="ctrl-key" style="display:none;width:110px;" placeholder="Model ID">
-  <input type="password" id="apiKeyInput" class="ctrl-key" placeholder="API Key" autocomplete="off">
+  <div class="topbar-group topbar-mic-group">
+    <button class="btn btn-mic" id="micBtn" title="Alt+S 开启/暂停监听">开启全场监听 (EN)</button>
+    <button class="btn" id="langBtn" title="切换语音识别语言 (EN / ZH)" style="padding:0 10px;">EN</button>
+    <select id="voiceModeSelect" class="ctrl-select" title="选择语音工作模式">
+      <option value="auto_detect" selected>模式: 自动识别并触发</option>
+      <option value="manual_grab">模式: 持续转写 · 按键取最后问句</option>
+      <option value="raw">模式: 传统全量语音</option>
+    </select>
+    <button class="btn btn-primary" id="grabLastQBtn" title="Alt+Q：从持续录音中提取最后一个评委问句并生成回答">提取最后问句</button>
+    <button class="btn" id="prevAnswerBtn" title="Alt+Z：误触发时一键返回上一个问题的回答画面" disabled>← 上一题</button>
+    <button class="btn" id="unlockNextBtn" title="Alt+N 手动解锁并准备接收下一题" style="display:none;">下一题解锁</button>
+  </div>
+
+  <div class="topbar-group topbar-search-group">
+    <input type="text" class="query-input" id="queryInput" placeholder="自动捕获评委问句，或输入关键词 / 题号 (如 B4, M23, M25, naringenin, 84%)...">
+    <button class="btn btn-primary" id="askBtn">生成回答</button>
+  </div>
+
+  <div class="topbar-group topbar-cfg-group">
+    <button class="btn" id="openDbBtn" title="可视化编辑、新增、导入/导出参考回答数据库">题库管理</button>
+    <select id="providerSelect" class="ctrl-select"></select>
+    <input type="text" id="customUrlInput" class="ctrl-key" style="display:none;width:140px;" placeholder="Base URL">
+    <input type="text" id="customModelInput" class="ctrl-key" style="display:none;width:105px;" placeholder="Model ID">
+    <input type="password" id="apiKeyInput" class="ctrl-key" placeholder="API Key" autocomplete="off">
+  </div>
 </header>
 
-<!-- Subbar: Live Translation & Matched Question Switcher -->
+<!-- Subbar: Live Status & Matched Question Switcher -->
 <div class="subbar">
-  <div class="trans-line" id="liveTransLine">就绪 · 点击「开启全场监听」后无需反复开关，系统会自动锁定评委问句并过滤我方队员回答</div>
+  <div class="trans-line" id="liveTransLine">就绪 · 点击「开启全场监听」后右侧 1/3 实时滚动英汉同传，左侧 2/3 自动锁定评委提问</div>
   <div class="hit-tabs" id="hitTabs"></div>
   <span class="slide-tag" id="slideTag">S1 · P1</span>
 </div>
 <div class="q-hist-bar" id="qHistBar">
   <span style="color:var(--text-muted);font-weight:600;white-space:nowrap;">本场评委问题与上下文记忆:</span>
   <div id="qHistList" style="display:flex;gap:6px;align-items:center;flex:1;overflow-x:auto;"></div>
-  <button class="btn" id="clearContextBtn" title="Alt+C：清空连续追问上下文记忆，开启全新话题" style="height:24px;padding:0 8px;font-size:11.5px;">清空上下文 (Alt+C)</button>
+  <button class="btn" id="clearContextBtn" title="Alt+C：清空连续追问上下文记忆，开启全新话题" style="height:26px;padding:0 9px;font-size:11.5px;">清空上下文</button>
 </div>
 
-<!-- Main Split Output: Left = 1, 2, 3 Key Points | Right = Listening-Note Cue Chains -->
+<!-- Main Split Output: Left 2/3 = Answer & Cue Chains | Right 1/3 = Real-Time Transcription & Translation -->
 <main class="workspace">
-  <!-- Left Column: 1, 2, 3 Full-Sentence Key Points -->
+  <!-- Left 2/3 Column: Answer Key Points + Shorthand Cues + Project References -->
   <section class="col col-left">
     <div class="col-header">
-      <span>1 · 2 · 3 分点陈述</span>
+      <span>1 · 2 · 3 答辩核心陈述 &amp; 速记逻辑链 (左 2/3)</span>
       <div style="display:flex;gap:8px;align-items:center;">
         <span id="leftStatusText">本地毫秒检索</span>
-        <button class="btn" id="copyBtn" style="padding:3px 9px;font-size:12px;">复制英文</button>
+        <button class="btn" id="copyBtn" style="padding:3px 10px;font-size:12px;height:28px;">复制英文</button>
       </div>
     </div>
     <div class="col-body">
@@ -58,7 +68,7 @@
         <div class="q-en" id="qEnText"></div>
       </div>
 
-      <!-- AI Generated 1, 2, 3 Points -->
+      <!-- AI Generated 1, 2, 3 Points & Cue Notes -->
       <div class="ai-block" id="aiPointsBlock">
         <div class="section-label">AI 实时生成 · English Points (1 / 2 / 3)</div>
         <div class="points-stack" id="aiPointsEnContainer"></div>
@@ -66,39 +76,73 @@
         <div class="points-stack" id="aiPointsZhContainer"></div>
       </div>
 
-      <!-- Standard 1, 2, 3 Points (EN) -->
-      <div class="section-label">English Key Points (1 / 2 / 3)</div>
-      <div class="points-stack" id="stdPointsEn"></div>
-
-      <!-- Standard 1, 2, 3 Points (ZH) -->
-      <div class="section-label">中文分点陈述 (1 / 2 / 3)</div>
-      <div class="points-stack" id="stdPointsZh"></div>
-
-      <!-- Auto-Retrieved Project Library Original Excerpts -->
-      <div class="section-label" id="refSectionLabel">关联项目库原文 (Protocols / Wiki / DBTL / Parts)</div>
-      <div class="ref-list" id="refListContainer"></div>
-    </div>
-  </section>
-
-  <!-- Right Column: Listening-Note Style Cues (Keywords + Arrow Chains, No Full Sentences) -->
-  <section class="col col-right">
-    <div class="col-header">
-      <span>答题思路 · 听力速记笔记</span>
-      <span id="rightStatusText">中文词汇速记</span>
-    </div>
-    <div class="col-body">
-      <!-- AI Generated Cue Notes -->
       <div class="ai-block" id="aiNotesBlock">
-        <div class="section-label">AI 实时生成 · 答题思路速记 (中文词汇与逻辑链)</div>
+        <div class="section-label">AI 实时生成 · 答题思路速记 (中文关键词与逻辑箭头)</div>
         <div class="note-stack" id="aiNotesContainer"></div>
       </div>
 
-      <!-- Standard Cue Notes -->
-      <div class="section-label">答题思路速记 (中文关键词 · 逻辑箭头 · 关键数值)</div>
-      <div class="note-stack" id="stdNotesContainer"></div>
+      <!-- Standard Cue Notes (Compact Quick-Glance Box) -->
+      <div>
+        <div class="section-label">答题思路速记 (中文关键词 · 逻辑箭头 · 关键数值)</div>
+        <div class="note-stack" id="stdNotesContainer"></div>
+      </div>
+
+      <!-- Standard 1, 2, 3 Points (EN) -->
+      <div>
+        <div class="section-label">English Key Points (1 / 2 / 3)</div>
+        <div class="points-stack" id="stdPointsEn"></div>
+      </div>
+
+      <!-- Standard 1, 2, 3 Points (ZH) -->
+      <div>
+        <div class="section-label">中文分点陈述 (1 / 2 / 3)</div>
+        <div class="points-stack" id="stdPointsZh"></div>
+      </div>
 
       <!-- Quantitative Calculation / Supplement Note if present -->
       <div class="extra-box" id="stdExtraZh" style="display:none;"></div>
+
+      <!-- Auto-Retrieved Project Library Original Excerpts -->
+      <div>
+        <div class="section-label" id="refSectionLabel">关联项目库原文 (Protocols / Wiki / DBTL / Parts)</div>
+        <div class="ref-list" id="refListContainer"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Right 1/3 Column: Real-Time Transcription & Simultaneous Translation -->
+  <section class="col col-right">
+    <div class="col-header">
+      <div style="display:flex;align-items:center;gap:7px;">
+        <span class="mic-live-dot" id="transLiveDot"></span>
+        <span>实时转写与同传翻译 (右 1/3)</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span id="rightStatusText" style="text-transform:none;letter-spacing:0;">实时同传待命</span>
+        <button class="btn btn-xs" id="toggleTeamSpeechBtn" title="切换是否显示我方队员发言记录">全部语音</button>
+        <button class="btn btn-xs" id="clearTranscriptBtn" title="清空右侧实时转写流">清空</button>
+      </div>
+    </div>
+
+    <div class="trans-panel-body">
+      <!-- Live Ongoing Utterance Box (Pinned Top of Right 1/3) -->
+      <div class="live-utterance-box" id="liveUtteranceBox">
+        <div class="live-utterance-meta">
+          <span class="role-badge" id="liveUtteranceRoleBadge">收音待命</span>
+          <span class="live-utterance-hint" id="liveUtteranceHint">开启监听后实时显示正在说的英文与中文同传</span>
+        </div>
+        <div class="live-utterance-en" id="liveInterimEn">等待麦克风语音输入...</div>
+        <div class="live-utterance-zh" id="liveInterimZh"></div>
+      </div>
+
+      <!-- Scrollable Real-Time Bilingual Transcript Stream -->
+      <div class="trans-feed" id="liveTranscriptFeed">
+        <div class="trans-empty" id="transEmptyState">
+          <div style="font-weight:600;color:var(--text);margin-bottom:4px;">实时语音转写与中文同传流</div>
+          <div>1. 开启顶部「开启全场监听」后，评委与现场的每一句话都会在此处实时转写并自动翻译为中文。</div>
+          <div>2. 在平板或电脑上<strong>直接点击任意一条转写卡片</strong>，即可立刻将该句作为评委问题锁定并在左侧生成回答。</div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
@@ -124,7 +168,7 @@
     <div class="modal-body">
       <aside class="db-sidebar" id="dbSidebarList"></aside>
       <div class="db-form">
-        <div style="display:grid;grid-template-columns:1fr 1fr 2fr;gap:12px;">
+        <div class="db-form-grid">
           <div class="form-row">
             <label>题号 (Code)</label>
             <input type="text" class="form-input" id="dbCodeInput" placeholder="如 S1.1 / B1.1">
@@ -155,7 +199,7 @@
           <textarea class="form-textarea" id="dbPointsZhInput"></textarea>
         </div>
         <div class="form-row">
-          <label>右侧答题思路 · 中文听力速记笔记 (notes_zh，每行一点，用 → 连接逻辑链)</label>
+          <label>答题思路 · 中文听力速记笔记 (notes_zh，每行一点，用 → 连接逻辑链)</label>
           <textarea class="form-textarea" id="dbNotesZhInput"></textarea>
         </div>
         <div class="form-row">

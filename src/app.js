@@ -695,6 +695,7 @@
     currentQaHits = hits;
     renderHitTabs(hits);
     document.getElementById("qEnText").textContent = q;
+    ensureQuestionInFeed(q, hits[0]);
 
     let histEntry = questionHistory.find(h => h.q.toLowerCase() === q.toLowerCase());
     if (!histEntry) {
@@ -799,6 +800,7 @@
                 : `<span class="role-badge">问题同传</span>`;
               document.getElementById("liveTransLine").innerHTML =
                 `${lockBadge}<strong>${escapeHtml(transText)}</strong>`;
+              syncTranslationToFeed(q, transText);
             }
           } catch (e) {}
         }
@@ -976,20 +978,429 @@
     return { role, cleanQuestion, judgeScore, teamScore };
   }
 
+  // ============================================================================
+  // Right 1/3 Panel: Real-Time Transcription & Simultaneous Translation Engine
+  // ============================================================================
+  let hideTeamSpeechInFeed = false;
+  let interimTranslateTimer = null;
+  let interimTranslateAbort = null;
+  let lastInterimTranslatedText = "";
+
+  const toggleTeamSpeechBtn = document.getElementById("toggleTeamSpeechBtn");
+  const clearTranscriptBtn = document.getElementById("clearTranscriptBtn");
+  const transLiveDot = document.getElementById("transLiveDot");
+  const liveUtteranceBox = document.getElementById("liveUtteranceBox");
+  const liveUtteranceRoleBadge = document.getElementById("liveUtteranceRoleBadge");
+  const liveUtteranceHint = document.getElementById("liveUtteranceHint");
+  const liveInterimEn = document.getElementById("liveInterimEn");
+  const liveInterimZh = document.getElementById("liveInterimZh");
+  const liveTranscriptFeed = document.getElementById("liveTranscriptFeed");
+
+  const QUICK_TERM_DICT = [
+    { re: /\bnaringenin\b/i, zh: "naringenin (柚皮素)" },
+    { re: /\bs\.?\s*epidermidis\b/i, zh: "S. epidermidis (表皮葡萄球菌)" },
+    { re: /\bs\.?\s*aureus\b/i, zh: "S. aureus (金黄色葡萄球菌)" },
+    { re: /\becn\b|\bnissle\b/i, zh: "EcN (大肠杆菌Nissle 1917)" },
+    { re: /\bbl21\b/i, zh: "BL21(DE3) (概念验证工程菌)" },
+    { re: /\bdspb\b|\bdispersin\b/i, zh: "DspB (生物膜解聚酶)" },
+    { re: /\blsp222\b/i, zh: "LSp222 (金葡菌噬菌体裂解酶)" },
+    { re: /\bhegf\b/i, zh: "hEGF (人表皮生长因子)" },
+    { re: /\bhemin\b|\bheme\b/i, zh: "heme/hemin (游离血红素)" },
+    { re: /\bhssrs\b|\bphrtba\b/i, zh: "HssRS/pHrtBA (血红素双组分传感)" },
+    { re: /\bfder\b|\bpfdear\b|\bnrsr\b/i, zh: "FdeR/PfdeAR (柚皮素转录激活系统)" },
+    { re: /\bpelb\b/i, zh: "PelB (周质空间分泌信号肽)" },
+    { re: /\bpnag\b|\bbiofilm\b/i, zh: "PNAG biofilm (多聚N-乙酰葡糖胺生物膜)" },
+    { re: /\bsupernatant\b/i, zh: "supernatant (培养上清液)" },
+    { re: /\bco-?culture\b/i, zh: "co-culture (双菌共培养)" },
+    { re: /\bauxotroph|\bkill\s*switch\b|\bd-?alanine\b/i, zh: "D-Ala auxotrophy (营养缺陷型自杀开关)" },
+    { re: /\bhydrogel\b|\bsemi-?permeable\b/i, zh: "hydrogel/membrane (水凝胶与半透膜隔离)" },
+    { re: /\bhplc\b|\bcalibration\b|\bpeak\s*area\b/i, zh: "HPLC/标曲定量" }
+  ];
+
+  function extractMatchedTerms(text) {
+    const qLower = String(text || "").toLowerCase();
+    if (!qLower) return [];
+    const found = [];
+    QUICK_TERM_DICT.forEach(item => {
+      if (item.re.test(qLower)) found.push(item.zh);
+    });
+    GLOSSARY.forEach(g => {
+      if (found.length >= 4) return;
+      const parts = g.en.toLowerCase().split(/[\/\s]+/);
+      if (parts.some(p => p.length >= 3 && qLower.includes(p))) {
+        const label = `${g.en}: ${g.zh.split("(")[0].trim()}`;
+        if (!found.includes(label)) found.push(label);
+      }
+    });
+    return found.slice(0, 4);
+  }
+
+  function buildInstantLocalZhPreview(text, matchedQa) {
+    const clean = String(text || "").trim();
+    if (!clean) return "";
+    if (/[\u4e00-\u9fa5]{4,}/.test(clean)) {
+      return clean;
+    }
+    const terms = extractMatchedTerms(clean);
+    if (matchedQa && matchedQa.q_zh) {
+      return `【关联 ${matchedQa.code}】${matchedQa.q_zh}`;
+    }
+    if (terms.length > 0) {
+      return `关键词同传：${terms.join(" ｜ ")}`;
+    }
+    return "同传解析中...";
+  }
+
+  function formatTimeHMS(ts) {
+    const d = new Date(ts || Date.now());
+    const hh = String(d.getHours()).padStart(2, "0");
+    const mm = String(d.getMinutes()).padStart(2, "0");
+    const ss = String(d.getSeconds()).padStart(2, "0");
+    return `${hh}:${mm}:${ss}`;
+  }
+
+  function renderTranscriptFeed() {
+    if (!liveTranscriptFeed) return;
+    const visibleSegments = hideTeamSpeechInFeed
+      ? transcriptSegments.filter(s => s.role !== "TEAM_ANSWER")
+      : transcriptSegments;
+
+    if (!visibleSegments.length) {
+      liveTranscriptFeed.innerHTML = `
+        <div class="trans-empty" id="transEmptyState">
+          <div style="font-weight:600;color:var(--text);margin-bottom:4px;">实时语音转写与中文同传流</div>
+          <div>1. 开启顶部「开启全场监听」后，评委与现场的每一句话都会在此处实时转写并自动翻译为中文。</div>
+          <div>2. 在平板或电脑上<strong>直接点击任意一条转写卡片</strong>，即可立刻将该句作为评委问题锁定并在左侧生成回答。</div>
+        </div>
+      `;
+      return;
+    }
+
+    const activeQNorm = (lastAiQuestionText || "").trim().toLowerCase();
+    liveTranscriptFeed.innerHTML = "";
+
+    visibleSegments.forEach((seg) => {
+      const card = document.createElement("div");
+      const isJudge = seg.role === "JUDGE_QUESTION";
+      const isTeam = seg.role === "TEAM_ANSWER";
+      const segQNorm = (seg.cleanQuestion || seg.text || "").trim().toLowerCase();
+      const isLockedActive = activeQNorm && (segQNorm === activeQNorm || seg.text.toLowerCase() === activeQNorm);
+
+      card.className = [
+        "trans-card",
+        isJudge ? "judge-card" : "",
+        isTeam ? "team-card" : "",
+        isLockedActive ? "active-locked" : ""
+      ].filter(Boolean).join(" ");
+
+      const roleBadgeHtml = isJudge
+        ? `<span class="role-badge judge">评委提问</span>`
+        : (isTeam
+            ? `<span class="role-badge ignored">我方发言</span>`
+            : `<span class="role-badge">现场语音</span>`);
+
+      const codeBadgeHtml = seg.matchedCode
+        ? `<span class="role-badge" style="font-family:ui-monospace,monospace;">${escapeHtml(seg.matchedCode)}</span>`
+        : "";
+
+      const zhText = seg.zhTrans || seg.localZhPreview || "等待同传...";
+      const terms = seg.terms || [];
+      const termsHtml = terms.length
+        ? `<div class="trans-card-terms">术语: ${escapeHtml(terms.join(" · "))}</div>`
+        : "";
+
+      card.innerHTML = `
+        <div class="trans-card-top">
+          <div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
+            ${roleBadgeHtml}
+            ${codeBadgeHtml}
+            <span class="trans-card-time">${formatTimeHMS(seg.ts)}</span>
+          </div>
+          <span class="trans-card-action">${isLockedActive ? "当前作答中" : "点击作答 →"}</span>
+        </div>
+        <div class="trans-card-en">${highlightNumbers(escapeHtml(seg.text))}</div>
+        <div class="trans-card-zh">${highlightNumbers(escapeHtml(zhText))}</div>
+        ${termsHtml}
+      `;
+
+      card.addEventListener("click", () => {
+        const targetQ = seg.cleanQuestion || seg.text;
+        if (!targetQ) return;
+        isQuestionLocked = true;
+        updateMicUi();
+        document.getElementById("queryInput").value = targetQ;
+        triggerAiStream(targetQ);
+      });
+
+      liveTranscriptFeed.appendChild(card);
+    });
+
+    liveTranscriptFeed.scrollTop = liveTranscriptFeed.scrollHeight;
+  }
+
+  function updateLiveInterimBox(rawText, role) {
+    if (!liveUtteranceBox || !liveInterimEn || !liveInterimZh) return;
+    const clean = String(rawText || "").trim();
+    liveUtteranceBox.classList.remove("active-speaking", "active-judge");
+
+    if (!clean) {
+      if (micSessionStarted && !micPaused) {
+        liveUtteranceRoleBadge.className = "role-badge";
+        liveUtteranceRoleBadge.textContent = "持续监听中";
+        liveUtteranceHint.textContent = "正在实时捕捉评委提问与现场语音...";
+        liveInterimEn.textContent = "等待说话...";
+        liveInterimZh.textContent = "";
+      } else {
+        liveUtteranceRoleBadge.className = "role-badge";
+        liveUtteranceRoleBadge.textContent = micPaused && micSessionStarted ? "已暂停" : "收音待命";
+        liveUtteranceHint.textContent = "点击左上角「开启全场监听」启动实时转写与同传";
+        liveInterimEn.textContent = "等待麦克风语音输入...";
+        liveInterimZh.textContent = "";
+      }
+      return;
+    }
+
+    if (role === "JUDGE_QUESTION") {
+      liveUtteranceBox.classList.add("active-judge");
+      liveUtteranceRoleBadge.className = "role-badge judge";
+      liveUtteranceRoleBadge.textContent = "评委正在提问";
+    } else if (role === "TEAM_ANSWER") {
+      liveUtteranceBox.classList.add("active-speaking");
+      liveUtteranceRoleBadge.className = "role-badge ignored";
+      liveUtteranceRoleBadge.textContent = "我方正在回答";
+    } else {
+      liveUtteranceBox.classList.add("active-speaking");
+      liveUtteranceRoleBadge.className = "role-badge";
+      liveUtteranceRoleBadge.textContent = "正在收音转写";
+    }
+
+    const hits = searchQaItems(clean);
+    const topHit = hits && hits[0];
+    liveUtteranceHint.textContent = topHit ? `实时匹配: ${topHit.code}` : "实时语音流";
+    liveInterimEn.innerHTML = highlightNumbers(escapeHtml(clean));
+
+    const instantZh = buildInstantLocalZhPreview(clean, role === "JUDGE_QUESTION" ? topHit : null);
+    if (!liveInterimZh.dataset.streamingFor || !clean.startsWith(liveInterimZh.dataset.streamingFor)) {
+      liveInterimZh.textContent = instantZh;
+    }
+
+    streamTranslateInterim(clean);
+  }
+
+  function streamTranslateInterim(rawText) {
+    const apiKey = apiKeyInput.value.trim();
+    if (!apiKey) return;
+    const clean = String(rawText || "").trim();
+    if (clean.split(/\s+/).length < 5 || clean === lastInterimTranslatedText) return;
+
+    if (interimTranslateTimer) clearTimeout(interimTranslateTimer);
+    interimTranslateTimer = setTimeout(async () => {
+      if (clean === lastInterimTranslatedText) return;
+      lastInterimTranslatedText = clean;
+      if (interimTranslateAbort) interimTranslateAbort.abort();
+      interimTranslateAbort = new AbortController();
+      const cfg = getActiveProviderConfig();
+
+      try {
+        const res = await fetch(cfg.url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${apiKey}`
+          },
+          body: JSON.stringify({
+            model: cfg.fastModel,
+            ...cfg.extra,
+            temperature: 0.0,
+            max_tokens: 80,
+            stream: true,
+            messages: [
+              {
+                role: "system",
+                content: "你是iGEM答辩同声传译员。将输入的英文语音片段实时直译为简明中文（只输出中文译文，不要解释）。术语：naringenin=柚皮素, S. epidermidis=表皮葡萄球菌, S. aureus=金葡菌, EcN=大肠杆菌Nissle 1917, DspB=生物膜解聚酶, LSp222=裂解酶, hemin/heme=血红素。"
+              },
+              { role: "user", content: clean }
+            ]
+          }),
+          signal: interimTranslateAbort.signal
+        });
+        if (!res.ok || !res.body) return;
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder("utf-8");
+        let zhOut = "";
+        let buf = "";
+        liveInterimZh.dataset.streamingFor = clean.slice(0, 18);
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buf += decoder.decode(value, { stream: true });
+          const lines = buf.split("\n");
+          buf = lines.pop();
+          for (const line of lines) {
+            if (!line.startsWith("data: ")) continue;
+            const dStr = line.slice(6).trim();
+            if (dStr === "[DONE]") break;
+            try {
+              const j = JSON.parse(dStr);
+              const delta = j.choices?.[0]?.delta?.content || "";
+              if (delta) {
+                zhOut += delta;
+                if (liveOngoingUtterance && liveInterimZh) {
+                  liveInterimZh.textContent = `同传: ${zhOut}`;
+                }
+              }
+            } catch (e) {}
+          }
+        }
+      } catch (e) {}
+    }, 520);
+  }
+
+  async function streamTranslateSegment(segObj) {
+    const apiKey = apiKeyInput.value.trim();
+    if (!apiKey || !segObj || !segObj.text) return;
+    if (/^[\u4e00-\u9fa5，。？！、；：“”‘’（）\s0-9a-zA-Z.-]+$/.test(segObj.text) && /[\u4e00-\u9fa5]{5,}/.test(segObj.text)) {
+      segObj.zhTrans = segObj.text;
+      renderTranscriptFeed();
+      return;
+    }
+
+    const cfg = getActiveProviderConfig();
+    const dialogueCtx = buildDialogueContextForAi(segObj.cleanQuestion || segObj.text);
+    const userContent = dialogueCtx.shortTransContext
+      ? `【${dialogueCtx.shortTransContext}】\n当前现场语音：${segObj.text}`
+      : segObj.text;
+
+    try {
+      const res = await fetch(cfg.url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+          model: cfg.fastModel,
+          ...cfg.extra,
+          temperature: 0.0,
+          max_tokens: 110,
+          stream: true,
+          messages: [
+            {
+              role: "system",
+              content: "你是iGEM答辩实时同声传译员。将当前英文语音用1句自然、准确的中文同传译出；若含有it/that/this/they等代词，结合【上一题】在括号内补全指代。术语：naringenin=柚皮素, DspB=生物膜解聚酶, EcN=大肠杆菌Nissle 1917, S. epidermidis=表皮葡萄球菌, S. aureus=金葡菌, PelB=信号肽, supernatant=上清液。只输出中文译文。"
+            },
+            { role: "user", content: userContent }
+          ]
+        })
+      });
+      if (!res.ok || !res.body) return;
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder("utf-8");
+      let transText = "";
+      let buf = "";
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buf += decoder.decode(value, { stream: true });
+        const lines = buf.split("\n");
+        buf = lines.pop();
+        for (const line of lines) {
+          if (!line.startsWith("data: ")) continue;
+          const dataStr = line.slice(6).trim();
+          if (dataStr === "[DONE]") break;
+          try {
+            const j = JSON.parse(dataStr);
+            const delta = j.choices?.[0]?.delta?.content || "";
+            if (delta) {
+              transText += delta;
+              segObj.zhTrans = transText;
+              renderTranscriptFeed();
+            }
+          } catch (e) {}
+        }
+      }
+    } catch (e) {}
+  }
+
+  function ensureQuestionInFeed(qText, topHit) {
+    const clean = String(qText || "").trim();
+    if (!clean) return;
+    const norm = clean.toLowerCase();
+    let existing = transcriptSegments.find(
+      s => s.text.toLowerCase() === norm || (s.cleanQuestion && s.cleanQuestion.toLowerCase() === norm)
+    );
+    if (!existing) {
+      existing = {
+        text: clean,
+        cleanQuestion: clean,
+        role: "JUDGE_QUESTION",
+        judgeScore: 6,
+        teamScore: 0,
+        matchedCode: topHit ? topHit.code : "",
+        terms: extractMatchedTerms(clean),
+        localZhPreview: buildInstantLocalZhPreview(clean, topHit),
+        zhTrans: "",
+        ts: Date.now()
+      };
+      transcriptSegments.push(existing);
+      if (transcriptSegments.length > 60) transcriptSegments.shift();
+    }
+    renderTranscriptFeed();
+  }
+
+  function syncTranslationToFeed(qText, zhTrans) {
+    const norm = String(qText || "").trim().toLowerCase();
+    for (let i = transcriptSegments.length - 1; i >= 0; i--) {
+      const s = transcriptSegments[i];
+      if (s.text.toLowerCase() === norm || (s.cleanQuestion && s.cleanQuestion.toLowerCase() === norm)) {
+        s.zhTrans = zhTrans;
+        break;
+      }
+    }
+    renderTranscriptFeed();
+  }
+
+  if (toggleTeamSpeechBtn) {
+    toggleTeamSpeechBtn.addEventListener("click", () => {
+      hideTeamSpeechInFeed = !hideTeamSpeechInFeed;
+      toggleTeamSpeechBtn.textContent = hideTeamSpeechInFeed ? "仅看评委" : "全部语音";
+      toggleTeamSpeechBtn.classList.toggle("btn-mode", hideTeamSpeechInFeed);
+      toggleTeamSpeechBtn.classList.toggle("active", hideTeamSpeechInFeed);
+      renderTranscriptFeed();
+    });
+  }
+
+  if (clearTranscriptBtn) {
+    clearTranscriptBtn.addEventListener("click", () => {
+      transcriptSegments.length = 0;
+      liveOngoingUtterance = "";
+      updateLiveInterimBox("", "EMPTY");
+      renderTranscriptFeed();
+    });
+  }
+
   function recordFinalizedSegment(rawSegText) {
     const clean = String(rawSegText || "").replace(/\s+/g, " ").trim();
     if (!clean || clean.length < 3) return;
     const analysis = classifyAndExtractQuestion(clean, false);
+    const hits = searchQaItems(analysis.cleanQuestion || clean);
+    const topHit = hits && hits[0];
     const segObj = {
       text: clean,
       cleanQuestion: analysis.cleanQuestion || clean,
       role: analysis.role,
       judgeScore: analysis.judgeScore,
       teamScore: analysis.teamScore,
+      matchedCode: (analysis.role === "JUDGE_QUESTION" && topHit) ? topHit.code : "",
+      terms: extractMatchedTerms(clean),
+      localZhPreview: buildInstantLocalZhPreview(clean, analysis.role === "JUDGE_QUESTION" ? topHit : null),
+      zhTrans: "",
       ts: Date.now()
     };
     transcriptSegments.push(segObj);
     if (transcriptSegments.length > 60) transcriptSegments.shift();
+    renderTranscriptFeed();
+    streamTranslateSegment(segObj);
     if (analysis.role === "JUDGE_QUESTION") {
       lastDetectedJudgeQ = segObj.cleanQuestion;
       emitEvent("questionDetected", segObj);
@@ -1066,17 +1477,20 @@
 
   function updateMicUi() {
     micBtn.classList.remove("listening", "paused");
+    if (transLiveDot) transLiveDot.classList.remove("listening", "paused");
     if (!micSessionStarted || micPaused) {
       if (micSessionStarted && micPaused) {
         micBtn.classList.add("paused");
+        if (transLiveDot) transLiveDot.classList.add("paused");
         micBtn.textContent = `已暂停收音 · 点击恢复 (${speechLang === "en-US" ? "EN" : "ZH"})`;
       } else {
         micBtn.textContent = `开启全场监听 (${speechLang === "en-US" ? "EN" : "ZH"})`;
       }
     } else {
       micBtn.classList.add("listening");
+      if (transLiveDot) transLiveDot.classList.add("listening");
       if (voiceMode === "manual_grab") {
-        micBtn.textContent = "后台持续转写中 (按 Alt+Q 取题)";
+        micBtn.textContent = "后台持续转写中 (点击提取)";
       } else if (voiceMode === "auto_trigger") {
         micBtn.textContent = isQuestionLocked ? "监听中 · 已锁题防覆盖" : "全场监听中 · 待评委提问";
       } else {
@@ -1084,6 +1498,9 @@
       }
     }
     unlockNextBtn.style.display = (voiceMode === "auto_trigger" && isQuestionLocked) ? "inline-block" : "none";
+    if (!liveOngoingUtterance) {
+      updateLiveInterimBox("", "EMPTY");
+    }
   }
 
   function unlockForNextQuestion() {
@@ -1191,7 +1608,13 @@
       }
       const rawCombined = currentTurnText.trim();
       liveOngoingUtterance = rawCombined;
-      if (!rawCombined) return;
+      if (!rawCombined) {
+        updateLiveInterimBox("", "EMPTY");
+        return;
+      }
+
+      const { role, cleanQuestion } = classifyAndExtractQuestion(rawCombined, isQuestionLocked);
+      updateLiveInterimBox(rawCombined, role);
 
       if (voiceMode === "raw") {
         document.getElementById("queryInput").value = rawCombined;
@@ -1203,8 +1626,6 @@
         }, 1150);
         return;
       }
-
-      const { role, cleanQuestion } = classifyAndExtractQuestion(rawCombined, isQuestionLocked);
 
       if (voiceMode === "manual_grab") {
         const snippet = rawCombined.length > 56 ? "..." + rawCombined.slice(-56) : rawCombined;
@@ -1221,6 +1642,7 @@
         if (turnFinal) {
           processedResultCount = event.results.length;
           liveOngoingUtterance = "";
+          updateLiveInterimBox("", "EMPTY");
         }
         return;
       }
@@ -1232,6 +1654,8 @@
           `<span class="role-badge ignored">已过滤我方作答</span><span style="color:var(--text-muted)">"${escapeHtml(snippet)}" ${backHint}</span>`;
         if (turnFinal) {
           processedResultCount = event.results.length;
+          liveOngoingUtterance = "";
+          updateLiveInterimBox("", "EMPTY");
         }
         return;
       }
@@ -1242,6 +1666,8 @@
           `<span class="role-badge locked">锁题保护中</span><span style="color:var(--text-muted)">忽略非问句语音: "${escapeHtml(snippet)}"（Alt+N 下一题 / Alt+Z 上一回答）</span>`;
         if (turnFinal) {
           processedResultCount = event.results.length;
+          liveOngoingUtterance = "";
+          updateLiveInterimBox("", "EMPTY");
         }
         return;
       }
@@ -1265,6 +1691,7 @@
           if (finalCheck.role === "TEAM_ANSWER") return;
           const lockedQ = finalCheck.cleanQuestion || activeQ;
           isQuestionLocked = true;
+          liveOngoingUtterance = "";
           processedResultCount = event.results.length;
           updateMicUi();
           document.getElementById("queryInput").value = lockedQ;
